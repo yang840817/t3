@@ -94,7 +94,7 @@ div #description {
 	color: #fff;
 	padding: 15px 20px 15px 20px;
 	line-height: 30px;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .two {
@@ -122,7 +122,7 @@ div #description {
 	width: 852px;
 	margin: 0 auto;
 	height: 110px;
-	font-size: 15px;
+	font-size: 14px;
 	color: #fff;
 
 }
@@ -180,7 +180,7 @@ div #description {
 }
 
 .c > .column {
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .c img {
@@ -192,7 +192,8 @@ div #description {
 }
 
 .d {
-	margin: 20px;
+	margin: 20px 20px 0 20px;
+	padding-bottom: 20px;
 }
 
 .d img {
@@ -207,5 +208,40 @@ div #description {
 
 .textarea ol {
 	line-height: 28px;
-	font-size: 15px;
+	font-size: 14px;
+}
+
+#footer {
+	width: 852px;
+	background-color: #DDEAD5;
+	margin: 0 auto;
+	border-top: 2px #CADCC0 solid;
+	color: #888;
+	font-size: 14px;
+}
+
+#footer h1 {
+	margin: 0px;
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 1px 1px #fff;
+	text-transform: uppercase;
+}
+
+#footer .column {
+	padding: 20px;
+	border-right: 2px #CADCC0 solid;
+}
+
+.icon-envelope, .icon-facebook2, .icon-twitter, .icon-google-plus2 {
+	color: #326611;
+	font-size: 20px;
+}
+
+#claim {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;	
+	line-height: 40px;
 }
