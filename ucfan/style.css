@@ -91,3 +91,52 @@ div #description {
 	line-height: 30px;
 	font-size: 15px;
 }
+
+.two {
+	width: 50%;
+}
+
+.three {
+	width: 33%;
+}
+
+.four {
+	width: 25%;
+}
+
+.row {
+	box-sizing: border-box;	
+}
+
+.row > .column {
+	box-sizing: border-box;
+	float: left;		
+}
+
+.a {
+	width: 852px;
+	margin: 0 auto;
+	height: 110px;
+	font-size: 15px;
+	color: #fff;
+
+}
+
+.a h1 {
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #E6E99B;
+}
+
+.a > .column {
+	padding: 15px;
+}
+
+.b img {
+	border: 2px #fff solid;
+}
+
+.border-left {
+	border-left: 2px #3D751A solid;
+}
