@@ -6,3 +6,6 @@ body {
 	background-image: url(../images/bg-body.jpg);
 }
 
+html {
+	height: 100%;
+}
