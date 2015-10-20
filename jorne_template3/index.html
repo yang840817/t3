@@ -17,6 +17,7 @@
 <![endif]-->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 <!--effect-->
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -87,41 +88,6 @@
 		</div>
 	</div>
 </section>
-<script>
-$(document).ready(function(){
-	$("#owl-about").owlCarousel({
-		items : 3,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [979,2],
-		itemsTablet : [768,1],
-		itemsMobile : [479,1],
-		navigation : false,
-		slideSpeed : 800,
-		paginationSpeed : 800,
-		autoPlay : true,
-	});
-});
-$(window).load(function(){
-	var maxHeight = Math.max.apply(null, $('.about .col-sm-8').map(function(){
-		 return $(this).outerHeight();
-	}).get());
-	$('.about .col-sm-8').css('height',maxHeight);
-
-	if(window.innerWidth>768){
-		$('.about .col-sm-4').css('height',$('.about .col-sm-8').height());
-	}
-})
-$(window).resize(function(){
-	var maxHeight = Math.max.apply(null, $('.about .col-sm-8').map(function(){
-		 return $(this).outerHeight();
-	}).get());
-	$('.about .col-sm-8').css('height',maxHeight);
-
-	if(window.innerWidth>768){
-		$('.about .col-sm-4').css('height',$('.about .col-sm-8').height());
-	}
-})
-</script>
 
 <section class="service">
 	<h3>Service</h3>
@@ -164,22 +130,6 @@ $(window).resize(function(){
 		</div>
 	</div>
 </section>
-<script>
-$(document).ready(function(){
-	if($('.pay .imgbg img').css('display')=='none'){
-	   $('.pay .imgbg').css('height',$('.pay .content').height());
-	}else{
-	   $('.pay .imgbg').css('height','');
-	};
-});
-$(window).resize(function(){
-	if($('.pay .imgbg img').css('display')=='none'){
-	   $('.pay .imgbg').css('height',$('.pay .content').height());
-	}else{
-	   $('.pay .imgbg').css('height','');
-	};
-});
-</script>
 
 <section class="contact">
 	<div class="row">
@@ -215,28 +165,6 @@ $(window).resize(function(){
 		</div>
 	</div>
 </section>
-<script>
-$(window).load(function(){
-	if(window.innerWidth>768){
-		var maxHeight = Math.max.apply(null, $('.contact .row div').map(function(){
-			 return $(this).outerHeight();
-		}).get());
-		$('.contact .row div').css('height',maxHeight);
-	}else{
-		$('.contact .row div').css('height','');
-	}
-})
-$(window).resize(function(){
-	if(window.innerWidth>768){
-		var maxHeight = Math.max.apply(null, $('.contact .row div').map(function(){
-			 return $(this).outerHeight();
-		}).get());
-		$('.contact .row div').css('height',maxHeight);
-	}else{
-		$('.contact .row div').css('height','');
-	}
-})
-</script>
 
 <footer id="footer">
 	<p>&copy;2023 All Right Reserved.</p>

@@ -1,11 +1,11 @@
 require 'compass/import-once/activate'
-Encoding.default_external = Encoding.find('utf-8')
 # Require any additional compass plugins here.
+Encoding.default_external = Encoding.find('utf-8')
 
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "css"
-sass_dir = "sass"
+sass_dir = "scss"
 images_dir = "img"
 javascripts_dir = "js"
 
