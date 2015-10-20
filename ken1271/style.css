@@ -1,0 +1,19 @@
+body{
+  background-image: url("img/bg-body");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  margin: 0;
+}
+#page{
+  background-color: #356618;
+  width: 1000px;
+  margin: 0 auto;
+}
+#mainContent{
+  width:90%;
+  margin: 0 auto;
+}
+#page>p{
+  text-align: center;
+}
