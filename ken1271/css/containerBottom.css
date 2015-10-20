@@ -17,6 +17,9 @@
 .containerBottom>div>ul>li{
   width:24%;
 }
+.containerBottom>div>ul>li>p{
+  color: black !important;
+}
 .containerBottom>div>div{
   border-top: 1px solid #D7D6CD;
   padding: 20px 0;

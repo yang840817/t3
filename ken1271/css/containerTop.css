@@ -7,7 +7,7 @@
 .containerTop>div>div{
   position: absolute;
   bottom: 0;
-  background-color: rgba(255,255, 255, 0.5);
+  background-color: rgba(21, 22, 24, 0.8);
   width: 100%;
 }
 .containerTop>ul>li{
@@ -15,4 +15,9 @@
 }
 .containerTop>ul{
   margin: 20px auto;
+}
+.containerTop>ul>li>div>div>img{
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
