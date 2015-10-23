@@ -1,0 +1,87 @@
+body
+{
+  background-image: url("img/bg-body.jpg");
+}
+
+
+#green_background
+{
+  background-color: green;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#logo
+{
+  width: 96%;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#home_btn
+{
+  margin: 0 auto;
+  width: 96%;
+  background: #E8FFC4;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#home
+{
+  background-color: #949449;
+  padding:15px;
+  font-size: 12pt;
+}
+
+.black_bg
+{
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 12pt;
+}
+
+.col-md-2:hover
+{
+  background-color: #E8FFC4;
+  color:black;
+}
+#cover{
+  position: relative;
+}
+#cover img
+{
+  width: 96%;
+}
+
+#descrip_word
+{
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  text-align: left;
+  left:20px
+}
+
+#descrip_word h2
+{
+  color: yellow;
+}
+
+#descrip_word h4
+{
+  line-height: +2;
+}
+
+#third_img
+{
+  width: 96%;
+}
