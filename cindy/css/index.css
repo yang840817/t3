@@ -135,12 +135,10 @@
 }
 
 #banner-bottom {
-  height: 150px;
+  height: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 160px;
-  margin-left: -617px;
+  bottom: 0;
+  left: 0;
   background: #302623;
   background: rgba(48, 38, 35, 0.8);
   background: transparent\9;
