@@ -84,4 +84,123 @@ body
 #third_img
 {
   width: 96%;
+  margin: 0px auto;       /*將div置中*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.border_line
+{
+  border-right: 1px solid #DDDDDD;
+}
+
+#third_img h4
+{
+  color: yellow;
+  text-align: left;
+}
+
+#third_img p
+{
+  text-align: left;
+  font-size: 12pt;
+  color: white;
+}
+
+#third_img img
+{
+  width: 80px;
+  height: 80px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#white_bg
+{
+  margin: 0px auto;       /*將div置中*/
+  width: 96%;
+  background-color: white;
+  padding-top:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.four_title h4
+{
+  background-color: #dce9d4;
+  text-align: left;
+  color: #A42D00;
+  padding:10px;
+  border-bottom: 2px solid #AAAAAA;
+  margin-top: 0;
+}
+
+#one_desciption
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.four_width
+{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.four_word
+{
+  text-align: left;
+}
+
+#four_img
+{
+  margin: 20px auto 0 auto;
+}
+
+#four_img h4
+{
+  color: #A42D00;
+  font-size: -1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#one_word
+{
+  text-align: left;
+}
+
+#connection
+{
+  background-color: #dce9d4;
+  margin: 0 auto;
+  width: 96%;
+  text-align: left;
+  color:#8e8e8e;
+  padding: 15px;
+}
+
+
+.line_show
+{
+  border-right: 2px solid #DDDDDD;
+  height: 100px;
+}
+
+.padding_set
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#copyright
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+
 }
