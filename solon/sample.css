@@ -139,12 +139,6 @@ body
   margin-top: 0;
 }
 
-#one_desciption
-{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .four_width
 {
   padding-left: 15px;
@@ -172,6 +166,12 @@ body
 #one_word
 {
   text-align: left;
+}
+
+#one_word p
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #connection
