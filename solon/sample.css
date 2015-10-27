@@ -37,6 +37,12 @@ body
   font-size: 12pt;
 }
 
+#home:hover
+{
+  background-color: #E8FFC4;
+  color:black;
+}
+
 .black_bg
 {
   padding: 15px;
