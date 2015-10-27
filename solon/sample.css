@@ -3,7 +3,6 @@ body
   background-image: url("img/bg-body.jpg");
 }
 
-
 #green_background
 {
   background-color: green;
@@ -51,9 +50,11 @@ body
   background-color: #E8FFC4;
   color:black;
 }
+
 #cover{
   position: relative;
 }
+
 #cover img
 {
   width: 96%;
@@ -181,14 +182,20 @@ body
   width: 96%;
   text-align: left;
   color:#8e8e8e;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 
 .line_show
 {
   border-right: 2px solid #DDDDDD;
-  height: 100px;
+  height: 200px;
+  padding-top: 15px;
+}
+
+.conec_pading
+{
+  padding-top: 15px;
 }
 
 .padding_set
@@ -202,5 +209,4 @@ body
   padding-top: 2px;
   padding-bottom: 2px;
   color: white;
-
 }
