@@ -8,12 +8,11 @@ body
   background-color: green;
   width: 1000px;
   margin: 0 auto;
-  text-align: center;
+  padding: 0 30px;
 }
 
 #logo
 {
-  width: 96%;
   background-color: white;
   text-align: center;
   margin: 0 auto;
@@ -24,10 +23,10 @@ body
 #home_btn
 {
   margin: 0 auto;
-  width: 96%;
   background: #E8FFC4;
   padding-top: 2px;
   padding-bottom: 2px;
+  text-align: center;
 }
 
 #home
@@ -63,19 +62,17 @@ body
 
 #cover img
 {
-  width: 96%;
+  width: 100%;
 }
 
 #descrip_word
 {
   position: absolute;
   bottom: 0;
-  width: 96%;
   background-color: black;
   color: white;
   opacity: 0.8;
   text-align: left;
-  left:20px
 }
 
 #descrip_word img{
@@ -96,7 +93,6 @@ body
 
 #third_img
 {
-  width: 96%;
   margin: 0px auto;       /*將div置中*/
   padding-top: 10px;
   padding-bottom: 10px;
@@ -134,7 +130,6 @@ body
 #white_bg
 {
   margin: 0px auto;       /*將div置中*/
-  width: 96%;
   background-color: white;
   padding-top:20px;
   padding-left: 20px;
@@ -150,12 +145,6 @@ body
   padding:10px;
   border-bottom: 2px solid #AAAAAA;
   margin-top: 0;
-}
-
-.four_width
-{
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .four_word
@@ -191,7 +180,6 @@ body
 {
   background-color: #dce9d4;
   margin: 0 auto;
-  width: 96%;
   text-align: left;
   color:#8e8e8e;
   padding-left: 15px;
@@ -221,4 +209,5 @@ body
   padding-top: 2px;
   padding-bottom: 2px;
   color: white;
+  text-align: center;
 }
