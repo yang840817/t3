@@ -1,0 +1,2 @@
+<a href="#" id="twi" class="link4"></a><a href="#">Twitter</a>
+<a href="#" id="goo" class="link4"></a><a href="#">Google+</a>
