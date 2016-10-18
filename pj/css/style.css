@@ -10,9 +10,9 @@ body {
     background: url("../img/bg.png") repeat;
 }
 section {
+    position: relative;
     height: 100%;
     overflow: auto;
-    position: relative;
 }
 .container {
     background-color: #256000;
@@ -118,7 +118,7 @@ section {
 	height: 100px;
 	float: left;
 	width: 60%;
-	border-right: 1px solid #CCC;
+	border-right: 1px solid #abc6a1;
 	margin-top: 15px;
 }
 .intro .figcaption h5{
@@ -166,7 +166,10 @@ section {
 }
 
 /*feature_tip*/
-.feature .feature_tip h3{
+.feature_tip{
+	padding-bottom: 30px;
+}
+.feature_tip h3{
 	background-color: #D9ECD1;
 	color: #85663C;
 	font-size: 18px;
@@ -176,11 +179,42 @@ section {
 	margin-top: 0;
 	margin-bottom: 40px;
 }
-.feature .feature_tip ol{
+.feature_tip ol{
 	margin-left: -20px
 }
 
 .feature .feature_tip ol li{
 	line-height: 1.7em;
 	margin-bottom: 1em;
+}
+
+/*feature_contact*/
+.feature .feature_contact{
+	background-color: #DBE7D3;
+	padding: 0 15px;
+	margin: 0 -15px;
+}
+.feature .feature_contact .col-md-3{
+	border: 1px solid #abc6a1;
+	height: 175px;
+}
+.feature .feature_contact h4{
+	color: #979797;
+}
+.feature .feature_contact p{
+	color: #777;
+}
+.feature .feature_contact .social-icons + a{
+	color: #777;
+}
+.feature .feature_contact .social-icons + a:hover{
+	text-decoration: none;
+}
+
+/*footer*/
+.footer p{
+
+	text-align: center;
+	padding-top: 7px;
+	color: #FFF;
 }
