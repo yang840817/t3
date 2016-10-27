@@ -1,0 +1,10 @@
+body {
+  background: url("img/bg-body.jpg");
+}
+main {
+  background-color: #2a5413;
+}
+main>p {
+  text-align: center;
+  color:white;
+}
