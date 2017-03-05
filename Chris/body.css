@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    background-image: url("./img/bg-body.jpg");
+}
+
+
+.layout_h_center{
+    margin: 0 auto;
+}
+.green_area {
+    max-width: 930px;
+    background-color: #356618;
+}
+
+.content_area {
+    max-width: 895px;
+}
+
+.white_background {
+    background-color: white;
+}
+
+.nav_bar_btn {
+    background-color: #4b4b4b;
+    color: white;
+}
+
+.nav_bar_btn_selected {
+    background-color: #96b285;
+    color: #2a6100;
+}
+
+.card_list > li{
+    display: inline-flex;
+}
+.my_card>img {
+    display: inline-block;
+    float: left;
+}
+.my_card>div {
+    display: inline-block;
+    width: 170px;
+    font-size: 9pt;
+}
