@@ -1,174 +1,38 @@
 body {
-    font-family: sans-serif;
     background-image: url("./img/bg-body.jpg");
 }
 
-.content_h_center {
-    text-align: center;
-}
-
-.layout_h_center{
-    margin: 0 auto;
-}
-
-.green_area {
-    max-width: 932px;
+.green_background {
     background-color: #356618;
 }
 
-.content_area {
-    max-width: 895px;
-}
-
 .white_background {
-    background-color: white;
-    border: 1px solid white;
-    padding: 20px;
+    background-color: #fff;
 }
 
-.nav_bar_btn {
-    background-color: #4b4b4b;
-    color: white;
-    padding: 12px 0;
+.logo_img{
+    background-image: url(./img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 7%;
+    margin: 14px 0;
 }
 
-.nav_bar_btn_selected {
-    background-color: #96b285;
-    color: #2a6100;
-}
-
-.card_list > li{
-    display: inline-flex;
-}
-
-.h_card {
-    padding: 18px 0px;
-    padding-bottom: 26px;
-}
-
-.h_card>img {
-    border: 2px white solid;
-    display: inline-block;
-    float: left;
-}
-
-.h_card>div {
-    display: inline-block;
-    width: 170px;
-    padding-left: 12px;
-    font-size: 9pt;
-    color: #fff;
-}
-
-.h_card>div>h5 {
-    color: #e4e899;
-}
-
-.red_heading {
-    color: #640a00;
-    margin: 20px 0;
-}
-
-.gray_title {
-    display: block;
+.menu_area ul {
     margin: 0;
-    background: #dde9d5;
-    border-bottom: 2px solid #abc79a;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-}
-
-.v_card>img {
-    width: 100%;
-}
-
-.v_card>p {
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.green_box {
-    background-color: #dce9d4;
-    border: 1px solid #cbddc1;
-}
-
-.green_box>div {
-    border-left: 1px solid #cbddc1;
-    border-right: 1px solid #cbddc1;
-    padding: 20px;
-    height: 175px;
-}
-
-.green_box>div>h6 {
-    color: #7f7d80;
-}
-
-.green_box>div>ul {
-    color: #969895;
-    font-size: 11pt;
-    line-height: 18px;
-    padding: 5px 0;
-}
-
-.green_box>div>ul>li {
+    padding: 0;
+    text-align: center;
     list-style-type: none;
 }
 
-.green_box i {
-    font-size: 16pt;
-    color: #356618;
-}
-
-.copy_right {
-    text-align: center;
+.menu_area li{
+    line-height: 40px;
+    background-color: #4b4b4b;
     color: white;
-    line-height: 24px;
-    font-size: 10pt;
-    font-weight: bold;
 }
 
-.tips_of_week_list{
-    padding-left: 20px;
-    font-size: 10pt;
-}
-
-.tips_of_week_list li{
-    margin-bottom: 22px;
-}
-
-.h_line {
-    border: 1px #e0e0e0 solid;
-    margin-bottom: 24px;
-}
-
-.logo {
-    max-width: 421px;
-    margin: 0 auto;
-}
-
-.logo > img {
-    width: 100%;
-}
-
-.max_photo {
-    background-image: url("./img/gardening1.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-top: 1px white solid;
-    padding-top: 316px;
-}
-
-.max_photo_text {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 18px;
-}
-
-.max_photo_text h4 {
-    color: #e4e899;
-}
-
-.max_photo_text p {
-    margin: 0;
-    font-size: 11pt;
-    color: #fff;
+li.menu_selected_page {
+    background-color: #96b285;
+    color: #356618;
 }
