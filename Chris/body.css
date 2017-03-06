@@ -3,13 +3,16 @@ body {
     background-image: url("./img/bg-body.jpg");
 }
 
+.content_h_center {
+    text-align: center;
+}
 
 .layout_h_center{
     margin: 0 auto;
 }
 
 .green_area {
-    max-width: 930px;
+    max-width: 932px;
     background-color: #356618;
 }
 
@@ -20,11 +23,14 @@ body {
 .white_background {
     background-color: white;
     border: 1px solid white;
+    padding: 20px;
 }
 
 .nav_bar_btn {
     background-color: #4b4b4b;
     color: white;
+    border-bottom: 1px white solid;
+    padding: 12px 0;
 }
 
 .nav_bar_btn_selected {
@@ -37,8 +43,8 @@ body {
 }
 
 .h_card {
-    padding: 12px 0px;
-    padding-bottom: 22px;
+    padding: 18px 0px;
+    padding-bottom: 26px;
 }
 
 .h_card>img {
@@ -59,21 +65,30 @@ body {
     color: #e4e899;
 }
 
-.gray_title {
-    display: block;
-    margin: 15px 0;
-    background: #dde9d5;
-    border-bottom: 2px solid #abc79a;
-    padding: 4px 15px;
-}
-
-.v_card>h6 {
+.red_heading {
     color: #640a00;
     margin: 20px 0;
 }
 
+.gray_title {
+    display: block;
+    margin: 0;
+    background: #dde9d5;
+    border-bottom: 2px solid #abc79a;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
 .v_card>img {
     width: 100%;
+}
+
+.v_card>p {
+    font-size: 14px;
+}
+
+.v_card>p {
+    line-height: 24px;
 }
 
 .green_box {
@@ -84,9 +99,48 @@ body {
 .green_box>div {
     border-left: 1px solid #cbddc1;
     border-right: 1px solid #cbddc1;
+    padding: 20px;
+    height: 175px;
+}
+
+.green_box>div>h6 {
+    color: #7f7d80;
+}
+
+.green_box>div>ul {
+    color: #969895;
+    font-size: 11pt;
+    line-height: 18px;
+    padding: 5px 0;
+}
+
+.green_box>div>ul>li {
+    list-style-type: none;
+}
+
+.green_box i {
+    font-size: 16pt;
+    color: #356618;
 }
 
 .copy_right {
     text-align: center;
     color: white;
+    line-height: 24px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.tips_of_week_list{
+    padding-left: 20px;
+    font-size: 10pt;
+}
+
+.tips_of_week_list li{
+    margin-bottom: 22px;
+}
+
+.h_line {
+    border: 1px #e0e0e0 solid;
+    margin-bottom: 24px;
 }
