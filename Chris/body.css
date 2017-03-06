@@ -29,7 +29,6 @@ body {
 .nav_bar_btn {
     background-color: #4b4b4b;
     color: white;
-    border-bottom: 1px white solid;
     padding: 12px 0;
 }
 
@@ -56,8 +55,8 @@ body {
 .h_card>div {
     display: inline-block;
     width: 170px;
-    font-size: 9pt;
     padding-left: 12px;
+    font-size: 9pt;
     color: #fff;
 }
 
@@ -85,9 +84,6 @@ body {
 
 .v_card>p {
     font-size: 14px;
-}
-
-.v_card>p {
     line-height: 24px;
 }
 
@@ -145,6 +141,34 @@ body {
     margin-bottom: 24px;
 }
 
-.white_background img {
+.logo {
+    max-width: 421px;
+    margin: 0 auto;
+}
+
+.logo > img {
     width: 100%;
+}
+
+.max_photo {
+    background-image: url("./img/gardening1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top: 1px white solid;
+    padding-top: 316px;
+}
+
+.max_photo_text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 18px;
+}
+
+.max_photo_text h4 {
+    color: #e4e899;
+}
+
+.max_photo_text p {
+    margin: 0;
+    font-size: 11pt;
+    color: #fff;
 }
