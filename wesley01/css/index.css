@@ -1,0 +1,97 @@
+body {
+    background-image: url("../images/bg-body.jpg");
+}
+
+div {
+    /*width: 30vw;*/
+    /*height: 30vh;*/
+    /*border: 0.5px blue dashed;*/
+}
+
+.center-block {
+    max-width: 80%;
+    background-color: #356618;
+}
+
+.content {
+    max-width: 99%;
+}
+
+.content-1 {
+    width: 98%;
+}
+
+.logo {
+    padding: 1% 10% 2%;
+    background-color: white;
+}
+
+.img-rounded {
+    background-color: white;
+}
+
+.btn1 {
+    padding: 1%;
+    text-align: center;
+    color: #5C6A18;
+    background-color: #96B285;
+}
+
+a {}
+
+.btn {
+    padding: 1%;
+    text-align: center;
+    color: #F0F2C1;
+    background: #4B4B4B;
+    /*border: 1px blue dashed;*/
+}
+
+a.btn:hover {
+    color: black;
+    background: #F0F8FF;
+}
+
+.bg-box {
+    padding: 32% 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/gardening1.jpg");
+}
+
+.title-box {
+    padding: 0.5%;
+    background: rgba(20, 20, 20, 0.6);
+}
+
+.title, .project-title {
+    color: yellow;
+}
+
+.box-text {
+    color: white;
+}
+
+.project {
+    margin-top: 1%;
+}
+
+.project-img {
+    border: 1px white solid;
+}
+
+.featured-page {
+    background-color: white;
+}
+
+.f-p-title {
+    background-color: #DCE9D4;
+}
+
+.hr {}
+
+.copyright {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
