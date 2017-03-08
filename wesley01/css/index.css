@@ -5,7 +5,7 @@ body {
 div {
     /*width: 30vw;*/
     /*height: 30vh;*/
-    /*border: 0.5px blue dashed;*/
+    border: 0.5px blue dashed;
 }
 
 .center-block {
@@ -17,16 +17,12 @@ div {
     max-width: 99%;
 }
 
-.content-1 {
-    width: 98%;
-}
-
-.logo {
+.logo-box {
     padding: 1% 10% 2%;
     background-color: white;
 }
 
-.img-rounded {
+.logo-img {
     background-color: white;
 }
 
@@ -52,6 +48,9 @@ a.btn:hover {
     background: #F0F8FF;
 }
 
+
+/*--------------header----------*/
+
 .bg-box {
     padding: 32% 0% 0%;
     background-size: cover;
@@ -72,19 +71,32 @@ a.btn:hover {
     color: white;
 }
 
+
+/*------------top----------*/
+
 .project {
-    margin-top: 1%;
+    margin-top: 1em;
 }
 
 .project-img {
     border: 1px white solid;
 }
 
+.p-img-box {
+    padding: 0;
+}
+
+
+/*--------project---------*/
+
 .featured-page {
+    padding: 15px;
     background-color: white;
 }
 
 .f-p-title {
+    padding: 0.8%;
+    border-bottom: 2.5px #B3CCA4 solid;
     background-color: #DCE9D4;
 }
 
