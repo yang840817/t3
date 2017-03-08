@@ -111,6 +111,10 @@ body {
     margin-bottom: 15px;
 }
 
+.garden_featured_list {
+    padding-left: 20px;
+}
+
 .connect_list {
     background-color: #dce9d4;
     border: 1px solid #cbddc1;
@@ -123,9 +127,11 @@ body {
     padding-top: 15px;
     height: 175px;
 }
+
 .connect_list h6 {
     color: #7f7d80;
 }
+
 .connect_list dt {
     color: #969895;
     font-size: 18pt;
