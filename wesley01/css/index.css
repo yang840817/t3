@@ -2,12 +2,6 @@ body {
     background-image: url("../images/bg-body.jpg");
 }
 
-div {
-    /*width: 30vw;*/
-    /*height: 30vh;*/
-    /*border: 0.5px blue dashed;*/
-}
-
 .center-block {
     max-width: 80%;
     background-color: #356618;
@@ -40,7 +34,6 @@ a {}
     text-align: center;
     color: #F0F2C1;
     background: #4B4B4B;
-    /*border: 1px blue dashed;*/
 }
 
 a.btn:hover {
@@ -53,10 +46,45 @@ a:hover {
 }
 
 
+/*---------------------------------*/
+
+label {
+    display: block;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked+div {
+    opacity: 0;
+    max-height: 0;
+}
+
+.boxtext {
+    display: inline-block;
+    padding: 10px;
+    opacity: 1;
+    overflow: hidden;
+    transition: opacity 1.0s linear;
+}
+
+input {
+    display: none;
+}
+
+
 /*--------------header----------*/
 
 .bg-box {
     padding: 32% 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/gardening1.jpg");
+}
+
+.bg-box2 {
+    padding: 48% 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../images/gardening1.jpg");
@@ -71,7 +99,7 @@ a:hover {
     color: yellow;
 }
 
-.box-text {
+.box-text, .boxtext {
     color: white;
 }
 
@@ -101,7 +129,6 @@ a:hover {
 .featured-page, .tips-box {
     padding: 15px 0px 0;
     background-color: white;
-    /*border: 1px red solid;*/
 }
 
 .f-p-title, .tips-title {
