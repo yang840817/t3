@@ -5,7 +5,7 @@ body {
 div {
     /*width: 30vw;*/
     /*height: 30vh;*/
-    border: 0.5px blue dashed;
+    /*border: 0.5px blue dashed;*/
 }
 
 .center-block {
@@ -46,6 +46,10 @@ a {}
 a.btn:hover {
     color: black;
     background: #F0F8FF;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 
@@ -89,20 +93,67 @@ a.btn:hover {
 
 /*--------project---------*/
 
-.featured-page {
-    padding: 15px;
+.f-p-title-box {
+    padding: 15px 16px 0;
     background-color: white;
 }
 
-.f-p-title {
+.featured-page, .tips-box {
+    padding: 15px 0px 0;
+    background-color: white;
+    /*border: 1px red solid;*/
+}
+
+.f-p-title, .tips-title {
     padding: 0.8%;
     border-bottom: 2.5px #B3CCA4 solid;
     background-color: #DCE9D4;
 }
 
-.hr {}
+.featured-img {
+    width: 100%;
+    box-shadow: 1px 4px 4px 1px #cccccc;
+}
+
+.featuped-title {
+    margin-top: 10px;
+    color: #836150;
+}
+
+.featuped-text {
+    font-size: 13px;
+}
+
+
+/*----------featured---------*/
+
+.hr {
+    padding: 0.1px 20px;
+    background-color: white;
+}
+
+.tips-box {
+    padding-bottom: 3%;
+}
+
+.tips-img {
+    width: 100%;
+}
+
+.footer-box {
+    height: 11em;
+    padding-top: 1em;
+    font-size: 15px;
+    background-color: #DCE9D4;
+    border: 0.5px #356618 solid;
+}
+
+i {
+    padding-bottom: 3%;
+}
 
 .copyright {
+    margin: 1%;
     color: white;
     font-size: 15px;
     text-align: center;
