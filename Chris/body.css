@@ -37,6 +37,13 @@ body {
     color: #356618;
 }
 
+.slider_img {
+    background-image: url("./img/gardening1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .carousel-caption {
     background: rgba(0, 0, 0, 0.6);
     left: 0;
@@ -48,6 +55,7 @@ body {
 
 .carousel-item > img {
     width: 100%;
+    opacity: 0;
 }
 
 .banner_select_list {
