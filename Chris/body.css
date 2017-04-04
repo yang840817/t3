@@ -58,6 +58,12 @@ body {
     opacity: 0;
 }
 
+.carousel-caption p {
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
 .banner_select_list {
     border-style: solid;
     border-color: #356618;
@@ -133,7 +139,7 @@ body {
     border-right: 1px solid #cbddc1;
     padding-left: 15px;
     padding-top: 15px;
-    height: 175px;
+    min-height: 175px;
 }
 
 .connect_list h6 {
