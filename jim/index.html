@@ -11,18 +11,18 @@
     padding: 0px;
     background-image: url("images/bg-body.jpg");
   }
-  .poster {
-    width: 1000px;
+  .poster, footer {
+    width: 1024px;
     height: auto;
     margin:0px auto;
     background-color: rgb(42, 85, 19);
   }
-  .poster header, .poster .content_upside{
+  .poster header, .poster .content_upside, .poster .content_downside{
     background-color: white;
     margin: 20px;
     display: block;
-    padding-top: 30px;
-    padding-bottom: 8px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     margin-bottom: 0px;
 
   }
@@ -93,7 +93,6 @@
   }
   .sandwich {
     text-align: center;
-    padding-bottom: 15px;
   }
   .sandwich p, .sandwich h4 {
     width: 150px;
@@ -127,11 +126,97 @@
     display: inline-block;
     text-align: left;
   }
-.content_downside {
-    width: 1000px;
-    height: auto;
-    margin:0px auto;
-    background-color: white;
+.content_downside .content_downside_border_up h3, .content_downside .content_downside_border_down div h3 {
+  padding: 5px;
+  padding-left: 20px;
+  margin-left: 26px;
+  margin-right: 26px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  border-bottom: 2px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-style: solid;
+  border-color: rgb(156, 189, 136);
+  color: rgb(103, 60, 26);
+  background-color: rgb(212, 228, 203);
+}
+.content_downside .content_downside_border_up .content_downside_border_up_content p {
+    width: 200px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+.content_downside .content_downside_border_up .content_downside_border_up_content h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: rgb(103, 60, 26);
+}
+#feature_left, #feature_middle_left, #feature_middle_right, #feature_right {
+  display: inline-block;
+  width: 20%;
+  padding-left: 12px;
+  padding-right: 1px;
+  padding-top: 15px;
+  margin: 15px;
+  margin-bottom: 0px;
+}
+.content_downside .content_downside_border_down .content_downside_border_down_left, .content_downside .content_downside_border_down .content_downside_border_down_right {
+  display: inline-block;
+  width: 40%;
+  margin: 0px;
+}
+
+.content_downside .content_downside_border_down .content_downside_border_down_left img {
+  width: 375px;
+  margin-top: 40px;
+  margin-left: 30px;
+
+}
+.content_downside .content_downside_border_down {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+.content_downside .content_downside_border_down .content_downside_border_down_right {
+  margin-left: 20px;
+  width: 55%;
+  line-height: 35px;
+}
+.content_downside .content_downside_border_down .content_downside_border_down_right h3 {
+  margin-bottom: 40px;
+  padding-bottom: 7px;
+  padding-right: 50px;
+  margin-right: 3px;
+}
+.content_downside_border_footer .content_downside_border_footer_left, .content_downside_border_footer .content_downside_border_footer_middle_left, .content_downside_border_footer .content_downside_border_footer_middle_right, .content_downside_border_footer .content_downside_border_footer_right {
+  width: 24.009%;
+  display: inline-block;
+  background-color: rgb(212, 228, 203);
+  border-style: solid;
+  border-color: rgb(156, 189, 136);
+  line-height:5px;
+  color: rgb(125, 125, 125);
+}
+.content_downside_border_footer ul{
+  padding: 0px;
+  margin-right: -1px;
+  margin-bottom: 0px;
+  align-content: center;
+}
+.content_downside_border_footer ul li {
+  padding-right: 3.5px;
+  padding-bottom: 15px;
+}
+.content_downside_border_footer ul li p {
+  margin: 10px;
+}
+.content_downside_border_footer ul li h4 {
+  padding-left: 11px;
+}
+footer .copyright {
+  text-align: center;
+  color: white;
+  padding-bottom: 3px;
 }
   </style>
 </head>
@@ -157,7 +242,8 @@
                This is just a place holder, so you can see waht the site would look like.
                This is just a place holder, so you can see waht the site would look like.  </p>
         </div>
-    </div>
+    </div> <!--End of the  content_downside-->
+
     <div class="sandwich">
        <div class="sandwich_left">
          <img src="images/gardening2.jpg" alt="">
@@ -180,13 +266,80 @@
            <p>This is just a place holder. This is just a place holder.</p>
          </span>
        </div>
-    </div>
-    <div class="content_downside">
-        <h1>1213</h1>
-    </div>
-    <footer>
+    </div> <!--End of the sandwich-->
 
+    <div class="content_downside">
+      <div class="content_downside_border_up">
+        <h3>FEATURED GARDENS</h3>
+        <div class="content_downside_border_up_content">
+          <div id="feature_left">
+            <img src="images/garden1.jpg" alt="">
+            <h4>JULIET'S GARDEN</h4>
+            <p>This is just a place holder, so you can see waht the site would look like.</p>
+          </div>
+            <div id="feature_middle_left">
+              <img src="images/garden2.jpg" alt="">
+              <h4>JOANNE'S GARDEN</h4>
+              <p>This is just a place holder, so you can see waht the site would look like.</p>
+            </div>
+            <div id="feature_middle_right">
+               <img src="images/garden3.jpg" alt="">
+               <h4>JETTKA'S GARDEN</h4>
+               <p>This is just a place holder, so you can see waht the site would look like.</p>
+            </div>
+            <div id="feature_right">
+               <img src="images/garden4.jpg" alt="">
+               <h4>JIA'S GARDEN</h4>
+               <p>This is just a place holder, so you can see waht the site would look like.</p>
+            </div>
+            <hr width="94%">
+        </div>
+      </div>
+      <div class="content_downside_border_down">
+            <div class="content_downside_border_down_left">
+              <img src="images/gardening5.jpg" alt="">
+            </div>
+            <div class="content_downside_border_down_right">
+              <h3>TIPS OF THE WEEK</h3>
+              <ol>
+                <li>This is just a place holder, so you can see waht the site would look like. This is just a place holder, so you can see waht the site would look like.</li>
+                <li>This is just a place holder, so you can see waht the site would look like. This is just a place holder, so you can see waht the site would look like.</li>
+                <li>This is just a place holder, so you can see waht the site would look like. This is just a place holder, so you can see waht the site would look like.</li>
+              </ol>
+            </div>
+      </div>
+
+      <div class="content_downside_border_footer">
+          <ul>
+            <li class="content_downside_border_footer_left">
+              <h4>PLACE HOLDER</h4>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+            <li class="content_downside_border_footer_middle_left">
+              <h4>PLACE HOLDER</h4>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+            <li class="content_downside_border_footer_middle_right">
+              <h4>PLACE HOLDER</h4>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+            <li class="content_downside_border_footer_right">
+              <h4>PLACE HOLDER</h4>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+              <p>This is just a place holder.</p>
+          </ul>
+      </div>
+    </div>  <!--End of the  content_downside-->
+
+    <footer>
+      <div class="copyright">
+          <p>&COPY; 2023 Zerotype. All Rights Reserved.</p>
+      </div>
     </footer>
-  </div>
+  </div>  <!--End of the Poster-->
 </body>
 </html>
