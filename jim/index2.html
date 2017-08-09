@@ -121,7 +121,7 @@
     border-left: 0px;
   }
   .sandwich .sandwich_left img, .sandwich .sandwich_center img, .sandwich .sandwich_right img{
-    border: 10px;
+    border: 2px solid;
     border-color: white;
     margin-bottom: -10px;
   }
@@ -196,14 +196,20 @@ table {
   width: 984px;
   border: 2px solid black;
   border-collapse:collapse;
+  color: rgb(99, 99, 99);
+}
+table h3 {
+  margin-bottom: 0px;
 }
 table th {
   border-left: 2px solid black;
 }
 table p {
   padding-left: 40px;
-  margin: 0px;
-
+  margin: 10px;
+}
+table th:last-child {
+  padding-bottom: 30px;
 }
 table #icon_list p::before {
   content: url("images/icon_fb.png");
@@ -213,7 +219,7 @@ table #icon_list p {
   margin: 0px;
 }
 table td{
-  width: 100px;
+  width: 150px;
   border-left: 2px solid black;
 }
 footer .copyright {
@@ -315,10 +321,10 @@ footer .copyright {
       <div class="content_footer">
         <table>
           <tr>
-            <th>PLACE HOLDER</th>
-            <th>PLACE HOLDER</th>
-            <th>PLACE HOLDER</th>
-            <th>CONNECT</th>
+            <th><h3>PLACE HOLDER</h3></th>
+            <th><h3>PLACE HOLDER</h3></th>
+            <th><h3>PLACE HOLDER</h3></th>
+            <th><h3>CONNECT</h3></th>
           </tr>
           <tr>
             <td><p>This is just a place holder.</p>
