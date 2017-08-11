@@ -1,0 +1,47 @@
+
+body {
+    background-image: url(img/bg-body.jpg);
+    background-color: white;
+}
+
+.container {
+    background: #356618;
+
+}
+
+.logo {
+    height: 100px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.logobg {
+    background: white;
+}
+
+@media (min-width: 992px) {
+.navbar-brand {
+    display: none;
+}
+}
+
+.nav {
+    background-color: #494949;
+}
+
+
+.navbar-nav {
+/*    為了讓nav-item能夠平均分配而設定寬度？*/
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.banner {
+/*    讓RWD的時候banner高度與寬度成比例縮放*/
+    height: 0;
+    padding-bottom: 40%;
+    
+    background: #356618 url(img/banner.jpg) no-repeat;
+    background-size: cover;
+}
