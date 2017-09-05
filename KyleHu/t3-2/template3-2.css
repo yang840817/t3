@@ -20,6 +20,9 @@ body {
 	font-size: 18px;
 	background-color: #4b4b4b;
 }
+.menusix:hover {
+	background-color: #8dbd84;
+}
 .menusix > a {
 	text-decoration: none;
 	color: #bdcba2;
