@@ -20,5 +20,27 @@
 }
 
 body {
+  margin-left: 2%;
+  margin-right: 2%;
   background-color: green;
+  text-align: center;
+}
+
+.logo {
+  background-color: #ffffff;
+}
+
+.col_fix {
+  background-color: #5f5959;
+  color: #8bc34a;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.header_backgroungd {
+  background-image: url(../image/gardening1.jpg);
+  height: 30%;
+  width: 100%;
 }
