@@ -1,3 +1,61 @@
+body {
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: green;
+  text-align: center;
+}
+
+.clear_mp {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  background-color: #ffffff;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.col_fix {
+  background-color: #5f5959;
+  color: #8bc34a;
+  font-size: 18px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.header_backgroungd {
+  position: relative;
+  background-image: url(../image/gardening1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 300px;
+}
+
+.header_background_info {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  font-family: sans-serif;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.header_background_info h1 {
+  color: green;
+}
+
+.header_background_info p {
+  font-weight: bold;
+}
+
 /* Medium devices (desktops, 768px and up)
 給手機*/
 
@@ -8,6 +66,15 @@
 /* Medium devices (desktops, 992px and up)
 給平板*/
 
+@media only screen and (max-width:575px) {
+  .col_fix {
+    line-height: 30px;
+  }
+  .header_background_info p {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) and (max-width:1199px) {
   p {}
 }
@@ -17,30 +84,4 @@
 
 @media (min-width: 1200px) {
   p {}
-}
-
-body {
-  margin-left: 2%;
-  margin-right: 2%;
-  background-color: green;
-  text-align: center;
-}
-
-.logo {
-  background-color: #ffffff;
-}
-
-.col_fix {
-  background-color: #5f5959;
-  color: #8bc34a;
-  font-size: 20px;
-  line-height: 50px;
-  margin: 0;
-  padding: 0;
-}
-
-.header_backgroungd {
-  background-image: url(../image/gardening1.jpg);
-  height: 30%;
-  width: 100%;
 }
