@@ -119,17 +119,39 @@ body {
 }
 
 .content_main_content {
+  font-size: 18px;
   margin-top: 10px;
   text-align: left;
 }
 
 .content_sub {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0px 30px;
+}
+
+.content_sub_img {}
+
+.content_sub_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.content_sub_right {
+  text-align: left;
 }
 
 .content_sub_title {
-  margin: 10px;
+  border-bottom: 1px solid green;
+  padding: 10px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.content_sub_content ol {
+  padding-left: 20px;
+}
+
+.content_sub_content ol li {
+  font-size: 18px;
 }
 
 .content_footer {
