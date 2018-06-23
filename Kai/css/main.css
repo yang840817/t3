@@ -7,6 +7,8 @@ body {
 
 .logo {
   background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .logo img {
@@ -23,9 +25,13 @@ body {
 
 .col_fix {
   background-color: #5f5959;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.col_fix a {
   color: #d4edda;
-  font-size: 18px;
-  line-height: 40px;
+  text-decoration: none;
 }
 
 .header_backgroungd {
@@ -36,15 +42,17 @@ body {
 }
 
 .header_background_info {
-  margin-top: 300px;
+  margin-top: 450px;
   font-family: sans-serif;
   padding: 10px 20px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
+  font-size: 18px;
 }
 
 .header_background_info h1 {
+  font-size: 48px;
   color: #85AA53;
 }
 
@@ -67,14 +75,14 @@ body {
 
 .info_content p {
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 18px;
   color: white;
 }
 
 .info_content_title {
   line-height: 1;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 28px;
   color: #d4edda;
 }
 
@@ -125,7 +133,7 @@ body {
 }
 
 .content_sub {
-  margin: 0px 30px;
+  margin: 0px 30px 30px 30px;
 }
 
 .content_sub_img {}
@@ -155,19 +163,33 @@ body {
 }
 
 .content_footer {
-  padding: 15px;
   background-color: #d4edda;
   color: #9e9e9eba;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
 }
 
-.content_footer_title {
+.content_footer_link {
   font-size: 18px;
+}
+
+.content_footer_title {
+  font-size: 24px;
 }
 
 .content_footer_fix {
   flex-direction: column;
+}
+
+.content_footer_border {
+  border: 1px solid #00800057;
+  padding: 15px;
+}
+
+.content_footer img {
+  height: 8%;
+  width: 8%;
+  margin-top: 5px;
 }
 
 .footer {
@@ -178,14 +200,6 @@ body {
 }
 
 /*給電腦*/
-
-@media (min-width: 1024px) {
-  .header_background_info {
-    margin-top: 450px;
-  }
-}
-
-/* 給平板*/
 
 @media screen and (min-width:576px) and (max-width:1023px) {
   .header_background_info {
@@ -202,25 +216,34 @@ body {
   }
 }
 
+/*給平板*/
+
 @media (max-width: 776px) {
-  .info_content img {
-    height: 100%;
-    width: 100%;
-  }
   .info_content_title {
     font-size: 24px;
   }
   .info_content p {
     font-size: 16px;
   }
-  .content_sub_title {
-    margin-top: 10px;
+  .content_footer {
+    font-size: 14px;
+  }
+  .content_footer_title {
+    font-size: 20px;
   }
 }
 
 /* 給手機*/
 
 @media screen and (max-width:575px) {
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    padding: 0;
+    margin: 0;
+  }
   .col_fix {
     line-height: 30px;
   }
@@ -234,7 +257,81 @@ body {
     text-align: center;
     font-size: 24px;
   }
+  .info-img img {
+    margin: 10px 10px 10px 5px;
+    border: 2px solid white;
+  }
+  .info_content {
+    text-align: left;
+  }
+  .info_content p {
+    margin: 10px 0;
+    font-weight: bold;
+    margin-top: 18px;
+    color: white;
+  }
+  .info_content_title {
+    line-height: 1;
+    margin-top: 10px;
+    font-size: 28px;
+    color: #d4edda;
+  }
+  .info_content_margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .info_display {
+    margin: 0px 5px;
+  }
+  .content_title {
+    margin: 5px;
+    padding: 5px;
+  }
+  .col-md-3 {
+    margin: 0;
+    padding: 0;
+  }
+  .content_main_fix {
+    margin: 10px 5px;
+  }
+  .content_main_title {
+    margin: 0;
+  }
+  .content_main_content {
+    margin: 0;
+  }
+  .content_sub {
+    margin: 5px;
+  }
+  .content_sub_title {
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .col-md-4 {
+    margin: 0;
+    padding: 0;
+  }
+  .col-md-8 {
+    margin: 0;
+    padding: 0;
+  }
+  .content_sub_content ol {
+    padding-left: 25px;
+    margin: 10px 0px;
+  }
   .content_footer {
     text-align: center;
+  }
+  .content_footer_border {
+    padding: 5px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  .content_footer br {
+    display: none;
+  }
+  .content_footer_link {
+    font-size: 16px;
   }
 }
