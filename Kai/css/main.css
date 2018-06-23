@@ -78,17 +78,48 @@ body {
   color: #85AA53;
 }
 
+.info_content_margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info_content_border {
+  border-right: 2px solid rgba(255, 255, 255, 0.26);
+}
+
 .content {
+  overflow: hidden;
   background-color: white;
+}
+
+.content_title {
+  border-bottom: 1px solid green;
+  margin: 20px 30px 10px 30px;
+  padding: 10px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.content_main_fix {
+  margin: 15px;
 }
 
 .content_main_img {}
 
+.content_main_img img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 .content_main_title {
+  font-size: 20px;
   text-align: left;
+  margin-top: 10px;
 }
 
 .content_main_content {
+  margin-top: 10px;
   text-align: left;
 }
 
@@ -97,10 +128,16 @@ body {
   flex-wrap: wrap;
 }
 
+.content_sub_title {
+  margin: 10px;
+}
+
 /*給電腦*/
 
 @media (min-width: 1024px) {
-  p {}
+  .header_background_info {
+    margin-top: 450px;
+  }
 }
 
 /* 給平板*/
@@ -110,7 +147,7 @@ body {
     margin-top: 200px;
   }
   .header_background_info p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .info_content_title {
     font-size: 20px;
