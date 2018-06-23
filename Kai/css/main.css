@@ -132,6 +132,19 @@ body {
   margin: 10px;
 }
 
+.content_footer {
+  background-color: red;
+  height: 100px;
+  width: auto;
+}
+
+.footer {
+  color: white;
+  margin: 5px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /*給電腦*/
 
 @media (min-width: 1024px) {
