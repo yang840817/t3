@@ -18,13 +18,23 @@ body {
   max-height: 100%;
 }
 
+.toggle {
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.toggle img {
+  display: none;
+}
+
 .clear_mp {
+  background-color: #5f5959;
   margin: 0;
   padding: 0;
 }
 
 .col_fix {
-  background-color: #5f5959;
   font-size: 22px;
   line-height: 60px;
 }
@@ -219,6 +229,9 @@ body {
 /*給平板*/
 
 @media (max-width: 776px) {
+  .col_fix {
+    font-size: 18px;
+  }
   .info_content_title {
     font-size: 24px;
   }
@@ -327,11 +340,19 @@ body {
   }
   .footer {
     font-size: 12px;
+    5555
   }
   .content_footer br {
     display: none;
   }
   .content_footer_link {
     font-size: 16px;
+  }
+  .container-fluid .col-sm {
+    display: none;
+  }
+  .toggle img {
+    display: block;
+    padding: 10px;
   }
 }
