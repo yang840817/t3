@@ -31,17 +31,17 @@ body {
 }
 
 .header_backgroungd {
-  position: relative;
   background-image: url(../image/gardening1.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding-top: 300px;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .header_background_info {
-  position: absolute;
-  bottom: 0;
-  margin: 10px;
+  margin-top: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   font-family: sans-serif;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
@@ -56,32 +56,37 @@ body {
   font-weight: bold;
 }
 
-/* Medium devices (desktops, 768px and up)
-給手機*/
+/* 給手機*/
 
-@media (max-width:767px) {
-  p {}
-}
-
-/* Medium devices (desktops, 992px and up)
-給平板*/
-
-@media only screen and (max-width:575px) {
+@media screen and (max-width:575px) {
   .col_fix {
     line-height: 30px;
+  }
+  .header_background_info {
+    margin-top: 150px;
   }
   .header_background_info p {
     display: none;
   }
+  .header_background_info h1 {
+    text-align: center;
+    font-size: 24px;
+  }
 }
 
-@media (min-width: 768px) and (max-width:1199px) {
-  p {}
+/* 給平板*/
+
+@media screen and (min-width:576px) and (max-width:1023px) {
+  .header_background_info {
+    margin-top: 200px;
+  }
+  .header_background_info p {
+    font-size: 12px;
+  }
 }
 
-/* Large devices (large desktops, 1200px and up)
-給電腦*/
+/*給電腦*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   p {}
 }
