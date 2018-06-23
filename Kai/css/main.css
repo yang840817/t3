@@ -23,7 +23,7 @@ body {
 
 .col_fix {
   background-color: #5f5959;
-  color: #8bc34a;
+  color: #d4edda;
   font-size: 18px;
   line-height: 40px;
 }
@@ -75,7 +75,7 @@ body {
   line-height: 1;
   margin-top: 20px;
   font-size: 24px;
-  color: #85AA53;
+  color: #d4edda;
 }
 
 .info_content_margin {
@@ -155,9 +155,19 @@ body {
 }
 
 .content_footer {
-  background-color: red;
-  height: 100px;
-  width: auto;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #9e9e9eba;
+  font-size: 16px;
+  text-align: left;
+}
+
+.content_footer_title {
+  font-size: 18px;
+}
+
+.content_footer_fix {
+  flex-direction: column;
 }
 
 .footer {
@@ -192,6 +202,22 @@ body {
   }
 }
 
+@media (max-width: 776px) {
+  .info_content img {
+    height: 100%;
+    width: 100%;
+  }
+  .info_content_title {
+    font-size: 24px;
+  }
+  .info_content p {
+    font-size: 16px;
+  }
+  .content_sub_title {
+    margin-top: 10px;
+  }
+}
+
 /* 給手機*/
 
 @media screen and (max-width:575px) {
@@ -208,10 +234,7 @@ body {
     text-align: center;
     font-size: 24px;
   }
-  .info_content_title {
-    font-size: 24px;
-  }
-  .info_content p {
-    font-size: 16px;
+  .content_footer {
+    text-align: center;
   }
 }
