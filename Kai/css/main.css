@@ -37,21 +37,87 @@ body {
 
 .header_background_info {
   margin-top: 300px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
   font-family: sans-serif;
+  padding: 10px 20px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }
 
 .header_background_info h1 {
-  color: green;
+  color: #85AA53;
 }
 
 .header_background_info p {
   font-weight: bold;
+}
+
+.info_display {
+  display: flex;
+}
+
+.info-img img {
+  margin: 20px;
+  border: 2px solid white;
+}
+
+.info_content {
+  text-align: left;
+}
+
+.info_content p {
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+}
+
+.info_content_title {
+  line-height: 1;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #85AA53;
+}
+
+.content {
+  background-color: white;
+}
+
+.content_main_img {}
+
+.content_main_title {
+  text-align: left;
+}
+
+.content_main_content {
+  text-align: left;
+}
+
+.content_sub {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*給電腦*/
+
+@media (min-width: 1024px) {
+  p {}
+}
+
+/* 給平板*/
+
+@media screen and (min-width:576px) and (max-width:1023px) {
+  .header_background_info {
+    margin-top: 200px;
+  }
+  .header_background_info p {
+    font-size: 12px;
+  }
+  .info_content_title {
+    font-size: 20px;
+  }
+  .info_content p {
+    font-size: 12px;
+  }
 }
 
 /* 給手機*/
@@ -70,21 +136,10 @@ body {
     text-align: center;
     font-size: 24px;
   }
-}
-
-/* 給平板*/
-
-@media screen and (min-width:576px) and (max-width:1023px) {
-  .header_background_info {
-    margin-top: 200px;
+  .info_content_title {
+    font-size: 24px;
   }
-  .header_background_info p {
-    font-size: 12px;
+  .info_content p {
+    font-size: 16px;
   }
-}
-
-/*給電腦*/
-
-@media (min-width: 1024px) {
-  p {}
 }
