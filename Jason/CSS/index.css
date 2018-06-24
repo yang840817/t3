@@ -1,10 +1,47 @@
 @import url("./bootstrap.min.css");
+@import url("./resetbyJason.css");
 @import url("./global.css");
-@import url("./check.css");
+@import url("./check.css"); /* 底層照片，對齊用 */
 
+.web-bg{
+    background: transparent url(../image/outside_background.jpg);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main-bg{
+    background-color: rgb(65,101,37);
+    width: 100vw;
+    height: 1000px; /* 記得拿掉 */
+    margin: 0 auto;
+}
+@media (min-width: 992px) {
+    .main-bg {
+        width: 74.4vw;
+    }
+}
 
+.main-container{
+    width: 95.7%;
+    margin: 0 auto;
+}
 
+.main-header {
+    background: white;
+    height: 7.5vw;
+    text-align: center;
+}
+.main-header a{
+    background: transparent url(../image/logo.png) center 30% /contain no-repeat;
+    display: inline-block; /* 為了撐開a連結 */
+    width: 47%;
+    height: 100%;
+}
 
-
-
-
+.main-nav{
+    width: 100%;
+    height: 
+}
