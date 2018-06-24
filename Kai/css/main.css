@@ -3,8 +3,6 @@ body {
   text-align: center;
 }
 
-.clear_mp {}
-
 .logo {
   background-color: #ffffff;
   padding-top: 15px;
@@ -18,40 +16,28 @@ body {
   max-height: 100%;
 }
 
-.toggle {
-  margin: 0 auto;
-  font-size: 30px;
-  text-align: center;
-}
-
-.toggle img {
-  display: none;
-}
-
-.clear_mp {
+.nav {
+  display: inline;
   background-color: #5f5959;
-  margin: 0;
-  padding: 0;
-}
-
-.col_fix {
+  width: 16.666666666667%;
   font-size: 22px;
   line-height: 60px;
 }
 
-.col_fix a {
+.nav a {
   color: #d4edda;
   text-decoration: none;
 }
 
-.header_backgroungd {
+.title_bar_background {
+  background-position: center;
   background-image: url(../image/gardening1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
-.header_background_info {
+.title_bar_background_info {
   margin-top: 450px;
   font-family: sans-serif;
   padding: 10px 20px;
@@ -61,99 +47,105 @@ body {
   font-size: 18px;
 }
 
-.header_background_info h1 {
+.title_bar_background_info h1 {
   font-size: 48px;
   color: #85AA53;
 }
 
-.header_background_info p {
+.title_bar_background_info p {
   font-weight: bold;
 }
 
-.info_display {
+.title_bar_content {
+  margin: 10px 0;
   display: flex;
+  width: 33.3333333333%;
+  border-right: 2px solid rgba(255, 255, 255, 0.26);
 }
 
-.info-img img {
+.title_bar_content_img {
   margin: 20px;
   border: 2px solid white;
 }
 
-.info_content {
+.title_bar_info {
   text-align: left;
 }
 
-.info_content p {
+.title_bar_info p {
   font-weight: bold;
   margin-top: 18px;
   color: white;
 }
 
-.info_content_title {
+.title_bar_info_title {
   line-height: 1;
   margin-top: 20px;
   font-size: 28px;
   color: #d4edda;
 }
 
-.info_content_margin {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.info_content_border {
-  border-right: 2px solid rgba(255, 255, 255, 0.26);
-}
-
 .content {
+  margin: auto 15px;
   overflow: hidden;
   background-color: white;
 }
 
-.content_title {
+.content_main {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.26);
+}
+
+.content_main_title {
   border-bottom: 1px solid green;
-  margin: 20px 30px 10px 30px;
+  margin: 20px 10px;
   padding: 10px;
   text-align: left;
   font-size: 24px;
 }
 
-.content_main_fix {
-  margin: 15px;
+.content_main_content {}
+
+.content_main_info {
+  padding: 10px;
+  width: 25%;
 }
 
-.content_main_img {}
-
-.content_main_img img {
+.content_main_info_img img {
   width: 100%;
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.content_main_title {
+.content_main_info_contnen {}
+
+.content_main_info_contnen h1 {
   font-size: 20px;
   text-align: left;
   margin-top: 10px;
 }
 
-.content_main_content {
+.content_main_info_contnen p {
   font-size: 18px;
   margin-top: 10px;
   text-align: left;
 }
 
 .content_sub {
-  margin: 0px 30px 30px 30px;
+  margin: 0px 10px 30px 10px;
 }
 
-.content_sub_img {}
+.content_sub_left {
+  width: 33.3333333333%;
+}
 
-.content_sub_img img {
+.content_sub_left img {
   height: 100%;
   width: 100%;
 }
 
 .content_sub_right {
+  padding-left: 20px;
+  width: 66.6666666667%;
   text-align: left;
 }
 
@@ -172,187 +164,41 @@ body {
   font-size: 18px;
 }
 
-.content_footer {
+.footer_top {
   background-color: #d4edda;
   color: #9e9e9eba;
   font-size: 18px;
   text-align: left;
 }
 
-.content_footer_link {
-  font-size: 18px;
+.footer_content {
+  width: 25%;
+  border: 1px solid #00800057;
+  padding: 15px;
+  font-size: 22px;
 }
 
-.content_footer_title {
-  font-size: 24px;
-}
-
-.content_footer_fix {
+.footer_img_fix {
   flex-direction: column;
 }
 
-.content_footer_border {
-  border: 1px solid #00800057;
-  padding: 15px;
+.footer_content_title {
+  font-size: 28px;
 }
 
-.content_footer img {
-  height: 8%;
-  width: 8%;
-  margin-top: 5px;
+.footer_content_link {
+  font-size: 22px;
 }
 
-.footer {
+.footer_content_link img {
+  height: 10%;
+  width: 10%;
+  margin: 5px;
+}
+
+.footer_bottom {
   color: white;
   margin: 5px 0px;
   font-size: 18px;
   font-weight: bold;
-}
-
-/*給電腦*/
-
-@media screen and (min-width:576px) and (max-width:1023px) {
-  .header_background_info {
-    margin-top: 200px;
-  }
-  .header_background_info p {
-    font-size: 16px;
-  }
-  .info_content_title {
-    font-size: 20px;
-  }
-  .info_content p {
-    font-size: 12px;
-  }
-}
-
-/*給平板*/
-
-@media (max-width: 776px) {
-  .col_fix {
-    font-size: 18px;
-  }
-  .info_content_title {
-    font-size: 24px;
-  }
-  .info_content p {
-    font-size: 16px;
-  }
-  .content_footer {
-    font-size: 14px;
-  }
-  .content_footer_title {
-    font-size: 20px;
-  }
-}
-
-/* 給手機*/
-
-@media screen and (max-width:575px) {
-  .container-fluid {
-    margin: 0;
-    padding: 0;
-  }
-  .row {
-    padding: 0;
-    margin: 0;
-  }
-  .col_fix {
-    line-height: 30px;
-  }
-  .header_background_info {
-    margin-top: 150px;
-  }
-  .header_background_info p {
-    display: none;
-  }
-  .header_background_info h1 {
-    text-align: center;
-    font-size: 24px;
-  }
-  .info-img img {
-    margin: 10px 10px 10px 5px;
-    border: 2px solid white;
-  }
-  .info_content {
-    text-align: left;
-  }
-  .info_content p {
-    margin: 10px 0;
-    font-weight: bold;
-    margin-top: 18px;
-    color: white;
-  }
-  .info_content_title {
-    line-height: 1;
-    margin-top: 10px;
-    font-size: 28px;
-    color: #d4edda;
-  }
-  .info_content_margin {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .info_display {
-    margin: 0px 5px;
-  }
-  .content_title {
-    margin: 5px;
-    padding: 5px;
-  }
-  .col-md-3 {
-    margin: 0;
-    padding: 0;
-  }
-  .content_main_fix {
-    margin: 10px 5px;
-  }
-  .content_main_title {
-    margin: 0;
-  }
-  .content_main_content {
-    margin: 0;
-  }
-  .content_sub {
-    margin: 5px;
-  }
-  .content_sub_title {
-    margin-top: 5px;
-    padding: 5px;
-  }
-  .col-md-4 {
-    margin: 0;
-    padding: 0;
-  }
-  .col-md-8 {
-    margin: 0;
-    padding: 0;
-  }
-  .content_sub_content ol {
-    padding-left: 25px;
-    margin: 10px 0px;
-  }
-  .content_footer {
-    text-align: center;
-  }
-  .content_footer_border {
-    padding: 5px;
-  }
-  .footer {
-    font-size: 12px;
-    5555
-  }
-  .content_footer br {
-    display: none;
-  }
-  .content_footer_link {
-    font-size: 16px;
-  }
-  .container-fluid .col-sm {
-    display: none;
-  }
-  .toggle img {
-    display: block;
-    padding: 10px;
-  }
 }
