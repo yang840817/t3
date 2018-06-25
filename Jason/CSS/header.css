@@ -13,5 +13,9 @@
 }
 
 .sub-header {
-    
+    color: rgb(110, 63, 5);
+    background-color: rgb(222, 232, 214);
+    line-height: 2;
+    font-weight: 600;
+    padding-left: 1em
 }
