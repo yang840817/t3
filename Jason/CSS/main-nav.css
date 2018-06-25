@@ -14,6 +14,11 @@
     height: 100%;
     display: inline-block;
 }
+@media (min-width: 992px) {
+    .main-nav a {
+        padding: 16px 0;
+    }
+}
 
 .main-nav a:hover {
     color: rgb(60, 75, 49);
@@ -48,7 +53,7 @@
     width: 1em;
     height: 1em;
     display: inline-block;
-    margin: 0.4em .2em .2em;
+    margin: .4em .6em .2em;
 }
 
 .ham-wrapper::before,
@@ -75,10 +80,10 @@
 /* 漢堡選單的觸發 */
 
 @media (max-width: 992px) {
-    .ham-checkbox~.main-nav {
+    .ham-checkbox ~ .main-nav {
         display: none;
     }
-    .ham-checkbox:checked~.main-nav {
+    .ham-checkbox:checked ~ .main-nav {
         display: block;
     }
 }

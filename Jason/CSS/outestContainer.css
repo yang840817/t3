@@ -1,18 +1,6 @@
-.web-bg {
-    background: transparent url(../image/outside_background.jpg);
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .main-bg {
     background-color: rgb(65, 101, 37);
     width: 100vw;
-    height: 1000px;
-    /* 記得拿掉 */
     margin: 0 auto;
 }
 
@@ -26,3 +14,9 @@
     width: 95.7%;
     margin: 0 auto;
 }
+
+.section-bg{
+    background: white;
+    width: 100%;
+}
+
