@@ -1,6 +1,12 @@
 body {
-  background-color: green;
+  background-image: url(../image/bg-body.jpg);
   text-align: center;
+}
+
+.body_color {
+  background-color: green;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .logo {
@@ -192,7 +198,7 @@ label {
 .footer_top {
   background-color: #d4edda;
   color: #9e9e9eba;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -200,7 +206,7 @@ label {
   width: 25%;
   border: 1px solid #00800057;
   padding: 15px;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .footer_img_fix {
@@ -208,11 +214,11 @@ label {
 }
 
 .footer_content_title {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .footer_content_link {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .footer_content_link img {
@@ -228,10 +234,15 @@ label {
   font-weight: bold;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1024px) {
+  .body_color {
+    width: 100%;
+  }
   .title_bar_content_img {
-    display: flex;
     justify-content: center;
+  }
+  .content_sub_content {
+    margin-top: 10px;
   }
   .content_sub_left {
     width: 100%
