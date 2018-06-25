@@ -1,0 +1,13 @@
+.main-header {
+    background: white;
+    height: 7.5vw;
+    text-align: center;
+}
+
+.main-header a {
+    background: transparent url(../image/logo.png) center 30% /contain no-repeat;
+    display: inline-block;
+    /* 為了撐開a連結 */
+    width: 47%;
+    height: 100%;
+}
