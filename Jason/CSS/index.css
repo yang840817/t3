@@ -64,3 +64,48 @@
     color: rgb(65, 101, 37);
     background: rgb(155, 177, 137);
 }
+
+.ham-menu{
+    background: rgb(75, 75, 75);
+    padding: 2px 5%; /* 漢堡選單的內距 */
+}
+
+.ham-checkbox{
+    display: none; /* 使checkbox隱形 */
+    vertical-align: middle;
+}
+
+.ham-icon::before {
+    background: rgb(201, 203, 174);
+    content: "";
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin-bottom: 2px;
+}
+.ham-icon{
+    border-bottom: 2px solid rgb(201,203,174);
+    display: inline-block;
+    width: 22px;
+    margin: 0;
+}
+.ham-icon::after {
+    background: rgb(201, 203, 174);
+    content: "";
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin-bottom: 2px;
+}
+
+
+
+/* 漢堡選單的觸發 */
+@media (max-width: 992px) {
+    .ham-checkbox ~ .main-nav{
+        display: none;
+    }
+    .ham-checkbox:checked ~ .main-nav {
+        display: block;
+    }
+}
