@@ -39,15 +39,15 @@ body {
   color: #d4edda;
 }
 
+.menu img {
+  height: 50%;
+}
+
 label {
   margin: 0;
 }
 
 #toggle_menu {
-  display: none;
-}
-
-#toggle_menu:checked~.nav {
   display: none;
 }
 
@@ -318,5 +318,8 @@ label {
   }
   .footer_bottom {
     font-size: 14px;
+  }
+  #toggle_menu:checked~.nav {
+    display: none;
   }
 }
