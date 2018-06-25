@@ -65,9 +65,13 @@
     background: rgb(155, 177, 137);
 }
 
-.ham-menu{
+.ham-bg{
     background: rgb(75, 75, 75);
-    padding: 2px 5%; /* 漢堡選單的內距 */
+}
+
+.ham-menu-wrapper {
+    margin: 0;/* 清除預設 */
+    width: 5vw;
 }
 
 .ham-checkbox{
@@ -75,30 +79,37 @@
     vertical-align: middle;
 }
 
-.ham-icon::before {
-    background: rgb(201, 203, 174);
-    content: "";
-    display: block;
-    height: 2px;
-    width: 22px;
-    margin-bottom: 2px;
-}
-.ham-icon{
-    border-bottom: 2px solid rgb(201,203,174);
+
+/* 漢堡選單的動畫 */
+
+.ham-wrapper {
+    font-size: 30px;
+    width: 1em;
+    height: 1em;
     display: inline-block;
-    width: 22px;
-    margin: 0;
+    margin: 0.4em .2em .2em;
 }
-.ham-icon::after {
-    background: rgb(201, 203, 174);
+
+.ham-wrapper::before,
+.ham-wrapper::after {
     content: "";
-    display: block;
-    height: 2px;
-    width: 22px;
-    margin-bottom: 2px;
 }
 
+.ham-wrapper::before,
+.ham-icon,
+.ham-wrapper::after {
+    background: rgb(201, 203, 174);
+    display: block;
+    height: .2em;
+    width: 100%;
+    margin-bottom: .2em;
+    text-align: middle;
+    transition: all 1s ease-in-out;
+}
 
+.ham-wrapper::after {
+    margin-bottom: 0;
+}
 
 /* 漢堡選單的觸發 */
 @media (max-width: 992px) {
