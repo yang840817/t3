@@ -15,3 +15,6 @@ a:hover{
 p {
     margin: 0;
 }
+ol {
+    padding-left: 20px;
+}

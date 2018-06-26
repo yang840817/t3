@@ -12,6 +12,8 @@
 .garden-list .col-12 {
     border-bottom: #00000036 solid 1px;
     padding-bottom: 3vh;
+}
+.section-bg .container {
     margin-bottom: 3vh;
 }
 
@@ -32,4 +34,10 @@
 
 .tips article {
     margin-left: 2vw;
+}
+
+@media (max-width: 768px){ 
+    .week-tips {
+        margin-top: 5vh;
+    }
 }

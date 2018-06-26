@@ -10,6 +10,8 @@
     bottom: 0;
     background: rgba(0,0,0,.5);
     padding: 16px 22px;
+    max-height: 50%;
+    overflow: auto;
 }
 .banner-info p:first-child {
     color: rgb(220, 233, 109);
@@ -48,6 +50,10 @@
         margin-bottom: 0;
     }
 }
+.switch-text{
+    margin-left:100px;
+}
+
 .banner-switch-pic img {
     float: left;
     margin-right: 10px;
