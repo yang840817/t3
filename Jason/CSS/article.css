@@ -18,7 +18,8 @@
 .garden-list p {
     color: rgb(110, 63, 5);
     text-transform: uppercase;
-    line-height: 3;
+    line-height: 2;
+    font-size: 20px;
 }
 
 .garden-list span {

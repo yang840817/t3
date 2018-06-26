@@ -21,3 +21,8 @@
     padding: 3vh 1vw;
 }
 
+.main-footer {
+    background-color: rgb(222, 233, 214);
+    padding: 0 1vw ;
+    border-top: 1px solid #367c3a63;
+}
