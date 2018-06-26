@@ -88,6 +88,9 @@ label {
   margin: 10px 0;
   display: flex;
   width: 33.3333333333%;
+}
+
+.title_bar_content:not(:last-child) {
   border-right: 2px solid rgba(255, 255, 255, 0.26);
 }
 
@@ -329,7 +332,10 @@ label {
   .footer_bottom {
     font-size: 14px;
   }
-  #toggle_menu:checked~.nav {
+  .nav {
     display: none;
+  }
+  #toggle_menu:checked~.nav {
+    display: inline;
   }
 }
