@@ -297,10 +297,17 @@ label {
     margin: 0;
   }
   .nav {
+    line-height: 40px;
+    display: none;
     width: 100%;
+    font-size: 18px;
   }
   .menu {
     display: block;
+    line-height: 40px;
+  }
+  #toggle_menu:checked~.nav {
+    display: inline;
   }
   .title_bar_background_info h1 {
     font-size: 32px;
@@ -320,7 +327,7 @@ label {
     padding: 5px;
   }
   .footer_content_link {
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer_content_link img {
     height: 5%;
@@ -330,12 +337,6 @@ label {
     display: none;
   }
   .footer_bottom {
-    font-size: 14px;
-  }
-  .nav {
-    display: none;
-  }
-  #toggle_menu:checked~.nav {
-    display: inline;
+    font-size: 12px;
   }
 }
