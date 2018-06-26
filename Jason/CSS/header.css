@@ -17,5 +17,6 @@
     background-color: rgb(222, 232, 214);
     line-height: 2;
     font-weight: 600;
-    padding-left: 1em
+    padding: 0 1em;
+    text-transform: uppercase;
 }

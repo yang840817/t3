@@ -40,14 +40,21 @@
 .banner-switch-pic:first-child {
     border-left: none;
 }
-
-.banner-switch-pic img{
+@media (max-width: 992px) {
+    .banner-switch-pic {
+        margin-bottom: 1vh;
+    }
+    .banner-switch-pic:last-child {
+        margin-bottom: 0;
+    }
+}
+.banner-switch-pic img {
     float: left;
     margin-right: 10px;
     border: 1px solid white;
 }
 
-.banner-switch-pic p{
+.banner-switch-pic p {
     color: rgb(220, 233, 109);
 }
 
