@@ -1,0 +1,240 @@
+body {
+    background-image: url(img/outside_background.jpg);
+    background-repeat: repeat;
+}
+
+/* background-green */
+
+.outer_background{
+	background-color: #326611;
+}
+
+@media(min-width: 576px){
+	.outer_background{
+		max-width: 596px;
+		margin: auto;
+	}
+}
+
+@media(min-width: 768px){
+	.outer_background{
+		max-width: 788px;
+		margin: auto;
+	}
+}
+
+@media(min-width: 992px){
+	.outer_background{
+		max-width: 1012px;
+		margin: auto;
+	}
+}
+
+@media(min-width: 1200px){
+	.outer_background{
+		max-width: 1220px;
+		margin: auto;
+	}
+}
+
+/* menu*/
+
+#nav-menu ul{
+	padding: 0px;
+	list-style: none;
+	margin: 0;
+}
+
+#nav-menu li{
+	padding: 5px;
+}
+
+#nav-menu a{
+	color: #ecffb3;
+}
+
+#nav-menu li:hover{
+	background-color: green;
+}
+
+#nav-menu li:first-child{
+	background-color: #97b386;	
+}
+
+@media (max-width: 576px)  {
+	.logo{
+	    width: 90%;
+	}
+}
+
+
+/* banner */
+
+.banner{
+	position: relative;
+}
+
+.carousel-text{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0px;
+}
+
+.truncate{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.carousel-text h3{
+	color: #97b386;
+}
+
+.carousel-text p{
+	color: white;
+	line-height: 2rem;
+}
+
+@media (max-width: 576px) {
+.carousel-text h3{
+		font-size: 1rem;
+	}
+}
+
+
+/* 3 ads */
+
+#three-ads img{
+	border: 1px solid white;
+	width: 100%;
+}
+
+#three-ads p{
+	color: white;
+}
+
+#three-ads h5{
+	color: #ecffb3;
+	font-size: 1rem;
+}
+
+.special-border{
+	border-right: 1px solid green;
+}
+
+@media (max-width: 768px){
+	
+	#three-ads img{
+		max-width: 100px;
+	}
+
+	.ad-shink-box{
+		text-align: center;
+	}
+
+	.special-border{
+		border: none;
+		padding-top: 1rem;
+	}
+
+	.special-border-last{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+
+/* main content */
+
+main{
+	padding: 15px;
+}
+
+main h5{
+	color: brown;
+	background-color: #DDE8D5;
+	padding: 10px;
+	font-weight: 300;
+	text-shadow: 0.1em 0.1em #fff;
+	border-bottom: 1px solid #93bf72;
+	margin-right: 15px;
+}
+
+hr{
+	margin-bottom: 30px;
+	width: calc(100% - 30px);
+}
+
+h6{
+	color: brown;
+	font-weight: 400;
+}
+
+/* four-plants*/
+#four-plants img{
+	margin-bottom: 1rem;
+	border: 1px solid black;
+	width: 100%;
+}
+
+/* footer */
+
+footer{
+	background-color: #DDE8D5;
+	margin: 0 auto;
+}
+
+.footer-content{
+	border: 1px solid #CBDDC1;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+footer p{
+	line-height: 1rem;
+	color: gray;
+}
+
+footer h5{
+	padding-bottom: 1rem;
+	color: gray;
+}
+
+#contact{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.icons a{
+    text-decoration: none;
+    color: gray;
+    line-height: 2rem;
+}
+
+.icons i{
+	color: #326611;
+}
+
+
+/* copyright */
+
+.copyright{
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media (max-width: 768px){
+	.copyright p{
+		margin-bottom: 0;	
+	}
+}
+
+@media (min-width: 768px)  {
+	.copyright p{
+		display: inline-block;
+		padding-top: 1rem;
+		padding-bottom: 1rem;	
+	}
+}
+
