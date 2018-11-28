@@ -1,0 +1,275 @@
+body {
+    background: url('../images/bg-body.jpg');
+}
+
+
+/* header */
+
+.wrapperOuter {
+    padding: 0 2rem;
+}
+
+.wrapperInside {
+    background: #2f6704;
+    padding: 0 1.5rem;
+}
+
+.logo-box {
+    background: #fff;
+}
+
+.headerMenu {
+    border-bottom: 2px solid #fff;
+    padding: 0;
+}
+
+.headerMenu a {
+    padding: 1rem 0;
+    color: #daeacf;
+    background: #4a4a4a;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.headerMenu a:hover{
+    background: #daeacf;
+    color: #3a4e35;
+}
+
+.headerMenu .headMenu-here, .headerMenu .headMenu-here:hover {
+    background: #96b584;
+    color: #4a7a2c;
+}
+
+.navBtnFake {
+    display: none;
+}
+
+.navBtnReal {
+    display: none;
+}
+
+.navBtnReal + label {
+    display: block;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .wrapperOuter {
+        padding: 0;
+    }
+
+    .navBtnFake {
+        display: block;
+        background: #dae9ce;
+        color: #545454;
+        padding: .5rem 0;
+        margin: .25rem 0;
+        cursor: pointer;
+    }
+
+    .navBtnReal:not(:checked) + nav {
+        display: none;
+    }
+}
+
+/* spotlight banner */
+
+.spotlight {
+    position: relative;
+}
+
+.spotlight__img {
+    width: 100%;
+}
+
+.spotlight__text-box {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background: rgba(0,0,0,.65);
+}
+
+.spotlight__text-box h2 {
+    color: #d5dc8b;
+    text-transform: uppercase;
+}
+
+.spotlight__text-box p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.spotlight__text-box .icon__next{
+    background: #788f92;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 4px;
+}
+
+.spotlight__tips {
+    position: relative;
+    padding: 1rem 0;
+    font-weight: 600;
+
+}
+
+.spotlight__tips h4{
+    color: #d5dc8b;
+    font-size: 1.2rem;
+}
+
+.spotlight__tips p {
+    color: #fff;
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+.spotlight__tips img{
+    border: 2px solid #fff;
+    border-radius: 1px;
+}
+
+.spotlight__tips .spotlight__tipsCard {
+    border-right: 2px ridge rgba(255,255,255,.3);
+    padding: .5rem 0;
+}
+
+.spotlight__tips .spotlight__tipsCard:last-child {
+    border: 0;
+}
+
+.spotlight__tipsImg {
+    text-align: center;
+    padding-top: .3rem;
+}
+
+@media (max-width: 991px) { 
+    .spotlight__tips .spotlight__tipsCard {
+        border-right: 0;
+        border-bottom: 2px ridge rgba(255,255,255,.3);
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 768px) { 
+
+    .spotlight__text-box {
+        top: 0;
+    }
+    .spotlight__text-box h2 {
+        font-size: 1.5rem;
+    }
+    .spotlight__text-box p {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+    
+}
+
+/* content */
+
+.content {
+    padding: 1.5rem;
+}
+
+.content h2{
+    color: #94765c;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: #dde8d4;
+    padding: .5rem 1.5rem;
+    border-bottom: 2px solid #b5d1a6;
+    text-shadow: 0px 1px 0px #fff;
+    margin-bottom: 1.5rem;
+}
+
+.content__feature {
+    border-bottom: 2px solid #eee;
+}
+
+.content img {
+    width:100%;
+    margin-bottom: 1.5rem;
+}
+
+.content__feature h4 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #94765c;
+}
+
+.content__feature p {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.content__tipsOfWeek {
+    padding-top: 1.5rem;
+}
+
+.content__tipsOfWeek li {
+    margin-bottom: 0.8rem; 
+}
+
+
+/* Footer */
+
+footer .contect {
+    background: #dde9d4;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.contect > div {
+    padding: 1.5rem 1rem;
+    border: 1px solid #cbdbbe;
+}
+
+.contect h2 {
+    text-shadow: 0px 1px 0px #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 700;
+}
+
+.contect p {
+    color: #999;
+    margin: 0;
+    font-weight: 700;
+}
+
+.contect a {
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #999;
+    margin-bottom: .5rem;
+}
+
+.contect i {
+    color: #2f6704;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contect span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    padding: 1.5rem;
+    font-weight: 700;
+}
