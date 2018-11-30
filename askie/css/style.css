@@ -14,12 +14,12 @@ body {
     text-align: center;
 }
 
-.logo-box {
+.logoBox {
     background: #fff;
     padding: 1rem;
 }
 
-.logo-box a {
+.logoBox a {
     display: block;
 }
 
@@ -90,7 +90,7 @@ body {
     width: 100%;
 }
 
-.spotlight__text-box {
+.spotlight__textBox {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -99,12 +99,12 @@ body {
     padding: 1.5rem;
 }
 
-.spotlight__text-box h2 {
+.spotlight__textBox h2 {
     color: #d5dc8b;
     text-transform: uppercase;
 }
 
-.spotlight__text-box p {
+.spotlight__textBox span {
     color: #fff;
     font-size: 1rem;
     line-height: 2rem;
@@ -112,7 +112,7 @@ body {
     margin: 0;
 }
 
-.spotlight__text-box .icon__next{
+.spotlight__textBox .icon__next{
     background: #788f92;
     color: #fff;
     border-radius: 50%;
@@ -170,22 +170,28 @@ body {
 }
 @media (max-width: 768px) { 
 
-    .spotlight__text-box {
+    .spotlight__textBox {
         position: relative;
         background: #dae8cd;
     }
 
-    .spotlight__text-box h2 {
+    .spotlight__textBox h2 {
         font-size: 1.5rem;
         color: #61854a;
     }
 
-    .spotlight__text-box p {
+    .spotlight__textBox span {
         display: -webkit-box;
         overflow: hidden;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 5;
         color: #212529;
+    }
+
+    .spotlight__textBox a {
+        display: block;
+        text-align: center;
+        margin-top: .5rem;
     }
     
 }
@@ -268,18 +274,18 @@ body {
 
 /* Footer */
 
-footer .contect {
+footer .contact {
     background: #dde9d4;
     margin-right: 0;
     margin-left: 0;
 }
 
-.contect > div {
+.contact > div {
     padding: 1.5rem;
     border: 1px solid #cbdbbe;
 }
 
-.contect h2 {
+.contact h2 {
     text-shadow: 0px 1px 0px #fff;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -287,13 +293,13 @@ footer .contect {
     font-weight: 700;
 }
 
-.contect p {
+.contact p {
     color: #999;
     margin: 0;
     font-weight: 700;
 }
 
-.contect a {
+.contact a {
     text-decoration: none;
     display: block;
     font-size: 1rem;
@@ -302,14 +308,14 @@ footer .contect {
     margin-bottom: .5rem;
 }
 
-.contect i {
+.contact i {
     color: #2f6704;
     font-size: 1.5rem;
     margin-right: .5rem;
     vertical-align: middle;
 }
 
-.contect span {
+.contact span {
     vertical-align: middle;
 }
 
