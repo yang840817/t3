@@ -28,7 +28,7 @@ body {
     padding: 0;
 }
 
-.headerMenu a {
+.headerMenu a { 
     padding: 1rem 0;
     color: #daeacf;
     background: #4a4a4a;
@@ -163,9 +163,8 @@ body {
         padding: 1.5rem 0;
     }
 
-    .spotlight__tipsImg {
-        padding-top: 0;
-        margin-bottom: 1rem;
+    .spotlight__tips .spotlight__tipsCard {
+        padding: 2rem 0;
     }
 }
 @media (max-width: 768px) { 
@@ -274,7 +273,7 @@ body {
 
 /* Footer */
 
-footer .contact {
+.contact {
     background: #dde9d4;
     margin-right: 0;
     margin-left: 0;
