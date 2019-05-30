@@ -1,0 +1,326 @@
+body{
+  background-image: url(../img/bg-body.jpg);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+.my_container {
+    background: #356618;
+}
+
+.my_logo {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+/* MENU */
+.my_nav_item {
+  line-height: 3rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  color:#fff;
+}
+.my_nav_item a{  
+  color:#fff;
+}
+
+.my_nav_item:hover {
+  background-color: #D9EACF;
+  color: #486042;
+  font-weight: 700;
+}
+.navbar-toggler {
+  width: 100%;
+  border-radius: 0rem
+}
+.navbar-toggler span {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+
+/* FEATURED GARDENS */
+.my_featured_body {
+  padding-top: 1rem;
+}
+.my_featured_body a {
+    color: #e3e699;
+    font-size: 1.1rem;
+}
+
+.my_featured_body a:hover {
+    color: #fff;
+}
+
+.my_featured_body p {
+    color: #fff;
+}
+.my_featured_img img {
+  border: 1px solid #fff;
+}
+
+/* BANNER */
+.my_carousel {
+border-top:1px solid #fff;
+}
+.my_carousel-caption {
+  left: 0;
+  right: 0;
+  background:rgba(0,0,0,0.5);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  bottom:0;
+  text-align: left;
+}
+.my_carousel-caption h5 a {
+  color: #e3e699;
+}
+.my_carousel-caption p {
+  font-weight: 600;
+}
+/* 隱藏預設扭 */
+.carousel-indicators {
+  display: none;
+}
+/* .arrow-circle-right {
+  font-size: 1.5rem;
+    color: #778D90;
+    background: white;
+    border-radius: 50%;
+}
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+} */
+.my_arrow {
+  color: #778D90;
+  padding-left: 0.5rem;
+}
+.my_arrow:hover {
+  color: #fff;
+}
+/* TIPS */
+.my_tips_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;;
+}
+
+/* FEATURED GARDENS */
+
+.my_main_content {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.my_featured_gardens {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #d7d6cd;
+}
+
+/* FEATURED GARDENS */
+.my_title {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  background-color: #dce9d4;
+  border-bottom: 2px solid #b3cca4;
+  color: #836145;
+  padding: 1rem 1.5rem;
+  margin:0 1rem 1rem;
+}
+
+.my_card_body h5 {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: #836145;
+
+}
+
+/* TIPS OF THE WEEK */
+.my_tips_week_img img{
+
+} 
+.my_tips_week_list li {
+  padding-bottom: 0.5rem;
+}
+/* FOOTER */
+.my_footer_content {
+  background: #dce9d4;
+  border-top: 1px solid #b8d0aa;
+  display: flex;
+  flex-wrap: wrap;
+}
+.my_footer_bloc{
+  display: block;
+  padding: 2rem;
+  border-bottom: 1px solid #b8d0aa;
+}
+.my_foot_title {
+  color: #8c8c8c;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #ffffff;
+  text-transform: uppercase;
+}
+.my_foot_text{
+  color: #8c8c8c;
+}
+
+.my_social_icons a {
+  color:#356618;
+display: block;
+line-height: 1.7rem;
+}
+
+.my_social_icons a > span {
+  color:#8c8c8c;
+  padding-left: 0.5rem;
+}
+
+.my_copyright {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top:1rem; 
+  line-height: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  /* xs _Extra small devices */
+  .my_card {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 576px) {
+  /* sm _Small devices */
+  .my_tips_content {
+    display: flex;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .my_featured_bloc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FEATURED GARDENS */
+  .my_card {
+    display: flex;
+    padding-bottom: 2rem;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  /* FOOTER */
+  .my_footer_bloc{
+    border-right: 1px solid #b8d0aa;
+  }
+  .my_footer_bloc:nth-child(2){
+    border-right: 0px solid #b8d0aa;
+  }
+
+}
+
+@media (min-width: 768px)  {
+  /* md _Medium devices */
+  .my_featured_bloc {
+    flex-direction: row;
+    padding: 1rem 0rem;
+    border-bottom: 3px ridge;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .my_featured_bloc:nth-last-child(1) {
+    border-bottom: 0px;
+  }
+  .my_featured_body {
+    display: block;
+  }
+  
+  /* FEATURED GARDENS */
+  .my_card_group {
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+  }
+  .my_card {
+    display: flex;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: 992px)  { 
+  .my_container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .my_nav_item {
+    flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+    text-align: center;
+  }
+  .my_tips_content {
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .my_featured_body {
+    padding-left: 0;
+  }
+
+  .my_featured_bloc {
+    padding: 1rem 0 0 1rem;
+    border-bottom: 0px;
+    border-right: 3px ridge;
+    border-color: rgba(255, 255, 255, 0.1); 
+  }
+  .my_featured_bloc:nth-last-child(1) {
+    border-right: 0px;
+  }
+  .my_featured_body {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  
+    /* FEATURED GARDENS */
+
+  .my_tips_week {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+  .my_tips_week_img {
+    order: -1;
+  }
+  .my_tips_week_list li {
+    padding-bottom: 1rem;
+  }
+  /* FOOTER */
+  .my_footer_bloc:nth-child(2){
+    border-right: 1px solid #b8d0aa;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* xl _Extra large devices */
+
+  .my_featured_bloc {
+    padding: 1rem 0 0 1rem;
+  }
+
+}
