@@ -11,23 +11,48 @@ a:active {
 img {
   width: 100%;
 }
-
 .my_container {
     background: #356618;
 }
 
+/* HEADER */
+header {
+  background: #fff;
+}
 .my_logo {
-  padding: 1.5rem 0;
+  display: block;
+  padding: 1.5rem 10px;
   text-align: center;
-  background-color: #fff;
+}
+.my_logo a {
+  display: block;
+}
+.my_logo a img {
+  max-width: 420px;
 }
 
 /* MENU */
+.my_navbar {
+  padding: 0rem 0rem;
+}
+
+.my_nav_button {
+  /* align-self: flex-start; */
+  margin: 7px 7px 7px 15px;
+}
+.my_nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+
+}
 .my_nav_item {
   line-height: 3rem;
   display: block;
   padding: 0.5rem 1rem;
   color:#fff;
+  width: 50%;
 }
 .my_nav_item a{  
   color:#fff;
@@ -38,21 +63,14 @@ img {
   color: #486042;
   font-weight: 700;
 }
-.navbar-toggler {
-  width: 100%;
-  border-radius: 0rem;
-}
-.navbar-toggler span {
-  font-size: 2rem;
-  line-height: 3rem;
-  /* padding-top: 0.5rem; */
+/* BANNER */
+.my_carousel_text {
+  display: none;
 }
 
 /* FEATURED GARDENS */
-.my_featured_body {
-  padding-top: 1rem;
-}
-.my_featured_body a {
+.my_featured_body a title {
+    display:block;
     color: #e3e699;
     font-size: 1.1rem;
 }
@@ -70,7 +88,7 @@ img {
 
 /* BANNER */
 .my_carousel {
-border-top:1px solid #fff;
+  border-top:1px solid #fff;
 }
 .my_carousel-caption {
   left: 0;
@@ -80,26 +98,22 @@ border-top:1px solid #fff;
   padding-right: 1rem;
   bottom:0;
   text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .my_carousel-caption h5 a {
   color: #e3e699;
+  font-size: 1.2rem;
+  
 }
 .my_carousel-caption p {
   font-weight: 600;
+  
 }
 /* 隱藏預設扭 */
 .carousel-indicators {
   display: none;
 }
-/* .arrow-circle-right {
-  font-size: 1.5rem;
-    color: #778D90;
-    background: white;
-    border-radius: 50%;
-}
-.fa-arrow-circle-right:before {
-  content: "\f0a9";
-} */
 .my_arrow {
   color: #778D90;
   padding-left: 0.5rem;
@@ -109,9 +123,16 @@ border-top:1px solid #fff;
 }
 /* TIPS */
 .my_tips_content {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.my_featured_bloc{
+  padding-top: 1rem;
+}
+.my_featured_title {
+  color : #F0F2c9;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* FEATURED GARDENS */
@@ -119,14 +140,11 @@ border-top:1px solid #fff;
 .my_main_content {
   background-color: #fff;
   padding-top: 1rem;
-  /* padding-bottom: 1rem; */
 }
 .my_featured_gardens {
   margin-bottom: 2rem;
-  /* border-bottom: 1px solid #d7d6cd; */
 }
 
-/* FEATURED GARDENS */
 .my_title, .my_title_tips{
   display: block;
   font-size: 1.2rem;
@@ -136,24 +154,14 @@ border-top:1px solid #fff;
   color: #836145;
   padding: 1rem 1.5rem;
   text-transform: uppercase;
-    text-shadow: 1px 1px 1px #ffffff;
-}
-.my_title {
-  
-  /* margin:0 1rem 1rem; */
-  margin: 0 15px 1rem 15px;
-}
-.my_title_tips {
-  
-  /* margin:0 1rem 1rem; */
-  margin: 1rem;
+  text-shadow: 1px 1px 1px #ffffff;
+  margin-bottom: 1rem;
 }
 
 .my_card_body h5 {
   font-size: 1.2rem;
   color: #836145;
-  padding: 1.2rem 0 0.5rem 0;
-  margin: 0;
+  margin-top: 1.2rem;
 }
 hr {
   margin-left: 15px;
@@ -161,11 +169,15 @@ hr {
   padding-bottom: 15px;
 }
 /* TIPS OF THE WEEK */
+.my_tips_week {
+  padding-bottom: 30px;
+}
 .my_tips_week_list li {
   padding-bottom: 0.5rem;
 }
 
 ol {
+  padding-left: 1rem;
   list-style: none; 
   counter-reset: li}
 li::before {
@@ -178,28 +190,30 @@ li::before {
   li {
     counter-increment: li;
   }
-  .my_tips_week_img {
-    padding-bottom: 2rem;
-  }
+
 
   
 /* FOOTER */
 .my_footer_content {
   background: #dce9d4;
   border-top: 1px solid #b8d0aa;
-  display: flex;
-  flex-wrap: wrap;
+  
+  
 }
 .my_footer_bloc{
   display: block;
-  padding: 2rem;
   border-bottom: 1px solid #b8d0aa;
+  padding: 30px 15px;
 }
 .my_foot_title {
   color: #8c8c8c;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px #ffffff;
+  text-shadow: 1px 1px 1px #fff;
   text-transform: uppercase;
+}
+.my_footer_bloc p, .my_social_icons {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .my_foot_text{
   color: #8c8c8c;
@@ -207,8 +221,12 @@ li::before {
 
 .my_social_icons a {
   color:#356618;
-display: block;
-line-height: 1.7rem;
+  display: block;
+  line-height: 1.7rem;
+}
+.my_social_icons a:hover {
+  cursor: pointer;
+  
 }
 
 .my_social_icons a > span {
@@ -230,28 +248,19 @@ line-height: 1.7rem;
   .my_card {
     width: 100%;
   }
+  .my_copyright span {
+    border-left: 0px solid #fff;
+    padding-left: 0.5rem;
+    margin-left: 0rem;
+    display: inline-block;
+  }
+
 
 }
 
 @media (min-width: 576px) {
   /* sm _Small devices */
-  .my_tips_content {
-    display: flex;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .my_featured_bloc {
-    display: flex;
-    flex-direction: column;
-  }
 
-  /* FEATURED GARDENS */
-  .my_card {
-    display: flex;
-    padding-bottom: 2rem;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
   /* FOOTER */
   .my_footer_bloc{
     border-right: 1px solid #b8d0aa;
@@ -260,37 +269,56 @@ line-height: 1.7rem;
     border-right: 0px solid #b8d0aa;
   }
 
+  .my_copyright span {
+    border-left: 1px solid #fff;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+  }
 }
 
 @media (min-width: 768px)  {
   /* md _Medium devices */
-  .my_featured_bloc {
-    flex-direction: row;
-    padding: 1rem 0rem;
-    border-bottom: 3px ridge;
-    border-color: rgba(255, 255, 255, 0.1);
+
+.my_carousel-caption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+  /* BANNER */
+  .my_carousel-caption h5 a {
+    font-size: 1.5rem;
   }
+
   .my_featured_bloc:nth-last-child(1) {
     border-bottom: 0px;
   }
   .my_featured_body {
+    padding-left: 1rem; 
+    padding-top: 1rem;
+  }
+  .my_featured_body .row {
+    padding-left: 1rem; 
+    padding-right: 0.7rem;
+  }
+  /* BANNER */
+  .my_carousel_text {
     display: block;
   }
   
   /* FEATURED GARDENS */
   .my_card_group {
-    display: flex;
     flex-direction:row; 
-    flex-wrap: wrap;
   }
-  .my_card {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
   .my_featured_gardens {
     margin-bottom: 0rem;
   }
-
+  .my_nav_item {
+    flex-basis: 0;
+  flex-grow: 1;
+    text-align: center;
+    width: 18%;
+  }
 }
 
 
@@ -298,80 +326,69 @@ line-height: 1.7rem;
   .my_container {
     padding-right: 30px;
     padding-left: 30px;
-  }
-
-  .my_nav_item {
-    flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-    text-align: center;
-  }
-  .my_tips_content {
-    flex-direction: row;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .my_featured_body {
-    padding-left: 0;
-  }
+  }  
 
   .my_featured_bloc {
-    padding: 1rem 0 0 1rem;
     border-bottom: 0px;
     border-right: 3px ridge;
-    border-color: rgba(255, 255, 255, 0.1); 
+    border-color: rgba(255, 255, 255, 0.1);  
   }
   .my_featured_bloc:nth-last-child(1) {
     border-right: 0px;
+    padding-right: 0;
+  }
+  .my_featured_img {
+    padding-left: 1rem;
+    padding-right: 0px;
   }
   .my_featured_body {
-    padding-left: 0;
-    padding-top: 0;
-  }
-  
+    padding-top: 0rem;
+  }  
     /* FEATURED GARDENS */
+    .my_main_content {
+      padding: 30px 15px;
+  }
 
+  .my_title, .my_title_tips {
+    margin-bottom: 30px;
+  }
+
+  .my_tips_content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .my_tips_week {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2rem;
-    /* padding-top: 2rem;; */
-     
+    padding-bottom: 1rem;
   }
   .my_tips_week_img {
     order: -1;
-    padding: 0;
   }
-  .my_tips_week_list {
-  padding-right: 2rem;
+  .my_tips_week_img img {
+    padding-right: 30px;
   }
+
   .my_tips_week_list li {
     padding-bottom: 1rem;
   }
-
-  .my_title_tips { 
-    margin: 0 1rem 1rem 1rem;
-
-  }
-  
-
-  .my_main_content{
-    padding-left: 0;
-    padding-right: 0;
-
+  .my_tips_week_body {
+    padding-left: 30px;
   }
   /* FOOTER */
   .my_footer_bloc:nth-child(2){
     border-right: 1px solid #b8d0aa;
   }
+  .my_footer_bloc p, .my_social_icons {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+    
 }
 
 @media (min-width: 1200px) {
   /* xl _Extra large devices */
-
   .my_featured_bloc {
-    padding: 1rem 0 1rem 1rem;
-  }
+    padding-bottom: 1rem;
+}
 
 }
