@@ -216,11 +216,10 @@ footer > p {
   font-size: 12px;
 }
 
-
+/* ------------test------------- */
 .carousel .first {
   background-image: url(https://fsmedia.imgix.net/df/56/bc/96/93fb/41de/96e6/d8efeb783d2d/the-combined-urban--zen-gardening-mastery-bundle.jpeg?crop=edges&fit=crop&auto=format%2Ccompress&dpr=2&h=325&w=65);
   height: 75vh;
-  width: 100%;
   background-size: 120%;
   background-repeat: no-repeat;
 }
@@ -228,7 +227,6 @@ footer > p {
 .carousel .second {
   background-image: url(https://ak3.picdn.net/shutterstock/videos/1012794743/thumb/1.jpg);
   height: 75vh;
-  width: 100%;
   background-size: 120%;
   background-repeat: no-repeat;
 }
@@ -236,7 +234,6 @@ footer > p {
 .carousel .third {
   background-image: url(https://previews.123rf.com/images/welcomia/welcomia1507/welcomia150700081/42085492-gardener-with-rake-at-work.jpg);
   height: 75vh;
-  width: 100%;
   background-size: 120%;
   background-repeat: no-repeat;
 }
