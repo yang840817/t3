@@ -169,6 +169,24 @@ nav > button > span {
   color: #4b4b4b;
 }
 
+.my-tips ol {
+  counter-reset: item;
+}
+
+.my-tips ol > li {
+  padding: 0 0 0 2em;
+  text-indent: -.7em;
+  list-style-type: none;
+  counter-increment: num;
+}
+
+.my-tips ol > li:before {
+  display: inline-block;
+  padding-right: .5em;
+  font-weight: bold;
+  content: counter(num) ".";
+}
+
 /* ------------footer------------- */
 footer > div {
   background-color: #dce9d4;
