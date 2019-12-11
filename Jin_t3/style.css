@@ -14,7 +14,7 @@ body {
   background-image: url(./img/bg-body.jpg);
 }
 
-.container {
+.my-background {
   background-color: #356618;
 }
 
@@ -39,15 +39,16 @@ nav a {
 .nav a:hover {
   background-color: #d9eacf;
   color: #4b4b4b;
+  
 }
 
 nav > button {
-  top: -30px;
-  left: 15px;
+  width: 100%;
 }
 
 .navbar-toggler {
   padding: 2px 14px;
+  border-radius: 0;
 }
 
 nav > button > span {
@@ -117,14 +118,9 @@ nav > button > span {
   width: 18px;
 }
 
-.my-banner-index h4 {
+.my-banner-index h2 {
+  font-size: 20px;
   color: #e2e498;
-}
-
-@media (min-width: 576px) {
-  .my-banner-index h4 {
-    font-size: 20px;
-  }
 }
 
 .my-banner-index > div:nth-of-type(1),
@@ -230,33 +226,3 @@ footer img {
 footer > p {
   font-size: 12px;
 }
-
-/* ------------test------------- */
-.carousel .first {
-  background-image: url(https://fsmedia.imgix.net/df/56/bc/96/93fb/41de/96e6/d8efeb783d2d/the-combined-urban--zen-gardening-mastery-bundle.jpeg?crop=edges&fit=crop&auto=format%2Ccompress&dpr=2&h=325&w=65);
-  height: 75vh;
-  background-size: 120%;
-  background-repeat: no-repeat;
-}
-
-.carousel .second {
-  background-image: url(https://ak3.picdn.net/shutterstock/videos/1012794743/thumb/1.jpg);
-  height: 75vh;
-  background-size: 120%;
-  background-repeat: no-repeat;
-}
-
-.carousel .third {
-  background-image: url(https://previews.123rf.com/images/welcomia/welcomia1507/welcomia150700081/42085492-gardener-with-rake-at-work.jpg);
-  height: 75vh;
-  background-size: 120%;
-  background-repeat: no-repeat;
-}
-
-.carousel .inner {
-  background-color: #00000088;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
