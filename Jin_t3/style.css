@@ -55,11 +55,24 @@ nav > button > span {
 }
 
 /* ------------banner------------- */
-.my-banner {
+.my-first-banner {
   background-image: url(./img/gardening1a.jpg);
   background-position: center top;
-  background-size: cover;
+}
+
+.my-second-banner {
+  background-image: url(./img/gardening-elder.jpg);
+  background-position: center;
+}
+
+.my-third-banner {
+  background-image: url(./img/gardening_friendship_03.jpg);
+  background-position: center;
+}
+
+.my-banner {
   height: 84vh;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -100,7 +113,7 @@ nav > button > span {
   width: 18px;
 }
 
-.banner img {
+.my-banner img {
   width: 18px;
 }
 
@@ -128,6 +141,8 @@ nav > button > span {
     box-shadow: 1px 0px #2c5d10;
   }
 }
+
+
 
 /* ------------feature------------- */
 .my-features > a:hover {
