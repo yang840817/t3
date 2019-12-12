@@ -174,7 +174,7 @@ nav > button > span {
 }
 
 .my-tips ol > li {
-  padding: 0 0 0 2em;
+  padding: 0 0 0 .5em;
   text-indent: -.7em;
   list-style-type: none;
   counter-increment: num;
