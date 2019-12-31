@@ -1,0 +1,53 @@
+* {
+  outline: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  position: absolute;
+  top: -10px;
+  left: -7px;
+  margin: 0;
+  opacity: 0.2;
+}
+
+figure img {
+  width: 100%;
+}
+
+.container {
+  width: 890px;
+  margin: 0 auto;
+}
+
+header, main, footer {
+  width: 855px;
+  margin: 0 auto;
+}
+
+header {
+  height: 133px;
+}
+
+main {
+  height: 1205px;
+}
+
+footer {
+  height: 165px;
+}
+
+.copyright {
+  height: 35px;
+}
+/*# sourceMappingURL=index.css.map */
