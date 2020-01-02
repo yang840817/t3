@@ -30,13 +30,32 @@ figure img {
   margin: 0 auto;
 }
 
-header, main, footer {
+header, main, footer, .copyright {
   width: 855px;
   margin: 0 auto;
 }
 
-header {
-  height: 133px;
+header .banner {
+  height: 87px;
+  background: #fff url(../image/logo.png) no-repeat 52% 21%;
+  background-size: 47%;
+}
+
+header .navbar {
+  padding: 0;
+}
+
+header .navbar .container {
+  padding: 0;
+}
+
+header .navbar .navbar-nav {
+  width: 100%;
+  margin: 0;
+}
+
+header .navbar a {
+  text-align: center;
 }
 
 main {

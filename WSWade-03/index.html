@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Goodideas-t3</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- 誰都不能覆蓋我的css -->
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     <div class="container">
-        <header>頭上</header>
+        <header>
+            <div class="banner"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
+                    <div class="navbar-nav row justify-content-center">
+                        <a class="nav-item nav-link col" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link col" href="#">About</a>
+                        <a class="nav-item nav-link col" href="#">Plants</a>
+                        <a class="nav-item nav-link col" href="#">Gardens</a>
+                        <a class="nav-item nav-link col" href="#">News</a>
+                        <a class="nav-item nav-link col" href="#">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <main>身體</main>
         <footer>腳下之處</footer>
-        <div class="copyright"></div>
+        <div class="copyright">copyright</div>
     </div>
     <figure>
         <img src="./Template_3.png" alt="">
     </figure>
+
+    <!-- 引入bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
