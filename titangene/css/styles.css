@@ -1,0 +1,78 @@
+/* ============= debug ============= */
+body::before {
+  content: "";
+  background: url(../Template_3.png) no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 3000px;
+  position: absolute;
+  /* screen width: 1540px */
+  left: -9px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: .8;
+  /* opacity: 0; */
+  z-index: -1;
+}
+
+
+
+
+/* ============= reset ============= */
+
+
+
+
+/* ============= layout ============= */
+.custom-container {
+  padding: 0 20px;
+  background-color: #356618;
+}
+.custom-row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.custom-col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+/* ============= header ============= */
+/* -------- logo -------- */
+.logo {
+  padding: 20px 0 26px 0;
+  background-color: #fff;
+}
+.logo img {
+  width: 500px;
+}
+
+/* -------- navbar -------- */
+.custom-navbar-nav {
+  background-color: #4b4b4b;
+  border-bottom: 1px solid #fff;
+}
+.custom-nav-link {
+  padding: 18px 0;
+  color: #f0f2c9;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.custom-nav-link:hover {
+  background-color: #daead0;
+  color: #1b330c;
+}
+.custom-nav-link.is-active {
+  background-color: #96b285;
+  color: #356618;
+}
+/* 使用 nav-justified 無法讓 nav-item 等寬，在 navbar-collapse 設定就能解決 */
+@media (min-width: 768px) {
+  .custom-navbar-collapse:not(.show) {
+    display: block !important;
+  }
+}
