@@ -20,6 +20,9 @@ body::before {
 
 
 /* ============= reset ============= */
+figure {
+  margin: 0;
+}
 
 
 
@@ -76,3 +79,44 @@ body::before {
     display: block !important;
   }
 }
+
+
+
+
+/* ============= main ============= */
+/* -------- carousel -------- */
+.custom-carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding: 20px 28px 15px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, .65);
+}
+.custom-carousel-caption h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #e3e699;
+  margin-bottom: .25rem;
+}
+.custom-carousel-caption p {
+  line-height: 1.75;
+  font-weight: bold;
+  word-spacing: 2px;
+  margin: 0;
+  color: #fff;
+}
+.custom-carousel-caption i {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.5rem;
+  background-color: #768e90;
+}
+.custom-carousel-caption a {
+  color: #fff;
+}
+
