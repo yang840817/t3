@@ -2,6 +2,13 @@
     background-color: #366819;
 }
 
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 .mx-n15 {
     margin: 0 -15px;
 }
@@ -69,4 +76,12 @@ ol {
 
 .footer-bg-lightgreen {
     background-color: #DDE9D5;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+i {
+    color: #366819;
 }

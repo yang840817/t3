@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f5b786372c.js" crossorigin="anonymous"></script>
 
     <title>DD's T3</title>
 </head>
@@ -18,18 +19,20 @@
     <div class="container bg-mainColor px-5">
         <header class="row">
             <div class="col-12 text-center bg-white">
-                <img src="./img/logo.png" alt="Logo" class="py-4">
-                <nav class="nav nav-fill bg-darkgreen mb-1 mx-n15">
-                    <div class="nav-item"><a class="nav-link" href="#">Home</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">About</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Plants</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Gardens</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">News</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Contact</a></div>
-                </nav>
+                <h1><img src="./img/logo.png" alt="Logo" class="py-4"></h1>
             </div>
 
         </header>
+
+        <nav class="nav nav-fill bg-darkgreen border-bottom border-white sticky-top mx-n15">
+            <div class="nav-item"><a class="nav-link" href="#">Home</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">About</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">Plants</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">Gardens</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">News</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">Contact</a></div>
+        </nav>
+
 
         <main class="row position-relative">
             <img src="./img/gardening1.jpg" alt="banner" class="img-fluid w-100">
@@ -68,15 +71,13 @@
             </div>
         </section>
 
-        <hr>
-
         <article class="row bg-white pt-3">
             <div class="col-12">
 
                 <div class="col-12 bg-title border-bottom-lightgreen mb-3">
                     <p class="h5 text-red pt-2 ">FEATURED GARDENS</p>
                 </div>
-                <div class="row border-bottom">
+                <div class="row">
                     <div class="col-3">
 
                         <img src="./img/garden1.jpg" alt="ULIET'S GARDEN" class="img-fluid w-100">
@@ -112,6 +113,8 @@
 
                 </div>
 
+                <hr>
+
 
                 <div class="row my-4">
                     <div class="col-4">
@@ -134,32 +137,41 @@
 
                 <div class="row footer-bg-lightgreen ">
                     <div class="col-3 border-lightgreen border-left-0">
-                        <h4 class="text-secondary pt-3">Place Holder</h4>
-                        <p class="text-secondary">This is a place holder.This is a place holder.This is a place holder.</p>
+                        <div class="d-flex flex-column ">
+                            <h4 class="text-secondary pt-3">Place Holder</h4>
+                            <p class="text-secondary mb-1">This is a place holder.</p>
+                            <p class="text-secondary mb-1">This is a place holder.</p>
+                            <p class="text-secondary mb-1">This is a place holder.</p>
+                        </div>
                     </div>
                     <div class="col-3 border-lightgreen border-left-0">
                         <h4 class="text-secondary pt-3">Place Holder</h4>
-                        <p class="text-secondary">This is a place holder.This is a place holder.This is a place holder.</p>
-                    </div>
-                    <div class="col-3 border-lightgreen border-left-0">
-                        <h4 class="text-secondary pt-3">Place Holder</h4>
-                        <p class="text-secondary">This is a place holder.This is a place holder.This is a place holder.</p>
-                    </div>
-                    <div class="col-3 border-lightgreen border-left-0">
-                        <h4 class="text-secondary pt-3">CONTECT</h4>
+                        <p class="text-secondary mb-1">This is a place holder.</p>
+                        <p class="text-secondary mb-1">This is a place holder.</p>
+                        <p class="text-secondary mb-1">This is a place holder.</p>
 
+                    </div>
+                    <div class="col-3 border-lightgreen border-left-0">
+                        <h4 class="text-secondary pt-3">Place Holder</h4>
+                        <p class="text-secondary mb-1">This is a place holder.</p>
+                        <p class="text-secondary mb-1">This is a place holder.</p>
+                        <p class="text-secondary mb-1">This is a place holder.</p>
+
+                    </div>
+                    <div class="col-3 border-lightgreen border-left-0">
+                        <h4 class="text-secondary pt-3">CONNECT</h4>
                         <ul>
                             <li class="list-unstyled">
-                                <a href="#" class="text-decoration-none text-secondary">Email us</a>
+                                <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-envelope mr-2 h5 "></i>Email us</a>
                             </li>
                             <li class="list-unstyled">
-                                <a href="#" class="text-decoration-none text-secondary">Facebook</a>
+                                <a href="#" class="text-decoration-none text-secondary"><i class="fab fa-facebook-square mr-2 h5"></i>Facebook</a>
                             </li>
                             <li class="list-unstyled">
-                                <a href="#" class="text-decoration-none text-secondary">Twitter</a>
+                                <a href="#" class="text-decoration-none text-secondary"><i class="fab fa-twitter-square mr-2 h5"></i>Twitter</a>
                             </li>
                             <li class="list-unstyled">
-                                <a href="#" class="text-decoration-none text-secondary">Google+</a>
+                                <a href="#" class="text-decoration-none text-secondary"><i class="fab fa-google-plus-square mr-2 h5"></i>Google+</a>
                             </li>
                         </ul class="text-secondary">
 
