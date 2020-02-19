@@ -44,6 +44,7 @@ figure {
 .custom-container {
   padding: 0 20px;
   background-color: #356618;
+  position: static;
 }
 .custom-row {
   margin-left: -20px;
