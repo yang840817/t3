@@ -268,3 +268,46 @@ main h2 {
   margin: 0;
   font-size: 18px;
 }
+
+
+/* -------- article -------- */
+.article-cover,
+.article-body {
+  padding: 0 10px;
+}
+
+.article-cover img {
+  width: 100%;
+  height: auto;
+}
+
+.article-body {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) { /* lg */
+  .article-body {
+    margin-bottom: 0;
+  }
+}
+
+.article-content ol {
+  padding-left: 34px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.article-content ol li {
+  text-indent: -2.5em;
+  list-style-type: none;
+  counter-increment: item;
+}
+.article-content ol li::before {
+  width: 2em;
+  display: inline-block;
+  text-align: right;
+  content: counter(item) ".";
+  font-weight: bold;
+  padding-right: .5em;
+}
+.article-content ol li + li {
+  margin-top: 20px;
+}
