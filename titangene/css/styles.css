@@ -49,13 +49,10 @@ hr {
   background-color: #356618;
   position: static;
 }
+
 .custom-row {
-  margin-left: -20px;
-  margin-right: -20px;
-}
-.custom-col {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 
