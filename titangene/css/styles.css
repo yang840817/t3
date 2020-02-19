@@ -60,11 +60,13 @@ figure {
 /* ============= header ============= */
 /* -------- logo -------- */
 .logo {
-  padding: 20px 0 26px 0;
+  padding: 20px;
   background-color: #fff;
+  text-align: center;
 }
 .logo img {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 
