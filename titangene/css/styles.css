@@ -304,6 +304,7 @@ main h2 {
   content: counter(item) ".";
   font-weight: bold;
   padding-right: .5em;
+  box-sizing: content-box;
 }
 .article-content ol li + li {
   margin-top: 20px;
