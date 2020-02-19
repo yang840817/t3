@@ -221,3 +221,47 @@ figure {
   font-size: 17px;
   font-weight: bold;
 }
+
+
+
+
+/* ============= main ============= */
+main {
+  padding: 20px 20px 40px;
+  background-color: #fff;
+}
+main h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #dce9d4;
+  color: #836145;
+  border-bottom: 2px solid #b3cca4;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+
+/* -------- card list -------- */
+.card-row {
+  margin-bottom: -20px;
+}
+
+.card-item {
+  border: none;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.custom-card-body {
+  padding: 20px 0 0;
+}
+.custom-card-body h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #836145;
+  margin-bottom: 20px;
+}
+.custom-card-body p {
+  margin: 0;
+  font-size: 18px;
+}
