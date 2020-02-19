@@ -177,3 +177,47 @@ figure {
 .custom-carousel-caption a {
   color: #fff;
 }
+
+
+
+
+/* ============= media section ============= */
+.media-list {
+  padding: 20px 0;
+}
+
+@media (min-width: 992px) { /* lg */
+  .col-border + .col-border {
+    border-left: 1px solid #245607;
+  }
+}
+
+.media-item {
+  padding: 20px;
+  cursor: pointer;
+}
+@media (min-width: 992px) { /* lg */
+  .media-item {
+    padding: 0 20px;
+  }
+}
+
+.media-item img {
+  width: 110px;
+  height: auto;
+  box-sizing: content-box;
+  border: 2px solid #fff;
+  margin-right: 20px;
+}
+
+.media-body h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e3e699;
+}
+.media-body p {
+  margin: 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
