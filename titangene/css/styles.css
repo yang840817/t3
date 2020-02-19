@@ -405,11 +405,16 @@ main h2 {
   margin-left: 10px;
 }
 
-.copyright p {
+.copyright {
   padding: 8px 0;
-  margin-bottom: 0;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
   text-align: center;
+  color: #fff;
+}
+.copyright p {
+  margin: 0;
+}
+.copyright-divider {
+  padding: 0 4px;
 }
