@@ -45,9 +45,13 @@ hr {
 
 /* ============= layout ============= */
 .custom-container {
-  padding: 0 20px;
+  padding: 0 10px;
   background-color: #356618;
-  position: static;
+}
+@media (min-width: 576px) { /* sm */
+  .custom-container {
+    padding: 0 20px;
+  }
 }
 
 .custom-row {
