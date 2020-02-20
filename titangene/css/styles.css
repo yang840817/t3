@@ -89,6 +89,20 @@ hr {
   color: #ddd;
 }
 
+.custom-navbar-logo {
+  font-size: 18px;
+  margin: 0;
+}
+@media (min-width: 576px) { /* sm */
+  .custom-navbar-logo {
+    font-size: 22px;
+  }
+}
+.custom-navbar-logo img,
+.custom-navbar-logo span {
+  vertical-align: middle;
+}
+
 .custom-navbar-toggler {
   color: rgba(255, 255, 255, .5);
   border-color: rgba(255, 255, 255, .3);
