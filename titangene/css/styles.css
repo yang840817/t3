@@ -288,8 +288,13 @@ hr {
 
 /* ============= main ============= */
 main {
-  padding: 20px 20px 40px;
+  padding: 10px 10px 20px;
   background-color: #fff;
+}
+@media (min-width: 576px) { /* sm */
+  main {
+    padding: 20px 20px 40px;
+  }
 }
 main h2 {
   font-size: 22px;
