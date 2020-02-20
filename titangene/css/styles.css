@@ -383,12 +383,7 @@ main h2 {
 .article-content ol {
   padding-left: 34px;
   margin-bottom: 0;
-  font-size: 16px;
-}
-@media (min-width: 576px) { /* sm */
-  .article-content ol {
-    font-size: 18px;
-  }
+  font-size: 18px;
 }
 .article-content ol li {
   text-indent: -2.5em;
@@ -459,8 +454,13 @@ main h2 {
   }
 }
 .footer__card-item p {
-  font-size: 18px;
+  font-size: 16px;
   color: #8c8c8c;
+}
+@media (min-width: 576px) { /* sm */
+  .footer__card-item p {
+    font-size: 18px;
+  }
 }
 
 .social {
