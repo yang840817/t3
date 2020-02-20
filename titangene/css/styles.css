@@ -218,7 +218,12 @@ hr {
 
 /* ============= media section ============= */
 .media-list {
-  padding: 20px 0;
+  padding: 10px 0;
+}
+@media (min-width: 576px) { /* sm */
+  .media-list {
+    padding: 20px 0;
+  }
 }
 
 @media (min-width: 992px) { /* lg */
