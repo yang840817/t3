@@ -337,7 +337,11 @@ main h2 {
   font-size: 20px;
   text-transform: uppercase;
   color: #836145;
-  margin-bottom: 20px;
+}
+@media (min-width: 576px) { /* sm */
+  .custom-card-body h3 {
+    margin-bottom: 10px;
+  }
 }
 .custom-card-body p {
   margin: 0;
