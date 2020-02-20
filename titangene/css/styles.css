@@ -357,7 +357,13 @@ main h2 {
 /* -------- article -------- */
 .article-cover,
 .article-body {
-  padding: 0 10px;
+  padding: 0 5px;
+}
+@media (min-width: 576px) { /* sm */
+  .article-cover,
+  .article-body {
+    padding: 0 10px;
+  }
 }
 
 .article-cover img {
