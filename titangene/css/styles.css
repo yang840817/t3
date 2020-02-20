@@ -274,8 +274,13 @@ hr {
 .media-body p {
   margin: 0;
   color: #fff;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
+}
+@media (min-width: 576px) { /* sm */
+  .media-body p  {
+    font-size: 17px;
+  }
 }
 
 
