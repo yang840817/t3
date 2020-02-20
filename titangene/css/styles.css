@@ -345,7 +345,12 @@ main h2 {
 }
 .custom-card-body p {
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
+}
+@media (min-width: 576px) { /* sm */
+  .custom-card-body p  {
+    font-size: 17px;
+  }
 }
 
 
