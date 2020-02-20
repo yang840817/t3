@@ -249,11 +249,21 @@ hr {
 }
 
 .media-item img {
-  width: 110px;
+  width: 80px;
   height: auto;
   box-sizing: content-box;
   border: 2px solid #fff;
   margin-right: 20px;
+}
+@media (min-width: 576px) { /* sm */
+  .media-item img {
+    width: 90px;
+  }
+}
+@media (min-width: 768px) { /* md */
+  .media-item img {
+    width: 110px;
+  }
 }
 
 .media-body h3 {
