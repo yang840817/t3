@@ -325,8 +325,14 @@ main h2 {
 }
 
 .custom-card-body {
-  padding: 20px 0 0;
+  padding: 10px 0 0;
 }
+@media (min-width: 576px) { /* sm */
+  .custom-card-body {
+    padding: 20px 0 0;
+  }
+}
+
 .custom-card-body h3 {
   font-size: 20px;
   text-transform: uppercase;
