@@ -55,8 +55,14 @@ hr {
 }
 
 .custom-row {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+@media (min-width: 576px) { /* sm */
+  .custom-row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 
