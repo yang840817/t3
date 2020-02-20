@@ -302,8 +302,14 @@ main h2 {
   background-color: #dce9d4;
   color: #836145;
   border-bottom: 2px solid #b3cca4;
-  padding: 10px 20px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) { /* sm */
+  main h2 {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
 }
 
 
