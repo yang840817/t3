@@ -89,6 +89,12 @@ hr {
   top: 0;
   background-color: #4b4b4b;
   z-index: 1000;
+  padding: 6px 10px;
+}
+@media (min-width: 576px) { /* sm */
+  .custom-navbar {
+    padding: 10px 20px;
+  }
 }
 
 .custom-navbar-brand {
