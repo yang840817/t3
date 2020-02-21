@@ -28,7 +28,7 @@ img {
 
 
 
-/* ============= reset ============= */
+/* ================= reset ================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../img/bg-body.jpg);
@@ -43,23 +43,23 @@ hr {
 
 
 
-/* ============= layout ============= */
-.custom-container {
+/* ================= layout ================= */
+.modify_container {
   padding: 0 10px;
   background-color: #356618;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-container {
+  .modify_container {
     padding: 0 20px;
   }
 }
 
-.custom-row {
+.modify_row {
   margin-left: -5px;
   margin-right: -5px;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-row {
+  .modify_row {
     margin-left: -10px;
     margin-right: -10px;
   }
@@ -68,7 +68,7 @@ hr {
 
 
 
-/* ============= header ============= */
+/* ================= header ================= */
 /* -------- logo -------- */
 .logo {
   padding: 20px;
@@ -83,8 +83,8 @@ hr {
 
 
 
-/* ============= nav ============= */
-.custom-navbar  {
+/* ================= nav ================= */
+.modify_navbar  {
   position: sticky;
   top: 0;
   background-color: #4b4b4b;
@@ -92,69 +92,70 @@ hr {
   padding: 6px 10px;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-navbar {
+  .modify_navbar {
     padding: 10px 20px;
   }
 }
 
-.custom-navbar-brand {
+.modify_navbar-brand {
   font-weight: bold;
   color: #fff;
 }
-.custom-navbar-brand:hover {
+.modify_navbar-brand:hover {
   color: #ddd;
 }
 
-.custom-navbar-logo {
+.custom_navbar-logo {
   font-size: 18px;
   margin: 0;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-navbar-logo {
+  .custom_navbar-logo {
     font-size: 22px;
   }
 }
-.custom-navbar-logo img,
-.custom-navbar-logo span {
+.custom_navbar-logo img,
+.custom_navbar-logo span {
   vertical-align: middle;
 }
 
-.custom-navbar-toggler {
+.modify_navbar-toggler {
   color: rgba(255, 255, 255, .5);
   border-color: rgba(255, 255, 255, .3);
 }
 
-.custom-navbar-toggler-icon {
+.modify_navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 @media (min-width: 768px) { /* md */
-  .custom-navbar-nav {
+  .modify_navbar-nav {
     border-bottom: 1px solid #fff;
   }
 }
 
-.custom-nav-link {
+.modify_nav-link {
   padding: 18px 0;
   color: #f0f2c9;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-.custom-nav-link:hover {
+.modify_nav-link:hover {
   background-color: #96b285;
   color: #356618;
 }
 
-.custom-navbar-collapse {
+.modify_navbar-collapse {
   margin-top: 16px;
 }
 
-/* 使用 nav-justified 無法讓 nav-item 等寬，在 navbar-collapse 設定就能解決 */
+/* 在 navbar 元件內使用 nav-justified 無法讓 nav-item 等寬，
+   要在 navbar-collapse 設定 display: block 才能變為等寬 */
 @media (min-width: 768px) { /* md */
-  .custom-navbar-collapse:not(.show) {
+  .modify_navbar-collapse:not(.show) {
     display: block !important;
   }
-  .custom-navbar-collapse {
+  .modify_navbar-collapse {
     margin-top: 0;
   }
 }
@@ -162,27 +163,22 @@ hr {
 
 
 
-/* ============= carousel section ============= */
-.custom-carousel-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+/* ================= carousel section ================= */
+.custom_carousel-caption {
   padding: 10px 20px;
   text-align: left;
   background-color: rgba(0, 0, 0, .65);
 }
 @media (min-width: 768px) { /* md */
-  .custom-carousel-caption  {
+  .custom_carousel-caption  {
     padding: 20px 28px 15px;
   }
 }
-.custom-carousel-caption h3 {
+.custom_carousel-caption h3 {
   color: #e3e699;
   margin-bottom: .25rem;
 }
-.custom-carousel-caption p {
+.custom_carousel-caption p {
   line-height: 1.5;
   font-size: 18px;
   font-weight: bold;
@@ -194,13 +190,13 @@ hr {
   white-space: nowrap;
 }
 @media (min-width: 768px) { /* md */
-  .custom-carousel-caption p {
+  .custom_carousel-caption p {
     text-overflow: clip;
     overflow: auto;
     white-space: normal;
   }
 }
-.custom-carousel-caption i {
+.custom_carousel-caption i {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
@@ -209,46 +205,46 @@ hr {
   line-height: 1.5rem;
   background-color: #768e90;
 }
-.custom-carousel-caption a {
+.custom_carousel-caption a {
   color: #fff;
 }
 
 
 
 
-/* ============= media section ============= */
-.media-list {
+/* ================= media section ================= */
+.banner-list {
   padding: 10px 0;
 }
 @media (min-width: 576px) { /* sm */
-  .media-list {
+  .banner-list {
     padding: 20px 0;
   }
 }
 
 @media (min-width: 992px) { /* lg */
-  .col-border + .col-border {
+  .banner-border + .banner-border {
     border-left: 1px solid #245607;
   }
 }
 
-.media-item {
+.banner-item {
   padding: 10px;
   cursor: pointer;
 }
 @media (min-width: 576px) { /* sm */
-  .media-item {
+  .banner-item {
     padding: 20px;
   }
 }
 @media (min-width: 992px) { /* lg */
-  .media-item {
+  .banner-item {
     padding: 0;
     margin: 0 20px;
   }
 }
 
-.media-item img {
+.banner-item img {
   width: 80px;
   height: auto;
   box-sizing: content-box;
@@ -256,29 +252,29 @@ hr {
   margin-right: 20px;
 }
 @media (min-width: 576px) { /* sm */
-  .media-item img {
+  .banner-item img {
     width: 90px;
   }
 }
 @media (min-width: 768px) { /* md */
-  .media-item img {
+  .banner-item img {
     width: 110px;
   }
 }
 
-.media-body h3 {
+.banner-item h3 {
   font-size: 20px;
   font-weight: bold;
   color: #e3e699;
 }
-.media-body p {
+.banner-item p {
   margin: 0;
   color: #fff;
   font-size: 15px;
   font-weight: bold;
 }
 @media (min-width: 576px) { /* sm */
-  .media-body p  {
+  .banner-item p  {
     font-size: 17px;
   }
 }
@@ -286,7 +282,7 @@ hr {
 
 
 
-/* ============= main ============= */
+/* ================= main ================= */
 main {
   padding: 10px 10px 20px;
   background-color: #fff;
@@ -313,42 +309,41 @@ main h2 {
 }
 
 
-/* -------- card list -------- */
-.card-row {
+/* -------- garden -------- */
   margin-bottom: -20px;
 }
 
-.card-item {
+.garden-item {
   border: none;
   padding: 0 10px;
   margin-bottom: 20px;
 }
 
-.custom-card-body {
+.modify_card-body {
   padding: 10px 0 0;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-card-body {
+  .modify_card-body {
     padding: 20px 0 0;
   }
 }
 
-.custom-card-body h3 {
+.modify_card-body h3 {
   font-size: 20px;
   text-transform: uppercase;
   color: #836145;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-card-body h3 {
+  .modify_card-body h3 {
     margin-bottom: 10px;
   }
 }
-.custom-card-body p {
+.modify_card-body p {
   margin: 0;
   font-size: 15px;
 }
 @media (min-width: 576px) { /* sm */
-  .custom-card-body p  {
+  .modify_card-body p  {
     font-size: 17px;
   }
 }
@@ -406,12 +401,7 @@ main h2 {
 
 
 
-/* ============= footer ============= */
-.footer__card-list {
-  background-color: #dce9d4;
-  border-top: 1px solid #b8d0aa;
-}
-
+/* ================= footer ================= */
 .footer-col + .footer-col {
   border-top: 1px solid #b8d0aa;
 }
@@ -437,28 +427,35 @@ main h2 {
   }
 }
 
-.footer__card-item {
+
+/* -------- contact -------- */
+.contact-list {
+  background-color: #dce9d4;
+  border-top: 1px solid #b8d0aa;
+}
+
+.contact-item {
   border: none;
   border-radius: 0;
   background-color: transparent;
 }
-.footer__card-item h3 {
+.contact-item h3 {
   font-size: 22px;
   text-transform: uppercase;
   color: #8c8c8c;
   text-align: center;
 }
 @media (min-width: 992px) { /* lg */
-  .footer__card-item h3 {
+  .contact-item h3 {
     text-align: left;
   }
 }
-.footer__card-item p {
+.contact-item p {
   font-size: 16px;
   color: #8c8c8c;
 }
 @media (min-width: 576px) { /* sm */
-  .footer__card-item p {
+  .contact-item p {
     font-size: 18px;
   }
 }
@@ -504,6 +501,8 @@ main h2 {
   margin-left: 10px;
 }
 
+
+/* -------- copyright -------- */
 .copyright {
   padding: 8px 0;
   font-size: 18px;
