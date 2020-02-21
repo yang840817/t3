@@ -444,6 +444,7 @@ main h2 {
   text-transform: uppercase;
   color: #8c8c8c;
   text-align: center;
+  margin-bottom: 12px;
 }
 @media (min-width: 992px) { /* lg */
   .contact-item h3 {
@@ -453,6 +454,7 @@ main h2 {
 .contact-item p {
   font-size: 16px;
   color: #8c8c8c;
+  margin: 0;
 }
 @media (min-width: 576px) { /* sm */
   .contact-item p {
