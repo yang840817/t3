@@ -389,10 +389,18 @@ main h2 {
     padding: 0 10px;
   }
 }
+.article-cover  {
+  text-align: center;
+}
 
 .article-cover img {
-  width: 100%;
-  height: auto;
+  max-width: 280px;
+}
+@media (min-width: 576px) { /* sm */
+  .article-cover img {
+    max-width: 360px;
+    width: 100%;
+  }
 }
 
 .article-body {
