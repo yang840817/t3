@@ -196,20 +196,33 @@ hr {
 }
 .custom_carousel-caption p {
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   word-spacing: 2px;
   margin: 0;
   color: #fff;
-  text-overflow: ellipsis;
+  display: -webkit-box;
   overflow: hidden;
-  white-space: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+@media (min-width: 576px) { /* sm */
+  .custom_carousel-caption p {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) { /* md */
   .custom_carousel-caption p {
-    text-overflow: clip;
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) { /* lg */
+  .custom_carousel-caption p {
+    font-size: 18px;
+    display: block;
     overflow: auto;
-    white-space: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: none;
   }
 }
 .custom_carousel-caption i {
