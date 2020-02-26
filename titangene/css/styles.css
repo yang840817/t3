@@ -324,6 +324,7 @@ main {
 main h2 {
   font-size: 22px;
   text-transform: uppercase;
+  text-align: center;
   background-color: #dce9d4;
   color: #836145;
   border-bottom: 2px solid #b3cca4;
@@ -334,11 +335,13 @@ main h2 {
   main h2 {
     margin-bottom: 20px;
     padding: 10px 20px;
+    text-align: left;
   }
 }
 
 
 /* -------- garden -------- */
+.garden-row {
   margin-bottom: -20px;
 }
 
