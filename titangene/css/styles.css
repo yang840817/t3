@@ -461,10 +461,22 @@ main h2 {
 }
 
 .contact-item {
+  max-width: 360px;
+  margin: auto;
   border: none;
   border-radius: 0;
   background-color: transparent;
 }
+
+.contact-body {
+  padding: 10px;
+}
+@media (min-width: 576px) { /* sm */
+  .contact-body {
+    padding: 20px;
+  }
+}
+
 .contact-item h3 {
   font-size: 22px;
   text-transform: uppercase;
