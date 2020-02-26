@@ -407,7 +407,12 @@ main h2 {
 .article-content ol {
   padding-left: 34px;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
+}
+@media (min-width: 576px) { /* sm */
+  .article-content ol {
+    font-size: 18px;
+  }
 }
 .article-content ol li {
   text-indent: -2.5em;
