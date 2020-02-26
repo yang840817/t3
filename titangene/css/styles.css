@@ -177,6 +177,12 @@ hr {
 .custom_carousel-caption h3 {
   color: #e3e699;
   margin-bottom: .25rem;
+  font-size: 24px;
+}
+@media (min-width: 768px) { /* md */
+  .custom_carousel-caption h3 {
+    font-size: 28px;
+  }
 }
 .custom_carousel-caption p {
   line-height: 1.5;
