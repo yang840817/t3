@@ -369,7 +369,7 @@ main h2 {
 }
 .modify_card-body p {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 @media (min-width: 576px) { /* sm */
   .modify_card-body p  {
