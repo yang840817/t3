@@ -167,7 +167,17 @@ hr {
 .custom_carousel-caption {
   padding: 10px 20px;
   text-align: left;
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, .8);
+}
+@media (min-width: 768px) { /* md */
+  .custom_carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .65);
+  }
 }
 @media (min-width: 768px) { /* md */
   .custom_carousel-caption  {
