@@ -6,20 +6,8 @@ body {
     background-color: #366819;
 }
 
-.px_30px {
-    padding: 0 30px !important;
-}
-
 .px_15px {
-    padding: 0 15px !important;
-}
-
-.mx_n15px {
-    margin: 0 -15px;
-}
-
-header h1 {
-    margin-bottom: 0;
+    padding: 0 15px;
 }
 
 .bg_darkgreen {
@@ -43,12 +31,8 @@ nav a:focus,
     color: #2A6100;
 }
 
-.bg_half_dark {
+.bg_transparent_dark {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.media p {
-    margin-bottom: 0;
 }
 
 .main_text {
@@ -74,10 +58,6 @@ nav a:focus,
     color: #784413;
 }
 
-article div h2 {
-    margin-bottom: 0;
-}
-
 .border_bottom_lightgreen {
     border-bottom: 3px #ABC79A solid;
 }
@@ -86,12 +66,29 @@ article div h2 {
     border: 1px #ABC79A solid;
 }
 
-.footer_bg_lightgreen {
-    background-color: #DDE9D5;
+.carouse_cursor {
+    cursor: pointer;
 }
 
-ol {
-    padding-inline-start: 1rem;
+.counter_reset {
+    counter-reset: num;
+    position: relative;
+    list-style: none;
+}
+
+.counter_reset li:before {
+    counter-increment: num;
+    content: counter(num) '.';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    text-align: right;
+    width: 1.5em;
+    font-weight: 600;
+}
+
+.footer_bg_lightgreen {
+    background-color: #DDE9D5;
 }
 
 footer ul {
@@ -106,38 +103,12 @@ i {
     color: #8F8F8E;
 }
 
-.carouse_cursor {
-    cursor: pointer;
-}
-
-.counter_reset {
-    counter-reset: num;
-    margin-left: 30px;
-    position: relative;
-}
-
-.counter_reset li:before {
-    counter-increment: num;
-    content: counter(num) '.';
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    text-align: right;
-    width: 2em;
-    font-weight: 600;
-}
-
-ul,
-li {
-    margin-bottom: .5rem;
-}
-
-footer li {
-    margin-bottom: 0;
-}
-
 footer p {
     margin-bottom: 0.25rem;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
 }
 
 .hr_gray {
@@ -155,10 +126,6 @@ footer p {
 
 .copyright p {
     margin: 0;
-}
-
-.copyright span {
-    display: none;
 }
 
 @media (min-width: 768px) {
@@ -180,9 +147,6 @@ footer p {
 }
 
 @media (min-width: 992px) {
-    .container {
-        padding: 0 3rem;
-    }
     .border_right_green {
         border-bottom: 0 !important;
         border-right: 2px inset #2B5B0F !important;
