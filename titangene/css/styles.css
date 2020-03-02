@@ -522,16 +522,16 @@ main h2 {
   background-color: transparent;
 }
 
-.contact-body {
+.contact-item .card-body {
   padding: 10px;
 }
 @media (min-width: 576px) { /* sm */
-  .contact-body {
+  .contact-item .card-body {
     padding: 20px;
   }
 }
 
-.contact-item h3 {
+.contact-item .card-title {
   font-size: 22px;
   text-transform: uppercase;
   color: #8c8c8c;
@@ -539,17 +539,17 @@ main h2 {
   margin-bottom: 12px;
 }
 @media (min-width: 992px) { /* lg */
-  .contact-item h3 {
+  .contact-item .card-title {
     text-align: left;
   }
 }
-.contact-item p {
+.contact-item .card-text {
   font-size: 16px;
   color: #8c8c8c;
   margin: 0;
 }
 @media (min-width: 576px) { /* sm */
-  .contact-item p {
+  .contact-item .card-text {
     font-size: 18px;
   }
 }
