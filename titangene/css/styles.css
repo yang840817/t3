@@ -152,10 +152,8 @@ hr {
 /* 在 navbar 元件內使用 nav-justified 無法讓 nav-item 等寬，
    要在 navbar-collapse 設定 display: block 才能變為等寬 */
 @media (min-width: 768px) { /* md */
-  .modify_navbar .navbar-collapse:not(.show) {
-    display: block !important;
-  }
   .modify_navbar .navbar-collapse {
+    display: block !important;
     margin-top: 0;
   }
 }
