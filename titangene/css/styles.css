@@ -359,10 +359,6 @@ main h2 {
 
 
 /* -------- garden -------- */
-.garden-row {
-  margin-bottom: -20px;
-}
-
 .garden-item {
   max-width: 360px;
   margin: auto;
@@ -373,10 +369,25 @@ main h2 {
 }
 @media (min-width: 576px) { /* sm */
   .garden-item {
-    padding: 0 10px;
+    padding: 0;
     text-align: left;
   }
 }
+
+.garden-list > .row > :last-child .garden-item {
+  margin-bottom: 0;
+}
+@media (min-width: 576px) { /* sm */
+  .garden-list > .row > :nth-last-child(2) .garden-item {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) { /* lg */
+  .garden-item {
+    margin-bottom: 0;
+  }
+}
+
 .garden-item img {
   max-width: 280px;
   align-self: center;
