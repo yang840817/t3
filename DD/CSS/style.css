@@ -1,5 +1,5 @@
 body {
-    background-image: url(./img/bg-body.jpg);
+    background-image: url(../img/bg-body.jpg);
 }
 
 .bg_mainColor {
@@ -64,10 +64,16 @@ nav a:focus,
 
 .border_lightgreen {
     border: 1px #ABC79A solid;
+    border-left: 0;
+    border-bottom: 0;
 }
 
 .carouse_cursor {
     cursor: pointer;
+}
+
+.media p {
+    line-height: 1.2;
 }
 
 .counter_reset {
