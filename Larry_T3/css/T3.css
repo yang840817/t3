@@ -3,10 +3,6 @@ body{
     background-image: url("../image/bg-body.jpg");
 }
 
-.wrap{
-    padding:0 1.5rem;
-}
-
 .wrap_bg_color{
     background-color:#3f6421;
 }
@@ -44,8 +40,12 @@ nav{
     content:"\2794";
     color: #ffffff;
     background-color: #7e9093;
-    padding: 1px;
-    border-radius: 10px;
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 5px;
 }
 
 .more{
@@ -70,8 +70,7 @@ nav{
 
 hr{
    border-top:2px solid rgba(0,0,0,.1);
-   margin-top: .5rem;
-   margin-bottom: 2rem;
+   margin: 2rem 0;
 }
 
 .product_tips ol{
@@ -85,7 +84,7 @@ hr{
     content:counter(num) '.';
     position: absolute;
     left:-1rem;
-    width: 2rem;
+    width:2rem;
     text-align:right;
     font-weight: bold;
 }
@@ -128,25 +127,17 @@ footer{
     display:none;
 }
 
-.f_wrap{
-    flex-flow: wrap;
-}
-
 .point:hover{
     cursor: pointer;
 }
 
+.customer_w_75{
+    width: 75%;
+}
+
 @media (min-width:992px){
-     .wrap{
-         padding:0 2.5rem;
-     }
 
-     .navbar-brand a{
-        padding: 2rem 0;
-        margin:0;
-    }
-
-    .carousel-item{
+    .carousel_position{
         position: relative;
     }
 
@@ -168,14 +159,10 @@ footer{
         width: 5px;
         height: 110px;
         position: absolute;
-        top:-10px;
+        top:4px;
         right: 5px;
         display:inline-block;
         box-shadow: -1px 0px 3px rgba(20%,20%,40%,0.3) inset;
-    }
-
-    .product_tips div{
-        order:-1;
     }
 
     .footer_item{
@@ -183,8 +170,9 @@ footer{
         border-bottom:0;
     }
   
-    .footer_item h5{
+    .footer_item h3{
         margin-top:0;
+        font-size: 1.25rem;
     }
 
     .footer_item p{
@@ -202,8 +190,12 @@ footer{
         white-space: normal;
     }
 
-    .norap_lg{
+    .nowrap_lg{
         flex-wrap: nowrap;
+    }
+
+   .customer_w_100_lg{
+       width: 100%;
     }
  }
 
