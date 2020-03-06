@@ -102,6 +102,7 @@ footer{
     display: block;
     font-size: 20px;
     color: #416524;
+    text-decoration: none;
 }
 
 .connect_list a:hover{
@@ -159,7 +160,7 @@ footer{
         width: 5px;
         height: 110px;
         position: absolute;
-        top:4px;
+        top:10px;
         right: 5px;
         display:inline-block;
         box-shadow: -1px 0px 3px rgba(20%,20%,40%,0.3) inset;
