@@ -2,6 +2,14 @@ body {
     background-image: url(../img/bg-body.jpg);
 }
 
+.background_main_color {
+    background-color: #366819;
+}
+
+.background_darkgreen {
+    background-color: #4B4B4B;
+}
+
 .main_text_wrap {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -21,16 +29,8 @@ body {
     margin-left: 0.5rem;
 }
 
-.bg_main_color {
-    background-color: #366819;
-}
-
 section {
     padding: 15px;
-}
-
-.bg_darkgreen {
-    background-color: #4B4B4B;
 }
 
 .navbar_nav_color {
@@ -50,7 +50,7 @@ nav a:focus,
     color: #2A6100;
 }
 
-.bg_transparent_dark {
+.background_transparent_dark {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -87,7 +87,7 @@ nav a:focus,
     border-bottom: 2px inset #2B5B0F;
 }
 
-.bg_title {
+.background_title {
     background-color: #DCE8D4;
 }
 
@@ -131,7 +131,7 @@ nav a:focus,
     font-weight: 600;
 }
 
-.footer_bg_lightgreen {
+.footer_background_lightgreen {
     background-color: #DDE9D5;
 }
 
