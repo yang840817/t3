@@ -2,7 +2,8 @@ body{
     background-image: url(../img/bg-body.jpg);
 }
 
-h1,h2,h3,p{
+h1,h2,h3,p,a{
+    display: block;
     margin: 0;
 }
 
@@ -11,12 +12,7 @@ h1,h2,h3,p{
 }
 
 .logo_box{
-    justify-content: center;
-    padding: 1.5rem 0;
-}
-
-.logo_image{
-    padding: 0 1rem;
+    text-align: center;
 }
 
 .menu{
@@ -26,15 +22,11 @@ h1,h2,h3,p{
     
 }
 
-.menu .toggle{
-    padding: 0.2rem 0.7rem;
-    margin: 0.5rem;
-    border: 1.5px solid #fff;
-    border-radius: 0.25rem;
-}
-
 .toggle .menu_icon{
+    border: 1.25px solid #fff;
+    border-radius: 0.25rem;
     background-image: url(../img/menu.svg);
+    background-size: 60%;
 }
 
 
@@ -43,7 +35,7 @@ h1,h2,h3,p{
 
 }
 
-.navbar-nav{
+.nav_item{
     width: 100%;
     text-align: center;
 }
@@ -71,16 +63,28 @@ h1,h2,h3,p{
 }
 
 .banner_caption{
+    display: block;
     width: 100%;
     background-color: rgb(0,0,0,0.5);
     color: #fff;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
+    position: static;
     padding: 1rem;
     text-align: left;
+}
+
+@media(min-width: 768px){
+    .banner_caption{
+        width: 100%;
+        background-color: rgb(0,0,0,0.5);
+        color: #fff;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding: 1rem;
+        text-align: left;
+    }
 }
 
 .banner_caption:hover{
@@ -89,6 +93,7 @@ h1,h2,h3,p{
 }
 
 .banner .banner_caption h2{
+    font-size: 20px;
     margin: 0;
     color: #e4e79b;
     font-weight: 600;
@@ -96,32 +101,31 @@ h1,h2,h3,p{
     text-transform: uppercase;
 }
 
-.banner_caption p{
-    white-space: nowrap;
+@media(min-width:768px){
+    .banner .banner_caption h2{
+        font-size: 36px;
+    }
+}
+
+.banner .banner_caption p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .banner_card{
     margin: 0;
+    justify-content: center;
 }
 
-@media (min-width: 768px){
-    .banner_card{
-        justify-content: space-around;
+@media(min-width: 768px){
+    .left_card,.middle_card,.right_card{
+        width: 70%;
     }
 }
 
-.left_card{
-    padding: 0;
-}
-
-
-.middle_card{
-    padding: 0;
-}
-
-@media(min-width: 1200px){
+@media(min-width: 768px){
     .middle_card::before{
         content: "";
         width: 2px;
@@ -136,11 +140,7 @@ h1,h2,h3,p{
     }
 }
 
-.right_card{
-    padding: 0;
-}
-
-@media(min-width: 1200px){
+@media(min-width: 768px){
     .right_card::before{
         content: "";
         width: 2px;
@@ -156,25 +156,27 @@ h1,h2,h3,p{
 }
 
 .card_content{
-    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
-.card_image{
-    margin-bottom: 0.5rem;
-    border: solid 2px #fff;
-    padding: 0;
-}
-
-@media(min-width: 1200px){
-    .card_content,.card_image{
-        display: flex;
-        margin: 0 0.5rem;
-        padding: 0;
+@media (min-width: 960px){
+    .card_content{
+        align-items: flex-start;
     }
 }
 
-.card_text{
+.card_image{
+    width: 80%;
+    border: solid 2px #fff;
+    margin-right: 1rem; 
     padding: 0;
+}
+
+@media (min-width: 576px){
+    .card_image{
+        width: 50%;
+    }
 }
 
 .card_text h3{
@@ -185,16 +187,28 @@ h1,h2,h3,p{
     margin-bottom: 0.3rem;
 }
 
-
 .card_text p{
     font-size: 16px;
     color: #fff;
     line-height: 1.2;
+    text-align: justify;
+}
+
+.content{
+    padding: 0;
+}
+
+.content_row{
+    margin: 0;
 }
 
 .content_title{
     background-color: #daebd0;
     border-bottom: solid 2px #97b486;
+}
+
+.content_item{
+    justify-content: center;
 }
 
 .content_title h2{
@@ -205,10 +219,18 @@ h1,h2,h3,p{
 
 .garden_brief{
     border: none;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width: 960px){
+    .figure_text{
+        text-align: left;
+    }
 }
 
 .garden_brief h3{
-    font-size: 20px;
+    font-size: 18px;
     color: #6f2f10;
     text-transform: uppercase;
 }
@@ -217,17 +239,16 @@ h1,h2,h3,p{
     padding: 0.5rem;
 }
 
-article hr{
-    width: 100%;
+.figure_text p{
+    text-align: justify;
+}
+
+.line_gap{
     border-bottom: solid 1px #d2d2d2;
 }
 
 .week_tips_image img{
     width: 100%;
-}
-
-.week_tips{
-    padding: 0;
 }
 
 .tips_title{
@@ -241,11 +262,7 @@ article hr{
     text-transform: uppercase;
 }
 
-.tips_text{
-    padding: 0;
-}
-
-@media(min-width: 1200px){
+@media(min-width: 960px){
     .tips_text{
         margin-top: 1rem;
     }
@@ -255,6 +272,7 @@ article hr{
     list-style: none;
     padding-inline-start: 1rem;
     counter-reset: num;
+    text-align: justify;
 }
 
 .tips_text li::before{
@@ -268,50 +286,83 @@ article hr{
 
 .footer_area{
     background-color: #daebd0;
+    border-top: solid 1px #97b486;
 }
 
-.footer_content h3{
+
+.footer_area h3{
     font-size: 20px;
     color: #7e7d80;
     text-transform: uppercase;  
     margin: 0;
 }
 
+.footer_area p{
+    color: #7e7d80;
+    text-align: justify;
+}
+
+.footer_content{
+    border-right: solid 1px #97b486;
+    border-left: solid 1px #97b486 ;
+}
+
 .social_media p{
+    display: inline;
+    font-size: 16px;
     color: #7e7d80;
     text-transform: capitalize;
-    display: inline;
+}
+
+.social_media a{
+    text-decoration: none;
 }
 
 .email i{
     font-size: 20px;
-    display: inline;
+    display: inline-block;
     color: #316611;
 }
 
 .facebook i{
     font-size: 24px;
-    display: inline;
+    display: inline-block;
     color: #316611;
 }
 
 .twitter i{
     font-size: 24px;
-    display: inline;
+    display: inline-block;
     color: #316611;
 }
 
 .google_plus i{
     font-size: 24px;
-    display: inline;
+    display: inline-block;
     color: #316611;
 }
 
-.copyright_content{
-    justify-content: center;
+.copyright{
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #316611;
+}
+
+@media(min-width: 768px){
+    .copyright_text::after{
+        content: " | ";
+        font-weight: 600;
+        color: #fff;
+    }
 }
 
 .copyright p{
     font-weight: 600;
     color: #fff;
+}
+
+@media(min-width: 768px){
+    .copyright p{
+        display: inline;
+    }
 }
