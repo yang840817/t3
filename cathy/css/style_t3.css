@@ -4,7 +4,6 @@ body{
 
 h1,h2,h3,p,a,i{
     margin: 0;
-    padding: 0;
 }
 
 a{
@@ -22,6 +21,7 @@ a:hover {
 }
 
 .logo_box{
+    background-color: #fff;
     text-align: center;
 }
 
@@ -29,6 +29,15 @@ a:hover {
     color: #daebd0;
     background-color: #494949;
     padding: 0;
+}
+
+@media(min-width:768px){
+    .menu{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
 }
 
 .menu_bar{
@@ -43,12 +52,12 @@ a:hover {
 }
 
 
-.navbar_area{
+.menu_area{
     justify-content: space-around;
     border-bottom: solid 2px #fff;
 }
 
-.nav_item{
+.menu_item{
     width: 100%;
     text-align: center;
 }
@@ -204,8 +213,8 @@ a:hover {
     text-align: justify;
 }
 
-.content_row{
-    margin: 0;
+.website_content{
+    background-color: #fff;
 }
 
 .featured_gardens_title{
@@ -308,9 +317,7 @@ a:hover {
 }
 
 .footer_content{
-    border-right: solid 1px #97b486;
-    border-left: solid 1px #97b486 ;
-    border-top: solid 1.5px #97b486;
+    height: 100%;
     text-align: center;
 }
 
@@ -320,12 +327,38 @@ a:hover {
     }
 }
 
-.social_media{
+.social_media_area{
+    display: flex;
     flex-wrap: wrap;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 992px){
+    .social_media_area{
+        align-items: flex-start;
+    }
+}
+
+
+@media(min-width:768px){
+    .social_media{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media(min-width:992px){
+    .social_media{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .social_media_item{
+    align-items: center;
     flex: 0 1 50%;
 }
 

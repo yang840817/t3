@@ -19,26 +19,26 @@
         <!-- -------------------- header -------------------- -->
         <header>
             <!-- ................. logo bar ................. -->
-            <h1 class="bg-white p-3 logo_box">
+            <h1 class="p-3 logo_box">
                 <a href="##"><img class="img-fluid logo_image" src="./img/logo.png" alt="Garden Walkthrough"></a>
             </h1>
-            <!-- ................. menu bar ................. -->
-            <nav class="sticky-top navbar navbar-expand-md menu">
-                <button class="navbar-toggler w-100 toggle menu_bar" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon menu_icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar_area" id="navbarNavAltMarkup">
-                    <div class="navbar-nav nav_item">
-                        <a class="nav-item nav-link menu_button home_link" href="##">home</a>
-                        <a class="nav-item nav-link menu_button" href="##">about</a>
-                        <a class="nav-item nav-link menu_button" href="##">plants</a>
-                        <a class="nav-item nav-link menu_button" href="##">gardens</a>
-                        <a class="nav-item nav-link menu_button" href="##">news</a>
-                        <a class="nav-item nav-link menu_button" href="##">contant</a>
-                    </div>
-                </div>
-            </nav>
         </header>
+        <!-- ................. menu bar ................. -->
+        <nav class="navbar navbar-expand-md menu">
+            <button class="navbar-toggler w-100 toggle menu_bar" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon menu_icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu_area" id="navbarNavAltMarkup">
+                <div class="navbar-nav menu_item">
+                    <a class="nav-item nav-link menu_button home_link" href="##">home</a>
+                    <a class="nav-item nav-link menu_button" href="##">about</a>
+                    <a class="nav-item nav-link menu_button" href="##">plants</a>
+                    <a class="nav-item nav-link menu_button" href="##">gardens</a>
+                    <a class="nav-item nav-link menu_button" href="##">news</a>
+                    <a class="nav-item nav-link menu_button" href="##">contant</a>
+                </div>
+            </div>
+        </nav>
         <!-- ------------------- main content -------------------- -->
         <main>
             <!-- ====================== banner ======================= -->
@@ -85,145 +85,175 @@
                     </div>
                 </div>
                 <!-- ................. banner card ................. -->
-                <div class="row p-2 banner_card">
-                    <div class="col-md-4 my-3 left_card card_content">
-                        <img class="card_image" src="./img/gardening2.jpg" alt="gardening tips">                        <div class="card_text">
-                            <h3>gardening tips</h3>
-                            <p>This is just a place holder, so you can see what the site would look like</p>
+                <div class="row no-gutters my-2 banner_card">
+                    <div class="col-md-4 my-3 px-3">
+                        <div class="left_card card_content">
+                            <img class="card_image" src="./img/gardening2.jpg" alt="gardening tips">                        
+                            <div class="card_text">
+                                <h3>gardening tips</h3>
+                                <p>This is just a place holder, so you can see what the site would look like</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 middle_card card_content">
-                        <img class="card_image" src="./img/gardening3.jpg" alt="happy gardener">
-                        <div class="card_text">
-                            <h3>happy gardener</h3>
-                            <p>This is just a place holder, so you can see what the site would look like</p>
+                    <div class="col-md-4 my-3 px-3">
+                        <div class="middle_card card_content">
+                            <img class="card_image" src="./img/gardening3.jpg" alt="happy gardener">
+                            <div class="card_text">
+                                <h3>happy gardener</h3>
+                                <p>This is just a place holder, so you can see what the site would look like</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 right_card card_content">
-                        <img class="card_image" src="./img/gardening4.jpg" alt="planting">
-                        <div class="card_text">
-                            <h3>planting</h3>
-                            <p>This is just a place holder, so you can see what the site would look like</p>
+                    <div class="col-md-4 my-3 px-3">
+                        <div class="right_card card_content">
+                            <img class="card_image" src="./img/gardening4.jpg" alt="planting">
+                            <div class="card_text">
+                                <h3>planting</h3>
+                                <p>This is just a place holder, so you can see what the site would look like</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- ====================== website content ======================= -->
             <article>
-                <div class="bg-white pt-3 content">
+                <div class="p-4 website_content">
                     <!-- ................. feature gardend ................. -->
-                    <h2 class="mx-4 my-2 px-3 py-2 featured_gardens_title">featured gardens</h2>
-                    <div class="row my-3 mx-3 featured_gardens_item">
-                        <div class="card col-8 col-md-5 col-lg-3 garden_brief">
-                            <img class="card-img-top brief_image" src="./img/garden1.jpg" alt="juliet's garden">
-                            <div class="card-body brief_text">
-                            <h3>juliet's garden</h3>
-                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                    <h2 class="no-gutters p-2 featured_gardens_title">featured gardens</h2>
+                    <div class="row mt-4 featured_gardens_item">
+                        <div class="col-8 col-md-5 col-lg-3">
+                            <div class="card garden_brief">
+                                <img class="card-img-top brief_image" src="./img/garden1.jpg" alt="juliet's garden">
+                                <div class="card-body brief_text">
+                                <h3>juliet's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card col-8 col-md-5 col-lg-3 garden_brief">
-                            <img class="card-img-top brief_image" src="./img/garden2.jpg" alt="joanne's garden">
-                            <div class="card-body brief_text">
-                            <h3>joanne's garden</h3>
-                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                        <div class="col-8 col-md-5 col-lg-3">
+                            <div class="card garden_brief">
+                                <img class="card-img-top brief_image" src="./img/garden2.jpg" alt="joanne's garden">
+                                <div class="card-body brief_text">
+                                <h3>joanne's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card col-8 col-md-5 col-lg-3 garden_brief">
-                            <img class="card-img-top brief_image" src="./img/garden3.jpg" alt="jettki's garden">
-                            <div class="card-body brief_text">
-                            <h3>jettki's garden</h3>
-                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                        <div class="col-8 col-md-5 col-lg-3">
+                            <div class="card garden_brief">
+                                <img class="card-img-top brief_image" src="./img/garden3.jpg" alt="jettki's garden">
+                                <div class="card-body brief_text">
+                                <h3>jettki's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card col-8 col-md-5 col-lg-3 garden_brief">
-                            <img class="card-img-top brief_image" src="./img/garden4.jpg" alt="jia's garden">
-                            <div class="card-body brief_text">
-                            <h3>jia's garden</h3>
-                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                        <div class="col-8 col-md-5 col-lg-3">
+                            <div class="card garden_brief">
+                                <img class="card-img-top brief_image" src="./img/garden4.jpg" alt="jia's garden">
+                                <div class="card-body brief_text">
+                                <h3>jia's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- ................. line gap ................. -->
-                    <hr class="mx-3 line_gap">
+                    <hr class="line_gap">
                     <!-- ................. week tips ................. -->
-                    <div class="row mx-3 py-3 week_tips_content">
-                        <div class="col-6 col-lg-4 mb-3 week_tips_image">
-                            <img src="./img/gardening5.jpg" alt="tips of the week">
+                    <div class="row py-3 week_tips_content">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="week_tips_image">
+                                <img src="./img/gardening5.jpg" alt="tips of the week">
+                            </div>
                         </div>
-                        <div class="col-lg-8 week_tips">
-                            <h3 class="p-2 tips_title">tips of the week</h3>
-                            <div class="p-3 tips_text">
-                                <ul>
-                                    <li>
-                                    This is just a place holder, so you can see what the site would look like
-                                    This is just a place holder, so you can see what the site would look like
-                                    </li>
-                                    <li>
-                                    This is just a place holder, so you can see what the site would look like
-                                    This is just a place holder, so you can see what the site would look like
-                                    </li>
-                                    <li>
-                                    This is just a place holder, so you can see what the site would look like
-                                    This is just a place holder, so you can see what the site would look like
-                                    </li>
-                                </ul>
+                        <div class="col-lg-8">
+                            <div class="week_tips">
+                                <h3 class="p-2 tips_title">tips of the week</h3>
+                                <div class="p-3 tips_text">
+                                    <ul>
+                                        <li>
+                                        This is just a place holder, so you can see what the site would look like
+                                        This is just a place holder, so you can see what the site would look like
+                                        </li>
+                                        <li>
+                                        This is just a place holder, so you can see what the site would look like
+                                        This is just a place holder, so you can see what the site would look like
+                                        </li>
+                                        <li>
+                                        This is just a place holder, so you can see what the site would look like
+                                        This is just a place holder, so you can see what the site would look like
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
             </article>
         </main>
         <!-- ------------------- footer --------------------  -->
-        <footer class="row m-0 footer_area">
-            <!-- ................. footer content ................. -->
-            <div class="col-md-6 col-lg-3 py-3 footer_content">
-                <h3 class="mb-2">place holder</h3>
-                <p>This is just a place holder, so you can see what the site would look like</p>
-            </div>
-            <div class="col-md-6 col-lg-3 py-3 footer_content">
-                <h3 class="mb-2">place holder</h3>
-                <p>This is just a place holder, so you can see what the site would look like</p>
-            </div>
-            <div class="col-md-6 col-lg-3 py-3 footer_content">
-                <h3 class="mb-2">place holder</h3>
-                <p>This is just a place holder, so you can see what the site would look like</p>
-            </div>
-            <!-- ................. social media ................. -->
-            <div class="d-flex flex-column align-items-center align-items-md-center align-items-lg-start col-md-6 col-lg-3 py-3 footer_content">
-                <h3 class="mb-2">connect</h3>
-                <div class="d-flex flex-column flex-md-row flex-lg-column  social_media">
-                    <div class="mb-2 social_media_item email">
-                        <a href="##">
-                            <i class="fas fa-envelope"></i>
-                            <p>mail us</p>
-                        </a>
-                    </div>
-                    <div class="mb-2 social_media_item facebook">
-                        <a href="##">
-                            <i class="fab fa-facebook-square"></i>
-                            <p>facebook</p>
-                        </a>
-                    </div>
-                    <div class="mb-2 social_media_item twitter">
-                        <a href="##">
-                            <i class="fab fa-twitter-square"></i>
-                            <p>twitter</p>
-                        </a>
-                    </div>
-                    <div class="mb-2 social_media_item google_plus">
-                        <a href="##">
-                            <i class="fab fa-google-plus-square"></i>
-                            <p>google+</p>
-                        </a>
+        <footer>
+            <div class="row no-gutters footer_area">
+                <!-- ................. footer content ................. -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3 footer_content">
+                        <h3 class="mb-2">place holder</h3>
+                        <p>This is just a place holder, so you can see what the site would look like</p>
                     </div>
                 </div>
-            </div>
-            <!-- ................. copyright ................. -->
-            <div class="col-12 copyright">
-                <p class="company_name">Garden Walkthrough &copy;2023</p>
-                <p>All Rights Reserved</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3 footer_content">
+                        <h3 class="mb-2">place holder</h3>
+                        <p>This is just a place holder, so you can see what the site would look like</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3 footer_content">
+                        <h3 class="mb-2">place holder</h3>
+                        <p>This is just a place holder, so you can see what the site would look like</p>
+                    </div>
+                </div>
+                <!-- ................. social media ................. -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-3 social_media_area">
+                        <h3 class="mb-2">connect</h3>
+                        <div class="social_media">
+                            <div class="mb-2 social_media_item email">
+                                <a href="##">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>mail us</p>
+                                </a>
+                            </div>
+                            <div class="mb-2 social_media_item facebook">
+                                <a href="##">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <p>facebook</p>
+                                </a>
+                            </div>
+                            <div class="mb-2 social_media_item twitter">
+                                <a href="##">
+                                    <i class="fab fa-twitter-square"></i>
+                                    <p>twitter</p>
+                                </a>
+                            </div>
+                            <div class="mb-2 social_media_item google_plus">
+                                <a href="##">
+                                    <i class="fab fa-google-plus-square"></i>
+                                    <p>google+</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ................. copyright ................. -->
+                <div class="col-12 copyright">
+                    <p class="company_name">Garden Walkthrough &copy;2023</p>
+                    <p>All Rights Reserved</p>
+                </div>
             </div>
         </footer>
     </div>
+</body>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
