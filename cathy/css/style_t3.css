@@ -316,9 +316,21 @@ a:hover {
     color: #7e7d80;
 }
 
-.footer_content{
-    height: 100%;
+.footer_area .col-md-6{
+    border-top: solid 1px #97b486;
     text-align: center;
+}
+
+@media(min-width: 768px){
+    .footer_area .col-md-6:nth-child(2n+1){
+        border-right: solid 1px #97b486;
+    }
+}
+
+@media(min-width: 768px){
+    .footer_area .col-md-6{
+        border-right: solid 1px #97b486;
+    }
 }
 
 @media(min-width: 992px){
@@ -346,7 +358,7 @@ a:hover {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
+        text-align: left;
     }
 }
 
