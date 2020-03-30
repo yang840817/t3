@@ -2,7 +2,7 @@ body{
     background-image: url(../img/bg-body.jpg);
 }
 
-h1,h2,h3,p,a,i{
+h1,h2,h3,ul,p,a,i{
     margin: 0;
 }
 
@@ -148,7 +148,7 @@ a:hover {
 @media(min-width: 768px){
     .middle_card::before{
         content: "";
-        width: 2px;
+        width: 3px;
         height: auto;
         position: absolute;
         top: 0;
@@ -156,7 +156,7 @@ a:hover {
         left: 0;
         margin: 0 auto;
         background-color:rgba(104, 170, 65, 0.3);
-        box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 3px rgb(0,0,0,0.3);
     }
 }
 
@@ -178,6 +178,7 @@ a:hover {
 .card_content{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 @media (min-width: 992px){
@@ -187,15 +188,12 @@ a:hover {
 }
 
 .card_image{
-    width: 80%;
     border: solid 2px #fff;
     margin-right: 1rem; 
 }
 
-@media (min-width: 576px){
-    .card_image{
-        width: 50%;
-    }
+.card_image img{
+    object-fit: cover;
 }
 
 .card_text h3{
@@ -226,12 +224,16 @@ a:hover {
 }
 
 .featured_gardens_item{
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .garden_brief{
     border: none;
     text-align: center;
+}
+
+.brief_image img{
+    object-fit: cover;
 }
 
 .garden_brief h3{
@@ -262,6 +264,10 @@ a:hover {
     justify-content: center;
 }
 
+.week_tips_image{
+    order: -1;
+}
+
 .week_tips_image img{
     width: 100%;
 }
@@ -272,12 +278,6 @@ a:hover {
     font-size: 20px;
     color: #6f2f10;
     text-transform: uppercase;
-}
-
-@media(min-width: 992px){
-    .tips_text{
-        margin-top: 1rem;
-    }
 }
 
 .tips_text ul{
@@ -327,8 +327,8 @@ a:hover {
     }
 }
 
-@media(min-width: 768px){
-    .footer_area .col-md-6{
+@media(min-width: 992px){
+    .footer_area .col-md-6:nth-child(n+1){
         border-right: solid 1px #97b486;
     }
 }
@@ -352,6 +352,9 @@ a:hover {
     }
 }
 
+.social_media{
+    text-align: left;
+}
 
 @media(min-width:768px){
     .social_media{
@@ -374,7 +377,7 @@ a:hover {
     flex: 0 1 50%;
 }
 
-.social_media p{
+.social_media span{
     display: inline;
     font-size: 16px;
     color: #7e7d80;
@@ -423,10 +426,11 @@ a:hover {
         content: " | ";
         font-weight: 600;
         color: #fff;
+        margin-right: 0.3rem;
     }
 }
 
-.copyright p{
+.copyright span{
     font-weight: 600;
     color: #fff;
     text-align: center;
