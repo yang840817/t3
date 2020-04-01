@@ -145,12 +145,6 @@ a:hover {
     margin-left: auto;
 }
 
-@media(min-width: 992px){
-    .banner_card{
-        margin: 0;
-    }
-}
-
 @media(min-width: 768px){
     .middle_card::before{
         content: "";
@@ -179,6 +173,7 @@ a:hover {
 
 .card_content{
     display: flex;
+    border: 0;
     align-items: flex-start;
     cursor: pointer;
 }
@@ -199,11 +194,17 @@ a:hover {
 }
 
 .card_text h3{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #e4e79b;
     margin-bottom: 0.3rem;
+}
+
+@media(min-width: 992px){
+    .card_text h3{
+        font-size: 20px;
+    }
 }
 
 .card_text p{
@@ -227,13 +228,13 @@ a:hover {
 
 .featured_gardens_item{
     justify-content: center;
-    margin: 0 -15px;
+    margin: 0 -12px;
 }
 
 .garden_brief{
     border: none;
     text-align: center;
-    margin-bottom: 1rem;
+    padding: 0 12px;
 }
 
 
@@ -370,6 +371,7 @@ a:hover {
 
 @media(min-width:768px){
     .social_media{
+        width: 60%;
         display: flex;
         flex-wrap: wrap;
     }
