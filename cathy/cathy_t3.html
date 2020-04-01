@@ -17,9 +17,9 @@
 <body>
     <div class="container-lg px-4 container_wrap">
         <!-- -------------------- header -------------------- -->
-        <header>
+        <header class="p-3 logo_box"
             <!-- ................. logo bar ................. -->
-            <h1 class="p-3 logo_box">
+            <h1>
                 <a href="##"><img class="img-fluid logo_image" src="./img/logo.png" alt="Garden Walkthrough"></a>
             </h1>
         </header>
@@ -41,7 +41,7 @@
         </nav>
         <!-- ------------------- main content -------------------- -->
         <main>
-            <!-- ====================== banner ======================= -->
+            <!-- ====================== banner area ======================= -->
             <section>
                 <!-- ................. banner ................. -->
                 <div id="carouselExampleCaptions" class="carousel slide banner" data-ride="carousel">
@@ -81,8 +81,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mx-0 banner_card">
-                    <div data-target="#carouselExampleCaptions" data-slide-to="0" class="col-md-4 my-4 px-4 active">
+                <div class="row banner_card">
+                    <div data-target="#carouselExampleCaptions" data-slide-to="0" class="col-md-4 p-4 active">
                         <div class="left_card card_content">
                             <div class="card_image">
                                 <img src="./img/gardening2.jpg" alt="gardening tips">                        
@@ -93,7 +93,8 @@
                             </div>
                         </div>
                     </div>
-                    <div data-target="#carouselExampleCaptions" data-slide-to="1" class="col-md-4 my-4 px-4">
+                    <!-- ................. banner card ................. -->
+                    <div data-target="#carouselExampleCaptions" data-slide-to="1" class="col-md-4 p-4">
                         <div class="middle_card card_content">
                             <div class="card_image">
                                 <img src="./img/gardening3.jpg" alt="happy gardener">
@@ -104,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-target="#carouselExampleCaptions" data-slide-to="2" class="col-md-4 my-4 px-4">
+                    <div data-target="#carouselExampleCaptions" data-slide-to="2" class="col-md-4 p-4">
                         <div class="right_card card_content">
                             <div class="card_image">
                                 <img src="./img/gardening4.jpg" alt="planting">
@@ -116,96 +117,94 @@
                         </div>
                     </div>
                 </div>
-                <!-- ................. banner card ................. -->
             </section>
             <!-- ====================== gardens content ======================= -->
-            <article>
-                <div class="p-4 website_content">
-                    <!-- ................. feature gardens ................. -->
-                    <h2 class="no-gutters p-2 featured_gardens_title">featured gardens</h2>
-                    <div class="row  mt-4 mx-n3 featured_gardens_item">
-                        <div class="col-md-5 col-lg-3">
-                            <div class="card garden_brief">
-                                <div class="brief_image">
-                                    <img class="card-img-top" src="./img/garden1.jpg" alt="juliet's garden">
-                                </div>
-                                <div class="card-body brief_text">
-                                <h3>juliet's garden</h3>
-                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
-                                </div>
+            <article class="p-4 website_content">
+                <!-- ................. feature gardens ................. -->
+                <h2 class="p-2 featured_gardens_title">featured gardens</h2>
+                <div class="row mt-4 featured_gardens_item">
+                    <div class="col-10 col-md-6 col-lg-3">
+                        <div class="card garden_brief">
+                            <div class="brief_image">
+                                <img class="card-img-top" src="./img/garden1.jpg" alt="juliet's garden">
                             </div>
-                        </div>
-                        <div class="col-md-5 col-lg-3">
-                            <div class="card garden_brief">
-                                <div class="brief_image">
-                                    <img class="card-img-top" src="./img/garden2.jpg" alt="joanne's garden">
-                                </div>
-                                <div class="card-body brief_text">
-                                <h3>joanne's garden</h3>
-                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-lg-3">
-                            <div class="card garden_brief">
-                                <div class="brief_image">
-                                    <img class="card-img-top" src="./img/garden3.jpg" alt="jettki's garden">
-                                </div>
-                                <div class="card-body brief_text">
-                                <h3>jettki's garden</h3>
-                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-lg-3">
-                            <div class="card garden_brief">
-                                <div class="brief_image">
-                                    <img class="card-img-top" src="./img/garden4.jpg" alt="jia's garden">
-                                </div>
-                                <div class="card-body brief_text">
-                                <h3>jia's garden</h3>
-                                <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
-                                </div>
+                            <div class="card-body brief_text">
+                            <h3>juliet's garden</h3>
+                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
                             </div>
                         </div>
                     </div>
-                    <!-- ................. line gap ................. -->
-                    <hr class="line_gap">
-                    <!-- ................. week tips ................. -->
-                    <div class="row py-3 week_tips_content">
-                        <div class="col-lg-8">
-                            <div class="week_tips">
-                                <h3 class="p-2 tips_title">tips of the week</h3>
-                                <div class="py-4 px-3 tips_text">
-                                    <ul>
-                                        <li>
-                                        This is just a place holder, so you can see what the site would look like
-                                        This is just a place holder, so you can see what the site would look like
-                                        </li>
-                                        <li>
-                                        This is just a place holder, so you can see what the site would look like
-                                        This is just a place holder, so you can see what the site would look like
-                                        </li>
-                                        <li>
-                                        This is just a place holder, so you can see what the site would look like
-                                        This is just a place holder, so you can see what the site would look like
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div class="col-10 col-md-6 col-lg-3">
+                        <div class="card garden_brief">
+                            <div class="brief_image">
+                                <img class="card-img-top" src="./img/garden2.jpg" alt="joanne's garden">
                             </div>
-                        </div>
-                        <div class="col-md-8 col-lg-4 order-lg-first">
-                            <div class="week_tips_image">
-                                <img src="./img/gardening5.jpg" alt="tips of the week">
+                            <div class="card-body brief_text">
+                            <h3>joanne's garden</h3>
+                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-10 col-md-6 col-lg-3">
+                        <div class="card garden_brief">
+                            <div class="brief_image">
+                                <img class="card-img-top" src="./img/garden3.jpg" alt="jettki's garden">
+                            </div>
+                            <div class="card-body brief_text">
+                            <h3>jettki's garden</h3>
+                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-6 col-lg-3">
+                        <div class="card garden_brief">
+                            <div class="brief_image">
+                                <img class="card-img-top" src="./img/garden4.jpg" alt="jia's garden">
+                            </div>
+                            <div class="card-body brief_text">
+                            <h3>jia's garden</h3>
+                            <p class="card-text">This is just a place holder, so you can see what the site would look like</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ................. line gap ................. -->
+                <hr class="line_gap">
+                <!-- ................. week tips ................. -->
+                <div class="row py-3 week_tips_content">
+                    <div class="col-lg-8">
+                        <div class="week_tips">
+                            <h3 class="p-2 tips_title">tips of the week</h3>
+                            <div class="py-4 px-3 tips_text">
+                                <ul>
+                                    <li>
+                                    This is just a place holder, so you can see what the site would look like
+                                    This is just a place holder, so you can see what the site would look like
+                                    </li>
+                                    <li>
+                                    This is just a place holder, so you can see what the site would look like
+                                    This is just a place holder, so you can see what the site would look like
+                                    </li>
+                                    <li>
+                                    This is just a place holder, so you can see what the site would look like
+                                    This is just a place holder, so you can see what the site would look like
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-4 order-lg-first">
+                        <div class="week_tips_image">
+                            <img src="./img/gardening5.jpg" alt="tips of the week">
+                        </div>
+                    </div>
+                </div>
             </article>
         </main>
-        <!-- ------------------- footer --------------------  -->
+        <!-- ------------------- footer area --------------------  -->
         <footer>
+            <!-- ====================== footer ======================= -->
             <div class="row no-gutters footer_area">
-                <!-- ................. footer content ................. -->
                 <div class="col-md-6 col-lg-3">
                     <div class="p-3 footer_content">
                         <h3 class="mb-2">place holder</h3>

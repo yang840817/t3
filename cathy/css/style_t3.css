@@ -145,14 +145,18 @@ a:hover {
     margin-left: auto;
 }
 
+@media(min-width: 992px){
+    .banner_card{
+        margin: 0;
+    }
+}
+
 @media(min-width: 768px){
     .middle_card::before{
         content: "";
-        width: 3px;
-        height: auto;
+        width: 2px;
+        height: 60%;
         position: absolute;
-        top: 0;
-        bottom: 0;
         left: 0;
         margin: 0 auto;
         background-color:rgba(104, 170, 65, 0.3);
@@ -164,10 +168,8 @@ a:hover {
     .right_card::before{
         content: "";
         width: 2px;
-        height: auto;
+        height: 60%;
         position: absolute;
-        top: 0;
-        bottom: 0;
         left: 0;
         margin: 0 auto;
         background-color:rgba(104, 170, 65, 0.3);
@@ -177,7 +179,7 @@ a:hover {
 
 .card_content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
 }
 
@@ -224,12 +226,26 @@ a:hover {
 }
 
 .featured_gardens_item{
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0 -15px;
 }
 
 .garden_brief{
     border: none;
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.brief_image{
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media(min-width: 768px){
+    .brief_image{
+        width: 100%;
+    }
 }
 
 .brief_image img{
@@ -262,10 +278,6 @@ a:hover {
 
 .week_tips_content{
     justify-content: center;
-}
-
-.week_tips_image{
-    order: -1;
 }
 
 .week_tips_image img{
@@ -360,15 +372,13 @@ a:hover {
     .social_media{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        text-align: left;
     }
 }
 
 @media(min-width:992px){
     .social_media{
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
 }
 
