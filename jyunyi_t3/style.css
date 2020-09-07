@@ -8,14 +8,13 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1050px;
+.wrap {
     background-color: #326611;
     padding: 0;
 }
 
 @media (min-width: 768px) {
-    .container {
+    .wrap {
         padding: 0 15px;
     }
 
@@ -86,7 +85,7 @@ body {
         text-align: center;
     }
 
-    .menu_list>a {
+    .menu_list a {
         flex: 1 1 auto;
     }
 
@@ -116,7 +115,6 @@ body {
         position: absolute;
         bottom: 0;
         background-color: rgba(68,68,68,0.85);
-        padding: 15px 15px;
     }
 
 }
@@ -138,7 +136,7 @@ body {
 }
 
 .quick_guide {
-    margin: 15px 0;
+    margin: 0;
 }
 
 
@@ -146,37 +144,30 @@ body {
    margin: 0;
 }
 
-.guide_list:nth-child(-n+2)::after {
-    content: " ";
-    border-bottom: 2px solid #3D731A;
-    box-shadow: 0 1px 0 #255906;
-    margin: 10px 0;
-    display: block;
-}
-
-@media (min-width: 576px) {
-
-    .guide_list:nth-child(-n+2) {
-        border-bottom: none;
-        border-right: 2px solid #3D731A;
-        box-shadow: 1px 0 0 #255906;
-    }
-
-
-    .guide_list:nth-child(-n+2)::after {
-        display: none;
-    }
-}
-
 .guide_items {
     display: flex;
+    margin: 0 15px;
+    padding: 15px 0;
+
+}
+
+.guide_list:not(:last-child)>.guide_items {
+    border-bottom: 2px solid #3D731A;
+    box-shadow: 0 1px 0 #255906;
 }
 
 @media (min-width: 576px) {
 
     .guide_items {
         display: block;
+        padding: 0 15px;
+        margin: 15px 0;
+    }
 
+    .guide_list:not(:last-child)>.guide_items {
+        border-bottom: none;
+        border-right: 2px solid #3D731A;
+        box-shadow: 2px 0 0 #255906;
     }
 }
 
@@ -284,19 +275,19 @@ h5 {
         flex-wrap: nowrap;
     }
 
-    .gardens_guide>div {
+    .garden_window {
         padding: 0;
         flex-shrink: 1;
         
     }
 
-    .gardens_guide>div:not(:last-child) {
+    .garden_window:not(:last-child) {
         margin-right: 15px;
         
     }
 }
 
-.main_introduce .card {
+.main_introduce .card_customized {
     border: none;
 }
 
@@ -304,21 +295,21 @@ h5 {
     border-radius: 0;
 }
 
-.main_introduce .card-body {
+.main_introduce .card_body_customized {
     margin-top: 15px;
     padding: 0;
 }
 
-.main_introduce .card-title {
+.main_introduce .card_title_customized {
     margin-bottom: 10px;
 }
 
-.main_introduce .card-text {
+.main_introduce .card_text_customized {
     font-size: 14px;
 }
 
-.lines {
-    margin: 15px auto;
+.line {
+    margin: 15px 0;
     border-top: 2px solid #EBEAE6;
 }
 
@@ -358,47 +349,34 @@ h5 {
 }
 
 
-
 ol {
     list-style: none;
     margin-bottom: 0;
+    padding: 0;
     counter-reset: tips_count;
-    padding-left: 30px;
-    position: relative;
+}
+
+ol li {  
+    display: flex;
+    text-align: justify;
 }
 
 ol li:before {
     content: counter(tips_count) ".";
     counter-increment: tips_count;
-    position: absolute;
-    left: 0;
-    width: 20px;
-    text-align: right;
     font-weight: bold;
+    flex:  0 0 30px;
 
 }
-
-
-ol li p {  
-    font-size: 14px;
-    font-weight: normal;
-    text-align: justify;
-}
-
-ol li:last-child p{
-    margin: 0;
-}
-
 
 .information {
-    margin: 0;
+    background-color: #DDE9D5;
 }
 
-
-.information>div  {
+.information_boxes {
     padding: 15px;
     border-top: 1px solid #CADCC0;
-    background-color: #DDE9D5;
+
 }
 
 @media (min-width: 768px) {
@@ -440,7 +418,7 @@ footer h6 {
     vertical-align: middle;
 }
 
-span:hover {
+.social_media span:hover {
     color: #326611;
 }
 
@@ -448,7 +426,7 @@ span:hover {
     margin-bottom: 10px;
 }
 
-.fas,.fab {
+.social_media i {
     font-size: 22px;
     color: #326611;
     margin-right: 7px;
