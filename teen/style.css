@@ -11,7 +11,7 @@ header{
 }
 .logo{
     margin: 0;
-    flex-basis: 80%;
+    width: 80%;
 }
 .logo_link{
     display: block;
@@ -20,6 +20,7 @@ header{
     margin: 0 auto;
     padding: 15px 0;
     display: block;
+    max-width: 100%;
 }
 .menu{
     padding: 0;
@@ -31,7 +32,7 @@ header{
 }
 @media (min-width: 768px){
     .logo{
-        flex-basis: 100%;
+        width: 100%;
     }
     .menu{
         flex-flow: row wrap;
@@ -135,6 +136,7 @@ header{
 .banner_controller_item{
     margin: 0;
     cursor: pointer;
+    display: flex;
 }
 .banner_controller_item + .banner_controller_item{
     margin-top: 15px;
@@ -146,6 +148,7 @@ header{
 }
 .banner_controller_image_wrap{
     padding: 0;
+    width: 35%;
 }
 .banner_controller_image{
     border: 1px solid #fff;
@@ -153,8 +156,16 @@ header{
 }
 .banner_controller_body{
     padding: 0 0 0 15px;
+    width: 65%;
 }
 @media (max-width: 991px) and (min-width: 576px){
+    .banner_controller_item{
+        flex-wrap: wrap;
+    }
+    .banner_controller_image_wrap,
+    .banner_controller_body{
+        width: 100%;
+    }
     .banner_controller_body{
         margin-top: 0.75rem;
         padding: 0;
