@@ -1,9 +1,14 @@
-
 body{
     background: url(img/bg-body.jpg);
     margin: 0;
 }
-.container{
+p{
+    margin: 0;
+}
+*{
+    outline: 1px solid red;
+}
+.wrap{
     background-color: #361;
 }
 header{
@@ -11,41 +16,44 @@ header{
 }
 .logo{
     margin: 0;
-    width: 80%;
+    padding: 15px 0;
 }
 .logo_link{
     display: block;
 }
 .logo_image{
-    margin: 0 auto;
-    padding: 15px 0;
     display: block;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
 }
 .menu{
-    padding: 0;
-}
-@media (max-width: 767px){
-    .menu{
-        justify-content: space-around;
-    }
-}
-@media (min-width: 768px){
-    .logo{
-        width: 100%;
-    }
-    .menu{
-        flex-flow: row wrap;
-    }
+    padding: 5px 0;
+    justify-content: center;
+    background-color: #444;
 }
 .menu .menu_button{
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.2);
     border-radius: 0;
     outline: none;
     padding: 0;
 }
+.menu_button_icon{
+    width: 5em;
+}
+.menu_collapse{
+    margin-top: 5px;
+}
+@media (min-width: 768px){
+    .menu{
+        padding: 0;
+    }
+    .menu_collapse{
+        margin-top: 0;
+    }
+}
 .menu_wrap{
-    flex-basis: 100%;
+    flex-grow: 1;
     text-align: center;
 }
 .menu .menu_wrap .menu_link.active{
@@ -63,6 +71,7 @@ header{
     background-color: #deb;
     color:#666;
 }
+
 
 .banner_caption{
     position: static;
@@ -82,17 +91,7 @@ header{
     font-size: 1.75rem;
     color: #bb7;
 }
-.banner_caption_text{
-    margin-bottom: 0;
-}
 @media (max-width: 767px) {
-    /* .active .banner_caption_text {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-    } */
     .banner_caption_text{
         white-space: nowrap;
         overflow: hidden;
@@ -110,65 +109,50 @@ header{
     color: #799;
 }
 
-.banner_controller_wrap{
-    background-color: transparent;
-    border: none;
-    margin: 15px 0;
-}
+
 .banner_controller{
     position: relative;
     margin: 0;
 }
 @media (min-width: 992px) {
-    .banner_controller_item + .banner_controller_item::before{
+    .banner_controller_item_wrap + .banner_controller_item_wrap::before{
         content: '';
         background-color: rgb(74, 114, 54);
         position: absolute;
         box-shadow: 1px 0 0 rgb(35, 91, 35);    
         width: 2px;
-        height: 100%;
+        height: 80%;
         left: 0;
         top: 0;
         bottom: 0;
         margin: auto;
     }
 }
+.banner_controller_item_wrap{
+    padding: 15px;
+}
+.banner_controller_item_wrap:not(:last-child){
+    padding-bottom: 0;
+}
 .banner_controller_item{
-    margin: 0;
     cursor: pointer;
     display: flex;
 }
-.banner_controller_item + .banner_controller_item{
-    margin-top: 15px;
-}
-@media (min-width: 576px) {
-    .banner_controller_item + .banner_controller_item{
-        margin-top: 0;
-    }
-}
 .banner_controller_image_wrap{
-    padding: 0;
-    width: 35%;
+    flex: 1 0 auto;
+    margin-right: 15px;
 }
 .banner_controller_image{
     border: 1px solid #fff;
-    border-radius: 0;
-}
-.banner_controller_body{
-    padding: 0 0 0 15px;
-    width: 65%;
+    width: 100%;
 }
 @media (max-width: 991px) and (min-width: 576px){
     .banner_controller_item{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-    .banner_controller_image_wrap,
-    .banner_controller_body{
-        width: 100%;
-    }
-    .banner_controller_body{
-        margin-top: 0.75rem;
-        padding: 0;
+    .banner_controller_image_wrap{
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 }
 .banner_controller_title{
@@ -177,10 +161,10 @@ header{
 }
 .banner_controller_text{
     font-size: 1rem;
-    margin: 0;
     line-height: 1.2;
     color: #fff;
 }
+
 
 .main_content{
     background-color: #fff;
@@ -198,32 +182,27 @@ header{
 
 .featured_gardens_wrap .featured_gardens_item{
     border: none;
-    margin-left: 0;
-    margin-right: 0;
+}
+.featured_gardens_wrap .featured_gardens{
+    margin: -8px;
+}
+.featured_gardens_wrap .featured_gardens_item{
+    padding: 8px;
+    margin: 0;
 }
 @media (min-width: 576px){
-    .featured_gardens_wrap .featured_gardens{
-        margin: 0;
-    }
-}
-@media (max-width: 991px) and (min-width: 576px){
     .featured_gardens_wrap .featured_gardens_item{
-        flex-basis: 40%
-    }
-    .featured_gardens_wrap .featured_gardens_item:nth-child(-n+2){
-        margin-bottom: 15px;
-    }
-    .featured_gardens_wrap .featured_gardens_item:nth-child(even){
-        margin-left: 15px;
+        flex-basis: 50%;
     }
 }
 @media (min-width: 992px){
-    .featured_gardens_wrap .featured_gardens_item:not(:first-child){
-        margin-left: 15px;
+    .featured_gardens_wrap .featured_gardens_item{
+        flex-basis: 25%;
     }
 }
 .featured_gardens_image{
     border-radius: 0;
+    margin-bottom: 15px;
 }
 .featured_gardens_body{
     padding: 0;
@@ -231,7 +210,6 @@ header{
 .featured_gardens_title{
     font-size: 1.1rem;
     color: #987;
-    margin-top: 1rem;
 }
 .featured_gardens_text{
     font-size: 1rem;
@@ -240,105 +218,60 @@ header{
 hr{
     border: 0.05rem solid #eee;
 }
+
 .week_tips_wrap{
-    margin: 0;
+    margin: -8px;
 }
 .week_tips_image_wrap,
 .week_tips_body{
-    padding: 0;
+    padding: 8px;
 }
 @media (min-width: 768px){
-    .week_tips_body{
-        padding-left: 15px;
-    }
-}
-.week_tips_image_wrap .week_tips_image{
-    width: 100%;
-}
-@media (max-width: 767px){
     .week_tips_image_wrap{
-        order: 2;
-        margin-top: 1rem;
-    }
-    .week_tips_body{
         order: 1;
     }
+    .week_tips_body{
+        order: 2;
+    }
+}
+.week_tips_image{
+    width: 100%;
 }
 .week_tips_list{
     margin-bottom: 0;
-    margin-left: -20px;
+    counter-reset: tips;
+    margin-left: 28px;
 }
-.week_tips_list li{
-    line-height: 2;
+.week_tips_list p{
+    line-height: 1.5;
+    /* margin-bottom: 15px; */
     font-size: 15px;
+    text-indent: -28px;
 }
-.week_tips_list li::marker{
-    font-weight: 800;
+.week_tips_list p + p {
+    margin-top: 15px;
 }
+.week_tips_list p::before{
+    counter-increment: tips; 
+    content: counter(tips) '.';
+    margin-right: 15px;
+  }
 
+
+.connect_wrap{
+    margin: 0;
+}
 .connect{
     background-color: #deb;
-    margin-bottom: 0;
     border-radius: 0;
-    border: 1px solid #ccc;
-}
-@media (max-width: 575px){
-    .connect{
-        border-left: none;
-        border-right: none;
-    }
-    .connect:first-child{
-        border-top: 2px solid #ccc;
-    }
-    .connect:last-child{
-        border-bottom: none;
-    }
-}
-@media (max-width: 991px) and (min-width: 576px){
-    .connect{
-        flex-basis: 50%
-    }
-    .connect:nth-child(odd){
-        border-left: none;
-    }
-    .connect:nth-child(even){
-        border-right: none;
-    }
-    .connect:nth-child(-n+2){
-        border-top: 2px solid #ccc;
-    }
-    .connect:nth-child(n+2){
-        border-bottom: none;
-    }
-    .connect_icons{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .connect_link{
-        flex-basis: 50%
-    }
-}
-@media (min-width: 992px){
-    .connect{
-        border-top: 2px solid #ccc;
-        border-bottom: none;
-    }
-    .connect:first-child{
-        border-left: none;
-    }
-    .connect:last-child{
-        border-right: none;
-    }
-}
-.connect_body{
     padding: 15px;
+    border-top: 1px solid #ccc;
 }
 .connect_title{
     font-size: 1rem;
     color: #999;
 }
 .connect_text{
-    margin: 0;
     color: #999;
     font-size: 15px;
 }
@@ -351,7 +284,7 @@ hr{
 .connect_link:hover{
     text-decoration: none;
 }
-.connect_body i{
+.connect_link i{
     color: #361;
     margin-right: .5rem;
     width: 20px;
@@ -359,11 +292,31 @@ hr{
     line-height: 26px;
     vertical-align: middle;
 }
+@media (min-width: 576px){
+    .connect:nth-child(even){
+        border-left: 1px solid #ccc;
+    }
+    .connect_icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .connect_link{
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 992px){
+    .connect:not(:first-child){
+        border-left: 1px solid #ccc;
+    }
+    .connect_link{
+        flex-basis: 100%;
+    }
+}
 .copyright{
     color: #fff;
     font-size: 15px;
     text-align: center;
-    padding: 0.5rem;
+    padding: 10px;
 }
 .copyright span{
     display: block;
