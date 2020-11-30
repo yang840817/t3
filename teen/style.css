@@ -5,9 +5,6 @@ body{
 p{
     margin: 0;
 }
-*{
-    outline: 1px solid red;
-}
 .wrap{
     background-color: #361;
 }
@@ -179,7 +176,6 @@ header{
     padding-left: 1rem;
     margin-bottom: 15px;
 }
-
 .featured_gardens_wrap .featured_gardens_item{
     border: none;
 }
@@ -215,11 +211,17 @@ header{
     font-size: 1rem;
 }
 
-hr{
-    border: 0.05rem solid #eee;
-}
 
+.week_tips_wrap::before{
+    content: '';
+    display: block;
+    width: 98%;
+    height: 2px;
+    margin: 16px auto 8px;
+    background-color: #eee;
+}
 .week_tips_wrap{
+    position: relative;
     margin: -8px;
 }
 .week_tips_image_wrap,
@@ -240,18 +242,18 @@ hr{
 .week_tips_list{
     margin-bottom: 0;
     counter-reset: tips;
-    margin-left: 28px;
+    margin-left: -10px;
+    list-style-type: none;
 }
-.week_tips_list p{
+.week_tips_list li{
     line-height: 1.5;
-    /* margin-bottom: 15px; */
     font-size: 15px;
     text-indent: -28px;
 }
-.week_tips_list p + p {
+.week_tips_list li + li {
     margin-top: 15px;
 }
-.week_tips_list p::before{
+.week_tips_list li::before{
     counter-increment: tips; 
     content: counter(tips) '.';
     margin-right: 15px;
