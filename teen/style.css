@@ -61,7 +61,7 @@ header{
     background-color: #444;
     color: #ddb;
     font-weight: 500;
-    flex-grow: 1;
+    flex: 1 0 0;
 }
 .menu .menu_wrap .menu_link:hover{
     background-color: #deb;
@@ -291,7 +291,6 @@ header{
 .connect_link i{
     color: #361;
     margin-right: .5rem;
-    width: 20px;
     font-size: 1.25rem;
     line-height: 26px;
     vertical-align: middle;
