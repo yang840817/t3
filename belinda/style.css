@@ -1,0 +1,89 @@
+body {
+  background-image: url(./img/bg-body.jpg);
+  background-repeat: repeat;
+}
+
+.container {
+  padding: 0 1rem;
+
+  background-color: #387a0a;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Header & Navbar */
+
+li {
+  border-top: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000;
+
+  background-color: #444;
+}
+
+li:hover a {
+  color: #555;
+}
+
+li:hover {
+  background-color: #b2cea6;
+}
+
+.row {
+  list-style-type: none;
+}
+
+a {
+  color: wheat;
+}
+
+a:visited li {
+  background-color: lawngreen;
+}
+
+
+/* Banner */
+
+#carouselExampleSlidesOnly {
+  padding: 0;
+}
+
+.carousel-caption {
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  padding: 1rem;
+
+  background-color: #333;
+  opacity: 0.8;
+}
+
+/* Gallery */
+
+
+
+/* slef-defined utilities */
+.content-heading {
+  background-color: #b2cea6;
+  color: brown;
+}
+
+
+.bg-gr {
+  background-color: #b2cea6;
+}
+
+.bg-main {
+  background-color: #387a0a;
+}
+
+
+
+/* Footer */
+
+footer p {
+  margin-bottom: 0;
+}
+
