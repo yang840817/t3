@@ -6,14 +6,27 @@ body {
 .container {
   padding: 0 1rem;
 
-  background-color: #387a0a;
+  background-color: #3D6600;
 }
 
-.row {
-  margin: 0;
+@media screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .row {
+    margin: 0 0.4rem;
+  }
+}
+
 
 /* Header & Navbar */
+
+ul {
+  padding-left: 0;
+}
 
 li {
   border-top: 0.1rem solid #000;
@@ -35,11 +48,12 @@ li:hover {
 }
 
 a {
-  color: wheat;
+  font-weight: 600;
+  color: #F0EDB3;
 }
 
-a:visited li {
-  background-color: lawngreen;
+nav a:active li  {
+  color: lawngreen;
 }
 
 
@@ -56,34 +70,106 @@ a:visited li {
 
   padding: 1rem;
 
-  background-color: #333;
-  opacity: 0.8;
+  background-color: rgba(50,50,50, 0.8);
+}
+
+h2 {
+  color: #F6FFA4;
+}
+
+h2 + p {
+  font-weight: 600;
+}
+
+p > a {
+  display: inline-block;
+
+  width: 1.3rem;
+  line-height: 1.3rem;
+  border-radius: 50%;
+
+  font-size: 1rem;
+  background-color: lightslategray;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Gallery */
 
-
-
-/* slef-defined utilities */
-.content-heading {
-  background-color: #b2cea6;
-  color: brown;
+h5 {
+  color: #F6FFA4;
 }
 
-
-.bg-gr {
-  background-color: #b2cea6;
+h5 + p {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-.bg-main {
-  background-color: #387a0a;
+/* Feature*/
+.figure-caption {
+  color: rgb(148, 37, 37);
 }
 
+h3 {
+  border-bottom: 2px solid rgba(39, 102, 36, 0.4);
+}
 
+ol > li:before {
+  display: inline-block;
+  content: counter(item) ".";
+  
+  padding-right: 0.5em;
+
+  font-weight: bold;
+}
 
 /* Footer */
+footer > div {
+  background-color: rgb(209, 226, 202);
+}
 
 footer p {
   margin-bottom: 0;
+}
+
+footer .text-group {
+  color: gray;
+}
+
+.link-item {
+  font-size: 1.5rem;
+}
+
+footer i {
+  color: #3D6600;
+  vertical-align: middle;
+}
+
+footer i + a {
+  font-size: 1rem;
+  color: gray;
+  text-decoration: none;
+}
+
+
+
+/* slef-defined utilities */
+.title {
+  background-color: rgb(209, 226, 202);
+  color: rgb(148, 37, 37);
+  font-weight: 400;
+}
+
+.bg-main {
+  background-color: #3D6600;
+}
+
+.line-divider {
+  border-top: 2px solid gray;
+}
+
+.border-green {
+  border: 1px solid rgba(39, 102, 36, 0.2);
 }
 
