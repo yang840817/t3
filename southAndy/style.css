@@ -1,0 +1,46 @@
+* {
+  outline: solid 1px ghostwhite;
+}
+
+body {
+  margin: 0;
+  background-image: url(img/bg-body.jpg);
+  background-repeat: repeat;
+}
+
+/* Header */
+
+div.container {
+  background-color: #3d6600;
+  width: 80%;
+}
+.header-navBar {
+  margin: 0;
+}
+.header-nav {
+  background-color: rgb(70, 67, 67);
+}
+.header-nav a {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  background-color: rgb(154, 197, 90);
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  height: 20rem;
+}
+.banner-image {
+  background-image: url(img/gardening1.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100%;
+}
+.banner-text {
+  text-transform: uppercase;
+}
