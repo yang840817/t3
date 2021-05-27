@@ -6,13 +6,18 @@ body {
   margin: 0;
   background-image: url(img/bg-body.jpg);
   background-repeat: repeat;
+  background-color: #356618;
+
 }
+
 
 /* Header */
 
 div.container {
   background-color: #3d6600;
+  max-width: 900px;
   width: 80%;
+
 }
 .header-navBar {
   margin: 0;
@@ -21,16 +26,16 @@ div.container {
   background-color: rgb(70, 67, 67);
 }
 .header-nav a {
-  color: ghostwhite;
+  color: #F0EDB3;
   text-decoration: none;
 }
 
 .header-nav a:hover {
   background-color: rgb(154, 197, 90);
-  color: #333;
+  color: #fff;
 }
 
-/* Banner */
+
 .banner {
   height: 20rem;
 }
@@ -43,4 +48,29 @@ div.container {
 }
 .banner-text {
   text-transform: uppercase;
+}
+
+/* !Footer */
+
+footer {
+  color: #969895;
+}
+footer .information {
+  background-color: #dce9d4;
+
+}
+footer ul {
+  padd
+}
+footer li {
+  list-style: none;
+}
+
+.contact a {
+  text-decoration: none;;
+}
+footer p {
+  background-color: #356618;
+  color:white;
+  font-weight: 500;
 }

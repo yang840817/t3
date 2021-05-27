@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
     <link
@@ -22,60 +22,114 @@
   <body>
     <div class="wrapper container px-4">
       <header>
-        <div class="container-fluid py-2 bg-white text-center">
+        <div class="container-fluid py-3 bg-white text-center">
           <img
             src="img/logo.png"
             alt="Garden Walkthroung"
             class="logo img-fluid"
           />
         </div>
+        <!-- 要使用下拉式選單嗎？ -->
+        <div class="collapse-sm" id="navbarToggleExternalContent"></div>
         <nav class="header-nav row text-center m-0">
-          <a href="##" class="col p-4">Home</a>
-          <a href="##" class="col p-4">About</a>
-          <a href="##" class="col p-4">Plants</a>
-          <a href="##" class="col p-4">Gardens</a>
-          <a href="##" class="col p-4">News</a>
-          <a href="##" class="col p-4">Contact</a>
+          <a href="##" class="col-6 col-md-2 p-3">Home</a>
+          <a href="##" class="col-6 col-md-2 p-3">About</a>
+          <a href="##" class="col-6 col-md-2 p-3">Plants</a>
+          <a href="##" class="col-6 col-md-2 p-3">Gardens</a>
+          <a href="##" class="col-6 col-md-2 p-3">News</a>
+          <a href="##" class="col-6 col-md-2 p-3">Contact</a>
         </nav>
       </header>
-      <!-- banner -->
-      <section class="banner">
-        <div class="banner-image">
-          <p class="banner-text">gardening tips</p>
-          <i>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod
-            minus doloribus iure in, eum reiciendis numquam voluptates iusto et
-            obcaecati itaque architecto dolore officiis at modi quaerat nisi
-            quasi.<a href="##"></a
-          ></i>
-        </div>
-      </section>
-      <!-- select menu -->
-      <section class="row mx-0">
-        <div class="col-4">
-          <img src="img/gardening2.jpg" alt="" class="round col-5" />
-          <div>
-            <p>tips</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+      <!-- 輪播效果 -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide vw-sm-100"
+        data-bs-ride="carousel"
+      >
+        <!-- <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+          ></li>
+        </ol> -->
+        <div class="carousel-inner">
+          <div
+            class="carousel-item w-100 active"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+          >
+            <img src="img/gardening1.jpg" class="d-block" alt="gardening1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Nulla vitae elit libero, a pharetra augue mollis interdum.<a
+                  href="##"
+                >
+                  ➙</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item w-100">
+            <img
+              src="img/gardener-planting-flowers-gardening-skills-ss-featured.jpeg"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item w-100">
+            <img
+              src="img/father-and-son-planting-seedlings.jpeg"
+              class="d-block"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-4">
-          <img src="img/gardening3.jpg" alt="" class="round" />
-          <p>tips</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <!-- banner's selector -->
+      <div class="row">
+        <div
+          class="col-4"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+        >
+          <img src="img/gardening3.jpg" alt="" />
         </div>
-        <div class="col-4">
-          <img src="img/gardening4.jpg" alt="" class="round" />
-          <p>tips</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div
+          class="col-4"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+        >
+          <img src="img/gardening4.jpg" alt="" />
         </div>
-      </section>
+      </div>
+
       <main class="bg-white">
         <!-- Featured -->
-        <div class="Featured">
+        <div class="Featured text-center">
           <div class="h2 px-4">Featured Gardens</div>
           <div class="row mx-0">
-            <div class="col-3">
+            <div class="col-md-3">
               <img src="img/garden1.jpg" alt="" class="img-fluid round" />
               <div class="h4">Juliet's Garden</div>
               <p>
@@ -83,7 +137,7 @@
                 voluptatum qui magnam?
               </p>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <img src="img/garden2.jpg" alt="" class="img-fluid round" />
               <div class="h4">Juliet's Garden</div>
               <p>
@@ -91,7 +145,7 @@
                 voluptatum qui magnam?
               </p>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <img src="img/garden3.jpg" alt="" class="img-fluid round" />
               <div class="h4">Juliet's Garden</div>
               <p>
@@ -99,7 +153,7 @@
                 voluptatum qui magnam?
               </p>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <img src="img/garden4.jpg" alt="" class="img-fluid round" />
               <div class="h4">Juliet's Garden</div>
               <p>
@@ -110,11 +164,11 @@
           </div>
         </div>
         <hr />
-        <article class="row">
-          <div class="col-4">
+        <article class="row mx-0">
+          <div class="col-md-4">
             <img src="img/gardening5.jpg" alt="" class="img-fluid "/ >
           </div>
-          <div class="col-8">
+          <div class="col-md-8">
             <div class="h4">Tips of the Week</div>
             <ol>
               <li>
@@ -134,8 +188,52 @@
         </article>
       </main>
       <footer>
-        <div></div>
+        <div class="information row mx-0">
+          <ul class="col-md-3">
+            Place Holder
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+          <ul class="col-md-3">
+            Place Holder
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+          <ul class="col-md-3">
+            Place Holder
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+          <ul class="contact col-md-3">
+            <li class="h4">Connect</li>
+            <li>
+              <i class="fas fa-envelope"
+                ><a href="mailto:someone@example.com">Email us</a></i
+              >
+            </li>
+            <li>
+              <i class="fab fa-facebook-square"><a href="##">Facebook</a></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter"><a href="##">Twitter</a></i>
+            </li>
+            <li>
+              <i class="fab fa-google-plus-square"><a href="##">Google+</a></i>
+            </li>
+          </ul>
+        </div>
+        <p class="col-12 text-center my-0 p-1">
+          Garden Walkthroung &copy; 2023 | All Rights Reserved
+        </p>
       </footer>
     </div>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
 </html>
