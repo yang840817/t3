@@ -44,7 +44,7 @@
       <!-- 輪播效果 -->
       <div
         id="carouselExampleCaptions"
-        class="carousel slide vw-sm-100"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
         <!-- <ol class="carousel-indicators">
@@ -68,25 +68,26 @@
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
           >
-            <img src="img/gardening1.jpg" class="d-block" alt="gardening1" />
-            <div class="carousel-caption d-none d-md-block">
+            <img
+              src="img/gardening1.jpg"
+              class="d-block img-fluid w-100"
+              alt="gardening1"
+            />
+            <div class="carousel-caption caption_style d-none d-md-block">
               <h5>First slide label</h5>
               <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.<a
-                  href="##"
-                >
-                  ➙</a
-                >
+                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                <a href="##">➙</a>
               </p>
             </div>
           </div>
           <div class="carousel-item w-100">
             <img
               src="img/gardener-planting-flowers-gardening-skills-ss-featured.jpeg"
-              class="d-block"
+              class="d-block img-fluid w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption caption_style d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -94,10 +95,10 @@
           <div class="carousel-item w-100">
             <img
               src="img/father-and-son-planting-seedlings.jpeg"
-              class="d-block"
+              class="d-block img-fluid w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption caption_style d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
@@ -107,31 +108,62 @@
         </div>
       </div>
       <!-- banner's selector -->
-      <div class="row">
+      <div class="row mx-0 carousel_select">
         <div
-          class="col-4"
+          class="carousel_select_item col-md-4"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+        >
+          <img
+            src="img/gardening2.jpg"
+            alt=""
+            class="img-fluid col-6 col-md-12 col-lg-6"
+          />
+          <div class="d-inline-block col-5 col-md-12 col-lg-5">
+            <h4>Tips</h4>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div
+          class="carousel_select_item col-md-4"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="1"
         >
-          <img src="img/gardening3.jpg" alt="" />
+          <img
+            src="img/gardening3.jpg"
+            alt=""
+            class="img-fluid col-6 col-md-12 col-lg-6"
+          />
+          <div class="d-inline-block col-5 col-md-12 col-lg-5">
+            <h4>Tips</h4>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
         </div>
         <div
-          class="col-4"
+          class="carousel_select_item col-md-4"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="2"
         >
-          <img src="img/gardening4.jpg" alt="" />
+          <img
+            src="img/gardening4.jpg"
+            alt=""
+            class="img-fluid col-6 col-md-12 col-lg-6"
+          />
+          <div class="d-inline-block col-5 col-md-12 col-lg-5">
+            <h4>Tips</h4>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
         </div>
       </div>
 
       <main class="bg-white">
         <!-- Featured -->
-        <div class="Featured text-center">
-          <div class="h2 px-4">Featured Gardens</div>
-          <div class="row mx-0">
+        <div class="Featured p-3">
+          <div class="col-12 h4 title">Featured Gardens</div>
+          <div class="row mx-0 feature_caption text-center">
             <div class="col-md-3">
               <img src="img/garden1.jpg" alt="" class="img-fluid round" />
-              <div class="h4">Juliet's Garden</div>
+              <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
                 voluptatum qui magnam?
@@ -139,7 +171,7 @@
             </div>
             <div class="col-md-3">
               <img src="img/garden2.jpg" alt="" class="img-fluid round" />
-              <div class="h4">Juliet's Garden</div>
+              <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
                 voluptatum qui magnam?
@@ -147,7 +179,7 @@
             </div>
             <div class="col-md-3">
               <img src="img/garden3.jpg" alt="" class="img-fluid round" />
-              <div class="h4">Juliet's Garden</div>
+              <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
                 voluptatum qui magnam?
@@ -155,7 +187,7 @@
             </div>
             <div class="col-md-3">
               <img src="img/garden4.jpg" alt="" class="img-fluid round" />
-              <div class="h4">Juliet's Garden</div>
+              <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
                 voluptatum qui magnam?
@@ -164,12 +196,12 @@
           </div>
         </div>
         <hr />
-        <article class="row mx-0">
+        <article class="row mx-0 article_style">
           <div class="col-md-4">
             <img src="img/gardening5.jpg" alt="" class="img-fluid "/ >
           </div>
           <div class="col-md-8">
-            <div class="h4">Tips of the Week</div>
+            <div class="col-12 h4 title">Tips of the Week</div>
             <ol>
               <li>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex,
@@ -189,26 +221,26 @@
       </main>
       <footer>
         <div class="information row mx-0">
-          <ul class="col-md-3">
+          <ul class="col-md-3 information_title">
             Place Holder
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
           </ul>
-          <ul class="col-md-3">
+          <ul class="col-md-3 information_title">
             Place Holder
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
           </ul>
-          <ul class="col-md-3">
+          <ul class="col-md-3 information_title">
             Place Holder
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
           </ul>
-          <ul class="contact col-md-3">
-            <li class="h4">Connect</li>
+          <ul class="contact col-md-3 information_title">
+            Connect
             <li>
               <i class="fas fa-envelope"
                 ><a href="mailto:someone@example.com">Email us</a></i
