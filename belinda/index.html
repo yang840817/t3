@@ -14,7 +14,7 @@
 
 <body>
   <div class="container layout_ratio bg_main">
-    <header class="container">
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light padding_reset">
           <div class="container-fluid navbar_show">
             <h1 class="logo">
@@ -52,13 +52,16 @@
       </nav>
     </header>
       
-    <main class="container"> 
+    <main> 
       <!--Banner-->
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active position-relative">
-            <img src="./img/carousel-1.jpg" class="d-block w-100" alt="a woman digs dirt out of a pot">
-            <div class="banner_caption d-md-block text-start">
+            <img 
+              src="./img/carousel-1.jpg" 
+              class="d-block w-100" 
+              alt="a woman digs dirt out of a pot">
+            <div class="d-md-block banner_caption">
               <h2 class="banner_title">Gardening Tips</h2>
               <p class="banner_text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi.
@@ -67,15 +70,21 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/carousel-2.jpg" class="d-block w-100" alt="a woman harvesting fruits">
-            <div class="banner_caption d-md-block text-start">
+            <img
+              src="./img/carousel-2.jpg"
+              class="d-block w-100"
+              alt="a woman harvesting fruits">
+            <div class="d-md-block banner_caption">
               <h2 class="banner_title">Happy Gardener</h2>
               <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic non quam. Quam soluta impedit culpa aliquam distinctio sequi dicta. Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/carousel-3.jpg" class="d-block w-100" alt="A gir">
-            <div class="banner_caption d-md-block text-start">
+            <img 
+              src="./img/carousel-3.jpg" 
+              class="d-block w-100" 
+              alt="hands growing plants">
+            <div class="d-md-block banner_caption">
               <h2 class="banner_title">Plants</h2>
               <p class="banner_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam aperiam amet inventore excepturi deserunt recusandae nam dolorum minima esse architecto. Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -87,10 +96,10 @@
       <section class="row gallery">
         <div class="col-md-4">
           <div class="row">
-              <div class="col-4 gallery_item">
+              <div class="col-4 col-md-10 col-lg-4 gallery_item">
                   <img data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1" class="img-fluid" src="./img/gardening-tip.jpg" alt="digging dirt out of flower pot">
               </div>
-              <div class="col-8">
+              <div class="col-8 col-md-10 col-lg-8">
                   <h5 class="card_title">Tips</h5>
                   <p class="card_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
@@ -98,10 +107,10 @@
         </div>
         <div class="col-md-4">
           <div class="row">
-              <div class="col-4 gallery_item divider">
+              <div class="col-4 col-md-10 col-lg-4 gallery_item divider">
                 <img data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="img-fluid" src="./img/gardening-happy-gardener.jpg" alt="smiling woman with plants">
               </div>
-              <div class="col-8">
+              <div class="col-8 col-md-10 col-lg-8">
                 <h5 class="card_title">Happy Gardener</h5>
                 <p class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
               </div>
@@ -109,10 +118,10 @@
         </div>
         <div class="col-md-4">
           <div class="row">
-              <div class="col-4 gallery_item divider">
+              <div class="col-4 col-md-10 col-lg-4 gallery_item divider">
                 <img data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="img-fluid" src="./img/gardening-planting.jpg" alt="sprout in the dirt">
               </div>
-              <div class="col-8">
+              <div class="col-8 col-md-10 col-lg-8">
                 <h5 class="card_title">Planting</h5>
                 <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
@@ -125,14 +134,14 @@
         <div class="col-12">
           <h3 class="content_title">Featured Gardens</h3>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <figure class="figure">
           <img src="./img/feature-gardens1.jpg" class="figure-img img-fluid w-100" alt="Juliet's Garden">
           <h4 class="caption_title">Juliet's Garden</h4>
           <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptatum qui magnam?</figcaption>
           </figure>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3">
           <figure class="figure">
           <img src="./img/feature-gardens2.jpg" class="figure-img img-fluid w-100" alt="Joanne's Garden">
           <h4 class="caption_title">Joanne's Garden
@@ -140,14 +149,14 @@
           <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus est quae.</figcaption>
           </figure>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3">
         <figure class="figure">
           <img src="./img/feature-gardens3.jpg" class="figure-img img-fluid w-100" alt="Jettka's Garden">
           <h4 class="caption_title">Jettka's Garden</h4>
           <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis accusamus dolorum!</figcaption>
         </figure>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-sm-6 col-lg-3">
         <figure class="figure">
           <img src="./img/feature-gardens4.jpg" class="figure-img img-fluid w-100" alt="Jia's Garden">
           <h4 class="caption_title">Jia's Garden</h4>
@@ -172,7 +181,7 @@
       </article>
     </main>
     
-    <footer class="container">
+    <footer>
       <div class="row margin_reset">
         <div class="col-sm-6 col-lg-3 border_green">
           <div class="text_group">
@@ -192,7 +201,7 @@
         </div>
         <div class="col-sm-6 col-lg-3 border_green">
           <div class="text_group">
-            <h5 class="text-uppercase">Lorem ipsum</h5>
+            <h5>Lorem ipsum</h5>
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
@@ -228,9 +237,10 @@
           </div>
         </div>
       </div>
+      <p class="copyright">
+        Garden Walkthrough &copy; 2023 | All Rights Reserved
+      </p>
     </footer>
-
-    <p class="copyright">Garden Walkthroung &copy; 2023 | All Rights Reserved</p>
 
   </div>
   
