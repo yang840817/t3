@@ -1,4 +1,4 @@
- /* * {
+/* * {
   outline: 1px solid orange;
 }  */
 
@@ -17,31 +17,32 @@ body {
   margin-right: 0;
 }
 
-.padding_reset {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 @media screen and (min-width: 992px) {
   .layout_ratio {
     width: 80%;
   }
 }
 
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
 
 .logo {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 #navbarSupportedContent a {
   display: inline-block;
 
-  padding: 1rem 0;
   width: 100%;
 
   font-weight: 600;
   color: #F0EDB3;
+  line-height: 3;
 }
 
 #navbarSupportedContent li {
@@ -163,7 +164,7 @@ body {
 
 /* Gallery */
 .gallery {
-  margin: 1rem 0;
+  margin: 16px 0;
 }
 
 .gallery_item {
@@ -240,7 +241,7 @@ body {
 /* Feature*/
 .feature {
   padding-top: 1.5rem;
-  margin: 0rem;
+  margin: 0;
 
   background-color: #fff;
 }
@@ -291,14 +292,15 @@ body {
 
 
 /* Article */
-article {
+.gardening_column {
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
+  margin: 0;
 
   background-color: #fff;
 }
 
-article > div:first-child {
+.gardening_column > div:first-child {
   order: 2;
 }
 
@@ -306,7 +308,7 @@ article > div:first-child {
   margin-top: 1.2rem;
 }
 
-article li::before {
+.gardening_column li::before {
   display: inline-block;
   content: counter ".";
   
@@ -327,18 +329,18 @@ article li::before {
 }
 
 @media screen and (min-width: 768px) {
-  article > div:first-child {
+  .gardening_column > div:first-child {
     order: 0;
   }
 }
 
 @media screen and (min-width: 992px) {
-  article::before {
+  .gardening_column::before {
     content: "";
     display: inline-block;
   
     position: relative;
-    bottom: 1.4rem;
+    bottom: 22px;
     
     width: 100%;
     margin: 0 0.75rem;
@@ -378,6 +380,10 @@ footer {
 }
 
 .link_item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 1.4rem;
   color: gray;
   text-decoration: none;
@@ -394,13 +400,12 @@ footer {
 }
 
 .copyright {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   margin: 0;
 
   background-color: #3D6600;
   color: #fff;
   font-size: 0.8rem;
+  line-height: 3;
   font-weight: bold;
   text-align: center;
 }
@@ -414,6 +419,14 @@ footer {
 .border_green + .border_green {
   border-left: 1px solid rgba(39, 102, 36, 0.2);
 }
+
+@media screen and (min-width: 768px) {
+  .margin_reset div:last-child > div {
+    justify-content: center;
+  }
+}
+
+
 
 @media screen and (min-width: 992px){
   .footer_text {
@@ -429,6 +442,7 @@ footer {
   }
 
   .link_item a {
+    display: inline;
     font-size: 1.6rem;
   }
   
