@@ -20,23 +20,54 @@
     <title>Garden Walkthrough</title>
   </head>
   <body>
-    <div class="wrapper container px-4">
+    <div class="wrapper container-fluid">
       <header>
-        <div class="container-fluid py-3 bg-white text-center">
+        <div class="logo_container">
           <img
             src="img/logo.png"
             alt="Garden Walkthroung"
             class="logo img-fluid"
           />
         </div>
-        <!-- 要使用下拉式選單嗎？ -->
-        <nav class="header-nav row text-center m-0">
-          <a href="##" class="col-6 col-md-2 p-3">Home</a>
-          <a href="##" class="col-6 col-md-2 p-3">About</a>
-          <a href="##" class="col-6 col-md-2 p-3">Plants</a>
-          <a href="##" class="col-6 col-md-2 p-3">Gardens</a>
-          <a href="##" class="col-6 col-md-2 p-3">News</a>
-          <a href="##" class="col-6 col-md-2 p-3">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header_nav" id="navbarNav">
+              <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Plants</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Garden</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -58,9 +89,12 @@
               alt="gardening1"
             />
             <div class="carousel-caption caption_style d-none d-md-block">
-              <h5>First slide label</h5>
+              <div>First slide label</div>
               <p>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                This is just a place holder, so you can see what the site would
+                look like. This is just a place holder, so you can see what the
+                site would look like. This is just a place holder, so you can
+                see what the site would look like.
                 <a href="##">➙</a>
               </p>
             </div>
@@ -72,8 +106,13 @@
               alt="plantingflower"
             />
             <div class="carousel-caption caption_style d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div>Second slide label</div>
+              <p>
+                This is just a place holder, so you can see what the site would
+                look like. This is just a place holder, so you can see what the
+                site would look like. This is just a place holder, so you can
+                see what the site would look like.
+              </p>
             </div>
           </div>
           <div class="carousel-item w-100">
@@ -83,16 +122,19 @@
               alt="familygarden"
             />
             <div class="carousel-caption caption_style d-none d-md-block">
-              <h5>Third slide label</h5>
+              <div>Third slide label</div>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                This is just a place holder, so you can see what the site would
+                look like. This is just a place holder, so you can see what the
+                site would look like. This is just a place holder, so you can
+                see what the site would look like.
               </p>
             </div>
           </div>
         </div>
       </div>
       <!-- carousel's selector -->
-      <div class="row mx-0 carousel_select">
+      <div class="row carousel_select">
         <div
           class="carousel_select_item col-md-4"
           data-bs-target="#carouselExampleCaptions"
@@ -101,9 +143,9 @@
           <img
             src="img/gardening2.jpg"
             alt="plantingflower"
-            class="img-fluid col-6 col-md-12 col-lg-6"
+            class="img-fluid"
           />
-          <div class="d-inline-block col-5 col-md-12 col-lg-5">
+          <div>
             <h4>Tips</h4>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
@@ -113,12 +155,8 @@
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="1"
         >
-          <img
-            src="img/gardening3.jpg"
-            alt="familygarden"
-            class="img-fluid col-6 col-md-12 col-lg-6"
-          />
-          <div class="d-inline-block col-5 col-md-12 col-lg-5">
+          <img src="img/gardening3.jpg" alt="familygarden" class="img-fluid" />
+          <div>
             <h4>Tips</h4>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
@@ -131,21 +169,21 @@
           <img
             src="img/gardening4.jpg"
             alt="plantingflower"
-            class="img-fluid col-6 col-md-12 col-lg-6"
+            class="img-fluid"
           />
-          <div class="d-inline-block col-5 col-md-12 col-lg-5">
+          <div>
             <h4>Tips</h4>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
       </div>
 
-      <main class="bg-white">
+      <main>
         <!-- Featured -->
-        <div class="Featured p-3">
-          <div class="col-12 h4 title">Featured Gardens</div>
-          <div class="row mx-0 feature_caption text-center">
-            <div class="col-md-3">
+        <div class="Featured">
+          <div class="h2 title">Featured Gardens</div>
+          <div class="row text-center feature_caption">
+            <div class="col-sm-6 col-lg-3">
               <img src="img/garden1.jpg" alt="sample" class="img-fluid" />
               <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
@@ -153,7 +191,7 @@
                 voluptatum qui magnam?
               </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-lg-3">
               <img src="img/garden2.jpg" alt="sample" class="img-fluid" />
               <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
@@ -161,7 +199,7 @@
                 voluptatum qui magnam?
               </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-lg-3">
               <img src="img/garden3.jpg" alt="sample" class="img-fluid" />
               <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
@@ -169,7 +207,7 @@
                 voluptatum qui magnam?
               </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-lg-3">
               <img src="img/garden4.jpg" alt="sample" class="img-fluid" />
               <div class="h4 feature_caption">Juliet's Garden</div>
               <p>
@@ -180,7 +218,7 @@
           </div>
           <hr class="col-12" />
         </div>
-        <article class="row mx-0 article_style">
+        <article class="row article_style">
           <div class="col-md-4">
             <img src="img/gardening5.jpg" alt="plantingflower" class="img-fluid
             "/ >
