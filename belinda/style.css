@@ -1,6 +1,6 @@
 /* * {
   outline: 1px solid orange;
-}  */
+} */
 
 body {
   background-image: url(./img/bg-body.jpg);
@@ -12,10 +12,6 @@ body {
   background-color: #3D6600;
 }
 
-.margin_reset {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 @media screen and (min-width: 992px) {
   .layout_ratio {
@@ -215,7 +211,7 @@ body {
     justify-content: normal;
   }
 
-  .divider {
+  .gallery_divider {
     border-left: 3px solid #3b5f04;
   }
 
@@ -378,13 +374,12 @@ footer {
   text-align: center;
 }
 
-.border_green {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.footer_block {
+  padding: 1.5rem;
   border-top: 1px solid rgba(39, 102, 36, 0.2);
 }
 
-.border_green + .border_green {
+.footer_block + .footer_block {
   border-left: 1px solid rgba(39, 102, 36, 0.2);
 }
 
@@ -401,7 +396,7 @@ footer {
     font-size: 1rem;
   }
 
-  .border_green div:last-child {
+  .footer_block div:last-child {
     text-align: left;
   } 
 
