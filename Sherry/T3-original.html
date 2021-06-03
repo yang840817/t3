@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherry T3</title>
+
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="T3-original.css">
+
+</head>
+
+<body>
+    <div class="basecolor container px-4">
+        <!-- 頁首 - nav -->
+        <header class="container p-0">
+            <div class="logo_area container-fluid">
+                <img class="img-responsive" src="img/logo.png" alt="Garden Walkthrough">
+            </div>
+
+            <nav class="navbar navbar-expand-md pt-0 pb-0 navbar-light">
+                <div class="navigation container-fluid">
+
+                    <!-- .navbar-toggler 漢堡式選單按鈕 -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+                    <!-- 選單項目&漢堡式折疊選單 -->
+                    <div class="collapse navbar-collapse id=" navbarSupportedContent">
+
+                        <ul class="navbar-nav nav-fill w-100">
+                            <!-- active表示已經選取的狀態 -->
+                            <li class="nav-item">
+                                <a class="nav-link active bg-home" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gardens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 第一區/ Banner -->
+            <section>
+                <div class="container p-0 mt-1">
+                    <div class="banner_area container-fluid">
+                        <div class="row align-items-end h-100">
+                            <div class="banner_caption">
+                                <h4 class="title">GARDEN TIPS</h4>
+                                <a class="content">This is just a place holder, so you can see what the site would look
+                                    like.This is just a place holder, so you can see what the site would look like. This
+                                    is just a place holder, so you can see what the site would look like. <i
+                                        class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第一區/ 三小圖 -->
+                <div class="thumbnail_area p-4">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                        <div class="col">
+                            <div class="thumbnail_item card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/tips.jpg" alt="tips" class="triple img-thumbnail w-100">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="item_content card-body pt-0">
+                                            <h5 class="card-title">Tips</h5>
+                                            <p class="card-text">This is just a placeholder, so you can see what the site
+                                                would look like.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="thumbnail_item card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/happy-gardener.jpg" alt="happy_gardener"
+                                            class="triple img-thumbnail w-100">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="item_content card-body pt-0">
+
+                                            <h5 class="card-title">Happy Garderner</h5>
+                                            <p class="card-text">This is just a placeholder, so you can see what the
+                                                site
+                                                would look like.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="thumbnail_item card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/planting.jpg" alt="planting" class="triple img-thumbnail w-100">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="item_content card-body pt-0">
+                                            <h5 class="card-title">Planting</h5>
+                                            <p class="card-text">This is just a placeholder, so you can see what the
+                                                site
+                                                would look like.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第三區 白色區內文 -->
+            <section class="main_content">
+
+                <!-- Article - Feature garden  -->
+                <article class="featured_garden container py-3">
+                    <h4 class="title py-2 px-1 ">FEATURED GARDEN</h4>
+
+                    <div class="container mt-4">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                            <div class="col">
+                                <div class="juliet_card card">
+                                    <img src="img/juliet.jpg" class="card-img-top" alt="Juliet's garden">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JULIET"S GARDEN</h5>
+                                        <p class="card-text">This is just a place holder, so you can see what the site
+                                            would look like.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="joanne_card card">
+                                    <img src="img/joanne.jpg" class="card-img-top" alt="Joanne's garden">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JOANNE'S GARDEN</h5>
+                                        <p class="card-text">This is just a place holder, so you can see what the site
+                                            would look like.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="jettka_card card">
+                                    <img src="img/jettka.jpg" class="card-img-top" alt="Jettka's garden">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JETTKA'S GARDEN</h5>
+                                        <p class="card-text">This is just a place holder, so you can see what the site
+                                            would look like.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="jia_card card">
+                                    <img src="img/jia.jpg" class="card-img-top" alt="Jia's garden">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JIA'S GARDEN</h5>
+                                        <p class="card-text">This is just a place holder, so you can see what the site
+                                            would look like.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Article - Tips of the week 列點 -->
+
+                <article class="tips_area container py-3">
+
+                    <div class="tips_of_the_week_card card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/gardening5.jpg" alt="tips of the week image" class="w-100">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body py-0 h-100">
+                                    <h4 class="card-title py-2 px-1">TIPS OF THE WEEK</h4>
+                                    <ol class="card-text">
+                                        <li>This is just a place holder, so you can see what the site would look
+                                            like.This is just a place holder, so you can see what the site would look
+                                            like.This is just a
+                                            place holder, so you can see what the site would look like.</li>
+                                        <li>This is just a place holder, so you can see what the site would look
+                                            like.This is just a place holder, so you can see what the site would look
+                                            like.This is just a
+                                            place holder, so you can see what the site would look like.</li>
+                                        <li>This is just a place holder, so you can see what the site would look
+                                            like.This is just a place holder, so you can see what the site would look
+                                            like.This is just a
+                                            place holder, so you can see what the site would look like.</li>
+                                    </ol>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- 頁尾 -->
+        <footer class="container p-0">
+            <nav class="footer_navigation navbar navbar-expand-lg navbar-light align-items-start row g-0">
+                <div class="col-12 col-lg-3">
+                    <div class="row w-100 g-0">
+                        <div class="col-10 p-0">
+                            <a class="nav-link" href="#">PLACE HOLDER</a>
+                        </div>
+                        <div class="col-2 p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarfooterContent1" aria-controls="navbarfooterContent1"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="navbarfooterContent1">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-lg-3">
+                    <div class="row w-100 g-0">
+                        <div class="col-10 p-0">
+                            <a class="nav-link" href="#">PLACE HOLDER</a>
+                        </div>
+                        <div class="col-2 p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarfooterContent2" aria-controls="navbarfooterContent2"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="navbarfooterContent2">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-lg-3">
+                    <div class="row w-100 g-0">
+                        <div class="col-10 p-0">
+                            <a class="nav-link" href="#">PLACE HOLDER</a>
+                        </div>
+                        <div class="col-2 p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarfooterContent3" aria-controls="navbarfooterContent3"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="navbarfooterContent3">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                            <a class="nav-link" href="#">this is just a place holder</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="connect col-12 col-lg-3">
+                    <div class="row w-100 g-0">
+                        <div class="col-10 p-0">
+                            <a class="nav-link" href="#">CONNECT</a>
+                        </div>
+                        <div class="col-2 p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarfooterContent4" aria-controls="navbarfooterContent4"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="navbarfooterContent4">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                            <a class="nav-link" href="##">
+                                <i class="fa-fw fas fa-envelope"></i><span class="social_media">Email us</span>
+                            </a>
+                            <a class="nav-link" href="##">
+                                <i class="fa-fw fab fa-facebook-square"></i><span class="social_media">Facebook</span>
+                            </a>
+                            <a class="nav-link" href="##">
+                                <i class="fa-fw fab fa-twitter"></i><span class="social_media">Twitter</span>
+                            </a>
+                            <a class="nav-link" href="##">
+                                <i class="fa-fw fab fa-google-plus-square"></i><span class="social_media">Google+</span>
+                            </a>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </nav>
+            <p class="copyright m-0 py-2">Garden Walkthrough &copy 2023 &#8739 All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
