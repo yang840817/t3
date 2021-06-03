@@ -24,12 +24,6 @@ body {
 }
 
 /* Header */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
-
 .logo {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -301,10 +295,6 @@ header {
   background-color: #fff;
 }
 
-.gardening_column > div:first-child {
-  order: 2;
-}
-
 .content_title + ol {
   margin-top: 1.2rem;
 }
@@ -324,12 +314,6 @@ header {
 
 .content_text + .content_text {
   margin-top: 0.8rem;
-}
-
-@media screen and (min-width: 768px) {
-  .gardening_column > div:first-child {
-    order: 0;
-  }
 }
 
 @media screen and (min-width: 992px) {
