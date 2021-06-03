@@ -94,18 +94,12 @@ header {
 
 /* Banner */
 .banner_caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
   padding: 1rem;
 
   background-color: rgba(50,50,50, 0.8);
   color: #fff;
   text-align: left;
 }
-
 
 .banner_title {
   margin-bottom: 0;
@@ -126,21 +120,14 @@ header {
   text-overflow: ellipsis;
 }
 
-.arrow_link {
-  display: inline-block;
-
-  width: 1.3rem;
-  line-height: 1.3rem;
-  border-radius: 50%;
-
-  font-size: 1rem;
-  background-color: lightslategray;
-  color: palegoldenrod;
-  text-decoration: none;
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
+  .banner_caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   .banner_title {
     font-size: 1.4rem;
   }
@@ -148,6 +135,20 @@ header {
   .banner_text {
     all: unset;
     font-size: 1rem;
+  }
+
+  .arrow_link {
+    display: inline-block;
+  
+    width: 1.3rem;
+    line-height: 1.3rem;
+    border-radius: 50%;
+  
+    font-size: 1rem;
+    background-color: lightslategray;
+    color: palegoldenrod;
+    text-decoration: none;
+    text-align: center;
   }
 }
 
@@ -309,9 +310,6 @@ header {
 }
 
 .gardening_column li::before {
-  display: inline-block;
-  content: counter ".";
-  
   padding-right: 0.5em;
 
   font-weight: bold;
