@@ -29,7 +29,11 @@ body {
   padding-bottom: 13px;
 }
 
-#navbarSupportedContent a {
+.logo a {
+  display: inline-block;
+}
+
+.navbar .navbar_show .navbar-nav a {
   display: inline-block;
 
   width: 100%;
@@ -39,19 +43,19 @@ body {
   line-height: 3;
 }
 
-#navbarSupportedContent li {
+.navbar .navbar_show .navbar-nav li {
   border-top: 1px solid #F0EDB3;
 
   background-color: #555;
   text-align: center;
 }
 
-#navbarSupportedContent a:hover{
+ .navbar .navbar_show .navbar-nav a:hover{
   background-color: #b2cea6;
   color: #555;
 }
 
-#navbarSupportedContent a:active {
+.navbar .navbar_show .navbar-nav a:active {
   background-color: #96c07f;
   color: #3D6600;
 }
@@ -67,19 +71,19 @@ body {
     margin: 0 auto;
   }
 
-  #navbarSupportedContent ul {
+  .sticky-top .navbar .navbar_show ul {
     flex: 1 0 100%;
   }
 
-  #navbarSupportedContent li {
-    flex-grow: 1;
+  .navbar .navbar_show .navbar-nav li {
+    flex: 1 0 0;  
   }
 
   nav.padding_reset {
     padding: 0;
   }
 
-  #navbarSupportedContent li {
+  .navbar .navbar_show .navbar-nav li {
     border-bottom: 1px solid #F0EDB3;
   }
 
@@ -235,14 +239,14 @@ body {
 
 /* Feature*/
 .feature {
-  padding-top: 1.5rem;
+  padding: 1.5rem 0.75rem 0;
   margin: 0;
 
   background-color: #fff;
 }
 
 .feature div:first-child {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .feature img {
@@ -257,7 +261,7 @@ body {
 }
 
 .content_title {
-  padding: 0.5rem 0 0.5rem 1.2rem;
+  padding: 0.5rem 1.2rem;
   border-bottom: 2px solid rgba(39, 102, 36, 0.4);
   margin-bottom: 0;
 
@@ -268,28 +272,10 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 992px){
-  .feature div:nth-child(1) ~ div {
-    padding: 0;
-    width: 23%;
-  } 
-
-  .feature {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  .feature div:nth-child(1) ~ div {
-    width: 23.5%;
-  } 
-}
-
 
 /* Article */
 .gardening_column {
-  padding-top: 1.5rem;
-  padding-bottom: 2.5rem;
+  padding: 1.5rem 0.75rem 2.5rem;
   margin: 0;
 
   background-color: #fff;
@@ -403,7 +389,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .margin_reset div:last-child > div {
+  .text_group {
     justify-content: center;
   }
 }
