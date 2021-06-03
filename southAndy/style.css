@@ -9,7 +9,8 @@ body {
   background-color: #356618;
 }
 .wrapper {
-  background-image: url(img/bg-body.jpg);
+  background-color: #3d6600;
+  /* background-image: url(img/bg-body.jpg); */
   padding: 0 1.5rem;
 }
 
@@ -81,7 +82,7 @@ header {
 /* Carousel part */
 
 /* tablet/mobile setting */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .carousel_select {
     background-color: #fff;
     background-image: none;
@@ -90,7 +91,7 @@ header {
   .carousel_select_item p {
     color: #333;
   }
-}
+} */
 
 .caption_style {
   left: 0;
@@ -117,10 +118,22 @@ header {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
 .carousel_select {
-  padding: 20px 0;
+  padding: 0.5rem 1.5rem;
+}
+.carousel_select_item {
+  padding: 1.5rem 1rem;
   margin: 0;
+  border-bottom: solid 2px;
+}
+.carousel_select_item:last-child {
+  border-right: none;
+}
+@media (min-width: 768px) {
+  .carousel_select_item {
+    border-right: solid 2px;
+    border-bottom: none;
+  }
 }
 .carousel_select div,
 img {
@@ -187,7 +200,7 @@ main .Featured {
 @media (min-width: 1024px) {
   main .Featured {
     padding: 1rem;
-    margin: 2rem 1rem;
+    margin: 0 1rem;
   }
   .Featured div {
     margin-bottom: 0;
