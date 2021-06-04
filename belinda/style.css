@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid orange;
-} */
+} 
 
 body {
   background-image: url(./img/bg-body.jpg);
@@ -371,18 +371,39 @@ footer {
   background-color: #3D6600;
   color: #fff;
   font-size: 0.8rem;
-  line-height: 3;
   font-weight: bold;
   text-align: center;
 }
 
-.footer_block {
-  padding: 1.5rem;
-  border-top: 1px solid rgba(39, 102, 36, 0.2);
+.copyright p {
+  margin: 0 auto;
+  width: 200px;
+
+  line-height: 1.5;
 }
 
-.footer_block + .footer_block {
+.copyright span {
+  display: none;
+}
+
+.footer_block > div {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(39, 102, 36, 0.2);
+} 
+
+.footer_block > div + div  {
   border-left: 1px solid rgba(39, 102, 36, 0.2);
+}  
+
+@media screen and (min-width: 576px) {
+  .copyright p {
+    width: fit-content;
+    line-height: 3;
+  }
+
+  .copyright span {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 768px) {
