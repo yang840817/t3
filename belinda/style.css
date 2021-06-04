@@ -60,6 +60,7 @@ body {
   .container-fluid.navbar_show {
     flex-direction: column;
     align-items: stretch;
+    
     padding: 0;
   }
 
@@ -75,10 +76,6 @@ body {
     flex: 1 0 0;  
   }
 
-  nav.padding_reset {
-    padding: 0;
-  }
-
   .navbar .navbar_show .navbar-nav li {
     border-bottom: 1px solid #F0EDB3;
   }
@@ -87,6 +84,11 @@ body {
 
 
 /* Banner */
+.carousel-item img {
+  min-height: 60vh;
+  object-fit: cover;
+}
+
 .banner_caption {
   padding: 1rem;
 
@@ -282,7 +284,7 @@ body {
 }
 
 .gardening_column li::before {
-  padding-right: 0.5em;
+  margin-right: 0.5em;
 
   font-weight: bold;
 }
