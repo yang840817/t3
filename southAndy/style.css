@@ -8,13 +8,14 @@ body {
   background-repeat: repeat;
   background-color: #356618;
 }
+
+/* mobile setting */
 .wrapper {
   background-color: #3d6600;
-  /* background-image: url(img/bg-body.jpg); */
   padding: 0 1.5rem;
 }
 
-/* tablet setting */
+/* tablet/laptop setting */
 @media (min-width: 768px) {
   .wrapper {
     width: 90%;
@@ -28,72 +29,67 @@ body {
 header {
   background-color: #fff;
   padding-bottom: 5px;
+
+  /* keep header's content show in the viewport */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.wrapper header .logo_container {
+.wrapper header .header_logobox {
   text-align: center;
   padding: 1rem 0;
 }
+
 /* nav */
 .header_nav {
   padding: 0;
-  /* background-color: #dce9d4; */
 }
-.header_nav li {
+
+.header_navbar li {
   border: sold 1px #333;
 }
 
-.header_nav a {
+.header_navbar a {
   text-decoration: none;
-  color: #333;
+  color: #daeacf;
   padding: 1rem;
   font-size: 1rem;
 }
 /* tablet / desktop setting */
 @media (min-width: 768px) {
+  .header_nav .header_navbox {
+    padding: 0;
+  }
   .header_nav {
-    background-color: rgb(70, 67, 67);
+    background: #4a4a4a;
   }
-  .navbar {
-    padding: 0;
-  }
-  .navbar .container-fluid {
-    padding: 0;
-  }
-  #navbarNav.header_nav a {
+
+  #navbarNav.header_navbar a {
     text-decoration: none;
-    color: #f0edb3;
+    color: #daeacf;
     padding: 1rem;
     font-size: 1rem;
   }
   a.navbar-brand {
     display: none;
   }
-  /* .navbar button {
-    display: none;
-  } */
 }
 
-.header_nav a:hover {
+#navbarNav.header_navbar a:hover {
   background-color: rgb(154, 197, 90);
-  color: #fff;
+  color: rgb(10, 9, 9);
   border-bottom: solid 1px #356618;
 }
+#navbarNav .header_navbar_headmenu a {
+  background-color: #96b584;
+  color: #4a7a2c;
+}
 
-/* Carousel part */
+/* Carousel  */
 
-/* tablet/mobile setting */
-/* @media (max-width: 767px) {
-  .carousel_select {
-    background-color: #fff;
-    background-image: none;
-  }
-  .carousel_select_item h4,
-  .carousel_select_item p {
-    color: #333;
-  }
-} */
-
-.caption_style {
+/* mobile setting */
+.banner_innerbox {
+  /* position */
   left: 0;
   right: 0;
   bottom: 0;
@@ -101,57 +97,63 @@ header {
   padding: 0;
 
   text-align: left;
-  padding: 30px;
-  background-color: rgb(0, 0, 0, 0.65);
+  background-color: rgb(0, 0, 0, 0.4);
+  font-size: 8px;
+  height: 100%;
 }
-.caption_style a {
+@media (min-width: 426px) {
+  .banner_innerbox {
+    background-color: rgb(0, 0, 0, 0.65);
+    font-size: 16px;
+    height: auto;
+    padding: 30px;
+  }
+}
+.banner_innerbox a {
   text-decoration: none;
   color: rgb(209, 226, 202);
   background-color: gray;
   border-radius: 20px;
   padding: 2px;
 }
-.caption_style div {
+.banner_innerbox div {
   margin: 0;
   color: #d5dc8b;
   text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.carousel_select {
-  padding: 0.5rem 1.5rem;
+.banner_select {
+  padding: 1rem;
 }
-.carousel_select_item {
-  padding: 1.5rem 1rem;
+.banner_select_item {
+  /* padding: 1.5rem 1rem; */
   margin: 0;
-  border-bottom: solid 2px;
+  border-bottom: solid 2px #407428;
 }
-.carousel_select_item:last-child {
+.banner_select_item:last-child {
   border-right: none;
 }
-@media (min-width: 768px) {
-  .carousel_select_item {
-    border-right: solid 2px;
+@media (min-width: 1024px) {
+  .banner_select_item {
+    border-right: solid 2px #407428;
     border-bottom: none;
   }
 }
-.carousel_select div,
-img {
-  vertical-align: text-top;
-}
-.carousel_select_item {
+
+.banner_select_item {
   color: #f6ffa4;
   display: flex;
 }
-h4 {
+.banner_select h4 {
   font-size: 20px;
 }
 
-.carousel_select_item div {
-  padding: 0 10px;
+.banner_select_item div {
+  margin: 0 10px;
 }
 
-.carousel_select_item img {
+.banner_select_item img {
   border: solid 2px white;
 }
 
@@ -159,24 +161,31 @@ h4 {
 main {
   background-color: #fff;
 }
-main .Featured {
-  padding: 1rem;
-  margin: 1rem;
-}
-.Featured div {
-  margin-bottom: 1rem;
-}
 .title {
   background-color: rgb(209, 226, 202);
-  color: rgb(148, 37, 37);
-  font-weight: 400;
-  padding: 5px 10px;
+  color: #836145;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem;
   text-transform: uppercase;
 }
+
+/* Featured */
+main .section_featuredbox {
+  padding: 1.5rem;
+}
+section .title {
+  margin-bottom: 1.5rem;
+}
+.section_featuredbox img {
+  width: 100%;
+}
 .feature_caption {
-  color: rgb(148, 37, 37);
-  margin: 10px 0;
-  text-align: left;
+  color: #94765c;
+  text-transform: uppercase;
+}
+.featured_content {
+  padding: 1.5rem 0;
 }
 .feature_caption p {
   color: black;
@@ -184,7 +193,7 @@ main .Featured {
 }
 
 .Featured > div {
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 .Featured div,
 .Featured p {
@@ -192,15 +201,11 @@ main .Featured {
 }
 
 /* laptop setting */
-/* @media (min-width: 992px) {
-  .feature_caption {
-    padding: 0;
-  }
-} */
+
 @media (min-width: 1024px) {
   main .Featured {
-    padding: 1rem;
-    margin: 0 1rem;
+    /* padding: 1rem;
+    margin: 0 1rem; */
   }
   .Featured div {
     margin-bottom: 0;
@@ -215,16 +220,31 @@ main .Featured {
 }
 
 /* Article */
+
+@media (max-width: 576px) {
+  .article_image {
+    order: 1;
+  }
+  .article_content ol {
+    padding: 0 1.5rem;
+  }
+}
 .article_style {
-  padding: 10px;
+  padding: 1rem 1rem 2rem 1rem;
   margin: 0;
 }
-ol {
+article ol {
   padding: 20px 20px;
 }
 
 .article_style li {
-  padding-top: 10px;
+  padding: 0.5rem;
+}
+li::marker {
+  font-weight: 700;
+}
+article img {
+  width: 100%;
 }
 /* !Footer */
 
@@ -240,22 +260,29 @@ footer .information {
 
 .information {
   border-top: solid 1px rgb(184, 212, 173);
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .information ul {
-    padding: 20px;
-    margin-bottom: 0;
-    border-right: solid 1px rgb(184, 212, 173);
-  }
-  .information {
-    text-align: left;
-  }
 }
 .information ul {
   padding: 20px;
   margin-bottom: 0;
   border-bottom: solid 1px rgb(184, 212, 173);
+}
+.information_title:last-child {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .information ul {
+    padding: 20px;
+    margin-bottom: 0;
+    border-right: solid 1px rgb(184, 212, 173);
+    border-bottom: 0;
+  }
+  .information {
+    text-align: left;
+  }
+  .information_title:last-child {
+    order: 0;
+  }
 }
 
 .information_title {
@@ -292,4 +319,6 @@ footer p {
   background-color: #356618;
   color: white;
   font-weight: 500;
+}
+@media (max-) {
 }
