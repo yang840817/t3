@@ -14,8 +14,8 @@
 
 <body>
   <div class="container layout_ratio bg_main">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light padding_reset">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-lg-0">
           <div class="container-fluid navbar_show">
             <h1 class="logo">
               <a href="##">
@@ -65,7 +65,7 @@
               <h4 class="banner_title">Gardening Tips</h4>
               <p class="banner_text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi.
-                <a class="arrow_link" href="##">→</a>
+                <a class="arrow_link" href="##"><i class="fas fa-arrow-right"></i></a>
               </p>
             </div>
           </div>
@@ -76,8 +76,9 @@
               alt="a woman harvesting fruits">
             <div class="d-md-block banner_caption">
               <h4 class="banner_title">Happy Gardener</h4>
-              <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic non quam. Quam soluta impedit culpa aliquam distinctio sequi dicta. Lorem ipsum dolor sit amet consectetur.</p>
-              <a class="arrow_link" href="##">→</a>
+              <p class="banner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic non quam. Quam soluta impedit culpa aliquam distinctio sequi dicta. Lorem ipsum dolor sit amet consectetur.
+                <a class="arrow_link" href="##"><i class="fas fa-arrow-right"></i></a>
+              </p>
             </div>
           </div>
           <div class="carousel-item">
@@ -87,8 +88,9 @@
               alt="hands growing plants">
             <div class="d-md-block banner_caption">
               <h4 class="banner_title">Plants</h4>
-              <p class="banner_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam aperiam amet inventore excepturi deserunt recusandae nam dolorum minima esse architecto. Lorem ipsum dolor sit amet consectetur.</p>
-              <a class="arrow_link" href="##">→</a>
+              <p class="banner_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam aperiam amet inventore excepturi deserunt recusandae nam dolorum minima esse architecto. Lorem ipsum dolor sit amet consectetur.
+                <a class="arrow_link" href="##"><i class="fas fa-arrow-right"></i></a>
+              </p>
             </div>
           </div>        
         </div>
@@ -109,7 +111,7 @@
         </div>
         <div class="col-md-4">
           <div class="gallery_item">
-              <div class="divider">
+              <div class="gallery_divider">
                 <img data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="img-fluid" src="./img/gardening-happy-gardener.jpg" alt="smiling woman with plants">
               </div>
               <div>
@@ -120,7 +122,7 @@
         </div>
         <div class="col-md-4">
           <div class="gallery_item">
-              <div class="divider">
+              <div class="gallery_divider">
                 <img data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="img-fluid" src="./img/gardening-planting.jpg" alt="sprout in the dirt">
               </div>
               <div>
@@ -169,23 +171,25 @@
 
       <!--Article-->
       <article class="row gardening_column">
-        <div class="col-md-4">
+        <div class="col-md-4 order-2 order-md-0">
           <img src="./img/tip-of-the-week.jpg" class="img-fluid w-100" alt="growing plants">
         </div>
         <div class="col-md-8">
-          <h2 class="content_title">Tips of the Week</h2>
-          <ol class="list-group list-group-numbered">
-            <li class="list-group-item content_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, cum. Lorem, ipsum Lorem ipsum dolor sit amet.</li>
-            <li class="list-group-item content_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita. Lorem, ipsum dolor. Lorem, ipsum Lorem ipsum dolor sit amet.</li>
-            <li class="list-group-item content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, deleniti? Lorem, ipsum dolor. Lorem, ipsum Lorem ipsum dolor sit amet.</li>
-          </ol>
+          <div class="content_area">
+            <h2 class="content_title">Tips of the Week</h2>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item content_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, cum. Lorem, ipsum Lorem ipsum dolor sit amet.</li>
+              <li class="list-group-item content_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita. Lorem, ipsum dolor. Lorem, ipsum Lorem ipsum dolor sit amet.</li>
+              <li class="list-group-item content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, deleniti? Lorem, ipsum dolor. Lorem, ipsum Lorem ipsum dolor sit amet.</li>
+            </ol>
+          </div>
         </div>
       </article>
     </main>
     
     <footer>
-      <div class="row margin_reset">
-        <div class="col-sm-6 col-lg-3 border_green">
+      <div class="row g-0 footer_block">
+        <div class="col-sm-6 col-lg-3">
           <div class="text_group">
             <h5>Lorem ipsum</h5>
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
@@ -193,7 +197,7 @@
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3 border_green">
+        <div class="col-sm-6 col-lg-3">
           <div class="text_group">
             <h5>Lorem ipsum</h5>
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
@@ -201,7 +205,7 @@
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3 border_green">
+        <div class="col-sm-6 col-lg-3">
           <div class="text_group">
             <h5>Lorem ipsum</h5>
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
@@ -209,9 +213,11 @@
             <p class="footer_text">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3 border_green">
-          <div class="row text_group">
-            <h5>Connect</h5>
+        <div class="col-sm-6 col-lg-3">
+          <div class="row g-0 text_group">
+            <div class="col-12">
+              <h5>Connect</h5>
+            </div>
             <div class="col-3 col-md-5 col-lg-12 link_item">
               <a href="mailto:someone@example.com">
                 <i class="fas fa-envelope fa-fw"></i> 
@@ -239,9 +245,11 @@
           </div>
         </div>
       </div>
-      <p class="copyright">
-        Garden Walkthrough &copy; 2023 | All Rights Reserved
-      </p>
+      <div class="copyright">
+        <p>Garden Walkthrough &copy; 2023
+        <span>|</span>
+        All Rights Reserved</p>
+      </div>
     </footer>
 
   </div>
