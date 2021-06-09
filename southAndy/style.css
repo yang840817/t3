@@ -19,9 +19,6 @@ body {
 @media (min-width: 768px) {
   .wrapper {
     width: 80%;
-    background-color: #3d6600;
-    background-image: none;
-    padding: 0 24px;
   }
 }
 
@@ -67,6 +64,7 @@ h1.header_logobox {
 
 .header_navbar li {
   border: sold 1px #333;
+  flex: 1;
 }
 
 .header_navbar a {
@@ -173,7 +171,6 @@ h1.header_logobox {
 }
 
 .banner_select_item {
-  color: #f6ffa4;
   display: flex;
   padding: 0 8px;
 }
@@ -201,7 +198,7 @@ main {
   color: #836145;
   font-size: 1.5rem;
   font-weight: 300;
-  padding: 8px;
+  padding: 8px 16px;
   text-transform: uppercase;
 }
 
@@ -254,7 +251,7 @@ hr {
   padding-bottom: 0;
 }
 .article_style {
-  padding: 24px 16px 32px 16px;
+  padding: 24px 12px 32px 12px;
   margin: 0;
 }
 article ol {
@@ -312,14 +309,14 @@ footer .footer_information {
 .information_title {
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-.footer_information li {
+footer li {
   list-style: none;
   font-size: 1rem;
   text-transform: none;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer_information a {
@@ -327,11 +324,11 @@ footer .footer_information {
   color: darkgrey;
   font-size: 1rem;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 .footer_information i {
   font-size: 1.5rem;
   color: #3d6600;
-  margin-bottom: 10px;
   vertical-align: sub;
 }
 
