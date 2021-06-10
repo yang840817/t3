@@ -243,9 +243,7 @@ hr {
 .article_content {
   flex-grow: 2;
 }
-.article_content > div {
-  margin-bottom: 24px;
-}
+
 .article_content ol {
   margin: 0;
   padding-bottom: 0;
