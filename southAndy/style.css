@@ -281,7 +281,7 @@ footer .footer_information {
   border-top: solid 1px rgb(184, 212, 173);
 }
 .footer_information ul {
-  padding: 16px;
+  padding: 12px;
   margin-bottom: 0;
   border-bottom: solid 1px rgb(184, 212, 173);
 }
@@ -289,9 +289,9 @@ footer .footer_information {
   order: -1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer_information ul {
-    padding: 20px;
+    padding: 24px;
     margin-bottom: 0;
     border-right: solid 1px rgba(184, 212, 173);
     border-bottom: 0;
