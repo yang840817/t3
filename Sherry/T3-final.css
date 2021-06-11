@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 body {
     background-image: url(img/bg-body.jpg);
@@ -12,17 +12,19 @@ body {
         padding:0 3rem;
     }
 }
-/* logo_area */
+
+/* ~logo area */
 
 .logo_box {
     display: block;
     height:40px;
     cursor: pointer;
-    font-size: 0;
+    font-size: 0; /* 去底部空隙 */
 }
 
+
 @media (min-width: 768px) {
-    .navigation h1 {
+    .header_navigation h1 {
         width:100%;
         background: white;
     }
@@ -34,60 +36,51 @@ body {
     .logo_box img {
         width:100%;
     }
-  }
+}
 
-/* 導覽列 */
+/* ~導覽列 */
 
-header .navigation {
+.header_navigation {
     background-image:url(img/bg-body.jpg);
-    flex-wrap:wrap;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
-
-.navigation button {
+.header_navigation button {
     display: flex;
-    align-items: center;
 }
-
-.navigation .nav_links li a {
+.header_navigation button:focus {
+    box-shadow: none;
+}
+.nav_links a {
     text-decoration: none;
     color: #4a4a4a !important;
 }
-.navigation .nav_links li a:hover, .navigation .nav_links li .home_link {
+.nav_links a:hover,.home_link {
     background-color: #97b485;
     color: #008000 !important;
 }
-.navigation button {
-    text-align: start;
-}
-.navigation button:focus {
-    box-shadow: none;
-}
-
 @media (min-width: 768px) {
-    header .navigation {
+    .header_navigation {
         background-image: unset;
         background-color: #4a4a4a;
         position: unset;
         flex-wrap: wrap;
         padding: 0;
     }
-    .navigation ul {
+    .header_navigation ul {
         border-bottom: 1px solid rgba(255, 255, 255, 0.849);
     }
-    .navigation .nav_links li a {
-        text-decoration: none;
+    .header_navigation .nav_links li a {
         color: #dbead1 !important;
     }
-    .navigation .nav_links li a:hover {
+    .header_navigation .nav_links li a:hover {
         background-color: #dbead1;
         color: #4a4a4a !important;
     }
-  }
+}
 
-/* main */
+/* -main */
 main {
-    padding-top:56px;
+    padding-top:48px;
 }
 @media (min-width: 768px) {
     main {
@@ -95,8 +88,7 @@ main {
     }
 }
 
-/*banner*/
-
+/*~banner*/
 .banner_indicators {
     margin-bottom: 0.5rem;
 }
@@ -111,7 +103,6 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1.5rem;
     text-align: start;
     background-color: #232222c4;
     cursor: pointer;
@@ -125,7 +116,6 @@ main {
     background-color:#e7ea9d;
     color:black;
 }
-
 .banner_caption h2 {
     color: #e7ea9d;
 }
@@ -138,27 +128,29 @@ main {
     width:4rem;
     height:4rem;
 }
-
-@media (min-width: 992px) {
+@media (min-width: 576px) {
     .banner_item {
-        height: 431px;
+        height: 380px;
     }
-    .banner_caption {
-        padding: 1.25rem;
-    }
+}
+@media (min-width: 768px) {
     .ellipsis {
         overflow: visible;
         white-space: unset;
         text-overflow: unset;
     }
+    .banner_area .control_icon {
+        width:2rem;
+        height:2rem;
+    }
+}
+@media (min-width: 992px) {
+    .banner_item {
+        height: 431px;
+    }
 }
 
-/* 三小圖 */
-
-.carousel-indicators .active {
-    border:10px solid yellow;
-}
-
+/*~ 三小圖 */
 .thumbnail_item img {
     padding: 0.1rem;
     border-radius: 0.1rem;
@@ -168,54 +160,31 @@ main {
 }
 .thumbnail_body h5 {
     color: #e7ea9d;
-    margin-top: 0.75rem;
 }
-
 .thumbnail_item {
     display: flex;
     justify-content:center;
-    align-items: center;
 }
-
 .thumbnail_img {
     width:fit-content;
 }
-
-
 @media (min-width: 992px) {
-    .thumbnail_area {
-        padding:1rem;
-    }
     .thumbnail_col + .thumbnail_col {
         border-left:2px solid #3b7218;
         box-shadow: inset 1px 0 rgb(35 91 35) ;
     }
-
-    .thumbnail_img {
-        flex:1 0 auto;
-        width:33.33%
-    }
     .thumbnail_body {
-        text-align: start;
-        padding-left:0.5rem;
         flex:1 0 auto;
-        width:66.66%
+        width:60%;
     }
-
 }
 
-/*下方section 空白區域*/
-
+/*~下方section 空白區域*/
 .article_area {
     background-color: white;
 }
-@media (min-width: 768px) {
-    .article_area {
-        padding: 1rem;
-    }
-}
 
-/* featured garden */
+/*~ featured garden */
 .featured_garden {
     border-bottom: 2px solid #eaeae5;
 }
@@ -233,7 +202,6 @@ main {
     font-size:22px;
     font-weight:500;
 }
-
 @media (min-width: 992px) {
     .featured_garden h3 {
         text-align: start;
@@ -244,31 +212,21 @@ main {
     }
 }
 
-/* tips of the week */
+/*~ tips of the week */
 .week_content h3{
     background-color: #dde8d5;
     color: #855b3c;
     border-bottom: 2px solid #b2cba1;
     text-align: center;
 }
-.week_text {
-    counter-reset: num;
-}
 .week_text li {
     padding: 0.5rem 0;
     display: flex;
 }
 .week_text li::before {
-    counter-increment: num;
-    content: counter(num) ". ";
     padding:0 0.5rem;
     font-weight: 500;
 }
-.week_img img{
-    object-fit: cover;
-    object-position: center;
-}
-
 @media (min-width:768px) {
     .week_text li::before {
         padding-left:0px;
@@ -284,41 +242,36 @@ main {
     }
 }
 
-/* footer */
+/*- footer */
 footer {
     background-color: #dde8d5;
     border-top: 1px solid #b2cba1;
-}
-.footer_navigation {
-    align-items: stretch;
 }
 .footer_item {
     color: #929392;
     border-bottom: 1px solid #b2cba1;
 }
 .footer_item h5 {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 .footer_item button {
-    position: absolute;
-    top: 0;
-    bottom:0;
     text-align: start;
     color: #929392;
 }
 .footer_item button:focus{
     box-shadow: none;
-    transform: rotate(45deg);
 }
-.footer_item a {
+.footer_item button[aria-expanded=true] {
+    transform:rotate(45deg);
+}
+.footer_item .footer_collapse a {
     text-decoration: none;
     color: #929392;
-    padding: 0.5rem !important;
 }
-
 .footer_item a:hover, .footer_item a:hover i {
-    background-color: #326611;
-    color: white;
+    color: #326611;
+    font-weight: 700;
 }
 .connect a i {
     color: #326611;
@@ -329,15 +282,13 @@ footer {
     margin-left: 0.5rem;
     vertical-align: middle;
 }
-
 @media (min-width: 768px) {
     .footer_item {
-        padding: 1rem;
         border-right: 1px solid #b2cba1;
     }
 }
 
-/*copyright*/
+/*~copyright*/
 
 .copyright {
     font-size: 12px;
@@ -345,5 +296,3 @@ footer {
     color: white;
     text-align: center;
 }
-
-
