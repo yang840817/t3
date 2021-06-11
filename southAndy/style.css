@@ -242,9 +242,7 @@ hr {
   padding: 24px;
   margin: 0;
 }
-article ol {
-  padding: 20px;
-}
+
 li::marker {
   font-weight: 700;
 }
@@ -264,7 +262,7 @@ article img {
   padding-left: 0;
 }
 .article_content ol {
-  padding: 0 24px;
+  padding-left: 24px;
 }
 @media (min-width: 768px) {
   .article_image {
@@ -273,7 +271,7 @@ article img {
 }
 
 .article_style li {
-  padding: 8px;
+  padding-top: 12px;
 }
 
 /* !Footer */
