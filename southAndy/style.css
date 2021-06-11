@@ -161,6 +161,9 @@ nav #navbarNav .header_navbar_headmenu a {
 .banner_select_item:last-child {
   border-right: none;
 }
+.banner_select_item > div {
+  display: flex;
+}
 .banner_select_item p {
   margin: 0;
 }
@@ -300,7 +303,7 @@ footer .footer_information {
 
 @media (min-width: 768px) {
   .footer_information div {
-    padding: 1.5rem;
+    padding: 1.25rem;
     margin-bottom: 0;
     border-right: solid 1px rgba(184, 212, 173);
     border-bottom: 0;
