@@ -15,15 +15,15 @@
   <div class="container modified_container">
     <!-- header -->
     <header>
-      <h1 class="bg-white text-center p-4"><a><img src="img/logo.png" alt="logo" class="img_width "></a></h1>
+      <h1><a><img src="img/logo.png" alt="logo" class="img_width "></a></h1>
       <nav class="navbar navbar-expand-md navbar-light menu">
-        <div class="container-fluid ">
+        <!-- <div class="wrap_button"> -->
           <button class="navbar-toggler menu_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item ">
+              <li class="nav-item " id="nav_home">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
@@ -43,7 +43,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        <!-- </div> -->
       </nav>
     </header>
     <main>
@@ -52,7 +52,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active banner-img">
             <img src="img/gardening1.jpg" class="d-block w-100" alt="gardening1.">
-            <div class="carousel-caption d-none d-md-block banner-inner">
+            <div class="carousel-caption  banner_inner">
               <h2>GARDENING TIPS</h2>
               <p>This is just a place holder,so you can see what the site would look like. This is just a placeholder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.
                 <a href="##"><i class="fas fa-arrow-circle-right bg-light rounded-circle"></i></a>
@@ -61,7 +61,7 @@
           </div>
           <div class="carousel-item banner-img">
             <img src="img/gardening1.jpg" class="d-block w-100" alt="gardening1.">
-            <div class="carousel-caption d-none d-md-block banner-inner">
+            <div class="carousel-caption banner_inner">
               <h2>GARDENING TIPS</h2>
               <p>This is just a place holder,so you can see what the site would look like. This is just a placeholder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.
                 <a href="##"><i class="fas fa-arrow-circle-right bg-light rounded-circle"></i></a>
@@ -70,7 +70,7 @@
           </div>
           <div class="carousel-item banner-img">
             <img src="img/gardening1.jpg" class="d-block w-100" alt="gardening1.">
-            <div class="carousel-caption d-none d-md-block banner-inner">
+            <div class="carousel-caption banner_inner">
               <h2>GARDENING TIPS</h2>
               <p>This is just a place holder,so you can see what the site would look like. This is just a placeholder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.
                 <a href="##"><i class="fas fa-arrow-circle-right bg-light rounded-circle"></i></a>
@@ -88,14 +88,14 @@
         </button>
       </div>
       <!-- banner_cards-->
-      <div class="banner_card">
+      <div class="banner_card row g-0">
         <!-- 左 -->
-        <div class="card border_right">
+        <div class="card border_right col-12 col-lg-4 g-0  ">
           <div class="row g-0">
-            <div class="col-md-3 ">
+            <div class="col-4 wrap_card">
               <img src="img/gardening2.jpg" alt="Tips">
             </div>
-            <div class="col-md-8 offset-md-1">
+            <div class="col-8">
               <div class="card-body">
                 <h5 class="card-title">Tips</h5>
                 <p class="card-text">This is just a place holder.This is just a place holder.</p>
@@ -104,12 +104,12 @@
           </div>
         </div>
         <!-- 中 -->
-        <div class="card  border_right">
+        <div class="card border_right col-12 col-lg-4 g-0">
           <div class="row g-0">
-            <div class="col-md-3 ">
+            <div class="col-4 wrap_card">
               <img src="img/gardening3.jpg" alt="Happy Gardener">
             </div>
-            <div class="col-md-8 offset-md-1">
+            <div class="col-8">
               <div class="card-body">
                 <h5 class="card-title">Happy Gardener</h5>
                 <p class="card-text">This is just a place holder.This is just a place holder.</p>
@@ -119,12 +119,12 @@
           </div>
         </div>
         <!-- 右 -->
-        <div class="card ">
+        <div class="card col-12 col-lg-4 g-0">
           <div class="row g-0">
-            <div class="col-md-3">
+            <div class="col-4 wrap_card">
               <img src="img/gardening4.jpg" alt="planting">
             </div>
-            <div class="col-md-8 offset-md-1">
+            <div class="col-8">
               <div class="card-body">
                 <h5 class="card-title">planting</h5>
                 <p class="card-text">This is just a place holder.This is just a place holder.</p>
@@ -134,26 +134,26 @@
         </div>
       </div>  
       <!-- 白色區塊 -->
-      <section class="content ">
+      <section class="content">
         <h3>FEATURED GARDENS</h3>
         <!--featured-gardens card-->
         <section class="row featured-gardens">
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <img src="img/garden1.jpg" alt="garden1 of featured-gardens">
             <h6>JULIET'S GARDEN</h6>
             <p>This is just a place holder,so you can see what the site would look like.</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <img src="img/garden2.jpg"  alt="garden2 of featured-gardens">
             <h6>JOANNE'S GARDEN</h6>
             <p>This is just a place holder,so you can see what the site would look like.</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <img src="img/garden3.jpg" alt="garden3 of featured-gardens">
             <h6>JETTKA'S GARDEN</h6>
             <p>This is just a place holder,so you can see what the site would look like.</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-lg-3">
             <img src="img/garden4.jpg" alt="garden4 of featured-gardens">
             <h6>JIA'S GARDEN</h6>
             <p>This is just a place holder,so you can see what the site would look like.</p>
@@ -164,16 +164,17 @@
           <div class="col-12 col-sm-4  tips_week_img">
             <img src="img/gardening5.jpg" alt="tips_week">
           </div>
-          <div class="col-12 col-sm-8">
+          <div class="col-12 col-sm tips_week_text">
             <h3>TIPS OF THE WEEK</h3>
-            <ol>
-              <li>This is just a place holder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.</li>
-              <li>This is just a place holder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.</li>
-              <li>This is just a place holder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.</li>
-            </ol>
-          </div>
-        </section>
+              <ol>
+                <li>This is just a place holder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.</li>
+                <li>This is just a place holder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.</li>
+                <li>This is just a place holder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.</li>
+              </ol>
+            </section>
       </section>
+    </main>  
+    <footer>
       <!--電腦-->
       <div class="row footer_pc g-0">
         <div class="col-md-3">
@@ -257,18 +258,15 @@
               <a href="##"><i class="fab fa-google-plus-square fa-fw"></i> Google+</a>
             </ul>
           </div>
-      </div> 
+      </div>   
     <!--row-->
-    </div>  
-    </main>
-  <!-- content-section -->
-  </section>  
-  <footer class="text-center py-2 copy-right">
-    <p>Garden Walkthrough © 2023 | All Right Reserved</p>
-  </footer>
-<!-- container   -->
-</div>
-  
+      </div>  
+      <div class="text-center copy-right">
+        <p class="copy_right">Garden Walkthrough © 2023 | All Right Reserved</p>
+      </div>
+     </footer> 
+  <!-- container   -->
+  </div>  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>
