@@ -1,0 +1,39 @@
+body {
+  background-image: url(./img/bg-body.jpg);
+}
+
+.container {
+  background-color: #356618;
+}
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... } */
+
+.logo_box {
+  padding: .5rem .5rem 1rem;
+}
+
+.figure {
+  
+}
+
+.figcaption {
+  background-break: black;
+  opacity: .5;
+  padding: ;
+}
+
+.garlly_box {
+  display: flex;
+}
+
+.garlly_text {
+
+}
+
+article {
+  background-color: white;
+}
