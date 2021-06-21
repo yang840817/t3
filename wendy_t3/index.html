@@ -15,7 +15,7 @@
   <div class="container modified_container">
     <!-- header -->
     <header>
-      <h1><a><img src="img/logo.png" alt="logo" class="img_width "></a></h1>
+      <h1><a href="##"><img src="img/logo.png" alt="logo" class="img_width"></a></h1>
       <nav class="navbar navbar-expand-md navbar-light menu">
         <!-- <div class="wrap_button"> -->
           <button class="navbar-toggler menu_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,9 @@
       <div id="carouselExampleCaptions" class="carousel slide carousel-banner" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active banner-img">
-            <img src="img/gardening1.jpg" class="d-block w-100" alt="gardening1.">
+            <div>
+              <img src="img/gardening1.jpg" class="d-block w-100 h-100" alt="gardening1">
+            </div>
             <div class="carousel-caption  banner_inner">
               <h2>GARDENING TIPS</h2>
               <p>This is just a place holder,so you can see what the site would look like. This is just a placeholder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.
@@ -60,7 +62,9 @@
             </div>
           </div>
           <div class="carousel-item banner-img">
-            <img src="img/gardening1.jpg" class="d-block w-100" alt="gardening1.">
+            <div>
+              <img src="img/gardening1.jpg" class="d-block w-100 h-100" alt="gardening2">
+            </div>
             <div class="carousel-caption banner_inner">
               <h2>GARDENING TIPS</h2>
               <p>This is just a place holder,so you can see what the site would look like. This is just a placeholder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.
@@ -69,7 +73,9 @@
             </div>
           </div>
           <div class="carousel-item banner-img">
-            <img src="img/gardening1.jpg" class="d-block w-100" alt="gardening1.">
+            <div>
+              <img src="img/gardening1.jpg" class="d-block w-100 h-100" alt="gardening3">
+            </div>
             <div class="carousel-caption banner_inner">
               <h2>GARDENING TIPS</h2>
               <p>This is just a place holder,so you can see what the site would look like. This is just a placeholder,so you can see what the site would look like. This is just a place holder,so you can see what the site would look like.
@@ -88,46 +94,49 @@
         </button>
       </div>
       <!-- banner_cards-->
-      <div class="banner_card row g-0">
+      <div class="banner_card">
         <!-- 左 -->
-        <div class="card border_right col-12 col-lg-4 g-0">
-          <div class="row g-0">
-            <div class="col-4 wrap_card">
-              <img src="img/gardening2.jpg" alt="Tips">
-            </div>
-            <div class="col col-sm-8">
-              <div class="card-body">
-                <h5 class="card-title">Tips</h5>
-                <p class="card-text">This is just a place holder.This is just a place holder.</p>
+        <div class="row g-0">
+          <div class="border_right col-12 col-lg-4 g-0">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-4 wrap_card">
+                  <img src="img/gardening2.jpg" alt="Tips">
+                </div>
+                <div class="col col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Tips</h5>
+                    <p class="card-text">This is just a place holder.This is just a place holder.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- 中 -->
-        <div class="card border_right col-12 col-lg-4 g-0">
-          <div class="row g-0">
-            <div class="col-4 wrap_card">
-              <img src="img/gardening3.jpg" alt="Happy Gardener">
-            </div>
-            <div class="col col-sm-8">
-              <div class="card-body">
-                <h5 class="card-title">Happy Gardener</h5>
-                <p class="card-text">This is just a place holder.This is just a place holder.</p>
-                
+          <!-- 中 -->
+          <div class="card border_right col-12 col-lg-4 g-0">
+            <div class="row g-0">
+              <div class="col-4 wrap_card">
+                <img src="img/gardening3.jpg" alt="Happy Gardener">
+              </div>
+              <div class="col col-sm-8">
+                <div class="card-body">
+                  <h5 class="card-title">Happy Gardener</h5>
+                  <p class="card-text">This is just a place holder.This is just a place holder.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- 右 -->
-        <div class="card col-12 col-lg-4 g-0">
-          <div class="row g-0">
-            <div class="col-4 wrap_card">
-              <img src="img/gardening4.jpg" alt="planting">
-            </div>
-            <div class="col col-sm-8">
-              <div class="card-body">
-                <h5 class="card-title">planting</h5>
-                <p class="card-text">This is just a place holder.This is just a place holder.</p>
+          <!-- 右 -->
+          <div class="card col-12 col-lg-4 g-0">
+            <div class="row g-0">
+              <div class="col-4 wrap_card">
+                <img src="img/gardening4.jpg" alt="planting">
+              </div>
+              <div class="col col-sm-8">
+                <div class="card-body">
+                  <h5 class="card-title">planting</h5>
+                  <p class="card-text">This is just a place holder.This is just a place holder.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -135,31 +144,42 @@
       </div>  
       <!-- 白色區塊 -->
       <section class="content">
-        <h3>FEATURED GARDENS</h3>
         <!--featured-gardens card-->
-        <section class="row featured-gardens">
+        <section>
+        <h3>FEATURED GARDENS</h3>
+        <div class="row featured-gardens">
           <div class="col-12 col-sm-6 col-lg-3">
-            <img src="img/garden1.jpg" alt="garden1 of featured-gardens">
-            <h6>JULIET'S GARDEN</h6>
-            <p>This is just a place holder,so you can see what the site would look like.</p>
+            <div>
+              <img src="img/garden1.jpg" alt="garden1 of featured-gardens">
+              <h6>JULIET'S GARDEN</h6>
+              <p>This is just a place holder,so you can see what the site would look like.</p>
+            </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
-            <img src="img/garden2.jpg"  alt="garden2 of featured-gardens">
-            <h6>JOANNE'S GARDEN</h6>
-            <p>This is just a place holder,so you can see what the site would look like.</p>
+            <div>
+              <img src="img/garden2.jpg"  alt="garden2 of featured-gardens">
+              <h6>JOANNE'S GARDEN</h6>
+              <p>This is just a place holder,so you can see what the site would look like.</p>
+            </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
-            <img src="img/garden3.jpg" alt="garden3 of featured-gardens">
-            <h6>JETTKA'S GARDEN</h6>
-            <p>This is just a place holder,so you can see what the site would look like.</p>
+            <div>
+              <img src="img/garden3.jpg" alt="garden3 of featured-gardens">
+              <h6>JETTKA'S GARDEN</h6>
+              <p>This is just a place holder,so you can see what the site would look like.</p>
+            </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
-            <img src="img/garden4.jpg" alt="garden4 of featured-gardens">
-            <h6>JIA'S GARDEN</h6>
-            <p>This is just a place holder,so you can see what the site would look like.</p>
+            <div>
+              <img src="img/garden4.jpg" alt="garden4 of featured-gardens">
+              <h6>JIA'S GARDEN</h6>
+              <p>This is just a place holder,so you can see what the site would look like.</p>
+            </div>     
           </div>
+        </div>  
         </section>  
-         <!-- tips_week-->
+      <hr></hr>
+        <!-- tips_week-->
         <section class="row tips_week g-0">
           <div class="col-12 col-sm-4  tips_week_img">
             <img src="img/gardening5.jpg" alt="tips_week">
@@ -205,70 +225,79 @@
       </div>
       <!--手機-->
       <div class="row footer_mobile">
-        <p class="col-12">
-          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample">
-            PLACE HOLDER
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample_1">
-          <div class="card card-body">
-            <p>test</p>
-            <p>This is just a place holder.</p>
-            <p>This is just a place holder.</p>
-            <p>This is just a place holder.</p>
+        <div class="col-12">
+          <div class="footer_item">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample">
+              PLACE HOLDER
+            </button>
+            <div class="collapse" id="collapseExample_1">
+              <div class="card card-body">
+                <p>test</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+              </div>
+            </div>  
+          </div>  
+        </div>
+        <div class="col-12">
+          <div class="footer_item">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_2" aria-expanded="false" aria-controls="collapseExample">
+              PLACE HOLDER
+            </button>
+            <div class="collapse" id="collapseExample_2">
+              <div class="card card-body">
+                <P>2</P>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-12"> 
+          <div class="footer_item">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_3" aria-expanded="false" aria-controls="collapseExample">
+              PLACE HOLDER
+            </button>
+            <div class="collapse" id="collapseExample_3">
+              <div class="card card-body">
+                <p>3</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+              </div>
+            </div>  
           </div>
         </div>  
-        <p class="col-12">
-          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_2" aria-expanded="false" aria-controls="collapseExample">
-            PLACE HOLDER
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample_2">
-          <div class="card card-body">
-            <P>2</P>
-            <p>This is just a place holder.</p>
-            <p>This is just a place holder.</p>
-            <p>This is just a place holder.</p>
+        <div class="col-12">
+          <div>
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_4" aria-expanded="false" aria-controls="collapseExample">
+              Connect
+            </button>
+            <div class="collapse" id="collapseExample_4">
+              <div class="card card-body ">
+                <ul>
+                  <a href="##"><i class="fas fa-envelope fa-fw"></i> Email us</a>
+                  <a href="##"><i class="fab fa-facebook-square fa-fw"></i> Facebook</a>
+                  <a href="##"><i class="fab fa-twitter-square fa-fw"></i> Twitter</a>
+                  <a href="##"><i class="fab fa-google-plus-square fa-fw"></i> Google+</a>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div> 
-        <p class="col-12"> 
-          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_3" aria-expanded="false" aria-controls="collapseExample">
-            PLACE HOLDER
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample_3">
-          <div class="card card-body">
-            <p>3</p>
-            <p>This is just a place holder.</p>
-            <p>This is just a place holder.</p>
-            <p>This is just a place holder.</p>
-          </div>
-        </div>  
-        <p class="col-12">
-          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample_4" aria-expanded="false" aria-controls="collapseExample">
-            Connect
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample_4">
-          <div class="card card-body ">
-            <ul>
-              <a href="##"><i class="fas fa-envelope fa-fw"></i> Email us</a>
-              <a href="##"><i class="fab fa-facebook-square fa-fw"></i> Facebook</a>
-              <a href="##"><i class="fab fa-twitter-square fa-fw"></i> Twitter</a>
-              <a href="##"><i class="fab fa-google-plus-square fa-fw"></i> Google+</a>
-            </ul>
-          </div>
-      </div>   
+        </div>
     <!--row-->
       </div>  
       <div class="text-center copy-right">
         <p class="copy_right">Garden Walkthrough © 2023 | All Right Reserved</p>
       </div>
-     </footer> 
-  <!-- container   -->
-  </div>  
+    </footer> 
+    <!-- container   -->
+  </div>  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>
 <!-- 
 <img src="./Template_3.png" alt=""> -->
+
