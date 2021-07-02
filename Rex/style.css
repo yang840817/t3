@@ -6,66 +6,118 @@ body {
   background-image: url(./img/bg-body.jpg);
 }
 
-.logo_box {
-  padding: .5rem 0 1rem;
-  display: block;
-  margin-bottom: 0;
+.modify_container {
+  background-color: #356618;
+  padding: 0 0;
 }
 
-.container {
-  background-color: #356618;
-  padding: 0 1rem;
-  max-width: 1050px;
+@media (min-width: 576px) {
+  .modify_container {
+    padding: 0 .8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .modify_container {
+    padding: 0 1rem;
+    max-width: 1050px;
+  }
+}
+
+.navbar_background {
+  padding: .5rem .5rem 1rem .5rem;
+  display: block;
+  margin-bottom: 0;
+  background-image: url(./img/bg-body.jpg);
+}
+
+@media (min-width: 576px) {
+  .navbar_background {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/* @media (min-width: 992px) {
+  .navbar_background {
+    flex-wrap: wrap;
+  }
+} */
+
+@media (min-width: 576px) {
+  .navbar_background div.container-fluid {
+    background-color: white;
+    justify-content: center;
+  }
+}
+/* 調整 nav logo 寬度 */
+header h1 {
+  width: fit-content;
+}
+header h1 a {
+  display: block;
+}
+.logo_img {
+  width: 100%;
+}
+
+@media (max-width: 575.97px) {
+  header h1 {
+    width: 70%;
+  }
+  .logo_img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .logo_box {
+    padding: .5rem 1rem 1rem;
+    /* display: block; */
+    text-align: center;
+    margin-bottom: 0;
+    background-image: none;
+    background-color: white;
+  }
+  .modify_navbar_toggler {
+    display: none;
+  }
+  .modify_navbar_list {
+    display: block;
+  }
 }
 
 .modify_navbar {
   padding: 0;
   background-color: rgb(93, 93, 93);
   border-bottom: 1px solid cornsilk;
+  display: block;
+  border-radius: 0;
 }
 
-.modify_list {
+.modify_navbar .nav-link.modify_list {
   text-align: center;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 2rem;
-}
-
-.modify_nav_link {
   color: #E3E5C7;
 }
 
-.modify_nav_link:hover {
+.modify_navbar .nav-link.modify_list:hover {
   background-color: #E0EED9;
   font-weight: initial;
   color: #254D14;
 }
 
-.bk_gray {
-  background-color: #5D5D5D!important;
-}
-
-.bk_nav:hover {
-  background-color: #E0EED9;
-}
-
-.modify_nav {
-  justify-content:space-around;
-  background-color: rgb(93, 93, 93);
-  border-bottom: 1px solid cornsilk;
-  padding: 0;
-}
-
-.modify_nav_home {
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 2rem;
+.modify_navbar .nav-link.active {
   background-color: #A4BE98;
+  color: #3B771B;
 }
-.modify_navbar .modify_list .modify_nav_link {
+
+/* .modify_navbar .modify_list .modify_nav_link {
   color: #E3E5C7;
-}
+} */
 
 .modify_navbar .modify_list .modify_nav_link:hover {
   color: #254D14;
@@ -82,12 +134,34 @@ body {
   font-weight: initial;
 }
 
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+    overflow: unset;
+  }
+}
+
 .modify_figcaption {
   padding: 20px 20px 10px;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: fit-content;
+  width: 100%;
   text-align: left;
   background-color: rgb(93, 93, 93, .6);
 }
@@ -106,21 +180,6 @@ figcaption p a {
   font-size: .8rem;
   display: inline-block;
   text-align: center;
-}
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 575px) {
-  .logo_box {
-    padding: 0;
-  }
-  * {
-    font-size: 8px;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  
 }
 
 .figcaption {
@@ -173,7 +232,6 @@ hr {
   font-size: 1.6rem;
   width: 1.6rem;
   text-align: center;
-  border-radius: ;
 }
 
 .card_group {
@@ -217,21 +275,18 @@ hr {
   color: white;
 }
 
-.modify_card_box {
-  padding-left: 1rem;
-}
-
 .modify_card + .modify_card {
+  padding-left: 10px;
   border-left: 2px solid #3D751A;
   box-shadow: inset 1px 0 rgba(0, 85, 4, 0.5);
 }
 
-.feature_gardens_card .card-body  h5 {
+.feature_gardens_card .card-body h5 {
   font-size: 1.2rem;
   color: #864a08;
 }
 
-.feature_gardens_card .card-body  p {
+.feature_gardens_card .card-body p {
   font-size: 1rem;
   color: #323332;
 }
@@ -300,3 +355,47 @@ ol li {
   padding-left: .5rem;
   font-size: 1rem;
 }
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (max-width: 575.98px) {
+
+  .modify_navbar_bkg {
+    background-color: rgb(93, 93, 93);
+  }
+
+  .modify_content_position {
+    width: 80%;
+    object-fit: cover;
+    border: 1px solid white;
+  }
+
+  .logo_small {
+    display: inline-block;
+  }
+
+  .logo_small_text {
+    font-size: 2rem;
+    font-weight: 300;
+    align-self: center;
+    line-height: 60px;
+  }
+
+  .modify_card + .modify_card {
+    padding-left: 0;
+    border-left: 0;
+    box-shadow: none;
+  }
+
+  .footer_content_box {
+    text-align: center;
+  }
+
+  .feature_gardens_card {
+    padding: 0px;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .modify_main_content .card-body {
+    padding: 0;
+  } */

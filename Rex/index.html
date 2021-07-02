@@ -11,79 +11,106 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container modify_container">
       <header>
-        <h1 class="bg-white logo_box">
-          <a href="##"><img src="./img/logo.png" class="img-fluid mx-auto d-none d-sm-block" title="Garden Walkthrough " alt="logo"></a>
-        </h1>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light py-0">
-          <div class="container-fluid">
-            <a class="navbar-brand d-block d-sm-none" href="##"><img src="./img/logo.png" class="img-fluid" title="Garden Walkthrough " alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse row" id="navbarNavDropdown">
-              <ul class="navbar-nav modify_navbar">
-                <li class="nav-item col-2">
-                  <a class="nav-link modify_nav_home active" aria-current="page" href="##">Home</a>
-                </li>
-                <li class="nav-item col-2 modify_list">
-                  <a class="nav-link modify_nav_link" href="##">About</a>
-                </li>
-                <li class="nav-item col-2 modify_list">
-                  <a class="nav-link modify_nav_link" href="##">Plants</a>
-                </li>
-                <li class="nav-item col-2 modify_list">
-                  <a class="nav-link modify_nav_link" href="##">Gardens</a>
-                </li>
-                <li class="nav-item col-2 modify_list">
-                  <a class="nav-link modify_nav_link" href="##">News</a>
-                </li>
-                <li class="nav-item col-2 modify_list">
-                  <a class="nav-link modify_nav_link" href="##">Contact</a>
-                </li>
-              </ul>
-            </div>
+      <!-- ---新的選單--- -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light p-0 navbar_background">
+        <div class="container-fluid">
+          <h1><a href="##"><img src="./img/logo.png" class="logo_img" alt="logo"></a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse row" id="navbarNav">
+            <ul class="navbar-nav nav-fill pe-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Plants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gardens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
+        <!-- <div class="row mx-0">
+          <h1 class="col col-10 mx-sm-0 logo_box">
+            <a href="##">
+              <img src="./img/logo.png" class="img-fluid mx-sm-auto" title="Garden Walkthrough" alt="logo">
+            </a>
+          </h1>
+          <nav class="col col-2 navbar navbar-expand-sm navbar-dark badge modify_navbar">
+            <div class="container-fluid p-0">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse row m-0" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-fill p-0">
+                  <li class="nav-item">
+                    <a class="nav-link modify_list active" aria-current="page" href="##">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link modify_list" href="##">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link modify_list" href="##">Plants</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link modify_list" href="##">Gardens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link modify_list" href="##">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link modify_list" href="##">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div> -->
       </header>
       <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
+        <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+        </div> -->
         <div class="carousel-inner">
           <figure class="carousel-item active">
             <img src="./img/gardening1.jpg" class="d-block w-100" alt="GARDENING TIPS">
-            <figcaption class="carousel-caption d-none d-md-block modify_figcaption">
+            <figcaption class="carousel-caption d-none d-sm-block modify_figcaption">
               <h2>GARDENING TIPS</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
+              <p class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. 
+                <a href="##"><i class="fas fa-arrow-right"></i></a></p>
             </figcaption>
           </figure>
           <figure class="carousel-item">
             <img src="./img/gardening2.jpg" class="d-block w-100" alt="GARDENING TIPS">
-            <figcaption class="carousel-caption d-none d-md-block modify_figcaption">
+            <figcaption class="carousel-caption d-none d-sm-block modify_figcaption">
               <h2>HAPPY GARDENER</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
+              <p class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
             </figcaption>
           </figure>
           <figure class="carousel-item">
             <img src="./img/gardening3.jpg" class="d-block w-100" alt="GARDENING TIPS">
-            <figcaption class="carousel-caption d-none d-md-block modify_figcaption">
+            <figcaption class="carousel-caption d-none d-sm-block modify_figcaption">
               <h2>PLANTING</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
+              <p class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
             </figcaption>
           </figure>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </section>
 <!-- ---------- 卡片 ---------- -->
       <section class="card_group row row-cols-1 row-cols-sm-3">
@@ -127,6 +154,7 @@
           </div>
         </div>
       </section>
+<!-- ------ FEATURE GARDENS卡片 ------ -->
       <main>
         <article>
           <div class="row modify_article_box">
@@ -192,7 +220,10 @@
               <div class="col-lg-3 footer_content_box"><h4>PLACE HOLDER</h4><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
               <div class="col-lg-3 footer_content_box"><h4>CONNECT</h4>
                 <p class="row social_media">
-                  <a href="##"><i class="fas fa-envelope"></i><span>Email us</span></a><a href="##"><i class="fab fa-facebook-square"></i><span>Facebook</span></a><a href="##"><i class="fab fa-twitter"></i><span>Twitter</span></a><a href="##"><i class="fab fa-google-plus-square"></i><span>Google+</span></a>
+                  <a href="##"><i class="fas fa-envelope"></i><span>Email us</span></a>
+                  <a href="##"><i class="fab fa-facebook-square"></i><span>Facebook</span></a>
+                  <a href="##"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                  <a href="##"><i class="fab fa-google-plus-square"></i><span>Google+</span></a>
                 </p>
               </div>
             </div>
