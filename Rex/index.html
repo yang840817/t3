@@ -12,16 +12,17 @@
   </head>
   <body>
     <div class="container modify_container">
+      <!-- ---0708修改選單--- -->
       <header>
-      <!-- ---新的選單--- -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-light p-0 navbar_background">
-        <div class="container-fluid">
-          <h1><a href="##"><img src="./img/logo.png" class="logo_img" alt="logo"></a></h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse row" id="navbarNav">
-            <ul class="navbar-nav nav-fill pe-0">
+        <a href="##" class="py-md-3 d-none d-md-block"><img src="./img/logo.png" alt="logo"></a>
+      </header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light shadow p-0 navbar_container">
+        <h1 class="py-md-3 d-block d-md-none"><a href="##"><img src="./img/logo.png" class="logo_img" alt="logo"></a></h1>
+        <button class="navbar-toggler modify_navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row m-0" id="navbarNav">
+            <ul class="navbar-nav nav-fill pe-0 modify_navbar_color">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -41,114 +42,80 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-          </div>
         </div>
       </nav>
-        <!-- <div class="row mx-0">
-          <h1 class="col col-10 mx-sm-0 logo_box">
-            <a href="##">
-              <img src="./img/logo.png" class="img-fluid mx-sm-auto" title="Garden Walkthrough" alt="logo">
-            </a>
-          </h1>
-          <nav class="col col-2 navbar navbar-expand-sm navbar-dark badge modify_navbar">
-            <div class="container-fluid p-0">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse row m-0" id="navbarNavDropdown">
-                <ul class="navbar-nav nav-fill p-0">
-                  <li class="nav-item">
-                    <a class="nav-link modify_list active" aria-current="page" href="##">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link modify_list" href="##">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link modify_list" href="##">Plants</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link modify_list" href="##">Gardens</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link modify_list" href="##">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link modify_list" href="##">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div> -->
-      </header>
+<!-- ---------- carousel ---------- -->
       <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <!-- <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div> -->
         <div class="carousel-inner">
-          <figure class="carousel-item active">
+          <figure class="carousel-item mb-0 active">
             <img src="./img/gardening1.jpg" class="d-block w-100" alt="GARDENING TIPS">
-            <figcaption class="carousel-caption d-none d-sm-block modify_figcaption">
+            <figcaption class="carousel-md-caption modify_figcaption">
               <h2>GARDENING TIPS</h2>
               <p class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. 
                 <a href="##"><i class="fas fa-arrow-right"></i></a></p>
             </figcaption>
           </figure>
-          <figure class="carousel-item">
+          <figure class="carousel-item mb-0">
             <img src="./img/gardening2.jpg" class="d-block w-100" alt="GARDENING TIPS">
-            <figcaption class="carousel-caption d-none d-sm-block modify_figcaption">
+            <figcaption class="carousel-md-caption modify_figcaption">
               <h2>HAPPY GARDENER</h2>
               <p class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
             </figcaption>
           </figure>
-          <figure class="carousel-item">
+          <figure class="carousel-item mb-0">
             <img src="./img/gardening3.jpg" class="d-block w-100" alt="GARDENING TIPS">
-            <figcaption class="carousel-caption d-none d-sm-block modify_figcaption">
+            <figcaption class="carousel-md-caption modify_figcaption">
               <h2>PLANTING</h2>
               <p class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quod minus doloribus iure in, eum reiciendis numquam voluptates iusto et obcaecati itaque architecto dolore officiis at modi quaerat nisi quasi. <a href="##"><i class="fas fa-arrow-right"></i></a></p>
             </figcaption>
           </figure>
         </div>
       </section>
-<!-- ---------- 卡片 ---------- -->
-      <section class="card_group row row-cols-1 row-cols-sm-3">
-        <div class="card mb-3 col modify_card">
-          <div class="row g-0 modify_card_box">
-            <div class="col col-md-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0">
-              <img class="modify_content_position" src="./img/gardening-tip.jpg" alt="Gardening Tips">
-            </div>
-            <div class="col col-md-8">
-              <div class="card-body modify_card_body">
-                <h5 class="card-title">Tips</h5>
-                <p class="card-text">This is just a place holder. This is just a place holder.</p>
+<!-- ---------- carousel控制卡片 ---------- -->
+      <section class="container-fluid">
+        <div class="modify_control_card row pt-3 py-md-3">
+          <div class="col col-12 col-md-4 p-3 pt-0 pb-md-0">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0">
+                  <img src="./img/gardening-tip.jpg" class="control_card_img" alt="Gardening Tips">
+                </div>
+                <div class="col-8">
+                  <div class="card-body p-0 ps-3">
+                    <h2 class="card-title">Tips</h2>
+                    <p class="card-text">This is just a place holder. This is just a place holder.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card mb-3 col modify_card">
-          <div class="row g-0 modify_card_box">
-            <div class="col col-md-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1">
-              <img class="modify_content_position" src="./img/gardening-happy-gardener.jpg" alt="Happy Gardener">
-            </div>
-            <div class="col col-md-8">
-              <div class="card-body modify_card_body">
-                <h5 class="card-title">Happy Gardener</h5>
-                <p class="card-text">This is just a place holder. This is just a place holder.</p>
+          <div class="col col-12 col-md-4 p-3 pt-0 pb-md-0 section_line">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1">
+                  <img src="./img/gardening-happy-gardener.jpg" class="control_card_img" alt="Gardening Tips">
+                </div>
+                <div class="col-8">
+                  <div class="card-body p-0 ps-3">
+                    <h2 class="card-title">Happy Gardener</h2>
+                    <p class="card-text">This is just a place holder. This is just a place holder.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card mb-3 col modify_card">
-          <div class="row g-0 modify_card_box">
-            <div class="col col-md-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2">
-              <img class="modify_content_position" src="./img/gardening-planting.jpg" alt="Planting">
-            </div>
-            <div class="col col-md-8">
-              <div class="card-body modify_card_body">
-                <h5 class="card-title">Planting</h5>
-                <p class="card-text">This is just a place holder. This is just a place holder.</p>
+          <div class="col col-12 col-md-4 p-3 pt-0 pb-md-0 section_line">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-4" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2">
+                  <img src="./img/gardening-planting.jpg" class="control_card_img" alt="Gardening Tips">
+                </div>
+                <div class="col-8">
+                  <div class="card-body p-0 ps-3">
+                    <h2 class="card-title">Planting</h2>
+                    <p class="card-text">This is just a place holder. This is just a place holder.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -157,79 +124,86 @@
 <!-- ------ FEATURE GARDENS卡片 ------ -->
       <main>
         <article>
-          <div class="row modify_article_box">
-            <!-- <div class="col-12 h2">FEATURE GARDENS</div> -->
-            <div class="col-12 modify_main_content">
-              <h2>FEATURE GARDENS</h2>
-            </div>
-            <div class="card-group modify_main_content">
-              <div class="card feature_gardens_card ps-0">
-                <img src="./img/feature-gardens1.jpg" class="card-img-top modify_card_img_top" alt="JULIET'S GARDEN">
-                <div class="card-body ps-0">
-                  <h5 class="card-title">JULIET'S GARDEN</h5>
-                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-                </div>
-              </div>
-              <div class="card feature_gardens_card">
-                <img src="./img/feature-gardens2.jpg" class="card-img-top modify_card_img_top" alt="JOANNE'S GARDEN">
-                <div class="card-body ps-0">
-                  <h5 class="card-title">JOANNE'S GARDEN</h5>
-                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-                </div>
-              </div>
-              <div class="card feature_gardens_card">
-                <img src="./img/feature-gardens3.jpg" class="card-img-top modify_card_img_top" alt="JETTKA'S GARDEN">
-                <div class="card-body ps-0">
-                  <h5 class="card-title">JETTKA'S GARDEN</h5>
-                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-                </div>
-              </div>
-              <div class="card feature_gardens_card pe-0">
-                <img src="./img/feature-gardens4.jpg" class="card-img-top modify_card_img_top" alt="JIA'S GARDEN">
-                <div class="card-body ps-0">
-                  <h5 class="card-title">JIA'S GARDEN</h5>
+          <div>
+            <h3>FEATURE GARDENS</h3>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img src="./img/feature-gardens1.jpg" class="card-img-top mb-3" alt="JULIET'S GARDEN">
+                <div class="card-body">
+                  <h4 class="card-title text-truncate">JULIET'S GARDEN</h4>
                   <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
                 </div>
               </div>
             </div>
-            <hr>
-            <div class="card mb-3 modify_main_content" style="max-width: fit-content;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./img/tip-of-the-week.jpg" class="article_img_full" alt="tip-of-the-week">
+            <div class="col">
+              <div class="card">
+                <img src="./img/feature-gardens2.jpg" class="card-img-top mb-3" alt="JOANNE'S GARDEN">
+                <div class="card-body">
+                  <h4 class="card-title text-truncate">JOANNE'S GARDEN</h4>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h2 class="card-title">TIPS OF THE WEEK</h2>
-                    <ol>
-                      <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-                      <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-                      <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-                    </ol>
-                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/feature-gardens3.jpg" class="card-img-top mb-3" alt="JETTKA'S GARDEN">
+                <div class="card-body">
+                  <h4 class="card-title text-truncate">JETTKA'S GARDEN</h4>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/feature-gardens4.jpg" class="card-img-top mb-3" alt="JIA'S GARDEN">
+                <div class="card-body">
+                  <h4 class="card-title text-truncate">JIA'S GARDEN</h4>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="card modify_section_tip">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/tip-of-the-week.jpg" class="img-fluid rounded-0" alt="tip of the week">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3>TIP OF THE WEEK</h3>
+                  <ol class="card-text">
+                    <li class="text-start fw-bold"><span class="fw-normal">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</span></li>
+                    <li class="text-start fw-bold"><span class="fw-normal">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                    <li class="text-start fw-bold"><span class="fw-normal">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                  </ol>
                 </div>
               </div>
             </div>
           </div>
         </article>
+      </main>
+<!-- ------ FEATURE GARDENS卡片 ------ -->
         <footer>
           <section class="footer_section">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-              <div class="col-lg-3 footer_content_box"><h4>PLACE HOLDER</h4><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
-              <div class="col-lg-3 footer_content_box"><h4>PLACE HOLDER</h4><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
-              <div class="col-lg-3 footer_content_box"><h4>PLACE HOLDER</h4><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
-              <div class="col-lg-3 footer_content_box"><h4>CONNECT</h4>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 m-0">
+              <div class="col-lg-3 footer_content_box"><h5>PLACE HOLDER</h5><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
+              <div class="col-lg-3 footer_content_box"><h5>PLACE HOLDER</h5><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
+              <div class="col-lg-3 footer_content_box"><h5>PLACE HOLDER</h5><p>This is just a place holder. This is just a place holder. This is just a place holder.</p></div>
+              <div class="col-lg-3 footer_content_box"><h5>CONNECT</h5>
                 <p class="row social_media">
-                  <a href="##"><i class="fas fa-envelope"></i><span>Email us</span></a>
-                  <a href="##"><i class="fab fa-facebook-square"></i><span>Facebook</span></a>
-                  <a href="##"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-                  <a href="##"><i class="fab fa-google-plus-square"></i><span>Google+</span></a>
+                  <a href="##" class="col-6 col-sm-12"><i class="fas fa-envelope"></i><span>Email us</span></a>
+                  <a href="##" class="col-6 col-sm-12"><i class="fab fa-facebook-square"></i><span>Facebook</span></a>
+                  <a href="##" class="col-6 col-sm-12"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                  <a href="##" class="col-6 col-sm-12"><i class="fab fa-google-plus-square"></i><span>Google+</span></a>
                 </p>
               </div>
             </div>
           </section>
           <section>
-            <p class="footer_copyright">Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
+            <p class="copyright">Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
           </section>
         </footer>
       </main>
