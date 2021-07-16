@@ -1,6 +1,6 @@
-* { 
+/* * { 
   outline: 1px solid red; 
-} 
+}  */
 
 body {
   background-image: url(./img/bg-body.jpg);
@@ -298,13 +298,13 @@ main article .card-body {
 
 /* ~nth */
 @media (min-width: 576px) {
-  .footer_content_box:nth-child(2n) {
+  .footer_section div:nth-child(2n) {
     border-left: 1px solid #CFDFC8;
   }
 }
 
 @media (min-width: 768px) {
-  .footer_content_box + .footer_content_box {
+  .footer_section div + div {
     border-left: 1px solid #CFDFC8;
   }
 }
