@@ -1,0 +1,158 @@
+/* 
+576
+768
+992
+1200
+1400 */
+
+:root {
+  --navlink-color: rgb(244, 245, 204);
+  --navlink-bg-color: rgb(74, 74, 74);
+  --navlink-color-hover: rgb(30, 35, 27);
+  --navlink-bg-color-hover: rgb(219, 234, 209);
+  --navlink-active-color: rgb(54, 106, 20);
+  --navlink-active-bg-color: rgb(151, 180, 133);
+  --carousel-caption-color: rgb(229, 232, 155);
+  --carousel-caption-bg-color: rgb(0, 0, 0, 0.5);
+  --arrow-right-color: rgb(124, 145, 148);
+  --thumbnail-caption-color: rgb(224, 228, 151);
+}
+
+body {
+  background-image: url(./img/bg-body.jpg);
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+/* reset */
+
+.deep-green {
+  background-color: rgb(50, 102, 17);
+}
+
+/* tools */
+
+.logo > a {
+  display: inline-block;
+}
+
+nav {
+  background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--navlink-color);
+  background-color: var(--navlink-bg-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--navlink-color-hover);
+  background-color: var(--navlink-bg-color-hover);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--navlink-active-color);
+  background-color: var(--navlink-active-bg-color);
+}
+
+.navbar-nav a {
+  flex: 1;
+}
+
+/* navbar */
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 40vh;
+  }
+
+  .carousel-caption a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 576px) {
+  .carousel-item {
+    height: 60vh;
+  }
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: inherit;
+}
+
+.carousel-caption {
+  background-color: var(--carousel-caption-bg-color);
+  max-height: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: start;
+  z-index: 99;
+}
+
+.carousel-caption h2 {
+  color: var(--navlink-color);
+}
+
+.carousel-caption a {
+  display: block;
+}
+
+/* .carousel-caption a i {
+  color: var(--arrow-right-color);
+  background-color: white;
+  border-radius: 20px;
+} */
+
+/* carousel */
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail-img {
+  min-width: 100px;
+}
+
+.thumbnail-img a {
+  display: inline-block;
+  width: 100%;
+}
+
+.thumbnail-img a img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-texts {
+  margin-left: 5%;
+}
+
+.thumbnail-texts h2 {
+  color: var(--thumbnail-caption-color);
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.thumbnail-texts p {
+  color: snow;
+  margin-bottom: 0;
+}
+
+/* thumbnails */
