@@ -15,23 +15,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-lg deep-green">
+    <div class="container-lg whole-contents">
       <header>
-        <nav class="navbar navbar-expand-md navbar-light py-0">
-          <div class="container-fluid flex-md-wrap px-0">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-fluid">
             <h1
-              class="logo col-10 col-md-12 d-md-flex justify-content-md-center"
+              class="logo col-8 col-md-12"
             >
-              <a class="navbar-brand col-md-6 mx-md-0" href="#">
+              <a class="navbar-brand" href="#">
                 <img
-                  class="w-100"
                   src="./img/logo.png"
                   alt="Garden Walkthrough - Gardening Community"
                 />
               </a>
             </h1>
             <button
-              class="navbar-toggler col-2 px-0"
+              class="navbar-toggler col-2"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -42,7 +41,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav text-center flex-md-grow-1">
+              <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">About</a>
                 <a class="nav-link" href="#">Plants</a>
@@ -55,7 +54,7 @@
         </nav>
       </header>
       <main>
-        <section class="garden-tips">
+        <section class="garden-tips-carousel">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -68,15 +67,15 @@
                     class="d-block w-100"
                     alt="woman planting flowers"
                   />
-                  <div class="carousel-caption d-block p-1 p-md-2">
+                  <div class="carousel-caption d-block">
                     <h2>Gardening Tips</h2>
-                    <a href="#">
+                    <a href="##">
                       This is just a placeholder, so you can see what the site would
                       look like. This is just a placeholder, so you can see what the
                       site would look like. This is just a placeholder, so you can
                       see what the site would look like.
                       <i class="fas fa-arrow-circle-right"></i>
-                    </a href="#">
+                    </a href="##">
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -85,15 +84,15 @@
                     class="d-block w-100"
                     alt="gardening tools on road"
                   />
-                  <div class="carousel-caption d-block p-1 p-md-2">
+                  <div class="carousel-caption d-block">
                     <h2>Happy Gardener</h2>
-                    <a href="#">
+                    <a href="##">
                       This is just a placeholder, so you can see what the site would
                       look like. This is just a placeholder, so you can see what the
                       site would look like. This is just a placeholder, so you can
                       see what the site would look like.
                       <i class="fas fa-arrow-circle-right"></i>
-                    </a href="#">
+                    </a href="##">
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -102,15 +101,15 @@
                     class="d-block w-100"
                     alt="seedling in hand"
                   />
-                  <div class="carousel-caption d-block p-1 p-md-2">
+                  <div class="carousel-caption d-block">
                     <h2>Planting</h2>
-                    <a href="#">
+                    <a href="##">
                       This is just a placeholder, so you can see what the site would
                       look like. This is just a placeholder, so you can see what the
                       site would look like. This is just a placeholder, so you can
                       see what the site would look like.
                       <i class="fas fa-arrow-circle-right"></i>
-                    </a href="#">
+                    </a href="##">
                   </div>
                 </div>
               </div>
@@ -133,24 +132,26 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <div class="thumbnails container-fluid py-md-3">
-                <div class="row">
-                    <div class="thumbnail col-md-4 my-2 my-md-0">
-                        <div class="thumbnail-img"><a href="#"><img src="./img/tips.jpg" alt="gardening tips"></a></div>
+        </section>
+        <section class="garden-tips-thumbnails">
+            <div class="thumbnails container-fluid">
+                <div class="row g-0"> 
+                    <div class="thumbnail col-md-4">
+                        <div class="thumbnail-img"><a href="##"><img src="./img/tips.jpg" alt="gardening tips"></a></div>
                         <div class="thumbnail-texts">
                             <h2>Tips</h2>
                             <p>This is just a place holder. This is just a place holder.</p>
                         </div>
                     </div>
-                    <div class="thumbnail col-md-4 my-2 my-md-0">
-                        <div class="thumbnail-img"><a href="#"><img src="./img/happy-gardener.jpg" alt="happy gardener"></a></div>
+                    <div class="thumbnail col-md-4">
+                        <div class="thumbnail-img"><a href="##"><img src="./img/happy-gardener.jpg" alt="happy gardener"></a></div>
                         <div class="thumbnail-texts">
                             <h2>Happy Gardener</h2>
                             <p>This is just a place holder. This is just a place holder.</p>
                         </div>
                     </div>
-                    <div class="thumbnail col-md-4 my-2 my-md-0">
-                        <div class="thumbnail-img"><a href="#"><img src="./img/planting.jpg" alt="seedling plants"></a></div>
+                    <div class="thumbnail col-md-4">
+                        <div class="thumbnail-img"><a href="##"><img src="./img/planting.jpg" alt="seedling plants"></a></div>
                         <div class="thumbnail-texts">
                             <h2>Planting</h2>
                             <p>This is just a place holder. This is just a place holder.</p>
@@ -158,6 +159,96 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="week-news">
+            <div class="container-fluid featured-gardens">
+                <div class="row g-0 featured-gardens-headline">
+                    <h2 class="col">Featured gardens</h2>    
+                </div>
+                <div class="row gx-3 featured-gardens-cards">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <a href="##"><img src="./img/juliet.jpg" alt="Juliet's Garden" class="card-img-top"></a>
+                            <div class="card-body">
+                                <h3 class="card-title">Juliet's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <a href="##"><img src="./img/joanne.jpg" alt="Joanne's Garden" class="card-img-top"></a>
+                            <div class="card-body">
+                                <h3 class="card-title">Joanne's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <a href="##"><img src="./img/jettka.jpg" alt="Jettka's Garden" class="card-img-top"></a>
+                            <div class="card-body">
+                                <h3 class="card-title">Jettka's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <a href="##"><img src="./img/jia.jpg" alt="Jia's Garden" class="card-img-top"></a>
+                            <div class="card-body">
+                                <h3 class="card-title">Jia's garden</h3>
+                                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid tips-of-the-week">
+                <div class="row gx-3">
+                    <div class="col-lg-4 col-md-5 to-last-order-md">
+                        <img class="tips-img" src="./img/gardening5.jpg" alt="weekly tips gardening">
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="tips-texts">
+                            <h2>Tips of the week</h2>
+                            <ol>
+                                <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                                <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                                <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contacts-content">
+                <div>
+                    <h2>place holder</h2>
+                    <p>This is just a place holder.<br/>This is just a place holder.<br/>This is just a place holder.</p>
+                </div>
+                <div>
+                    <h2>place holder</h2>
+                    <p>This is just a place holder.<br/>This is just a place holder.<br/>This is just a place holder.</p>
+                </div>
+                <div>
+                    <h2>place holder</h2>
+                    <p>This is just a place holder.<br/>This is just a place holder.<br/>This is just a place holder.</p>
+                </div>
+                <div class="connect">
+                    <h2>connect</h2>
+                    <div class="social-links">
+                        <p><a href="##"><i class="fas fa-envelope fa-fw"></i>Email us</a><br/>
+                        <a href="##"><i class="fab fa-facebook-square fa-fw"></i>Facebook</a><br/>
+                        <a href="##"><i class="fab fa-twitter fa-fw"></i>Twitter</a><br/>
+                        <a href="##"><i class="fab fa-google-plus-square fa-fw"></i>Google+</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>garden walkthrough &copy; 2023 | all rights reserved</p>
         </section>
       </main>
     </div>
