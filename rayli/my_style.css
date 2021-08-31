@@ -164,15 +164,23 @@ h1.logo {
   text-align: center;
 }
 
+.my_carousel span[class*="carousel-control"] {
+  width: 4rem;
+  height: 4rem;
+}
+
 /* carousel */
 
 .thumbnails .container-fluid {
   padding: 1rem 0;
 }
 
+.thumbnails_contents .row {
+  justify-content: center;
+}
+
 .thumbnail {
   display: flex;
-  justify-content: center;
   gap: 1rem;
 }
 
@@ -215,12 +223,13 @@ h1.logo {
 
 .week_news h2 {
   padding: 0.5rem 1rem;
-  border-bottom: 0.2rem solid var(--weeknews-title-border-color);
+  border-bottom: 2px solid var(--weeknews-title-border-color);
   color: var(--weeknews-title-color);
   background-color: var(--weeknews-title-bg-color);
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 
 .week_news > div:not(:first-child) {
@@ -238,6 +247,8 @@ h1.logo {
 
 .my_card.card {
   border: none;
+  padding: 0 1rem;
+  background-color: snow;
 }
 
 .my_card.card a {
@@ -298,7 +309,7 @@ h1.logo {
 }
 
 .contacts_content > div:not(:first-child) {
-  border-top: 0.1rem solid var(--weektips-border-color);
+  border-top: 1px solid var(--weektips-border-color);
 }
 
 .contacts_content h2 {
@@ -324,6 +335,8 @@ h1.logo {
 }
 
 .contacts_content .social_links i {
+  display: inline-block;
+  margin-right: 3px;
   font-size: 1.25rem;
   color: var(--whole-contents-bg-color);
 }
@@ -331,14 +344,21 @@ h1.logo {
 /* contacts */
 
 .copyright p {
+  max-width: 220px;
   padding: 0.5rem 0;
-  margin: 0;
+  margin: 0 auto;
   color: snow;
   text-align: center;
   text-transform: capitalize;
 }
 
 /* copyright */
+
+@media (min-width: 396px) {
+  .copyright p {
+    max-width: 100%;
+  }
+}
 
 @media (min-width: 576px) {
   .my_nav.navbar-light .navbar-toggler {
@@ -351,6 +371,10 @@ h1.logo {
     overflow: visible;
   }
 
+  .thumbnail {
+    padding: 0 1rem;
+  }
+
   .contacts_content > div {
     flex: 1 0 50%;
   }
@@ -361,11 +385,11 @@ h1.logo {
 
   .contacts_content > div:nth-child(3),
   .contacts_content > div:nth-child(4) {
-    border-top: 0.1rem solid var(--weektips-border-color);
+    border-top: 1px solid var(--weektips-border-color);
   }
 
   .contacts_content > div:nth-child(2n) {
-    border-left: 0.1rem solid var(--weektips-border-color);
+    border-left: 1px solid var(--weektips-border-color);
   }
 }
 
@@ -376,17 +400,21 @@ h1.logo {
     text-align: center;
   }
 
-  .thumbnails_contents .thumbnail {
-    padding: 0 1rem;
-  }
-
   .thumbnails_contents .thumbnail:not(:first-child) {
-    border-left: 0.1rem solid var(--thumbnail-border-color);
+    border-left: 1px solid var(--thumbnail-border-color);
     margin: 0;
   }
 
-  .to_last_order_md {
-    order: 0;
+  .week_news h2 {
+    text-align: left;
+  }
+
+  .my_card.card {
+    padding: 0;
+  }
+
+  .comes_first_md {
+    order: -1;
   }
 
   .contacts_content > div {
@@ -398,7 +426,7 @@ h1.logo {
   }
 
   .contacts_content > div:not(:first-child) {
-    border-left: 0.1rem solid var(--weektips-border-color);
+    border-left: 1px solid var(--weektips-border-color);
   }
 
   .contacts_content .social_links a {
