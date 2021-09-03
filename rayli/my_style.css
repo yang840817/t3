@@ -85,7 +85,6 @@ h1.logo {
 
 .logo img {
   width: 100%;
-  object-fit: cover;
 }
 
 .my_nav.navbar-light .navbar-toggler {
@@ -171,7 +170,7 @@ h1.logo {
 
 /* carousel */
 
-.thumbnails .container-fluid {
+.thumbnails_contents {
   padding: 1rem 0;
 }
 
@@ -237,10 +236,6 @@ h1.logo {
   border-top: 1px solid var(--weektips-border-color);
 }
 
-.week_news > .container-fluid {
-  padding: 0;
-}
-
 .featured_gardens_cards {
   margin-top: 1rem;
 }
@@ -257,7 +252,6 @@ h1.logo {
 
 .my_card .card-img-top {
   border-radius: 0;
-  object-fit: cover;
 }
 
 .my_card .card-body {
@@ -287,10 +281,6 @@ h1.logo {
   margin-top: 1rem;
 }
 
-.to_last_order_md {
-  order: 99;
-}
-
 /* weeknews */
 
 .contacts {
@@ -301,6 +291,7 @@ h1.logo {
   display: flex;
   flex-wrap: wrap;
   color: var(--contacts-text-color);
+  border-top: 1px solid var(--weektips-border-color);
 }
 
 .contacts_content > div {
@@ -312,7 +303,7 @@ h1.logo {
   border-top: 1px solid var(--weektips-border-color);
 }
 
-.contacts_content h2 {
+.contacts_content h3 {
   margin: 0;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -364,6 +355,10 @@ h1.logo {
   .my_nav.navbar-light .navbar-toggler {
     padding: 0.5rem;
     font-size: 1.25rem;
+  }
+
+  .my_carousel .carousel-item {
+    height: 60vh;
   }
 
   .my_carousel .carousel-caption a {
