@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: inherit;
+  /* color: inherit; */
 }
 
 /* reset */
@@ -343,11 +343,19 @@ h1.logo {
   text-transform: capitalize;
 }
 
+.copyright span {
+  display: none;
+}
+
 /* copyright */
 
 @media (min-width: 396px) {
   .copyright p {
     max-width: 100%;
+  }
+
+  .copyright span {
+    display: inline;
   }
 }
 
