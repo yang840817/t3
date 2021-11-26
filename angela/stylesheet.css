@@ -12,6 +12,24 @@
   --slide-text-yellowgreen: #dada94;
 }
 
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-image: url("/img/bg-body.jpg");
 }
@@ -29,13 +47,17 @@ header {
   padding-top: 15px;
   background: white;
   position: sticky;
-  z-index: 1;
+  z-index: 2;
   top: 0;
 }
 
 .logo {
   margin: 0 0 1.5rem 0;
   text-align: center;
+}
+
+.logo a {
+  display: inline-block;
 }
 
 .logo img {
@@ -46,12 +68,18 @@ nav {
   border-bottom: 1px solid var(--bg-light-green);
 }
 
-.burger_menu {
+nav .navbar-toggler {
   margin: 5px auto 5px;
+}
+
+/* 移除BS預設的focus效果 */
+nav .navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
 }
 
 .navbar_modify {
   padding: 0;
+  background-color: gray;
 }
 
 .navbar_nav_modify {
@@ -65,19 +93,17 @@ nav {
   color: var(--nav-text-light);
   flex: 1 0 0;
 }
-
-.navbar .navbar-nav .nav-link.menu_button:hover {
+.navbar .navbar-nav .nav-link:hover {
   background-color: var(--bg-light-green);
   color: black;
 }
 
-.navbar .navbar-nav .nav-link.home_button {
+.navbar .navbar-nav .nav-link.active {
   background: var(--home-green);
   color: green;
 }
 
 /* show at breakpoint-sm */
-
 .slide_title {
   font-size: 24px;
   color: var(--slide-text-yellowgreen);
@@ -105,8 +131,9 @@ nav {
 }
 
 .slide_info i {
-  color: #728a8c;
   margin-left: 10px;
+  background-color: white;
+  color: #728a8c;
 }
 
 @media (min-width: 768px) {
@@ -116,7 +143,6 @@ nav {
 }
 
 /* cards below slide */
-
 .slide_card_wrap {
   position: relative;
   padding: 1.5rem;
@@ -127,7 +153,7 @@ nav {
   color: white;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   .slide_card_wrap + .slide_card_wrap::before {
     content: "";
     margin: auto;
@@ -142,7 +168,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .slide_card_wrap + .slide_card_wrap::before {
     content: "";
     margin: auto;
@@ -166,10 +192,11 @@ nav {
 
 .slide_card_picture {
   flex: 1 0 auto;
+  box-sizing: border-box;
   border: 1px solid white;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
   .slide_card {
     flex-direction: column;
   }
@@ -178,25 +205,31 @@ nav {
   }
 }
 
-.slide_card_title {
-  font-size: 18px;
-  color: var(--slide-text-yellowgreen);
+@media (min-width: 992px) {
+  .slide_card {
+    flex-direction: row;
+  }
+
+  .slide_card_picture {
+    width: auto;
+  }
 }
 
-.slide_card p {
-  margin: 0;
+.slide_card_title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: var(--slide-text-yellowgreen);
 }
 
 /* featured garden */
 
 .content_wrap {
-  padding: 1.5rem;
   background-color: white;
 }
 
 .gallery {
-  padding: 0 0 1.5rem 0;
-  border-bottom: 2px solid #eae2cf;
+  padding: 1.5rem;
+  position: relative;
 }
 
 .sections_title {
@@ -226,11 +259,11 @@ nav {
 }
 
 .gallery_card_info {
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   color: black;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .gallery_card_info {
     margin: 0 0 0 0;
   }
@@ -240,27 +273,37 @@ nav {
   color: black;
 }
 
+hr {
+  margin: 0 auto;
+  padding: 2px 0;
+  width: calc(100% - 3rem);
+  color: #ebe9e5;
+}
+
 /* tips of week */
 
-.list_wrap {
-  padding: 1.5rem 0 0 0;
+/* 使用before:: */
+.week_content {
+  padding: 1.5rem;
 }
 
-.list {
-  margin: 0 0 0 -10px;
+.week_content ol {
+  counter-reset: tip-list;
+  list-style-type: none;
 }
 
-.list li::marker {
-  font-weight: 600;
+.week_content li {
+  display: flex;
+  margin: 0 0 15px 0;
+  counter-increment: tip-list;
 }
 
-.list li {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 10px;
+.week_content li::before {
+  margin: 0 15px 0 0;
+  content: counter(tip-list) ".";
 }
 
 /* footer */
-
 .footer_column {
   padding: 10px 24px;
   background: var(--bg-light-green);
@@ -270,16 +313,18 @@ nav {
 
 .footer_column_title {
   margin: 0 0 10px 0;
+  font-size: 20px;
   text-shadow: white 1px 1px;
 }
 
-.footer_column_content {
-  margin: 0;
+.media_link {
+  display: block;
 }
 
 .media_link i {
   padding: 0 10px 0 0;
   color: var(--bg-dark-green);
+  font-size: 20px;
 }
 
 .media_link span {
