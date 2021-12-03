@@ -15,7 +15,6 @@
 h1,
 h2,
 h3,
-h3,
 h4,
 h5,
 h6,
@@ -26,28 +25,40 @@ ul {
   padding: 0;
 }
 
-body {
-  background-image: url("/img/bg-body.jpg");
-}
-
 a {
   text-decoration: none;
 }
 
-.all_wrap {
+body {
+  min-width: 375px;
+  background-image: url("/img/bg-body.jpg");
+}
+
+.underlayer_modify {
   padding: 0 1.5rem;
   background: var(--bg-dark-green);
 }
 
 header {
   display: flex;
-  padding: 15px 0;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 9;
   background: white;
 }
 
 .logo {
-  text-align: center;
+  padding: 10px 0;
   flex-grow: 1;
+  text-align: center;
+  max-width: 85%;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    max-width: 100%;
+  }
 }
 
 .logo a {
@@ -55,17 +66,23 @@ header {
 }
 
 .logo img {
+  height: 100%;
   max-width: 90%;
 }
 
 header .navbar-toggler {
-  padding: 10px;
+  padding: 5px;
   border: none;
+  font-size: 18px;
 }
 
 /* 移除BS預設的focus效果 */
 header .navbar-toggler:focus {
   box-shadow: none;
+}
+
+header button {
+  flex-grow: 1;
 }
 
 nav {
@@ -74,7 +91,8 @@ nav {
 
 .navbar_modify {
   padding: 0;
-  background-color: gray;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 .navbar_nav_modify {
@@ -115,6 +133,11 @@ nav {
   bottom: 0;
   text-align: left;
   background-color: rgba(128, 128, 128, 0.6);
+}
+
+.slide_info:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .slide_info p {
@@ -211,7 +234,7 @@ nav {
 
 /* featured garden */
 
-.content_wrap {
+.article {
   background-color: white;
 }
 
@@ -249,6 +272,10 @@ nav {
   }
 }
 
+.gallery_card_title {
+  color: brown;
+}
+
 .gallery_card_title a {
   color: brown;
 }
@@ -262,6 +289,10 @@ nav {
   .gallery_card_info {
     margin: 0 0 0 0;
   }
+}
+
+.gallery_card_info {
+  color: black;
 }
 
 .gallery_card_info a {
@@ -297,7 +328,29 @@ hr {
   font-weight: 600;
 }
 
-/* footer */
+/* footer手機版 */
+.footer_mobile button {
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: var(--bg-light-green);
+  border: 1px solid var(--borer-light-green);
+  border-bottom: none;
+  color: gray;
+  font-size: 20px;
+  text-shadow: white 1px 1px;
+}
+
+.footer_mobile .card {
+  padding: 0.75rem 1.5rem;
+  border-top: none;
+  border-radius: none;
+  background: var(--bg-light-green);
+  color: gray;
+}
+
+/* footer電腦版 */
 .footer_column {
   padding: 10px 24px;
   background: var(--bg-light-green);
