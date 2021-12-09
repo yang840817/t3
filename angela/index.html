@@ -16,16 +16,17 @@
 <body>
     <div class="container underlayer_modify">
         <header>
-            <button class="navbar-light navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h1 class="logo">
-                <a href="#"><img src="/img/logo.png" alt="Garden Walkthrough"></a>
-            </h1>
+            <div>
+                <h1 class="logo">
+                    <a href="#"><img src="/img/logo.png" alt="Garden Walkthrough"></a>
+                </h1>
+                <button class="navbar-light navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <nav class="navbar navbar-expand-md navbar-light g-0 navbar_modify">
-
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav navbar_nav_modify">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -68,11 +69,13 @@
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon prev_color_modify" aria-hidden="true"></span>
+                        <!-- 換掉bootstrap的預設左右button樣式(svg in bg-image)，改成font awesome的 -->
+                        <span class="slide_control" aria-hidden="true"><i class="fas fa-caret-left"></i></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!-- 換掉bootstrap的預設左右button樣式(svg in bg-image)，改成font awesome的 -->
+                        <span class="slide_control" aria-hidden="true"><i class="fas fa-caret-right"></i></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -110,7 +113,7 @@
                 </div>
             </section>
             <!-- section 文章內容 -->
-            <article>
+            <section class="main_content">
                 <div class="garden_gallery">
                     <h2 class="article_heading">FEATURED GARDENS</h2>
                     <div class="row">
@@ -148,7 +151,9 @@
                     </div>
                 </div>
 
-                <hr>
+                <!-- <hr> -->
+                
+                <div class="divider"></div>
 
                 <div class="week_content">
                     <div class="row">
@@ -165,9 +170,8 @@
                         </div>
                     </div>
                 </div>
-            </article>
+            </section>
         </main>
-        <footer>
             <div class="row g-0">
                 <div class="col-12 col-sm-6 col-md-3 footer_column">
                     <h4 class="footer_column_title">PLACE HOLDER
