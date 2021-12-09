@@ -23,7 +23,6 @@ p {
   margin: 0;
 }
 a {
-  /* color: inherit; */
   text-decoration: none;
 }
 body {
@@ -40,20 +39,33 @@ body {
 }
 
 /* nav */
-.logo {
-  padding: 1rem 0;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-.logo a {
-  display: inline-block;
+.logo {
+  display: block;
+  flex: 0 0 50%;
+  padding: 1rem 0;
+  margin-right: 1rem;
+}
+
+.logo img {
+  width: 100%;
 }
 .nav_modify {
   padding: 0;
 }
-.nav_modify .collapse {
-  flex-basis: 100%;
+.nav_modify.navbar-light .navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+.nav_modify .navbar-collapse {
+  flex: 0 0 100%;
 }
 .nav_modify .navbar-nav {
-  flex-grow: 1;
+  flex: 1 0 0;
 }
 .nav_modify .nav-item {
   flex: 1 0 0;
@@ -61,6 +73,7 @@ body {
   background-color: var(--accent-color);
 }
 .nav_modify .nav-item a.nav-link {
+  padding: 0.75rem 0;
   color: #f1f3c9;
   transition: color 0.4s, background-color 0.4s;
 }
@@ -74,22 +87,24 @@ body {
 }
 
 /* carousel */
-.carousel_modify {
-  height: 40vh;
-}
-@media screen and (min-width: 992px) {
+/* .carousel_modify {
+  height: 50vh;
+} */
+/* @media screen and (min-width: 768px) {
   .carousel_modify {
-    height: 50vh;
+    height: 60vh;
   }
-}
-.carousel_modify .carousel-inner {
+} */
+/* .carousel_modify .carousel-inner {
   height: 100%;
 }
 .carousel_modify .carousel-item {
   height: 100%;
-}
+} */
 .carousel_modify img {
-  height: 100%;
+  /* width: 100%; */
+  /* height: 50vh; */
+  min-height: 250px;
   object-fit: cover;
 }
 .carousel_modify .carousel-caption {
@@ -97,7 +112,7 @@ body {
   right: 0;
   bottom: 0;
   padding: 1rem;
-  text-align: start;
+  text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel_modify h5 {
@@ -116,43 +131,49 @@ body {
 .carousel_modify a:hover {
   color: #fff459;
 }
+.carousel_modify a:hover + i {
+  color: #fff459;
+}
 .carousel_modify i {
   padding: 3px 5px;
   border-radius: 50%;
   background-color: #7a9093;
+  transition: 0.4s;
 }
 @media screen and (min-width: 768px) {
-  .carousel_modify p {
+  .carousel_modify a {
     white-space: normal;
   }
 }
 
 /* thumbnails */
 .thumbnail {
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .thumbnail_item {
-  padding: 0 1rem;
   gap: 1rem;
-  margin-bottom: 1rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .thumbnail_item {
+    margin-bottom: 0;
+  }
 }
 
 .thumbnail_pic {
-  flex: 0 0 80px;
-  height: 80px;
   border: 1px solid #e2e2e5;
-  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .thumbnail .col:not(:first-child) {
     border-left: 2px solid #3e7320;
     box-shadow: 1px 0 #2a5a0e inset;
   }
-  .thumbnail_pic {
-    flex: 0 0 100px;
-    height: 100px;
-  }
 }
+.thumbnail_pic {
+  flex: 0 0 80px;
+  height: 80px;
+}
+
 .thumbnail_pic img {
   width: 100%;
   height: 100%;
@@ -175,13 +196,10 @@ body {
   padding: 1rem;
   background-color: #fff;
 }
-.weekly_garden {
-  margin-bottom: 1rem;
-}
 .weekly_title {
   padding: 0.5rem 1.5rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #abc79a;
+  border-bottom: 2px solid #589234;
   font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -190,14 +208,9 @@ body {
   background-color: var(--secondary-color);
 }
 .card_modify {
-  padding: 2rem;
   border: none;
 }
-@media screen and (min-width: 768px) {
-  .card_modify {
-    padding: 0;
-  }
-}
+
 .card_modify img {
   margin-bottom: 1rem;
   border-radius: 0;
@@ -207,84 +220,89 @@ body {
 }
 .card_modify h5 {
   margin-bottom: 1rem;
-  text-align: center;
   font-weight: 400;
   font-size: 1.25rem;
   text-transform: uppercase;
   color: var(--main-title-color);
 }
-@media screen and (min-width: 768px) {
-  .card_modify h5 {
-    text-align: left;
-  }
-}
+
 .weekly hr {
-  margin: 0;
+  margin: 1rem 0;
   height: 2px;
 }
 
 /* weekly_tips */
-.weekly_tips {
-  padding: 1rem 0;
-}
-.weekly_tips_pic {
-  padding: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .weekly_tips_pic {
-    padding: 0;
-  }
-}
+
 .weekly_tips_pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .weekly_tips_content {
-  padding: 0 2rem;
-  counter-reset: num;
+  padding: 0;
+  list-style-position: inside;
 }
-@media screen and (min-width: 768px) {
-  .weekly_tips_content {
-    padding: 0;
-  }
-}
-.weekly_tips_content p {
-  display: flex;
+.weekly_tips_content li {
   line-height: 1.5;
 }
-.weekly_tips_content p:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.weekly_tips_content p::before {
-  margin-right: 0.5rem;
-  counter-increment: num;
+.weekly_tips_content li::marker {
   font-weight: bold;
-  content: counter(num) ".";
+}
+.weekly_tips_content li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 /* footer */
 footer {
   background-color: var(--secondary-color);
 }
+
+.contact .col {
+  border: 1px solid #c6d8ba;
+}
 .contact_item {
   padding: 1rem;
-  height: 100%;
-  border: 1px solid #c6d8ba;
   text-align: center;
   color: var(--footer-color);
 }
 @media screen and (min-width: 768px) {
   .contact_item {
-    text-align: start;
+    text-align: left;
   }
+}
+.contact_item .navbar-toggler {
+  padding: 0;
+  vertical-align: bottom;
+  box-shadow: none;
+  transition: 0.4s;
+}
+.contact_item .navbar-toggler-icon {
+  width: auto;
+  height: auto;
+}
+.contact_icon {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .contact_item .navbar-toggler {
+    display: none;
+  }
+  .contact_item .collapse:not(.show) {
+    display: block;
+  }
+}
+
+.contact_item .navbar-toggler[aria-expanded="true"] {
+  transform: rotate(-45deg);
+}
+.contact_item .navbar-toggler i {
+  font-size: 1rem;
+  color: var(--footer-color);
 }
 .contact_item h3 {
   margin-bottom: 1rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .contact_icon a {
   display: block;
@@ -294,13 +312,21 @@ footer {
   transition: filter 0.4s;
 }
 .contact_icon i {
-  margin-right: 0.5rem;
   vertical-align: middle;
   font-size: 1.5rem;
   color: #346515;
 }
 .contact_icon span {
-  vertical-align: middle;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .contact_icon i {
+    margin-right: 0.5rem;
+  }
+  .contact_icon span {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 .contact_icon a:hover {
   filter: brightness(150%);
