@@ -1,0 +1,148 @@
+* {
+  /* outline: 1px solid red; */
+}
+body {
+  background-image: url(./img/bg-body.jpg);
+}
+.container_modify {
+  padding: 0 2rem;
+  background-color: #356618;
+  width: 80%;
+}
+
+/* header */
+header {
+  background: #fff;
+}
+header h1 {
+  text-align: center;
+}
+.navbar_modify {
+  padding: 0;
+}
+.navbar_modify .navbar-nav .nav-link {
+  background: #4b4b4b;
+  flex: 1;
+  padding: 1rem 0;
+  color: rgb(129, 167, 129);
+}
+.navbar_nav_modify {
+  flex-basis: 100%;
+  text-align: center;
+}
+.navbar_modify .navbar-nav .nav-link:hover {
+  background-color: #91a784;
+  color: black;
+}
+.navbar_modify .navbar-nav .nav-link.active {
+  background: #91a784;
+  color: green;
+}
+
+/* 幻燈片 carousel */
+.carousel .a_modify {
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  text-decoration: none;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.carousel .a_modify:hover {
+  color: rgb(79, 203, 44);
+}
+.slide_3card_picture {
+  border: 1px solid #fff;
+}
+.slide_3card {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.slide_3card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #dbdf92;
+}
+.slide_3card p {
+  margin: 0;
+  padding: 0;
+}
+.slide_3card_content {
+  padding: 1rem;
+}
+
+/* 中間白色區域 */
+.main_area {
+  background-color: #fff;
+  padding: 1rem;
+}
+.featured_gardens h2 {
+  color: #733d1c;
+  background-color: #dce8d4;
+  padding: 1rem;
+}
+.featured_gardens h3 {
+  color: #733d1c;
+  font-size: 18px;
+  padding: 1rem 0;
+}
+.featured_gardens p {
+  font-size: 15px;
+}
+.tips_gardens h2 {
+  color: #733d1c;
+  background-color: #dce8d4;
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 18px;
+}
+li + li {
+  margin-top: 1rem;
+}
+ol {
+  padding-top: 1rem;
+}
+
+/* footer */
+
+footer {
+  background-color: #dce8d4;
+  border-top: 3px solid #acc79b;
+}
+.copyright {
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+.place_holder {
+  color: #8a8b8b;
+  padding-top: 1.5rem;
+}
+footer h3 {
+  font-size: 20px;
+  color: #828283;
+}
+footer p {
+  font-size: 15px;
+}
+.footer_content {
+  padding-top: 1.5rem;
+}
+.media_modify {
+  color: #828283;
+  display: block;
+}
+.footer_content a {
+  text-decoration: none;
+}
+i {
+  padding: 0 1rem 0 0;
+  vertical-align: middle;
+  color: #3a6820;
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+}
