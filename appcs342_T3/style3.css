@@ -1,10 +1,6 @@
-* {
-  /* outline: 1px solid red; */
-}
 body {
   padding: 0;
   background-image: url(./img/bg-body.jpg);
-  min-width: 375px;
 }
 
 /* conteainer */
@@ -15,11 +11,6 @@ body {
 @media (min-width: 576px) {
   .container_modify {
     padding: 0 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .container_modify {
-    width: 85%;
   }
 }
 
@@ -34,29 +25,29 @@ header h1 {
 header h1 a {
   display: block;
 }
-.navbar_modify {
+.navbar_body {
   padding: 0;
   border-bottom: 1px solid #fff;
 }
-.navbar_modify .navbar-nav .nav-link {
+.navbar_body .navbar-nav .nav-link {
   flex: 1;
   padding: 1rem 0;
   background: #4b4b4b;
   color: rgb(129, 167, 129);
 }
-.navbar_modify .navbar-nav {
+.navbar_body .navbar-nav {
   flex-basis: 100%;
   text-align: center;
 }
-.navbar_modify .navbar-nav .nav-link:hover {
+.navbar_body .navbar-nav .nav-link:hover {
   background-color: #d9eacf;
   color: black;
 }
-.navbar_modify .navbar-nav .nav-link.active {
+.navbar_body .navbar-nav .nav-link.active {
   background: #91a784;
   color: green;
 }
-.navbar_modify .navbar-nav .nav-link.active:hover {
+.navbar_body .navbar-nav .nav-link.active:hover {
   background-color: #d9eacf;
 }
 header .navbar-toggler:focus {
@@ -64,10 +55,10 @@ header .navbar-toggler:focus {
 }
 
 /* 幻燈片 carousel */
-.card_modify {
-  padding: 0 1rem 1rem 1rem;
+.card_body {
+  padding: 0 1rem;
 }
-.carousel .a_modify {
+.carousel a {
   padding: 1rem;
   left: 0;
   right: 0;
@@ -76,51 +67,73 @@ header .navbar-toggler:focus {
   text-decoration: none;
   background-color: rgba(128, 128, 128, 0.5);
 }
-.carousel .a_modify h2 {
+.carousel a h2 {
   color: #dbdf92;
 }
-.carousel .a_modify:hover {
+.carousel a:hover {
   color: rgb(79, 203, 44);
 }
-.a_modify p {
+a p {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.small_arrow {
+  text-align: center;
+}
 @media (min-width: 768px) {
-  .a_modify p {
+  a p {
     white-space: normal;
   }
+  .small_arrow {
+    display: none;
+  }
 }
-.slide_card_picture {
-  min-width: 30%;
+.thumbnail_picture {
+  flex: 1 0 auto;
   border: 1px solid #fff;
 }
-.slide_card {
+.thumbnail_body {
   display: flex;
+  padding-bottom: 1rem;
   align-items: center;
-  padding-top: 1rem;
   color: #fff;
 }
-.slide_card + .slide_card {
+.thumbnail_body + .sthumbnail_body {
   padding-top: 1rem;
 }
+@media (min-width: 768px) {
+  .thumbnail_body {
+    display: flex;
+    color: #fff;
+    align-items: normal;
+    flex-direction: column;
+  }
+}
 @media (min-width: 992px) {
-  .card_modify + .card_modify {
+  .thumbnail_body {
+    flex-direction: row;
+    align-items: center;
+  }
+  .card_body + .card_body {
     border-left: 2px solid #3d751a;
     box-shadow: inset 1px 0 0 #2a5a0d;
   }
-  .slide_card {
+  .thumbnail_body {
     margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .thumbnail_picture {
+    margin-right: 1rem;
   }
 }
-.slide_card h3 {
+.thumbnail_body h3 {
   margin: 0 0 10px 0;
   font-size: 20px;
   color: #dbdf92;
 }
-.slide_card p {
+.thumbnail_body p {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -131,10 +144,19 @@ header .navbar-toggler:focus {
   border-radius: 50%;
   background-color: #798f92;
 }
-.slide_card_content {
+.thumbnail_content {
   margin-left: 1rem;
 }
-
+@media (min-width: 768px) {
+  .thumbnail_content {
+    margin: 1rem 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .thumbnail_content {
+    margin: 0;
+  }
+}
 /* 中間白色區域 */
 .article_box {
   background-color: #fff;
@@ -148,6 +170,7 @@ header .navbar-toggler:focus {
   font-size: 25px;
   border-bottom: 2px solid #acc799;
   text-shadow: #fff 2px 0 0px;
+  text-transform: uppercase;
 }
 .article_content h3 {
   color: #733d1c;
@@ -166,11 +189,7 @@ header .navbar-toggler:focus {
   margin: 0;
   font-size: 25px;
   border-bottom: 2px solid #acc799;
-}
-@media (min-width: 768px) {
-  .article_tips .card_body {
-    padding-left: 1rem;
-  }
+  text-transform: uppercase;
 }
 li {
   color: #606060;
@@ -220,8 +239,11 @@ footer {
   .footer_content button {
     display: none;
   }
-  .footer_content p.collapse:not(.show) {
+  .footer_content p.collapse {
     display: block;
+  }
+  .collapse {
+    font-size: 17px;
   }
   .footer_content + .footer_content {
     border-left: 3px solid #c9dabc;
@@ -231,7 +253,7 @@ footer a:hover {
   color: rgb(79, 203, 44);
 }
 footer h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #828283;
   margin: 0.5rem 0;
   text-shadow: #fff 2px 0 0px;
