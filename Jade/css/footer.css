@@ -1,0 +1,48 @@
+footer {
+    background-color: #DBE9D4;
+    color: gray;
+}
+
+footer a:link, a:visited {
+    list-style: none;
+    color: gray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer h5 {
+    padding: 20px 10px 10px 10px;
+    text-shadow: 1px 1px white;
+}
+
+footer a {
+    display: block;
+    margin-left: 10px;
+}
+
+footer i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+footer span {
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.copy {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.copy p {
+    margin: 0;
+}
+
+footer .row {
+    padding-bottom: 25px;
+}

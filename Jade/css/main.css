@@ -1,0 +1,112 @@
+.news {
+    padding: 20px;
+    margin-top: 16px;
+}
+.featured {
+    margin-bottom: 20px;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #836045;
+    text-shadow: 1px 1px white;
+}
+
+.garden {
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+    text-align: left;
+}
+
+.people-name {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #836045;
+}
+
+.people-text {
+    font-size: 13px;
+}
+
+
+.about-cover {
+    width: 900px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.about-box {
+    display: flex;
+}
+
+.about-box a:hover {
+    opacity: 0.8;
+}
+
+.about-box a {
+    display: inline-block;
+}
+
+.tips , .happy-gardener , .plants {
+    display: flex;
+    height: 110px;
+}
+
+.img-tips, .img-plants, .img-happy {
+    width: 89px;
+    height: 89px;
+    margin: 10px;
+}
+
+.image-top:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.img-tips>img, .img-plants>img, .img-happy>img {
+    height: 100%;
+}
+
+.tips-text, .happy-text, .plants-text {
+    padding: 10px 30px 10px 10px;
+}
+
+.tips-text>h3, .happy-text>h3, .plants-text>h3 {
+    font-size: 16px;
+}
+
+.tips-text>p, .happy-text>p, .plants-text>p {
+    font-size: 13px;
+}
+
+figcaption > span>a {
+    color: white;
+}
+
+.gray-line {
+    margin: 20px 0;
+    border: 0.5px solid gray;
+}
+
+.tips-title {
+    margin-bottom: 30px;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #836045;
+    text-shadow: 1px 1px white;
+}
+
+.tips-of-the-week {
+    display: flex;
+}
+
+.tips-of-the-week > .tips-text {
+    padding: 0 0 0 20px;
+}
+
+
+

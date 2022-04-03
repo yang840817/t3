@@ -1,0 +1,28 @@
+.img-logo{
+    text-align: center;
+}
+
+nav {
+    background-color:#535151;
+}
+
+nav .nav-link:link, .nav-link:visited {
+    color:#f4f5c7;
+}
+
+/* nav a:hover {
+    background-color: #B3CCA3;
+    color: black;
+}  */
+/* 
+nav .nav-pills .nav-link:hover{
+    background: #B3CCA3;
+    color: black;
+} */
+
+nav .nav-link:hover,nav .nav-link:focus  {
+    background-color: #B3CCA3;
+    color: black;
+    border-radius: 0;
+}
+

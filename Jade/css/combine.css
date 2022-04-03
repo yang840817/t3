@@ -1,0 +1,28 @@
+* {
+    outline: 1px solid black;
+}
+
+body {
+    background-image: url("../img/bg-body.jpg");
+    background-repeat: repeat;
+}
+
+.color-background {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 940px;
+    background-color: #356618;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.back-light-green {
+    background-color: #DBE8D4;
+    border-bottom: #B3CCA3 2px solid;
+}
+
+.font-yellow {
+    color: #E3E699;
+}
