@@ -9,27 +9,22 @@ footer a:link, a:visited {
     text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover, i:hover {
     color: black;
 }
 
 footer h5 {
-    padding: 20px 10px 10px 10px;
+    margin: 15px 0;
     text-shadow: 1px 1px white;
 }
 
 footer a {
     display: block;
-    margin-left: 10px;
 }
 
 footer i {
     font-size: 20px;
-    vertical-align: middle;
-}
-
-footer span {
-    margin: 10px;
+    color: #356618;
     vertical-align: middle;
 }
 
@@ -43,6 +38,11 @@ footer span {
     margin: 0;
 }
 
-footer .row {
-    padding-bottom: 25px;
+footer .row .fa-fw {
+    width: 1.5em;
+}
+
+footer .col-sm-6 {
+    border-right: 1px #B3CCA3 solid;
+    padding-bottom: 35px;
 }
