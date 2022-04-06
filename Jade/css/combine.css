@@ -1,0 +1,61 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+body {
+    background-image: url("../img/bg-body.jpg");
+    background-repeat: repeat;
+}
+
+.color-background {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 940px;
+    background-color: #356618;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.back-light-green {
+    background-color: #DBE8D4;
+    border-bottom: #B3CCA3 2px solid;
+}
+
+.font-yellow {
+    color: #E3E699;
+}
+
+@media screen and (max-width: 768px) {
+    .about-cover {
+        position:static;
+        width: fit-content;
+    }
+    .about-box {
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid #356618 ;
+    }
+    .tips-of-the-week {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .tips-week-text {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer .row .col-sm-6{
+        display: flex;
+        padding: 10px;
+    }
+    footer .row .col-sm-6 h5{
+        font-size: 16px;
+        }
+     footer .row .col-sm-6 a{
+        padding: 10px;
+        text-align: center;
+        }
+}

@@ -1,0 +1,48 @@
+footer {
+    background-color: #DBE9D4;
+    color: gray;
+}
+
+footer a:link, a:visited {
+    list-style: none;
+    color: gray;
+    text-decoration: none;
+}
+
+footer a:hover, i:hover {
+    color: black;
+}
+
+footer h5 {
+    margin: 15px 0;
+    text-shadow: 1px 1px white;
+}
+
+footer a {
+    display: block;
+}
+
+footer i {
+    font-size: 20px;
+    color: #356618;
+    vertical-align: middle;
+}
+
+.copy {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.copy p {
+    margin: 0;
+}
+
+footer .row .fa-fw {
+    width: 1.5em;
+}
+
+footer .col-sm-6 {
+    border-right: 1px #B3CCA3 solid;
+    padding-bottom: 35px;
+}
