@@ -1,0 +1,19 @@
+nav {
+    background-color:#535151;
+}
+
+nav .nav-link:link, .nav-link:visited {
+    color:#f4f5c7;
+}
+
+nav .nav-link:hover{
+    background-color: #B3CCA3;
+    color: black;
+    border-radius: 0;
+}
+
+nav .nav-link:active ,nav .nav-link:focus, nav .nav-link:focus-visible{
+    background-color: #95B285;
+    color: #39691D;
+    border-radius: 0;
+}

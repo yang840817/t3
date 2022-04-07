@@ -1,0 +1,71 @@
+.featured {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #836045;
+    text-shadow: 1px 1px white;
+}
+
+.people-name {
+    font-size: 18px;
+    color: #836045;
+}
+
+.people-text {
+    font-size: 13px;
+}
+
+.about-cover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.about-cover a:hover, a:focus, main .about-cover i:hover  {
+    color: white;
+}
+
+.about-cover a{
+    font-size: 20px;
+}
+
+.about-box a:hover {
+    opacity: 0.8;
+}
+
+.img-tips, .img-plants, .img-happy {
+    width: 89px;
+    height: 89px;
+}
+
+.image-top:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.img-tips>img, .img-plants>img, .img-happy>img {
+    height: 100%;
+}
+
+.tips-text>h3, .happy-text>h3, .plants-text>h3 {
+    font-size: 16px;
+}
+
+.tips-text>p, .happy-text>p, .plants-text>p {
+    font-size: 13px;
+}
+
+.gray-line {
+    border: 0.5px solid gray;
+}
+
+.tips-title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #836045;
+    text-shadow: 1px 1px white;
+}
+
+.tips-week-text > ul {
+    list-style: decimal;
+    font-size: 14px;
+}
