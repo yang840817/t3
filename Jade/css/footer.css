@@ -1,7 +1,86 @@
+@media (min-width: 768px) {
+    footer .col-sm-6:not(.col-sm-6:last-child) {
+        border-right: 1px #B3CCA3 solid;
+    }
+
+    footer .row .col-sm-6 {
+        padding: 0 5px;
+    }
+
+    footer .row .col-sm-6 .footer-content4 a {
+        display: block;
+    }
+
+    footer .footer-content1, footer .footer-content2, footer .footer-content3 {
+        text-align:left;
+    }
+
+}
+
+@media (min-width: 576px) {
+     
+    footer .row .col-sm-6 {
+        padding: 0 15px;
+    }
+    footer .row .col-sm-6:first-child, footer .row .col-sm-6:nth-child(3) {
+        border-right: 1px #B3CCA3 solid;
+    }
+
+    footer .row .col-sm-6:first-child, footer .row .col-sm-6:nth-child(2) {
+        border-bottom: 1px #B3CCA3 solid;
+    }
+
+    footer .row .col-md-3 .collapse:not(.show) {
+        display: block;
+    }
+    footer button {
+        display: none;
+    }
+
+    footer .row .col-sm-6 .footer-content4 a {
+        display: block;
+    }
+
+    footer .footer-content1, footer .footer-content2, footer .footer-content3 {
+        text-align:left;
+    }
+
+}
+
 footer {
     background-color: #DBE9D4;
     color: gray;
 }
+
+footer .row a {
+    display: block;
+}
+
+footer .col-sm-6 .footer-content4 a{
+    display: inline-block;
+}
+
+footer .col-sm-6:not(.col-sm-6:last-child) {
+    border-bottom: 1px #B3CCA3 solid;
+}
+
+footer .row .col-sm-6 h5{
+    text-align: center;
+}
+
+.footer-content1, .footer-content2, .footer-content3 {
+    text-align: center;
+}
+
+footer .footer-content4 a {
+    vertical-align: baseline;
+}
+
+footer i {
+    font-size: 20px;
+    color: #356618;
+}
+
 
 footer a:link, a:visited {
     list-style: none;
@@ -9,40 +88,25 @@ footer a:link, a:visited {
     text-decoration: none;
 }
 
-footer a:hover, i:hover {
+footer a:hover, footer i:hover {
     color: black;
 }
 
 footer h5 {
-    margin: 15px 0;
     text-shadow: 1px 1px white;
-}
-
-footer a {
-    display: block;
-}
-
-footer i {
-    font-size: 20px;
-    color: #356618;
-    vertical-align: middle;
-}
-
-.copy {
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
-
-.copy p {
-    margin: 0;
 }
 
 footer .row .fa-fw {
     width: 1.5em;
 }
 
-footer .col-sm-6 {
-    border-right: 1px #B3CCA3 solid;
-    padding-bottom: 35px;
+footer .navbar-toggler:focus {
+    box-shadow: none;
 }
+
+
+.copy {
+    color: white;
+    background-color: #356618;
+}
+

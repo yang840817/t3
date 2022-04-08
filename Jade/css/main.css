@@ -1,9 +1,59 @@
-.featured {
+@media (min-width: 768px) {
+    figure {
+        position: relative;
+    }
+    
+    figcaption {
+        position:absolute;
+    }
+    .about-box, .tips {
+        display: flex;
+    }
+    .tips-week-text .tips-title {
+        margin-top: 0; 
+    } 
+    .tips-of-the-week {
+        display: flex;
+    }
+    .tips-week-text {
+        padding-left: 2rem;
+    }
+    .tips-title {
+        margin-top:0;
+    }  
+    .tips, .happy-gardener {
+        box-shadow: 4px 0 3px -3px #4d8928;
+    }
+}
+
+@media (min-width: 576px) {
+    .tips-title {
+        margin-top: 1rem;
+    }  
+}
+
+.featured, .tips-title{
     height: 40px;
     line-height: 40px;
     font-size: 20px;
     color: #836045;
     text-shadow: 1px 1px white;
+}
+
+.about-cover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.about-cover a:hover, a:focus, main .about-cover i:hover  {
+    color: white;
+}
+
+.about-cover i{
+    font-size: 20px;
+}
+
+.about-box a:hover {
+    opacity: 0.8;
 }
 
 .people-name {
@@ -15,20 +65,8 @@
     font-size: 13px;
 }
 
-.about-cover {
-    background-color:rgba(0, 0, 0, 0.5);
-}
-
-.about-cover a:hover, a:focus, main .about-cover i:hover  {
-    color: white;
-}
-
-.about-cover a{
-    font-size: 20px;
-}
-
-.about-box a:hover {
-    opacity: 0.8;
+.tips, .happy-gardener, .plants {
+    justify-content: space-evenly;
 }
 
 .img-tips, .img-plants, .img-happy {
@@ -38,7 +76,6 @@
 
 .image-top:hover {
     opacity: 0.8;
-    cursor: pointer;
 }
 
 .img-tips>img, .img-plants>img, .img-happy>img {
@@ -57,15 +94,11 @@
     border: 0.5px solid gray;
 }
 
-.tips-title {
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    color: #836045;
-    text-shadow: 1px 1px white;
-}
-
 .tips-week-text > ul {
     list-style: decimal;
     font-size: 14px;
+}
+
+.tips-week-text > ul li::marker{
+    font-weight: bold;
 }

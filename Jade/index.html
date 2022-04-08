@@ -14,29 +14,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="color-background">
+    <div class="container color-background px-4">
         <header>
-            <div class="container back-white p-0">
-                <div class="img-logo py-3 text-center">
-                    <a class="d-inline-block" href="##"><img src="img/logo.png"></a>
+            <div class="back-white p-0">
+                <h1 class="img-logo py-3 text-center">
+                    <a class="d-inline-block" href="##"><img class="w-100" src="img/logo.png" alt="Walking through garden's logo"></a>
+                </h1>
+            </div>
+            <nav class="navbar navbar-expand-sm navbar-light p-0">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="##">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="##">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="##">Plants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="##">Gardens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="##">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3" href="##">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="container p-0">
-                <nav class="nav nav-pills nav-justified">
-                    <a class="nav-link p-3" href="##">Home</a>
-                    <a class="nav-link p-3" href="##">About</a>
-                    <a class="nav-link p-3" href="##">Plants</a>
-                    <a class="nav-link p-3" href="##">Gardens</a>
-                    <a class="nav-link p-3" href="##">News</a>
-                    <a class="nav-link p-3" href="##">Contact</a>
-                </nav>
-            </div>
+            </nav>
         </header>
         <main>
-            <div class="container p-0">
-                <figure>
-                    <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+            <figure>
+                <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="carousel">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="img/carousel-1.jpg" class="d-block w-100" alt="planting plants">
                         </div>
@@ -46,49 +64,48 @@
                         <div class="carousel-item">
                             <img src="img/carousel-3.jpg" class="d-block w-100" alt="planting plants">
                         </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                        </button>
-                        <figcaption class="about-cover p-3 w-100 position-absolute  bottom-0">
-                            <h2 class="font-yellow lh-1 fs-4">GARDENING TIPS</h2>
-                            <p class="m-0 text-white">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
-                        </figcaption>
-                    </div>
-                </figure>
-            </div>
-            <section class="container">
-                <div class="about-box d-flex text-white">
-                    <div class="tips d-flex border-end">
+                    </button>
+                </div>
+                <figcaption class="about-cover p-3 w-100 bottom-0">
+                    <h2 class="font-yellow lh-1 fs-4">GARDENING TIPS</h2>
+                    <p class="m-0 text-white">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
+                </figcaption>
+            </figure>
+            <section>
+                <div class="about-box text-white">
+                    <div class="tips d-flex ps-3">
                         <div class="img-tips m-2"><a href="##" class="d-inline-block border border-white"><img src="img/gardening-tip.jpg"></a></div>
-                        <div class="tips-text py-2 pe-4 ps-2"> 
+                        <div class="tips-text py-2 ps-2"> 
                             <h3 class="font-yellow">Tips</h3>
                             <p class="m-0">This is just a place holder, so you can see the site would look like.</p>
                         </div>
                     </div>
-                    <div class="happy-gardener d-flex border-end">
+                    <div class="happy-gardener d-flex ps-3">
                         <div class="img-happy m-2"><a href="##" class="d-inline-block border border-white"><img src="img/gardening-happy-gardener.jpg"></div></a>
-                        <div class="happy-text py-2 pe-4 ps-2">
+                        <div class="happy-text py-2 ps-2">
                             <h3 class="font-yellow">Happy-gardener</h3>
                             <p class="m-0">This is just a place holder, so you can see the site would look like.</p>
                         </div>
                     </div>
-                    <div class="plants d-flex">
+                    <div class="plants d-flex ps-3">
                         <div class="img-plants m-2"><a href="##" class="d-inline-block border border-white"><img src="img/gardening-planting.jpg"></a></div>
-                        <div class="plants-text py-2 pe-4 ps-2">
+                        <div class="plants-text py-2 ps-2">
                             <h3 class="font-yellow">Planting</h3>
-                            <p class"m-0">This is just a place holder, so you can see the site would look like.</p>
+                            <p class="m-0">This is just a place holder, so you can see the site would look like.</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="news back-white mt-3 p-4">
-                <h3 class="featured back-light-green mb-3 ps-2">FEATURED GARDENS</h3>
+                <h3 class="featured back-light-green mb-4 ps-2">FEATURED GARDENS</h3>
                 <div class="garden">
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
@@ -122,42 +139,72 @@
                     </div>
                 </div>
                 <hr class="gray-line mt-0 mb-4">
-                <div class="tips-of-the-week d-flex">
-                    <img class="tips-image" src="img/tip-of-the-week.jpg" alt="Planting to the ground">
-                    <div class="tips-week-text ps-4">
+                <div class="tips-of-the-week">
+                    <img class="tips-image w-100" src="img/tip-of-the-week.jpg" alt="Planting to the ground">
+                    <div class="tips-week-text">
                         <h4 class="tips-title back-light-green mb-4 ps-2">TIPS OF THE WEEK</h4>
                         <ul class="ps-3">
-                            <li class="mb-2">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
-                            <li class="mb-2">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
-                            <li class="mb-2">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
+                            <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
+                            <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
+                            <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
                         </ul>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <h5>PLACE HOLDER</h5>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
+            <div class="row gx-0">
+                <div class="col-sm-6 col-md-3 pb-4">
+                    <h5 class="my-3">PLACE HOLDER
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column1" aria-controls="footer-column1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa-solid fa-angles-down"></i>
+                            </span>
+                        </button>
+                    </h5>
+                    <div class="footer-content1 collapse" id="footer-column1">
+                        <a href="##">This is just a place holder.</a>
+                        <a href="##">This is just a place holder.</a>
+                        <a href="##">This is just a place holder.</a>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h5>PLACE HOLDER</h5>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
+                </div>
+                <div class="col-sm-6 col-md-3 pb-4">
+                    <h5 class="my-3">PLACE HOLDER
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column2" aria-controls="footer-column2" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa-solid fa-angles-down"></i>
+                            </span>
+                        </button>
+                    </h5>
+                    <div class="footer-content2 collapse" id="footer-column2">
+                        <a href="##">This is just a place holder.</a>
+                        <a href="##">This is just a place holder.</a>
+                        <a href="##">This is just a place holder.</a>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h5>PLACE HOLDER</h5>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
-                        <a href="##" class="b-inline-block m-10">This is just a place holder.</a>
+                </div>
+                <div class="col-sm-6 col-md-3 pb-4">
+                    <h5 class="my-3">PLACE HOLDER
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column3" aria-controls=footer-column3" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa-solid fa-angles-down"></i>
+                            </span>
+                        </button>
+                    </h5>
+                    <div class="footer-content3 collapse" id="footer-column3">
+                        <a href="##">This is just a place holder.</a>
+                        <a href="##">This is just a place holder.</a>
+                        <a href="##">This is just a place holder.</a>
                     </div>
-                    <div class="col-sm-6 col-md-3">
-                        <h5>CONNECT</h5>
+                </div>
+                <div class="col-sm-6 col-md-3 pb-4">
+                    <h5 class="my-3">CONNECT
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column4" aria-controls="footer-column4" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa-solid fa-angles-down"></i>
+                            </span>
+                        </button>
+                    </h5>
+                    <div class="footer-content4 collapse" id="footer-column4">
                         <a href="##"><i class="fa-fw fa-solid fa-envelope"></i>Email Us</a>
                         <a href="##"><i class="fa-fw fa-brands fa-facebook-square"></i>Facebook</a>
                         <a href="##"><i class="fa-fw fa-brands fa-twitter"></i>Twitter</a>
@@ -165,10 +212,10 @@
                     </div>
                 </div>
             </div>
+            <div class="copy p-2 text-center">
+                <p class="m-0">Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
+            </div>
         </footer>
-        <div class="copy">
-            <p>Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
-        </div>
     </div>
 </body>
 </html>

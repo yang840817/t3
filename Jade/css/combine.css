@@ -5,14 +5,16 @@
 body {
     background-image: url("../img/bg-body.jpg");
     background-repeat: repeat;
+    min-width: 350px;
 }
 
 .color-background {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 940px;
     background-color: #356618;
 }
+
+/* .container {
+    max-width: 940px !important;
+} */
 
 .back-white {
     background-color: white;
@@ -27,35 +29,13 @@ body {
     color: #E3E699;
 }
 
-@media screen and (max-width: 768px) {
-    .about-cover {
-        position:static;
-        width: fit-content;
-    }
-    .about-box {
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: 1px solid #356618 ;
-    }
-    .tips-of-the-week {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .tips-week-text {
-        padding: 30px;
-    }
+.font-light-yellow {
+    color:#f4f5c7;
 }
 
-@media screen and (max-width: 576px) {
-    footer .row .col-sm-6{
-        display: flex;
-        padding: 10px;
+
+@media (min-width: 992px) {
+    body .container {
+        max-width: 940px;
     }
-    footer .row .col-sm-6 h5{
-        font-size: 16px;
-        }
-     footer .row .col-sm-6 a{
-        padding: 10px;
-        text-align: center;
-        }
 }
