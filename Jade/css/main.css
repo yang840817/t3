@@ -1,104 +1,239 @@
+main .carousel-control-prev,main .carousel-control-next {
+    width: 5%;
+}
+figcaption {
+    width: 100%;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+figcaption h2 {
+    color: #E3E699;
+    line-height: 1;
+    font-size: 24px;
+}
+
+figcaption p {
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 @media (min-width: 768px) {
-    figure {
-        position: relative;
-    }
-    
     figcaption {
         position:absolute;
     }
-    .about-box, .tips {
+
+    main figcaption p{
+        text-overflow:initial;
+        overflow:auto;
+        white-space:normal;
+    }
+}
+
+@media (min-width: 992px) {
+    figcaption {
+        position:absolute;
+    }
+}
+
+figcaption a:hover,figcaption a:focus, figcaption i:hover  {
+    color: white;
+}
+
+figcaption a{
+    color: gray;
+}
+
+figcaption i{
+    font-size: 20px;
+}
+
+.brief_content {
+    display: flex;
+    justify-content: center;
+}
+
+.brief_text {
+    align-self: center;
+    margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+    .brief_box {
         display: flex;
+        justify-content: center;
     }
-    .tips-week-text .tips-title {
-        margin-top: 0; 
-    } 
-    .tips-of-the-week {
-        display: flex;
+    .brief_content {
+        display: block;
     }
-    .tips-week-text {
-        padding-left: 2rem;
+}
+
+.brief_text h3 {
+    color: #E3E699;
+    font-size: 16px;
+}
+
+.brief_text p {
+    color: white;
+    font-size: 13px;
+}
+
+.brief_image_box {
+    width: 90px;
+    height: 90px;
+    outline: 1px solid white;
+}
+
+@media (min-width: 768px) {
+    .brief_content {
+        text-align: center;
     }
-    .tips-title {
-        margin-top:0;
+    .brief_text {
+        margin: 0;
+        margin-top: 16px;
+        text-align: center;
+    }
+    .brief_image_box {
+        width: 140px;
+        height: 140px;
+        outline: 1px solid white;
     }  
-    .tips, .happy-gardener {
+
+}
+
+@media (min-width: 992px) {
+    .brief_image_box {
+        width: 90px;
+        height: 90px;
+        outline: 1px solid white;
+    }
+
+    .brief_text {
+        align-self: center;
+        margin-left: 16px;
+        margin-top: 0;
+        text-align: left;
+     }    
+}
+
+.brief_image_box a {
+    border: 1px solid white;
+}
+
+.brief_box a:hover{
+    opacity: 0.8;
+}
+
+@media (min-width: 992px) {
+    .brief_box ,.brief_content {
+        display: flex;
+    }
+
+    .brief_content:not(.brief_content:last-child) {
         box-shadow: 4px 0 3px -3px #4d8928;
     }
 }
 
-@media (min-width: 576px) {
-    .tips-title {
-        margin-top: 1rem;
-    }  
+.featured_box {
+    background-color: white;
+    gap: 10px;
 }
 
-.featured, .tips-title{
-    height: 40px;
+.featured_card {
+    display: flex;
+}
+
+.featured_text {
+    margin-left: 16px;
+}
+
+.featured_image_box {
+    align-self: center;
+}
+
+.featured_image_box img {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .featured_card {
+        display: block;
+        text-align: center;
+    }  
+    .featured_text {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .featured_card {
+        text-align: left;
+    }
+    .featured_text {
+        margin: 0;
+    }
+    
+}
+
+.featured_box h3, .knowing_text h4 {
     line-height: 40px;
     font-size: 20px;
-    color: #836045;
     text-shadow: 1px 1px white;
+    color: #836045;
+    background-color: #DBE8D4;
+    border-bottom: #B3CCA3 2px solid;
 }
 
-.about-cover {
-    background-color:rgba(0, 0, 0, 0.5);
-}
-
-.about-cover a:hover, a:focus, main .about-cover i:hover  {
-    color: white;
-}
-
-.about-cover i{
-    font-size: 20px;
-}
-
-.about-box a:hover {
-    opacity: 0.8;
-}
-
-.people-name {
+.featured_text h4 {
     font-size: 18px;
     color: #836045;
 }
 
-.people-text {
+.featured_text p {
     font-size: 13px;
 }
 
-.tips, .happy-gardener, .plants {
-    justify-content: space-evenly;
+.featured_box a:hover {
+    opacity: 0.8; 
 }
 
-.img-tips, .img-plants, .img-happy {
-    width: 89px;
-    height: 89px;
-}
-
-.image-top:hover {
-    opacity: 0.8;
-}
-
-.img-tips>img, .img-plants>img, .img-happy>img {
-    height: 100%;
-}
-
-.tips-text>h3, .happy-text>h3, .plants-text>h3 {
-    font-size: 16px;
-}
-
-.tips-text>p, .happy-text>p, .plants-text>p {
-    font-size: 13px;
-}
-
-.gray-line {
+.gray_line {
     border: 0.5px solid gray;
 }
 
-.tips-week-text > ul {
+.knowing_box {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.knowing_image_box img {
+    width: 100%;
+}
+
+.knowing_text {
+    flex: 1;
+    order: 1;
+}  
+
+.knowing_text ul {
     list-style: decimal;
     font-size: 14px;
 }
 
-.tips-week-text > ul li::marker{
+.knowing_text > ul li::marker{
     font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .knowing_box {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .knowing_box img {
+        flex: 3;
+    }
 }

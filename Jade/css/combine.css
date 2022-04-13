@@ -1,6 +1,16 @@
-/* * {
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+* {
     outline: 1px solid black;
-} */
+}
+
+@media (min-width: 992px) {
+    body .container {
+        max-width: 940px;
+    }
+}
 
 body {
     background-image: url("../img/bg-body.jpg");
@@ -8,34 +18,16 @@ body {
     min-width: 350px;
 }
 
-.color-background {
+header h1 a, .brief_box a, .featured_box a{
+    display: inline-block;
+}
+
+footer a {
+    display: block;
+}
+
+.green_background {
     background-color: #356618;
 }
 
-/* .container {
-    max-width: 940px !important;
-} */
 
-.back-white {
-    background-color: white;
-}
-
-.back-light-green {
-    background-color: #DBE8D4;
-    border-bottom: #B3CCA3 2px solid;
-}
-
-.font-yellow {
-    color: #E3E699;
-}
-
-.font-light-yellow {
-    color:#f4f5c7;
-}
-
-
-@media (min-width: 992px) {
-    body .container {
-        max-width: 940px;
-    }
-}
