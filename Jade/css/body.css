@@ -2,9 +2,9 @@
 @import url(main.css);
 @import url(footer.css);
 
-* {
+/* * {
     outline: 1px solid black;
-}
+} */
 
 @media (min-width: 992px) {
     body .container {
@@ -18,16 +18,17 @@ body {
     min-width: 350px;
 }
 
-header h1 a, .brief_box a, .featured_box a{
-    display: inline-block;
-}
-
-footer a {
-    display: block;
-}
-
-.green_background {
+.container__background {
     background-color: #356618;
 }
 
+figure {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
 
+h1, h4, h5 {
+    margin: 0;
+}

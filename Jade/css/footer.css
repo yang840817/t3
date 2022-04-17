@@ -1,93 +1,92 @@
+/* footer：不會改變的 */
+
 footer {
     background-color: #DBE9D4;
     color: gray;
 }
 
-.footer_body h5 {
-    text-align: center;
-    text-shadow: 1px 1px white;
-}
-.footer_text {
-    text-align: center;
-}
-#footer-column4 {
-    text-align: left;
-    width: 130px;
-    margin: 0 auto;
-}
-
-.footer_modify:not(.footer_modify:last-child){
-    border-bottom: 2px red solid;
-}
-
-.footer_body i {
+.footer__body_content i {
     font-size: 20px;
     color: #356618;
 }
 
-.footer_body a {
-    list-style: none;
+.footer__body_outlook h5 {
+    text-align: center;
+    text-shadow: 1px 1px white;
+}
+
+.footer__text_content a {
+    display: block;
     color: gray;
     text-decoration: none;
 }
 
-footer .fa-fw {
-    width: 1.5em;
-}
-
-footer .navbar-toggler {
-    padding: 0;
-}
-
-footer button {
-    vertical-align: baseline;
-}
-
-.footer_body a:hover, .footer_body i:hover {
+.footer__body_outlook a:hover, .footer__body_outlook i:hover {
     color: black;
 }
 
-.footer_body .navbar-toggler:focus {
+.footer__body_outlook .navbar-toggler:focus {
     box-shadow: none;
 }
 
-.copy {
+.copyright {
     color: white;
     background-color: #356618;
     text-align: center;
 }
 
+/* footer: 會改變的 */
+
+.footer__text_outlook {
+    text-align: center;
+}
+
+.footer__items:not(.footer__items:last-of-type){
+    border-bottom: 1px #B3CCA3 solid;
+}
+
+.footer__body_outlook:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__body_outlook:last-of-type .footer__text_outlook {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 @media (min-width: 768px) {
-    .footer_modify:first-child, .footer_modify:nth-of-type(3) {
+    .footer__items:first-of-type, .footer__items:nth-of-type(3) {
         border-right: 1px #B3CCA3 solid;
     }
-    .footer_modify:not(.footer_modify:first-child, .footer_modify:nth-of-type(2)) {
+    .footer__items:nth-of-type(3), .footer__items:nth-of-type(4) {
         border-bottom: initial;
     }
-    .footer_modify .collapse:not(.show) {
+    .footer__body_content .collapse:not(.show) {
         display: block;
     }
-    footer button {
+    .footer__body_outlook button {
         display: none;
     }
-    .footer_body h5 {
+    .footer__body_outlook h5 {
+        margin-bottom: 16px;
         text-align: left;
     }
-    .footer_text {
+    .footer__text_outlook {
         text-align: left;
     }
-    #footer-column4 {
-        width: initial;
+    .footer__body_outlook:last-of-type {
+        align-items: flex-start;
     }
 }
 
-
 @media (min-width: 992px) {
-    .footer_modify:not(.footer_modify:nth-of-type(4)) {
+    .footer__items:not(.footer__items:nth-of-type(4)) {
         border-right: 1px #B3CCA3 solid;
     }
-    .footer_modify:not(.footer_modify:last-child) {
+    .footer__items:not(.footer__items:last-of-type) {
         border-bottom: initial;
     }
 }

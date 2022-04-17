@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden Walkthrough</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/combine.css">
+    <link rel="stylesheet" href="css/body.css">
     <script src="https://kit.fontawesome.com/aa23c1a952.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <!-- JavaScript Bundle with Popper -->
 </head>
 <body>
-    <div class="container green_background px-3">
+    <div class="container container__background px-3">
         <header>
-            <div class="header_box">
-                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="header">
+                <button class="header__button navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                <h1 class="logo">
+                </button>
+                <h1 class="header__logo py-3">
                     <a href="##"><img class="w-100" src="img/logo.png" alt="Walking through garden's logo"></a>
                 </h1>
             </div>
-            <nav class="navbar_modify navbar navbar-expand-md navbar-light p-0">
+            <nav class="header__navbar_content header__navbar_outlook navbar navbar-expand-md navbar-light p-0">
                 <div class="container-fluid p-0">
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav nav-justified">
+                        <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link p-3" href="##">Home</a>
                             </li>
@@ -51,187 +50,205 @@
             </nav>
         </header>
         <main>
-            <figure id="carouselExampleControls" class="carousel slide position-relative">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/carousel-1.jpg" class="d-block w-100" alt="Tips of digging">
-                        <figcaption class="p-3">
-                            <h2>GARDENING TIPS</h2>
-                            <p class="m-0">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
-                        </figcaption>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-2.jpg" class="d-block w-100" alt="Happy-gardener">
-                        <figcaption class="p-3">
-                            <h2>HAPPY-GARDENERS</h2>
-                            <p class="m-0">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
-                        </figcaption>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-3.jpg" class="d-block w-100" alt="planting plants">
-                        <figcaption class="p-3">
-                            <h2>PLANTING</h2>
-                            <p class="m-0">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
-                        </figcaption>
-                    </div>
+            <section class="myCarousel">
+                <div class="myCarousel__items">
+                    <figure id="carouselGardenControls" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/carousel-1.jpg" class="w-100" alt="Tips of digging">
+                                <figcaption class="carousel__text_content carousel__text_outlook p-3">
+                                    <h2>GARDENING TIPS</h2>
+                                    <p>This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a data-bs-target="#carouselGardenControls" data-bs-slide="next" class="carousel_icon_content carousel_icon_outlook" href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
+                                </figcaption>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel-2.jpg" class="w-100" alt="Happy-gardener">
+                                <figcaption class="carousel__text_content carousel__text_outlook p-3">
+                                    <h2>HAPPY-GARDENERS</h2>
+                                    <p>This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a data-bs-target="#carouselGardenControls" data-bs-slide="next" class="carousel_icon_content carousel_icon_outlook" href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
+                                </figcaption>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel-3.jpg" class="w-100" alt="planting plants">
+                                <figcaption class="carousel__text_content carousel__text_outlook p-3">
+                                    <h2>PLANTING</h2>
+                                    <p>This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like. <a data-bs-target="#carouselGardenControls" data-bs-slide="next" class="carousel_icon_content carousel_icon_outlook" href="##"><i class="fa-solid fa-circle-arrow-right"></i></a></p>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGardenControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGardenControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </figure>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </figure>
-            <section class="brief_box">
-                <div class="brief_content p-3">
-                    <a class="brief_image_box" href="##"><img class="h-100" src="img/gardening-tip.jpg" alt="tips of digging"></a>
-                    <div class="brief_text"> 
-                        <h3>Tips</h3>
-                        <p class="m-0">This is just a place holder, so you can see the site would look like.</p>
-                    </div>
-                </div>
-                <div class="brief_content p-3">
-                    <a class="brief_image_box" href="##"><img class="h-100" src="img/gardening-happy-gardener.jpg" alt="Happy-gardener"></a>
-                    <div class="brief_text">
-                        <h3>Happy-gardener</h3>
-                        <p class="m-0">This is just a place holder, so you can see the site would look like.</p>
-                    </div>
-                </div>
-                <div class="brief_content p-3">
-                    <a class="brief_image_box" href="##"><img class="h-100" src="img/gardening-planting.jpg" alt="planting plants"></a>
-                    <div class="brief_text">
-                        <h3>Planting</h3>
-                        <p class="m-0">This is just a place holder, so you can see the site would look like.</p>
+                <div class="myCarouel__items">
+                    <div class="thumbnail">
+                        <div class="thumbnail__body_content thumbnail__body_outlook p-3">
+                            <a class="thumbnail__image_content thumbnail__image_outlook active" data-bs-target="#carouselGardenControls" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" href="##"><img class="w-100 h-100" src="img/gardening-tip.jpg" alt="tips of digging"></a>
+                            <div class="thumbnail__text_content thumbnail__text_outlook"> 
+                                <h3>Tips</h3>
+                                <p>This is just a place holder, so you can see the site would look like.</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail__body_content thumbnail__body_outlook p-3">
+                            <a class="thumbnail__image_content thumbnail__image_outlook" data-bs-target="#carouselGardenControls" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" href="##"><img class="w-100 h-100" src="img/gardening-happy-gardener.jpg" alt="Happy-gardener"></a>
+                            <div class="thumbnail__text_content thumbnail__text_outlook">
+                                <h3>Happy-gardener</h3>
+                                <p>This is just a place holder, so you can see the site would look like.</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail__body_content thumbnail__body_outlook p-3">
+                            <a class="thumbnail__image_content thumbnail__image_outlook" data-bs-target="#carouselGardenControls" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" href="##"><img class="w-100 h-100" src="img/gardening-planting.jpg" alt="planting plants"></a>
+                            <div class="thumbnail__text_content thumbnail__text_outlook">
+                                <h3>Planting</h3>
+                                <p>This is just a place holder, so you can see the site would look like.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="featured_box p-3">
-                <h3 class="mb-3 ps-2">FEATURED GARDENS</h3>
-                <div class="row gx-3">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featured_card">
-                            <a class="featured_image_box" href="##"><img src="img/feature-gardens1.jpg" alt="JULIET'S GARDEN"></a>
-                            <div class="featured_text">
-                                <h4 class="mt-2">JULIET'S GARDEN</h4>
-                                <p>This is just a place holder, so you can see the site would look like.</p>
+            <section class="gallery p-3">
+                <div class="gallery__items">
+                    <h3 class="gallery__title mb-3 ps-2">FEATURED GARDENS</h3>
+                    <div class="row gx-3">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="gallery__body_content gallery__body_outlook p-2">
+                                <a class="gallery__image_content gallery__image_outlook mw-100" href="##"><img src="img/feature-gardens1.jpg" alt="JULIET'S GARDEN"></a>
+                                <div class="gallery__text_content gallery__text_outlook">
+                                    <h4 class="my-2">JULIET'S GARDEN</h4>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featured_card">
-                            <a class="featured_image_box" href="##"><img src="img/feature-gardens2.jpg" alt="JOANNE'S GARDEN"></a>
-                            <div class="featured_text">
-                                <h4 class="mt-2">JOANNE'S GARDEN</h4>
-                                <p>This is just a place holder, so you can see the site would look like.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="gallery__body_content gallery__body_outlook p-2">
+                                <a class="gallery__image_content gallery__image_outlook mw-100" href="##"><img src="img/feature-gardens2.jpg" alt="JOANNE'S GARDEN"></a>
+                                <div class="gallery__text_content gallery__text_outlook">
+                                    <h4 class="my-2">JOANNE'S GARDEN</h4>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featured_card">
-                            <a class="featured_image_box" href="##"><img src="img/feature-gardens3.jpg" alt="JETTKA'S GARDEN"></a>
-                            <div class="featured_text">
-                                <h4 class="mt-2">JETTKA'S GARDEN</h4>
-                                <p>This is just a place holder, so you can see the site would look like.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="gallery__body_content gallery__body_outlook p-2">
+                                <a class="gallery__image_content gallery__image_outlook mw-100" href="##"><img src="img/feature-gardens3.jpg" alt="JETTKA'S GARDEN"></a>
+                                <div class="gallery__text_content gallery__text_outlook">
+                                    <h4 class="my-2">JETTKA'S GARDEN</h4>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featured_card">
-                            <a class="featured_image_box" href="##"><img src="img/feature-gardens4.jpg" alt="JIA'S GARDEN"></a>
-                            <div class="featured_text">
-                                <h4 class="mt-2">JIA'S GARDEN</h4>
-                                <p>This is just a place holder, so you can see the site would look like.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="gallery__body_content gallery__body_outlook p-2">
+                                <a class="gallery__image_content gallery__image_outlook mw-100" href="##"><img src="img/feature-gardens4.jpg" alt="JIA'S GARDEN"></a>
+                                <div class="gallery__text_content gallery__text_outlook">
+                                    <h4 class="my-2">JIA'S GARDEN</h4>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr class="gray_line">
-                <div class="knowing_box">
-                    <div class="konwing_image_box"><img class="w-100" src="img/tip-of-the-week.jpg" alt="Planting to the ground"></div>
-                    <div class="knowing_text">
-                        <h4 class="mb-3 ps-2">TIPS OF THE WEEK</h4>
-                        <ul class="ps-3">
-                            <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
-                            <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
-                            <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
-                        </ul>
+                <hr class="hr_line">
+                <div class="gallery__items">
+                    <div class="tips_content tips_outlook">
+                        <div class="tips__image_outlook"><img class="w-100 h-100" src="img/tip-of-the-week.jpg" alt="Planting to the ground"></div>
+                        <div class="tips__text_content tips__text_outlook">
+                            <h4 class="tips__title mb-3 ps-2">TIPS OF THE WEEK</h4>
+                            <ul class="p-0">
+                                <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
+                                <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
+                                <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="row gx-0">
-            <div class="footer_modify col-md-6 col-lg-3">
-                <div class="footer_body py-3 ps-md-3">
-                    <h5>PLACE HOLDER
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column1" aria-controls="footer-column1" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </span>
-                        </button>
-                    </h5>
-                    <div class="footer_text collapse" id="footer-column1">
-                        <a href="##">This is just a place holder.</a>
-                        <a href="##">This is just a place holder.</a>
-                        <a href="##">This is just a place holder.</a>
+        <footer>
+            <div class="row gx-0">
+                <div class="footer__items col-md-6 col-lg-3">
+                    <div class="footer__body_content footer__body_outlook h-100 py-3 p-md-3">
+                        <h5>
+                            <span>PLACE HOLDER</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column1" aria-expanded="false" aria-controls="footer-column1" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </button>
+                        </h5>
+                        <div class="footer__text_content footer__text_outlook collapse" id="footer-column1">
+                            <a href="##">This is just a place holder.</a>
+                            <a href="##">This is just a place holder.</a>
+                            <a href="##">This is just a place holder.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__items col-md-6 col-lg-3">
+                    <div class="footer__body_content footer__body_outlook h-100 py-3 p-md-3">
+                        <h5>
+                            <span>PLACE HOLDER</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column2" aria-controls="footer-column2" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </button>
+                        </h5>
+                        <div class="footer__text_content footer__text_outlook collapse" id="footer-column2">
+                            <a href="##">This is just a place holder.</a>
+                            <a href="##">This is just a place holder.</a>
+                            <a href="##">This is just a place holder.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__items col-md-6 col-lg-3">
+                    <div class="footer__body_content footer__body_outlook h-100 py-3 p-md-3">
+                        <h5>
+                            <span>PLACE HOLDER</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column3" aria-controls=footer-column3" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </button>
+                        </h5>
+                        <div class="footer__text_content footer__text_outlook collapse" id="footer-column3">
+                            <a href="##">This is just a place holder.</a>
+                            <a href="##">This is just a place holder.</a>
+                            <a href="##">This is just a place holder.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__items col-md-6 col-lg-3">
+                    <div class="footer__body_content footer__body_outlook h-100 py-3 p-md-3">
+                        <h5>
+                            <span>Connect</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column4" aria-controls="footer-column4" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </button>
+                        </h5>
+                        <div class="footer__text_content footer__text_outlook collapse" id="footer-column4">
+                            <a href="##"><i class="fa-fw fa-solid fa-envelope"></i><span>Email Us</span></a>
+                            <a href="##"><i class="fa-fw fa-brands fa-facebook-square"></i><span>Facebook</span></a>
+                            <a href="##"><i class="fa-fw fa-brands fa-twitter"></i><span>Twitter</span></a>
+                            <a href="##"><i class="fa-fw fa-brands fa-google-plus-square"></i><span>Google+</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer_modify col-md-6 col-lg-3">
-                <div class="footer_body py-3 ps-md-3">
-                    <h5>PLACE HOLDER
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column2" aria-controls="footer-column2" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </span>
-                        </button>
-                    </h5>
-                    <div class="footer_text collapse" id="footer-column2">
-                        <a href="##">This is just a place holder.</a>
-                        <a href="##">This is just a place holder.</a>
-                        <a href="##">This is just a place holder.</a>
-                    </div>
+            <div class="footer__items">
+                <div class="copyright p-2">
+                    <p>Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
                 </div>
-            </div>
-            <div class="footer_modify col-md-6 col-lg-3">
-                <div class="footer_body py-3 ps-md-3">
-                    <h5>PLACE HOLDER
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column3" aria-controls=footer-column3" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </span>
-                        </button>
-                    </h5>
-                    <div class="footer_text collapse" id="footer-column3">
-                        <a href="##">This is just a place holder.</a>
-                        <a href="##">This is just a place holder.</a>
-                        <a href="##">This is just a place holder.</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_modify col-md-6 col-lg-3">
-                <div class="footer_body py-3 ps-md-3">
-                    <h5>CONNECT
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column4" aria-controls="footer-column4" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </span>
-                        </button>
-                    </h5>
-                    <div class="footer_text collapse" id="footer-column4">
-                        <a href="##"><i class="fa-fw fa-solid fa-envelope"></i>Email Us</a>
-                        <a href="##"><i class="fa-fw fa-brands fa-facebook-square"></i>Facebook</a>
-                        <a href="##"><i class="fa-fw fa-brands fa-twitter"></i>Twitter</a>
-                        <a href="##"><i class="fa-fw fa-brands fa-google-plus-square"></i>Google+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="copy p-2">
-                <p class="m-0">Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
             </div>
         </footer>
     </div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

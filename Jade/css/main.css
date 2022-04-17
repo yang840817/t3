@@ -1,183 +1,157 @@
-main .carousel-control-prev,main .carousel-control-next {
+/* Carousel:不會改變的 */
+
+.myCarousel__items .carousel-control-prev, .myCarousel__items .carousel-control-next {
     width: 5%;
 }
-figcaption {
-    width: 100%;
+.carousel__text_content {
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.5);
 }
 
-figcaption h2 {
-    color: #E3E699;
-    line-height: 1;
-    font-size: 24px;
+.carousel_icon_content {
+    font-size: 20px;
+    color: gray;
 }
 
-figcaption p {
+.carousel_icon_outlook:hover {
     color: white;
+}
+
+/* Carousel:會改變的 */
+
+.carousel__text_content h2 {
+    color: #E3E699;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.carousel__text_content p {
+    color: white;
+    font-size: 12px;
+} 
+.carousel__text_outlook p {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
+@media (min-width: 576px) {
+    .carousel__text_content h2 {
+        font-size: 24px;
+    }
+    .carousel__text_content p {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 768px) {
-    figcaption {
+    .carousel__text_outlook {
         position:absolute;
     }
 
-    main figcaption p{
+    .carousel__text_outlook p{
         text-overflow:initial;
         overflow:auto;
         white-space:normal;
     }
 }
 
-@media (min-width: 992px) {
-    figcaption {
-        position:absolute;
-    }
-}
+/* thumbnail：不會改變的 */
 
-figcaption a:hover,figcaption a:focus, figcaption i:hover  {
-    color: white;
-}
-
-figcaption a{
-    color: gray;
-}
-
-figcaption i{
-    font-size: 20px;
-}
-
-.brief_content {
-    display: flex;
-    justify-content: center;
-}
-
-.brief_text {
-    align-self: center;
-    margin-left: 16px;
-}
-
-@media (min-width: 768px) {
-    .brief_box {
-        display: flex;
-        justify-content: center;
-    }
-    .brief_content {
-        display: block;
-    }
-}
-
-.brief_text h3 {
+.thumbnail__text_content h3 {
     color: #E3E699;
     font-size: 16px;
 }
 
-.brief_text p {
+.thumbnail__text_content p {
     color: white;
     font-size: 13px;
 }
 
-.brief_image_box {
+.thumbnail__image_content {
     width: 90px;
     height: 90px;
-    outline: 1px solid white;
-}
-
-@media (min-width: 768px) {
-    .brief_content {
-        text-align: center;
-    }
-    .brief_text {
-        margin: 0;
-        margin-top: 16px;
-        text-align: center;
-    }
-    .brief_image_box {
-        width: 140px;
-        height: 140px;
-        outline: 1px solid white;
-    }  
-
-}
-
-@media (min-width: 992px) {
-    .brief_image_box {
-        width: 90px;
-        height: 90px;
-        outline: 1px solid white;
-    }
-
-    .brief_text {
-        align-self: center;
-        margin-left: 16px;
-        margin-top: 0;
-        text-align: left;
-     }    
-}
-
-.brief_image_box a {
     border: 1px solid white;
+    object-fit: fill;
 }
 
-.brief_box a:hover{
+.thumbnail__image_outlook {
+    flex-shrink: 0;
+}
+
+a.thumbnail__image_content {
+    display: inline-block;
+}
+
+a.thumbnail__image_outlook:hover{
     opacity: 0.8;
 }
 
-@media (min-width: 992px) {
-    .brief_box ,.brief_content {
-        display: flex;
-    }
+/* thumbnail：會改變的 */
 
-    .brief_content:not(.brief_content:last-child) {
-        box-shadow: 4px 0 3px -3px #4d8928;
-    }
-}
-
-.featured_box {
-    background-color: white;
-    gap: 10px;
-}
-
-.featured_card {
+.thumbnail {
     display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+ 
+.thumbnail__body_outlook {
+    text-align: center;
 }
 
-.featured_text {
-    margin-left: 16px;
+.thumbnail__text_outlook {
+    margin: 16px 0 0 0;
 }
 
-.featured_image_box {
-    align-self: center;
-}
-
-.featured_image_box img {
-    max-width: 100%;
+.thumbnail__text_outlook p {
+    display: none;
 }
 
 @media (min-width: 768px) {
-    .featured_card {
-        display: block;
-        text-align: center;
-    }  
-    .featured_text {
-        margin: 0;
+    .thumbnail {
+        justify-content: space-evenly;
     }
 }
 
 @media (min-width: 992px) {
-    .featured_card {
+    .thumbnail__body_outlook {
+        display: flex;
+    }
+    .thumbnail__body_outlook:not(:last-child) {
+        box-shadow: 4px 0 3px -3px #4d8928;
+    }
+    .thumbnail__text_outlook {
+        margin: 0 0 0 16px;
         text-align: left;
     }
-    .featured_text {
-        margin: 0;
+    .thumbnail__text_outlook p {
+        display: block;
     }
-    
 }
 
-.featured_box h3, .knowing_text h4 {
+/* gallery:不會改變的  */
+.gallery {
+    background-color: white;
+}
+
+a.gallery__image_content {
+    display: inline-block;
+}
+
+a.gallery__image_outlook {
+    align-self: center;
+}
+
+.gallery__text_content h4 {
+    font-size: 18px;
+    color: #836045;
+}
+
+.gallery__text_content p {
+    font-size: 13px;
+}
+
+.gallery__title {
     line-height: 40px;
     font-size: 20px;
     text-shadow: 1px 1px white;
@@ -186,54 +160,80 @@ figcaption i{
     border-bottom: #B3CCA3 2px solid;
 }
 
-.featured_text h4 {
-    font-size: 18px;
-    color: #836045;
-}
-
-.featured_text p {
-    font-size: 13px;
-}
-
-.featured_box a:hover {
+a.gallery__image:hover {
     opacity: 0.8; 
 }
 
-.gray_line {
+/* gallery:會改變的  */
+
+.gallery__body_outlook {
+    display: flex;
+}
+
+.gallery__text_outlook {
+    margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+    .gallery__body_outlook {
+        display: block;
+        text-align: center;
+    }  
+    .gallery__text_outlook {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery__body_outlook {
+        text-align: left;
+    }
+}
+
+.hr_line {
     border: 0.5px solid gray;
 }
 
-.knowing_box {
+/* tips:不會改變的 */
+
+.tips__title {
+    line-height: 40px;
+    font-size: 20px;
+    text-shadow: 1px 1px white;
+    color: #836045;
+    background-color: #DBE8D4;
+    border-bottom: #B3CCA3 2px solid;
+}
+
+.tips__text_outlook ul { 
+    list-style: decimal;
+    list-style-position: inside;
+    font-size: 14px;
+}
+
+.tips__text_outlook > ul li::marker{
+    font-weight: bold;
+}
+
+/* tips:會改變的 */
+
+.tips_outlook {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.knowing_image_box img {
-    width: 100%;
-}
-
-.knowing_text {
-    flex: 1;
-    order: 1;
-}  
-
-.knowing_text ul {
-    list-style: decimal;
-    font-size: 14px;
-}
-
-.knowing_text > ul li::marker{
-    font-weight: bold;
-}
-
 @media (min-width: 992px) {
-    .knowing_box {
-        display: flex;
+    .tips_outlook {
         flex-direction: row;
         gap: 20px;
     }
 
-    .knowing_box img {
-        flex: 3;
+    .tips__image_outlook {
+        flex-basis: 0;
+        flex-grow: 1;
     }
+    .tips__text_outlook {
+        flex-basis: 0;
+        flex-grow: 2;
+    } 
 }
