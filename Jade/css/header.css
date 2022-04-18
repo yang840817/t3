@@ -8,7 +8,7 @@
     display: inline-block;
 }
 
-.header__button {
+.header .header__button {
     box-shadow: 0 0 0 0;
 }
 
@@ -22,11 +22,6 @@
     width: 100%;
     background-color:#535151;
     border-bottom: 1px solid white;
-}
-
-.header__navbar_outlook .navbar-nav {
-    flex-shrink: 0;
-    flex-grow: 1;
 }
 
 .header__navbar_outlook .nav-item {
@@ -46,8 +41,7 @@
 }
 
 .header__navbar_outlook .nav-item .nav-link:active ,
-.header__navbar_outlook .nav-item .nav-link:focus, 
-.header__navbar_outlook .nav-item .nav-link:focus-visible{
+.header__navbar_outlook .nav-item .nav-link:focus {
     background-color: #95B285;
     color: #39691D;
     border-radius: 0;

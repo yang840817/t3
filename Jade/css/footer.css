@@ -11,7 +11,6 @@ footer {
 }
 
 .footer__body_outlook h5 {
-    text-align: center;
     text-shadow: 1px 1px white;
 }
 
@@ -37,48 +36,34 @@ footer {
 
 /* footer: 會改變的 */
 
-.footer__text_outlook {
-    text-align: center;
-}
-
 .footer__items:not(.footer__items:last-of-type){
     border-bottom: 1px #B3CCA3 solid;
 }
 
-.footer__body_outlook:last-of-type {
+.footer__body_outlook {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.footer__body_outlook:last-of-type .footer__text_outlook {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 @media (min-width: 768px) {
     .footer__items:first-of-type, .footer__items:nth-of-type(3) {
         border-right: 1px #B3CCA3 solid;
     }
-    .footer__items:nth-of-type(3), .footer__items:nth-of-type(4) {
+    .footer__items:nth-of-type(3) {
         border-bottom: initial;
     }
-    .footer__body_content .collapse:not(.show) {
+    .footer__body_content .collapse {
         display: block;
+    }
+    .footer__body_outlook {
+        align-items: flex-start;
     }
     .footer__body_outlook button {
         display: none;
     }
     .footer__body_outlook h5 {
         margin-bottom: 16px;
-        text-align: left;
-    }
-    .footer__text_outlook {
-        text-align: left;
-    }
-    .footer__body_outlook:last-of-type {
-        align-items: flex-start;
     }
 }
 

@@ -19,6 +19,10 @@
 
 /* Carousel:會改變的 */
 
+.carousel__text_outlook {
+    display: none;
+}
+
 .carousel__text_content h2 {
     color: #E3E699;
     line-height: 1;
@@ -29,31 +33,28 @@
     color: white;
     font-size: 12px;
 } 
-.carousel__text_outlook p {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+
+@media (min-width: 768px) {
+    .carousel__text_outlook {
+        display: block;
+        position:absolute;
+    }
+    .carousel__text_content h2 {
+        font-size: 20px;
+    }
+    .carousel__text_content p {
+        font-size: 14px;
+    }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .carousel__text_content h2 {
         font-size: 24px;
     }
     .carousel__text_content p {
         font-size: 16px;
     }
-}
-
-@media (min-width: 768px) {
-    .carousel__text_outlook {
-        position:absolute;
-    }
-
-    .carousel__text_outlook p{
-        text-overflow:initial;
-        overflow:auto;
-        white-space:normal;
-    }
+    
 }
 
 /* thumbnail：不會改變的 */
@@ -69,10 +70,13 @@
 }
 
 .thumbnail__image_content {
-    width: 90px;
-    height: 90px;
+    /* width: 90px;
+    height: 90px; */
     border: 1px solid white;
-    object-fit: fill;
+}
+
+.thumbnail__body_outlook:not(:last-child) {
+    box-shadow: 4px 0 3px -3px #4d8928;
 }
 
 .thumbnail__image_outlook {
@@ -96,6 +100,7 @@ a.thumbnail__image_outlook:hover{
 }
  
 .thumbnail__body_outlook {
+    flex-grow: 1;
     text-align: center;
 }
 
@@ -103,23 +108,11 @@ a.thumbnail__image_outlook:hover{
     margin: 16px 0 0 0;
 }
 
-.thumbnail__text_outlook p {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .thumbnail {
-        justify-content: space-evenly;
-    }
-}
-
 @media (min-width: 992px) {
     .thumbnail__body_outlook {
         display: flex;
     }
-    .thumbnail__body_outlook:not(:last-child) {
-        box-shadow: 4px 0 3px -3px #4d8928;
-    }
+
     .thumbnail__text_outlook {
         margin: 0 0 0 16px;
         text-align: left;
@@ -136,10 +129,6 @@ a.thumbnail__image_outlook:hover{
 
 a.gallery__image_content {
     display: inline-block;
-}
-
-a.gallery__image_outlook {
-    align-self: center;
 }
 
 .gallery__text_content h4 {
