@@ -1,6 +1,6 @@
 /* Carousel:不會改變的 */
 
-.myCarousel__items .carousel-control-prev, .myCarousel__items .carousel-control-next {
+.my_carousel .carousel-control-prev, .myCarousel__items .carousel-control-next {
     width: 5%;
 }
 .carousel__text_content {
@@ -70,20 +70,15 @@
 }
 
 .thumbnail__image_content {
-    /* width: 90px;
-    height: 90px; */
+    height: 90px;
     border: 1px solid white;
-}
-
-.thumbnail__image_outlook {
-    flex-shrink: 0;
 }
 
 a.thumbnail__image_content {
     display: inline-block;
 }
 
-a.thumbnail__image_outlook:hover{
+a.thumbnail__image_content:hover{
     opacity: 0.8;
 }
 
@@ -133,6 +128,7 @@ a.thumbnail__image_outlook:hover{
 }
 
 /* gallery:不會改變的  */
+
 .gallery {
     background-color: white;
 }
@@ -159,7 +155,7 @@ a.gallery__image_content {
     border-bottom: #B3CCA3 2px solid;
 }
 
-a.gallery__image:hover {
+a.gallery__image_outlook:hover {
     opacity: 0.8; 
 }
 
@@ -205,8 +201,9 @@ a.gallery__image:hover {
 }
 
 .tips__text_outlook ul { 
+    padding-left: 1rem;
     list-style: decimal;
-    list-style-position: inside;
+    /* list-style-position: inside; */
     font-size: 14px;
 }
 
