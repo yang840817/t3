@@ -5,7 +5,7 @@ footer {
     color: gray;
 }
 
-.footer__body_content i {
+.footer__body i {
     font-size: 20px;
     color: #356618;
 }
@@ -14,7 +14,7 @@ footer {
     text-shadow: 1px 1px white;
 }
 
-.footer__text_content a {
+.footer__text a {
     display: block;
     color: gray;
     text-decoration: none;
@@ -32,6 +32,9 @@ footer {
     color: white;
     background-color: #356618;
     text-align: center;
+}
+.copyright span{
+    display: none;
 }
 
 /* footer: 會改變的 */
@@ -53,7 +56,7 @@ footer {
     .footer__items:nth-of-type(3) {
         border-bottom: initial;
     }
-    .footer__body_content .collapse {
+    .footer__body .collapse {
         display: block;
     }
     .footer__body_outlook {
@@ -64,6 +67,12 @@ footer {
     }
     .footer__body_outlook h5 {
         margin-bottom: 16px;
+    }
+    .copyright span{
+        display: inline-block;
+    }
+    .copyright br{
+        display: none;
     }
 }
 

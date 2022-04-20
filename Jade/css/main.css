@@ -1,9 +1,9 @@
 /* Carousel:不會改變的 */
 
-.my_carousel .carousel-control-prev, .myCarousel__items .carousel-control-next {
+.my_carousel .carousel-control-prev, .my_carousel .carousel-control-next {
     width: 5%;
 }
-.carousel__text_content {
+.carousel__text {
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.5);
 }
@@ -23,13 +23,14 @@
     display: none;
 }
 
-.carousel__text_content h2 {
+.carousel__text h2 {
     color: #E3E699;
     line-height: 1;
     font-size: 20px;
+    text-transform:uppercase;
 }
 
-.carousel__text_content p {
+.carousel__text p {
     color: white;
     font-size: 12px;
 } 
@@ -39,46 +40,45 @@
         display: block;
         position:absolute;
     }
-    .carousel__text_content h2 {
+    .carousel__text h2 {
         font-size: 20px;
     }
-    .carousel__text_content p {
+    .carousel__text p {
         font-size: 14px;
     }
 }
 
 @media (min-width: 992px) {
-    .carousel__text_content h2 {
+    .carousel__text h2 {
         font-size: 24px;
     }
-    .carousel__text_content p {
+    .carousel__text p {
         font-size: 16px;
     }
-    
 }
 
 /* thumbnail：不會改變的 */
 
-.thumbnail__text_content h3 {
+.thumbnail__text h3 {
     color: #E3E699;
     font-size: 16px;
 }
 
-.thumbnail__text_content p {
+.thumbnail__text p {
     color: white;
     font-size: 13px;
 }
 
-.thumbnail__image_content {
+.thumbnail__image {
     height: 90px;
     border: 1px solid white;
 }
 
-a.thumbnail__image_content {
+a.thumbnail__image {
     display: inline-block;
 }
 
-a.thumbnail__image_content:hover{
+a.thumbnail__image:hover{
     opacity: 0.8;
 }
 
@@ -133,16 +133,17 @@ a.thumbnail__image_content:hover{
     background-color: white;
 }
 
-a.gallery__image_content {
+a.gallery__image {
     display: inline-block;
 }
 
-.gallery__text_content h4 {
+.gallery__text h4 {
     font-size: 18px;
+    text-transform: uppercase;
     color: #836045;
 }
 
-.gallery__text_content p {
+.gallery__text p {
     font-size: 13px;
 }
 
@@ -195,6 +196,7 @@ a.gallery__image_outlook:hover {
     line-height: 40px;
     font-size: 20px;
     text-shadow: 1px 1px white;
+    text-transform:uppercase;
     color: #836045;
     background-color: #DBE8D4;
     border-bottom: #B3CCA3 2px solid;
