@@ -1,0 +1,14 @@
+*{
+    outline: solid red 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 字體 最後是明體(泛用字體) */
+    box-sizing: border-box;
+} 
+
+body {
+    background-image: url("img/bg-body.jpg");
+}
+
+.header , main ,.footer {
+    background-color: #326611;;
+}
