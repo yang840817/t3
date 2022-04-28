@@ -27,13 +27,49 @@
     <!-- CSS的extrenal -->
 </head>
 <body>
-    <header class="container header">
+    <header class="container p-0 px-sm-3 px-xl-4 header">
+    <!-- bootstrap的容器 -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light py-0">
+        <!-- 伸縮的斷點設在sm(576px),左右paddingg設成0 -->
+            <div class="container-fluid px-0 flex-wrap header__container">
+            <!-- width:100%,上下padding設成0 -->
+                <h1 class="mb-0">
+                <!-- margin-bottom設0 -->
+                    <a class="navbar-brand me-0 py-0 d-inline-block header__anchor-logo" href="#">
+                        <img class="header__logo" src="img/logo.png" alt="Garden_Walkthrough">
+                    </a>
+                </h1>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="d-inline-block header__hamberger"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                    <ul class="container-fluid collapse navbar-collapse navbar-nav nav-justified align-items-stretch px-0 header__nav" id="navbarSupportedContent">
+                        <li class="nav-item header__item bg-opacity-15">
+                            <a class="nav-link header__link d-inline-flex justify-content-center align-items-center active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item header__item bg-opacity-30">
+                            <a class="nav-link header__link d-inline-flex justify-content-center align-items-center" href="#">About</a>
+                        </li>
+                        <li class="nav-item header__item bg-opacity-45">
+                            <a class="nav-link header__link d-inline-flex justify-content-center align-items-center" href="#">Plants</a>
+                        </li>
+                        <li class="nav-item header__item bg-opacity-60">
+                            <a class="nav-link header__link d-inline-flex justify-content-center align-items-center" href="#">Gardens</a>
+                        </li>
+                        <li class="nav-item header__item bg-opacity-75">
+                            <a class="nav-link header__link d-inline-flex justify-content-center align-items-center" href="#">News</a>
+                        </li>
+                        <li class="nav-item header__item bg-opacity-90">
+                            <a class="nav-link header__link d-inline-flex justify-content-center align-items-center" href="#">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
         header
     </header>
-    <main class="container header">
+    <main class="container px-sm-3 px-xl-4 ">
         main
     </main>
-    <footer class="container footer">
+    <footer class="container px-sm-3 px-xl-4 footer">
         footer
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
