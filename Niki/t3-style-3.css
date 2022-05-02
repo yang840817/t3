@@ -1,5 +1,5 @@
 *{
-    outline: solid red 1px;
+    /* outline: solid red 1px; */
     font-family: Arial, Helvetica, sans-serif;
     /* 字體 最後是明體(泛用字體) */
     box-sizing: border-box;
@@ -164,8 +164,14 @@ h1 {
     padding: 12px 0;
 }
 
+.menu__img img {
+    border-radius: 0;
+}
+
 .menu__card {
     background-color: #326611;
+    border: 0;
+    border-radius: 0
 }
 
 .menu__title {
@@ -183,6 +189,7 @@ h1 {
 @media screen and (min-width: 769px) {
     .menu__card + .menu__card {
         border-left: 4px solid #3a6f1c;
+        box-shadow: 1px 0 #2a5a0e inset;
     }
 }
 
@@ -192,17 +199,21 @@ h1 {
     }
 
     .menu__card {
-        padding: 6px 0;
+        padding: 6px;
+    }
+
+    .menu__img {
+        margin-right: 6px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .menu {
-        padding: 6px 0;
+    .menu__card {
+        padding: 6px 12px;
     }
     
     .menu__img {
-        padding: 0 12px;
+        margin-right: 12px;
     }
 }
 
@@ -220,11 +231,23 @@ h1 {
 h4.featured__title {
     color: #856346;
     font-weight: bold;
+    font-size: 20px;
+}
+    
+p.featured__text {
+    font-size: 16px;
 }
 
+/* @media(min-width: 992px) { */
 @media screen and (min-width: 992px) {
     .featured__container {
         gap: 8px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .featured__container {
+        gap: 16px;
     }
 
     h4.featured__title {
@@ -233,12 +256,6 @@ h4.featured__title {
     
     p.featured__text {
         font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .featured__container {
-        gap: 16px;
     }
 }
 
@@ -262,9 +279,10 @@ h4.featured__title {
 }
 
 .tips__img img {
-    max-height: 100%;
+    height: 100%; 
     width: 100%;
     object-fit: contain;
+    object-position: top left;
 }
 
 .tips--height {
@@ -281,10 +299,6 @@ h4.featured__title {
 }
 
 @media screen and (min-width :576px) {
-    .tips__img img {
-        height: auto;
-    }
-
     .tips--height {
         height: 200px;
     }
@@ -300,6 +314,13 @@ h4.featured__title {
     background-color: #dce8d4;
     height: 240px;
     font-size: 0;
+    border: 0;
+    border-top: 2px solid #9cc588;
+    border-radius: 0;
+}
+
+.footer__card-body + .footer__card-body {
+    border-left: 2px solid #9cc588;
 }
 
 .footer__title {
@@ -314,7 +335,7 @@ h4.featured__title {
 
 .footer__text a {
     color: #a3a7a1;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .footer__text a i {
@@ -331,9 +352,25 @@ h4.featured__title {
 .footer__card {
     background-color: #dce8d4;
 }
+@media screen and (min-width: 768px) {
+    .footer__card-body  {
+        height: 100%;
+    }
+}
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
+    .footer__text a {
+        font-size: 20px;
+    }
+    
     .footer__copyright {
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__card-body {
+        border-top: 2px solid #9cc588;;
+        height: 200px;
     }
 }

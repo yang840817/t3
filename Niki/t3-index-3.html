@@ -30,11 +30,10 @@
     <header class="container p-0 px-sm-3 header">
     <!-- bootstrap的容器 -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light py-0">
-        <!-- 伸縮的斷點設在sm(576px),左右paddingg設成0 -->
+        <!-- navbar伸縮的斷點設在sm(576px) -->
             <div class="container-fluid px-0 flex-wrap header__container">
-            <!-- width:100%,上下padding設成0 -->
+            <!-- 用container-fluid 做width:100%,置中 -->
                 <h1 class="mb-0">
-                <!-- margin-bottom設0 -->
                     <a class="navbar-brand me-0 py-0 d-inline-block header__anchor-logo" href="#">
                         <img class="header__logo" src="img/logo.png" alt="Garden_Walkthrough">
                     </a>
@@ -42,26 +41,26 @@
                 <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="d-inline-block header__hamberger"><i class="fa-solid fa-bars"></i></span>
                 </button>
-                    <ul class="container-fluid collapse navbar-collapse navbar-nav nav-justified align-items-stretch px-0 header__nav" id="navbarSupportedContent">
-                        <li class="nav-item header__item bg-opacity-15">
-                            <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item header__item bg-opacity-30">
-                            <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">About</a>
-                        </li>
-                        <li class="nav-item header__item bg-opacity-45">
-                            <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">Plants</a>
-                        </li>
-                        <li class="nav-item header__item bg-opacity-60">
-                            <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">Gardens</a>
-                        </li>
-                        <li class="nav-item header__item bg-opacity-75">
-                            <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">News</a>
-                        </li>
-                        <li class="nav-item header__item bg-opacity-90">
-                            <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">Contact</a>
-                        </li>
-                    </ul>
+                <ul class="container-fluid collapse navbar-collapse navbar-nav nav-justified align-items-stretch px-0 header__nav" id="navbarSupportedContent">
+                    <li class="nav-item header__item bg-opacity-15">
+                        <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item header__item bg-opacity-30">
+                        <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">About</a>
+                    </li>
+                    <li class="nav-item header__item bg-opacity-45">
+                        <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">Plants</a>
+                    </li>
+                    <li class="nav-item header__item bg-opacity-60">
+                        <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">Gardens</a>
+                    </li>
+                    <li class="nav-item header__item bg-opacity-75">
+                        <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">News</a>
+                    </li>
+                    <li class="nav-item header__item bg-opacity-90">
+                        <a class="nav-link header__link d-inline-flex p-0 justify-content-center align-items-center" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -69,7 +68,7 @@
         <figure class="figure w-100 px-0 mb-0 position-relative">
         <!-- 圖片區 (Figures) -->
             <img src="img/gardening1.jpg" class="figure-img img-fluid container-fluid px-0 rounded mb-0 figure__img" alt="Garden">
-                <figcaption class="figure-caption figure__img p-2 p-sm-3 p-xl-4 figure__caption">
+                <figcaption class="figure-caption p-2 p-sm-3 p-xl-4 figure__caption">
                     <h2 class="m-0">GARDENING TIPS</h2>
                     <p class="m-0">
                         This is just a place holder, 
@@ -85,7 +84,7 @@
         </figure>
         <section class="container-fluid menu">
             <div class="row g-0 d-flex flex-column flex-md-row menu__container">
-                <div class="col card border-0 mb-3 mb-md-0 menu__card">
+                <div class="col card mb-3 mb-md-0 menu__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center flex-lg-row align-items-lg-start menu__card-container">
                         <div class="col-3 col-md-8 col-lg-4 col-xl-5 menu__img">
                             <img src="img/gardening2.jpg" class="img-thumbnail p-0 w-100" alt="Tips">
@@ -101,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col card border-0 mb-3 mb-md-0 menu__card">
+                <div class="col card mb-3 mb-md-0 menu__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center flex-lg-row align-items-lg-start menu__card-container">
                         <div class="col-3 col-md-8 col-lg-4 col-xl-5 menu__img">
                             <img src="img/gardening3.jpg" class="img-thumbnail p-0 w-100" alt="Plantig">
@@ -117,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col card border-0 menu__card">
+                <div class="col card menu__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center flex-lg-row align-items-lg-start menu__card-container">
                         <div class="col-3 col-md-8 col-lg-4 col-xl-5 menu__img">
                             <img src="img/gardening4.jpg" class="img-thumbnail p-0 w-100" alt="Tips">
@@ -137,13 +136,13 @@
         </section>
         <section class="container-fluid featured py-3 px-lg-3">
             <div class="row g-0">
-                <h3 class="py-2 mb-3 px-2">FEATURED GARDENS</h3>
+                <h3 class="py-2 mb-3 px-3">FEATURED GARDENS</h3>
             </div>
             <div class="row g-0 d-flex flex-column flex-md-row featured__container">
                 <div class="col card border-0 col-md-6 col-lg mb-3 mb-lg-0 featured__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center featured__card-container">
                         <div class="col-3 col-md-8 col-lg-12 mb-md-3 featured__img">
-                            <img src="img/garden1.jpg" class="p-0 w-100" alt="Tips">
+                            <img src="img/garden1.jpg" class="p-0 w-100" alt="JULIET'S GARDEN">
                         </div>
                         <div class="col-9 col-md-8 col-lg-12 featured__content">
                             <div class="card-body py-0 px-3 px-md-0">
@@ -159,11 +158,11 @@
                 <div class="col card border-0 col-md-6 col-lg mb-3 mb-lg-0 featured__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center featured__card-container">
                         <div class="col-3 col-md-8 col-lg-12 mb-md-3 featured__img">
-                            <img src="img/garden2.jpg" class="p-0 w-100" alt="Tips">
+                            <img src="img/garden2.jpg" class="p-0 w-100" alt="JOANNE'S GARDEN">
                         </div>
                         <div class="col-9 col-md-8 col-lg-12 featured__content">
                             <div class="card-body py-0 px-3 px-md-0">
-                                <h4 class="card-title mb-0 mb-sm-3 featured__title">JULIET'S GARDEN</h4>
+                                <h4 class="card-title mb-0 mb-sm-3 featured__title">JOANNE'S GARDEN</h4>
                                 <p class="card-text featured__text">
                                     This is just a place holder, 
                                     so you can see what the site would look like.
@@ -175,11 +174,11 @@
                 <div class="col card border-0 col-md-6 col-lg mb-3 mb-md-0 featured__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center featured__card-container">
                         <div class="col-3 col-md-8 col-lg-12 mb-md-3 featured__img">
-                            <img src="img/garden3.jpg" class="p-0 w-100" alt="Tips">
+                            <img src="img/garden3.jpg" class="p-0 w-100" alt="JETTKA'S GARDEN">
                         </div>
                         <div class="col-9 col-md-8 col-lg-12 featured__content">
                             <div class="card-body py-0 px-3 px-md-0">
-                                <h4 class="card-title mb-0 mb-sm-3 featured__title">JULIET'S GARDEN</h4>
+                                <h4 class="card-title mb-0 mb-sm-3 featured__title">JETTKA'S GARDEN</h4>
                                 <p class="card-text featured__text">
                                     This is just a place holder, 
                                     so you can see what the site would look like.
@@ -191,11 +190,11 @@
                 <div class="col card border-0 col-md-6 col-lg mb-0 featured__card">
                     <div class="row g-0 flex-md-column flex-nowrap align-items-md-center featured__card-container">
                         <div class="col-3 col-md-8 col-lg-12 mb-md-3 featured__img">
-                            <img src="img/garden4.jpg" class="p-0 w-100" alt="Tips">
+                            <img src="img/garden4.jpg" class="p-0 w-100" alt="JIA'S GARDEN">
                         </div>
                         <div class="col-9 col-md-8 col-lg-12 featured__content">
                             <div class="card-body py-0 px-3 px-md-0">
-                                <h4 class="card-title mb-0 mb-sm-3 featured__title">JULIET'S GARDEN</h4>
+                                <h4 class="card-title mb-0 mb-sm-3 featured__title">JIA'S GARDEN</h4>
                                 <p class="card-text featured__text">
                                     This is just a place holder, 
                                     so you can see what the site would look like.
@@ -211,17 +210,17 @@
         </div>
         <section class="container-fluid py-3 px-0 px-lg-3 tips">
             <div class="row g-0">
-                <h3 class="py-2 mb-3 px-2 d-xl-none tips__title">TIPS OF THE WEEK</h3>
+                <h3 class="py-2 mb-3 px-3 d-xl-none tips__title">TIPS OF THE WEEK</h3>
             </div>
             <div class="row g-0 tips__container">
                 <div class="col card border-0 tips__card">
                     <div class="row g-0 tips__card-container">
-                        <div class="col-3 col-sm-6 col-md-4 tips__img align-items-start tips--height">
+                        <div class="col-3 col-sm-6 col-md-4 tips__img tips--height">
                             <img src="img/gardening5.jpg" class="p-0" alt="Tips">
                         </div>
                         <div class="col-9 col-sm-6 col-md-8 d-xxl-flex tips__content">
-                            <div class="card-body py-0 px-3 pe-md-0 overflow-auto d-xxl-flex flex-column justify-content-between tips--height">
-                                <h3 class="py-2 mb-3 px-2 mb-xxl-0 d-none d-xl-block tips__title">TIPS OF THE WEEK</h3>
+                            <div class="card-body py-0 px-3 pe-lg-0 overflow-auto d-xxl-flex flex-column justify-content-between tips--height">
+                                <h3 class="py-2 mb-3 px-3 mb-xxl-0 d-none d-xl-block tips__title">TIPS OF THE WEEK</h3>
                                 <ol class="card-text ps-4 tips__text">
                                         <li class="mb-3 mb-xxl-4">
                                             This is just a place holder, 
@@ -250,16 +249,24 @@
         </section>
     </main>
     <footer class="container px-sm-3 footer">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-dark d-md-none" data-bs-ride="false" data-bs-interval="false">
-            <div class="carousel-indicators">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-dark d-md-block d-xl-none" data-bs-ride="carousel">
+            <div class="carousel-indicators d-md-none">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active card footer__carousel-card">
-                    <div class="card-body px-5 pb-5">
+                <div class="carousel-item active card footer__carousel-card d-md-flex flex-md-row" data-bs-interval="2000">
+                    <div class="card-body px-5 col-md-6 footer__card-body">
+                        <h5 class="card-title footer__title">PLACE HOLDER</h5>
+                        <p class="card-text footer__text ">
+                            <span class="d-block">This is just a place holder.</span>
+                            <span class="d-block">This is just a place holder.</span>
+                            <span class="d-block">This is just a place holder.</span>
+                        </p>
+                    </div>
+                    <div class="card-body px-5 d-none d-md-block col-md-6 footer__card-body">
                         <h5 class="card-title footer__title">PLACE HOLDER</h5>
                         <p class="card-text footer__text">
                             <span class="d-block">This is just a place holder.</span>
@@ -268,8 +275,45 @@
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item card footer__carousel-card">
-                    <div class="card-body px-5 pb-5">
+                <div class="carousel-item card footer__carousel-card d-md-flex flex-md-row" data-bs-interval="2000">
+                    <div class="card-body px-5 col-md-6 footer__card-body">
+                       <h5 class="card-title footer__title">PLACE HOLDER</h5>
+                       <p class="card-text footer__text ">
+                           <span class="d-block">This is just a place holder.</span>
+                           <span class="d-block">This is just a place holder.</span>
+                           <span class="d-block">This is just a place holder.</span>
+                       </p>
+                    </div>
+                    <div class="card-body px-5 d-none d-md-block col-md-6 footer__card-body">
+                       <h5 class="card-title footer__title">CONNECT</h5>
+                       <p class="card-text footer__text">
+                           <a class="d-block text-decoration-none" href="mailto:info@mysite.com"><i class="fa-solid fa-envelope fa-fw me-2"></i>Email us</a>
+                           <a class="d-block text-decoration-none" href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-fw me-2"></i>Facebook</a>
+                           <a class="d-block text-decoration-none" href="https://twitter.com/"><i class="fa-brands fa-twitter fa-fw me-2"></i>Twitter</a>
+                           <a class="d-block text-decoration-none" href="https://www.google.com"><i class="fa-brands fa-google-plus-square fa-fw me-2"></i>Google+</a>
+                       </p>
+                    </div>
+                </div>
+                <div class="carousel-item card footer__carousel-card d-md-flex flex-md-row" data-bs-interval="2000">
+                    <div class="card-body px-5 col-md-6 footer__card-body">
+                        <h5 class="card-title footer__title">PLACE HOLDER</h5>
+                        <p class="card-text footer__text">
+                            <span class="d-block">This is just a place holder.</span>
+                            <span class="d-block">This is just a place holder.</span>
+                            <span class="d-block">This is just a place holder.</span>
+                        </p>
+                    </div>
+                    <div class="card-body px-5 d-none d-md-block col-md-6 footer__card-body" data-bs-interval="2000">
+                        <h5 class="card-title footer__title">PLACE HOLDER</h5>
+                        <p class="card-text footer__text">
+                            <span class="d-block">This is just a place holder.</span>
+                            <span class="d-block">This is just a place holder.</span>
+                            <span class="d-block">This is just a place holder.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item card footer__carousel-card d-md-flex flex-md-row">
+                    <div class="card-body px-5 d-none d-md-block col-md-6 footer__card-body">
                        <h5 class="card-title footer__title">PLACE HOLDER</h5>
                        <p class="card-text footer__text">
                            <span class="d-block">This is just a place holder.</span>
@@ -277,19 +321,7 @@
                            <span class="d-block">This is just a place holder.</span>
                        </p>
                     </div>
-                </div>
-                <div class="carousel-item card footer__carousel-card">
-                    <div class="card-body px-5 pb-5">
-                       <h5 class="card-title footer__title">PLACE HOLDER</h5>
-                       <p class="card-text footer__text">
-                           <span class="d-block">This is just a place holder.</span>
-                           <span class="d-block">This is just a place holder.</span>
-                           <span class="d-block">This is just a place holder.</span>
-                       </p>
-                    </div>
-                </div>
-                <div class="carousel-item card footer__carousel-card">
-                    <div class="card-body px-5 pb-5">
+                    <div class="card-body px-5 col-md-6 footer__card-body">
                        <h5 class="card-title footer__title">CONNECT</h5>
                        <p class="card-text footer__text">
                            <a class="d-block text-decoration-none" href="mailto:info@mysite.com"><i class="fa-solid fa-envelope fa-fw me-2"></i>Email us</a>
@@ -300,11 +332,11 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev d-md-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next d-md-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -315,8 +347,8 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active card footer__carousel-card row g-0 pb-5" data-bs-interval="2000">
-                    <div class="col-6 d-inline-block card-body footer__card-body">
+                <div class="carousel-item active card footer__carousel-card row g-0" data-bs-interval="2000">
+                    <div class="col-6 px-5 d-inline-block card-body footer__card-body">
                         <h5 class="card-title footer__title">PLACE HOLDER</h5>
                         <p class="card-text footer__text">
                             <span class="d-block">This is just a place holder.</span>
@@ -324,7 +356,7 @@
                             <span class="d-block">This is just a place holder.</span>
                         </p>
                     </div>
-                    <div class="col-6 d-inline-block card-body footer__card-body">
+                    <div class="col-6 px-5 d-inline-block card-body footer__card-body">
                         <h5 class="card-title footer__title">PLACE HOLDER</h5>
                         <p class="card-text footer__text">
                             <span class="d-block">This is just a place holder.</span>
@@ -333,8 +365,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item card footer__carousel-card row g-0 pb-5" data-bs-interval="4000">
-                    <div class="col-6 d-inline-block card-body footer__card-body">
+                <div class="carousel-item card footer__carousel-card row g-0" data-bs-interval="4000">
+                    <div class="col-6 px-5 d-inline-block card-body footer__card-body">
                         <h5 class="card-title footer__title">PLACE HOLDER</h5>
                         <p class="card-text footer__text">
                             <span class="d-block">This is just a place holder.</span>
@@ -342,7 +374,7 @@
                             <span class="d-block">This is just a place holder.</span>
                         </p>
                     </div>
-                    <div class="col-6 d-inline-block card-body footer__card-body align-top">
+                    <div class="col-6 px-5 d-inline-block card-body footer__card-body align-top">
                         <h5 class="card-title footer__title">CONNECT</h5>
                         <p class="card-text footer__text">
                             <a class="d-block text-decoration-none" href="mailto:info@mysite.com"><i class="fa-solid fa-envelope fa-fw me-2"></i>Email us</a>
