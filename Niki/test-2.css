@@ -1,5 +1,5 @@
 *{
-    outline: solid red 1px;
+    /* outline: solid red 1px; */
     font-family: Arial, Helvetica, sans-serif;
     /* 字體 最後是明體(泛用字體) */
     box-sizing: border-box;
@@ -11,29 +11,245 @@ body {
 }
 
 .header , main ,.footer {
+    background-color: #326611;;
+}
+
+.test-ex {
+    height: 200px;
+    background-color: #856346;
+}
+
+.figure__caption {
+    background-color: RGB(0,0,0);
+}
+
+.figure__caption h2 {
+    color: #e1e497;
+}
+
+.figure__caption p {
+    font-weight: bold;
+    color: #fff;
+}
+
+.figure__caption p a {
+    height: 14px;
+    width: 14px;
+    background-color: #a4b2b5;
+}
+
+.figure__caption p a i {
+    color: #fff;
+    font-size: 12px;
+    vertical-align: text-top;
+}
+
+@media screen and (min-width :768px) {
+    .figure__caption {
+        background-color: RGB(0,0,0,0.75);
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width :1200px) {
+    .figure__caption p {
+        font-size: 20px;
+    }
+
+    .figure__caption p a {
+        height: 20px;
+        width: 20px;
+    }
+
+    .figure__caption p a i {
+        font-size: 18px;
+        vertical-align: top;
+    }
+}
+
+.menu {
+    padding: 12px 0;
+}
+
+.menu__img img {
+    border-radius: 0;
+}
+
+.menu__card {
     background-color: #326611;
+    border: 0;
+    border-radius: 0
+}
+
+.menu__title {
+    font-weight: bold;
+    color: #e1e497;
+}
+
+.menu__text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 769px) {
+    .menu__card + .menu__card {
+        border-left: 4px solid #3a6f1c;
+        box-shadow: 1px 0 #2a5a0e inset;
+    }
+}
+
+@media screen and (min-width: 922px) {
+    .menu {
+        padding: 6px 0;
+    }
+
+    .menu__card {
+        padding: 6px;
+    }
+
+    .menu__img {
+        margin-right: 6px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu__card {
+        padding: 6px 12px;
+    }
+    
+    .menu__img {
+        margin-right: 12px;
+    }
+}
+
+.featured {
+    padding: 12px 0;
+    background-color: #fff;
+}
+
+.featured * h3 {
+    background-color: #dce8d4;
+    border-bottom: 2px solid #b6cda8;
+    color: #856346;
+}
+
+h4.featured__title {
+    color: #856346;
+    font-weight: bold;
+    font-size: 20px;
+}
+    
+p.featured__text {
+    font-size: 16px;
+}
+
+/* @media(min-width: 992px) { */
+@media screen and (min-width: 992px) {
+    .featured__container {
+        gap: 8px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .featured__container {
+        gap: 16px;
+    }
+
+    h4.featured__title {
+        font-size: 24px;
+    }
+    
+    p.featured__text {
+        font-size: 20px;
+    }
+}
+
+.hr {
+    background-color: #fff;
+}
+
+.hr hr {
+    height: 2px;
+    background-color: #a3a3a3;
+}
+
+.tips {
+    background-color: #fff;
+}
+
+.tips h3 {
+    background-color: #dce8d4;
+    border-bottom: 2px solid #b6cda8;
+    color: #856346;
+}
+
+.tips__img img {
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+    object-position: top left;
+}
+
+.tips--height {
+    height: 100px;
+}
+
+.tips__text {
+    margin: 0;
+    font-size: 20px;
+}
+
+.tips__text li::marker {
+    font-weight: bold;
+}
+
+@media screen and (min-width :576px) {
+    .tips--height {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width :992px) {
+    .tips--height {
+        height: auto;
+    }
 }
 
 .footer__carousel-card {
     background-color: #dce8d4;
     height: 240px;
     font-size: 0;
+    border: 0;
+    border-top: 2px solid #9cc588;
+    border-radius: 0;
+}
+
+.footer__card-body + .footer__card-body {
+    border-left: 2px solid #9cc588;
 }
 
 .footer__title {
-    font-size: 24px;
+    font-size: 20px;
     color: #a4a7a3;
 }
 
 .footer__text {
-    font-size: 20px; 
+    font-size: 16px; 
     color: #a3a7a1;
 }
 
+.about-us__title a,
 .footer__text a {
     color: #a3a7a1;
-    font-size: 24px;
 }
+
+.about-us__title a {
+    text-decoration-line: none;
+}
+
 
 .footer__text a i {
     color: #326611;
@@ -50,8 +266,118 @@ body {
     background-color: #dce8d4;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+    .footer__card-body  {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
     .footer__copyright {
         font-size: 20px;
     }
+}
+
+/* about-us */
+
+.about-us {
+    background-color: #9cc588;
+    border-top: 2px solid #9cc588;
+    gap: 2px;
+}
+
+.about-us__container {
+    background-color: #dce8d4;
+    height: 180px;
+}
+
+@media screen and (min-width: 1400px) {
+    .footer__text {
+        font-size: 20px;
+    }
+
+    .about-us__container {
+        height: 200px;
+    }
+}
+
+/* 自己添加參數 */
+
+/* 不透明參數補足 */
+
+.bg-opacity-95 {
+    --bs-bg-opacity: 0.95;
+}
+
+.bg-opacity-90 {
+    --bs-bg-opacity: 0.9;
+}
+
+.bg-opacity-85 {
+    --bs-bg-opacity: 0.85;
+}
+
+.bg-opacity-80 {
+    --bs-bg-opacity: 0.8;
+}
+
+.bg-opacity-75 {
+    --bs-bg-opacity: 0.75;
+}
+
+.bg-opacity-70 {
+    --bs-bg-opacity: 0.7;
+}
+
+.bg-opacity-65 {
+    --bs-bg-opacity: 0.65;
+}
+
+.bg-opacity-60 {
+    --bs-bg-opacity: 0.6;
+}
+
+.bg-opacity-55 {
+    --bs-bg-opacity: 0.55;
+}
+
+.bg-opacity-50 {
+    --bs-bg-opacity: 0.5;
+}
+
+.bg-opacity-45 {
+    --bs-bg-opacity: 0.45;
+}
+
+.bg-opacity-40 {
+    --bs-bg-opacity: 0.4;
+}
+
+.bg-opacity-35 {
+    --bs-bg-opacity: 0.35;
+}
+
+.bg-opacity-30 {
+    --bs-bg-opacity: 0.3;
+}
+
+.bg-opacity-25 {
+    --bs-bg-opacity: 0.25;
+}
+
+.bg-opacity-20 {
+    --bs-bg-opacity: 0.2;
+}
+
+.bg-opacity-15 {
+    --bs-bg-opacity: 0.15;
+}
+
+.bg-opacity-10 {
+    --bs-bg-opacity: 0.1;
+}
+
+.bg-opacity-5 {
+    --bs-bg-opacity: 0.05;
 }
