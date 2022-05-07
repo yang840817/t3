@@ -177,50 +177,57 @@ header , main ,.footer {
 
 /* focus figure */
 
-.main-focus__caption {
-    background-color: RGB(0,0,0);
-}
-
 .main-focus__title {
     color: #e1e497;
 }
 
-.main-focus__text {
+.main-focus__slideshow-explain {
+    background-color: RGB(0,0,0);
+    position: relative;
+    left: unset;
+    right: unset;
+    bottom: unset;
+}
+
+.main-focus__content {
+    font-size: 14px;
     font-weight: bold;
     color: #fff;
 }
 
-.main-focus__link {
+.main-focus__content a {
     height: 14px;
     width: 14px;
     background-color: #a4b2b5;
 }
 
-.main-focus__link i {
+.main-focus__content a i {
     color: #fff;
     font-size: 12px;
     vertical-align: text-top;
 }
 
-@media screen and (min-width :768px) {
-    .main-focus__caption {
-        background-color: RGB(0,0,0,0.75);
+@media screen and (min-width: 769px) {
+    .main-focus__slideshow-explain {
+        background-color: RGB(0,0,0,.75);
         position: absolute;
         bottom: 0;
     }
 }
 
-@media screen and (min-width :1200px) {
-    .main-focus__text {
+@media screen and (min-width: 1200px) {
+    .main-focus__content {
         font-size: 20px;
+        font-weight: bold;
+        color: #fff;
     }
 
-    .main-focus__link {
+    .main-focus__content a {
         height: 20px;
         width: 20px;
     }
 
-    .main-focus__link i {
+    .main-focus__content a i {
         font-size: 18px;
         vertical-align: top;
     }
@@ -266,6 +273,7 @@ header , main ,.footer {
         box-shadow: 1px 0 #2a5a0e inset;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .secondary-focus {
         margin: -8px 0;
@@ -287,6 +295,7 @@ header , main ,.footer {
 }
 
 .featured {
+    padding: 12px 0;
     background-color: #fff;
 }
 
@@ -391,13 +400,13 @@ hr.hr {
 }
 
 @media screen and (min-width :768px) {
-    .tips__content {
+    .tips--height {
         height: 270px;
     }
 }
 
 @media screen and (min-width :992px) {
-    .tips__content {
+    .tips--height {
         height: unset;
     }
 }

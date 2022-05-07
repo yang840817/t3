@@ -21,7 +21,7 @@
     <!-- link連結外部資源,rel(relationship)表示關係,stylesheet為樣式表,CSS用的 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Bootstrap的CDN -->
-    <link rel="stylesheet" href="test-2.css">
+    <link rel="stylesheet" href="t3-style-4-another.css">
     <!-- CSS的extrenal -->
 </head>
 <body>
@@ -61,12 +61,17 @@
     </header>
     <main class="container px-3 px-xxl-4">
 
-    <!-- 輪播 -->
-
-        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner main-focus">
+        <!-- 輪播圖 -->
+        
+        <section id="carouselExampleCaptions" class="carousel slide main-focus" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
                 <div class="carousel-item active main-focus__slideshow">
-                    <img src="img/gardening-1.jpg" class="d-block w-100" alt="GARDENING TIPS">
+                    <img src="img/gardening-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-block p-3 p-xl-4 text-start main-focus__slideshow-explain">
                         <h2 class="m-0 main-focus__title">
                             GARDENING TIPS
@@ -85,10 +90,10 @@
                     </div>
                 </div>
                 <div class="carousel-item main-focus__slideshow">
-                    <img src="img/gardening-2.jpg" class="d-block w-100" alt="Happy Gardener">
+                    <img src="img/gardening-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-block p-3 p-xl-4 text-start main-focus__slideshow-explain">
                         <h2 class="m-0 main-focus__title">
-                            Happy Gardener                        
+                            GARDENING TIPS
                         </h2>
                         <p class="m-0 main-focus__content">
                             This is just a place holder, 
@@ -104,10 +109,10 @@
                     </div>
                 </div>
                 <div class="carousel-item main-focus__slideshow">
-                    <img src="img/gardening-3.jpg" class="d-block w-100" alt="Plantig">
+                    <img src="img/gardening-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-block p-3 p-xl-4 text-start main-focus__slideshow-explain">
                         <h2 class="m-0 main-focus__title">
-                            Plantig
+                            GARDENING TIPS
                         </h2>
                         <p class="m-0 main-focus__content">
                             This is just a place holder, 
@@ -123,69 +128,74 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button> -->
-            <div class="container-fluid px-0 pt-3 py-md-3 py-xxl-4">
-            <div class="carousel-indicators position-relative row g-0 d-flex flex-column flex-md-row flex-nowrap secondary-focus">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active col card mb-3 mb-md-0 secondary-focus__card" aria-current="true" aria-label="Slide 1">
+              <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- 三小格-次要焦點(secondary-focus) -->
+
+        <section class="container-fluid px-0 py-3 py-xxl-4">
+            <div class="row g-0 d-flex flex-column flex-md-row secondary-focus">
+                <div class="col card mb-3 mb-md-0 secondary-focus__card">
                     <div class="row g-0 gx-xl-3 gx-xxl-4 px-xl-3 px-xxl-4 flex-md-column flex-nowra align-items-md-center flex-xl-row align-items-xl-start secondary-focus__card-container">
                         <div class="col-3 col-md-8 col-lg-6 col-xl-5 mb-md-3 mb-xl-0 secondary-focus__img">
                             <img src="img/gardening2.jpg" class="img-thumbnail p-0 w-100" alt="Tips">
                         </div>
                         <div class="col col-md-10 col-xl secondary-focus__content">
                             <div class="card-body py-0 pe-0 px-md-0">
-                                <h4 class="card-title mb-0 mb-sm-3 mb-xxl-4 text-start text-md-center text-xl-start secondary-focus__title">
+                                <h4 class="card-title mb-0 mb-sm-3 mb-xxl-4 text-md-center text-xl-start secondary-focus__title">
                                     Tips
                                 </h4>
-                                <p class="card-text text-start secondary-focus__text">
+                                <p class="card-text secondary-focus__text">
                                     This is just a place holder. 
                                     This is just a place holder. 
                                 </p>
                             </div>
                         </div>
                     </div>
-                </button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="col card mb-3 mb-md-0 secondary-focus__card" aria-label="Slide 2">
-                    <div class="row g-0 gx-xl-3 gx-xxl-4 px-xl-3 px-xxl-4 flex-md-column flex-nowra align-items-md-center flex-xl-row align-items-xl-start secondary-focus__card-container">
+                </div>
+                <div class="col card mb-3 mb-md-0 secondary-focus__card">
+                    <div class="row g-0 gx-xl-3 gx-xxl-4 px-xl-3 px-xxl-4 flex-md-column flex-nowrap align-items-md-center flex-xl-row align-items-xl-start secondary-focus__card-container">
                         <div class="col-3 col-md-8 col-lg-6 col-xl-5 mb-md-3 mb-xl-0 secondary-focus__img">
                             <img src="img/gardening3.jpg" class="img-thumbnail p-0 w-100" alt="Happy_Gardener">
                         </div>
                         <div class="col col-md-10 col-xl secondary-focus__content">
                             <div class="card-body py-0 pe-0 px-md-0">
-                                <h4 class="card-title mb-0 mb-sm-3 mb-xxl-4 text-start text-md-center text-xl-start secondary-focus__title">
+                                <h4 class="card-title mb-0 mb-sm-3 mb-xxl-4 text-md-center text-xl-start secondary-focus__title">
                                     Happy Gardener
                                 </h4>
-                                <p class="card-text text-start secondary-focus__text">
+                                <p class="card-text secondary-focus__text">
                                     This is just a place holder. 
                                     This is just a place holder. 
                                 </p>
                             </div>
                         </div>
                     </div>
-                </button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="col card mb-3 mb-md-0 secondary-focus__card" aria-label="Slide 3">
-                    <div class="row g-0 gx-xl-3 gx-xxl-4 px-xl-3 px-xxl-4 flex-md-column flex-nowra align-items-md-center flex-xl-row align-items-xl-start secondary-focus__card-container">
+                </div>
+                <div class="col card secondary-focus__card">
+                    <div class="row g-0 gx-xl-3 gx-xxl-4 px-xl-3 px-xxl-4 flex-md-column flex-nowrap align-items-md-center flex-xl-row align-items-xl-start secondary-focus__card-container">
                         <div class="col-3 col-md-8 col-lg-6 col-xl-5 mb-md-3 mb-xl-0 secondary-focus__img">
                             <img src="img/gardening4.jpg" class="img-thumbnail p-0 w-100" alt="Plantig">
                         </div>
                         <div class="col col-md-10 col-xl secondary-focus__content">
                             <div class="card-body py-0 pe-0 px-md-0">
-                                <h4 class="card-title mb-0 mb-sm-3 mb-xxl-4 text-start text-md-center text-xl-start secondary-focus__title">
+                                <h4 class="card-title mb-0 mb-sm-3 mb-xxl-4 text-md-center text-xl-start secondary-focus__title">
                                     Plantig
                                 </h4>
-                                <p class="card-text text-start secondary-focus__text">
+                                <p class="card-text secondary-focus__text">
                                     This is just a place holder. 
                                     This is just a place holder. 
                                 </p>
                             </div>
                         </div>
                     </div>
-                </button>
-            </div>    
+                </div>
             </div>
         </section>
 
@@ -308,80 +318,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- about-us -->
-
-        <div class="accordion d-flex flex-row flex-wrap about-us" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item navbar-expand-md flex-grow-1 col-12 col-md-5 col-lg-2 about-us__container">
-                <h5 class="accordion-header card-title d-md-none collapse show about-us__title col-12" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button about-us__button p-3 collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        PLACE HOLDER
-                    </button>
-                </h5>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse navbar-collapse d-md-flex flex-column p-md-3 p-xxl-4 col-12 about-us__content" aria-labelledby="panelsStayOpen-headingOne">
-                    <h5 class="accordion-header card-title mb-3 mb-xxl-4 d-none d-md-block about-us__title" id="panelsStayOpen-headingOne">
-                        PLACE HOLDER
-                    </h5>
-                    <div class="accordion-body card-text pt-0 p-md-0 about-us__text">
-                        <span class="d-block">This is just a place holder.</span>
-                        <span class="d-block">This is just a place holder.</span>
-                        <span class="d-block">This is just a place holder.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item navbar-expand-md flex-grow-1 col-12 col-md-5 col-lg-2 about-us__container">
-                <h5 class="accordion-header card-title d-md-none collapse show about-us__title col-12" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button about-us__button p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                        PLACE HOLDER
-                    </button>
-                </h5>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse navbar-collapse d-md-flex flex-column p-md-3 p-xxl-4 col-12 about-us__content" aria-labelledby="panelsStayOpen-headingTwo">
-                    <h5 class="accordion-header card-title mb-3 mb-xxl-4 d-none d-md-block about-us__title" id="panelsStayOpen-headingOne">
-                        PLACE HOLDER
-                    </h5>
-                    <div class="accordion-body card-text pt-0 p-md-0 about-us__text">
-                        <span class="d-block">This is just a place holder.</span>
-                        <span class="d-block">This is just a place holder.</span>
-                        <span class="d-block">This is just a place holder.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item navbar-expand-md flex-grow-1 col-12 col-md-5 col-lg-2 about-us__container">
-                <h5 class="accordion-header card-title d-md-none collapse show about-us__title col-12" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button about-us__button p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
-                        PLACE HOLDER
-                    </button>
-                </h5>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse navbar-collapse d-md-flex flex-column p-md-3 p-xxl-4 col-12 about-us__content" aria-labelledby="panelsStayOpen-headingOne">
-                    <h5 class="accordion-header card-title mb-3 mb-xxl-4 d-none d-md-block about-us__title" id="panelsStayOpen-headingOne">
-                        PLACE HOLDER
-                    </h5>
-                    <div class="accordion-body card-text pt-0 p-md-0 about-us__text">
-                        <span class="d-block">This is just a place holder.</span>
-                        <span class="d-block">This is just a place holder.</span>
-                        <span class="d-block">This is just a place holder.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item navbar-expand-md flex-grow-1 col-12 col-md-5 col-lg-2 about-us__container">
-                <h5 class="accordion-header card-title d-md-none collapse show about-us__title col-12" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button about-us__button p-3 collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
-                        CONNECT
-                    </button>
-                </h5>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse navbar-collapse d-md-flex flex-column p-md-3 p-xxl-4 col-12 about-us__content" aria-labelledby="panelsStayOpen-headingOne">
-                    <h5 class="accordion-header card-title mb-3 mb-xxl-4 d-none d-md-block about-us__title" id="panelsStayOpen-headingOne">
-                        CONNECT
-                    </h5>
-                    <div class="accordion-body card-text pt-0 p-md-0 about-us__text">
-                        <a class="d-block text-decoration-none" href="mailto:info@mysite.com"><i class="fa-solid fa-envelope fa-fw me-2"></i>Email us</a>
-                        <a class="d-block text-decoration-none" href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-fw me-2"></i>Facebook</a>
-                        <a class="d-block text-decoration-none" href="https://twitter.com/"><i class="fa-brands fa-twitter fa-fw me-2"></i>Twitter</a>
-                        <a class="d-block text-decoration-none" href="https://www.google.com"><i class="fa-brands fa-google-plus-square fa-fw me-2"></i>Google+</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- about-us -->
 
