@@ -295,11 +295,10 @@ header , main ,.footer {
 }
 
 .featured {
-    padding: 12px 0;
     background-color: #fff;
 }
 
-.featured * h3 {
+.featured h3 {
     background-color: #dce8d4;
     border-bottom: 2px solid #b6cda8;
     color: #856346;
@@ -352,21 +351,6 @@ hr.hr {
     opacity:1;
 }
 
-
-@media screen and (min-width: 992px) {
-    hr {
-        border-left: 16px solid #fff;
-        border-right: 16px solid #fff;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    hr {
-        border-left: 24px solid #fff;
-        border-right: 24px solid #fff;
-    }
-}
-
 .tips {
     background-color: #fff;
 }
@@ -385,7 +369,6 @@ hr.hr {
 }
 
 .tips__text {
-    margin: 0;
     font-size: 16px;
 }
 
@@ -400,13 +383,13 @@ hr.hr {
 }
 
 @media screen and (min-width :768px) {
-    .tips--height {
-        height: 270px;
+    .tips__content {
+        height: 250px;
     }
 }
 
 @media screen and (min-width :992px) {
-    .tips--height {
+    .tips__content {
         height: unset;
     }
 }
