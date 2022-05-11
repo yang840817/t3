@@ -273,6 +273,7 @@ header , main ,.footer {
     order: 1;
     background-color: #d8e8ce;
     color: #326611;
+    transition: all .6s
 }
 
 .secondary-focus__card.active + .secondary-focus__card {
