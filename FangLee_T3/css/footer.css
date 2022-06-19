@@ -1,0 +1,96 @@
+.accordion {
+    display: flex;
+    flex-wrap: wrap;
+    --bs-accordion-bg: rgb(222, 233, 214);
+    --bs-accordion-border-color: rgb(179,199,161);
+    --bs-accordion-border-radius: initial;
+    border-top: 1px solid rgb(179,199,161);
+    border-bottom: 1px solid rgb(179,199,161);
+}
+
+.accordion-item {
+    color: #848484;
+    border: 0;
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid rgb(179,199,161);
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0;
+}
+
+.accordion-button {
+    padding: 0.5rem 1.25rem 0.5rem;
+    color: unset;
+    text-shadow: 2px -1px white;
+}
+
+.accordion-button:focus {
+    box-shadow: initial;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #2d6e25;
+    background-color: unset;
+    box-shadow: initial;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23848484'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    filter: drop-shadow(1px -1px white);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232d6e25'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    filter: drop-shadow(-1px 1px white);
+}
+
+.accordion-body {
+    padding: 0 1.2rem 1rem;
+}
+
+.accordion h2 button , .accordion-body h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-shadow: 2px -1px white;
+}
+
+.accordion-body a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: unset;
+}
+.accordion-body a:hover {
+    color: rgb(45, 110, 37);
+}
+
+.connect_list i {
+    margin-right: 0.5rem;
+    color: rgb(45, 110, 37);
+    font-size: 1.2rem;
+}
+
+
+.footer_right p {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 576px) {
+    .accordion-body {
+        padding: 1rem 1.25rem;
+    }
+
+    .accordion-item {
+        border: 1px solid rgb(179,199,161);
+    }
+}
+

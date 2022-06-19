@@ -35,8 +35,9 @@
       </nav>
     </header>
     <main>
-      <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner mb-3"> 
+      <!-- 輪播圖 -->
+      <section id="carouselExampleCaptions" class="carousel slide mb-3" data-bs-ride="true">
+        <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="image/carousel-1.jpg" class="d-block w-100" alt="carousel-1">
             <div class="carousel-caption d-none d-sm-block">
@@ -73,95 +74,98 @@
               </a>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-        <section class="carousel-indicators mb-3">
-          <div class="row figure_list gx-3">
-            <figure class="col col-lg-4">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  class="active" aria-current="carousel" aria-label="Slide 1">
-                <img src="image/gardening-tip.jpg" class="d-block w-100 img-thumbnail" alt="gardening-tip">
-              </button>
-              <figcaption>
-                <h3>tips</h3>
-                <p class="m-0">This is just a place holder. This is just a place holder.</p>
-              </figcaption>
-            </figure>
-            <figure class="col col-lg-4">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
-                <img src="image/gardening-happy-gardener.jpg" class="d-block w-100 img-thumbnail" alt="gardening-happy-gardener">
-              </button>
-              <figcaption>
-                <h3>happy gardener</h3>
-                <p class="m-0">This is just a place holder. This is just a place holder.</p>
-              </figcaption>
-            </figure>
-            <figure class="col col-lg-4">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
-                <img src="image/gardening-planting.jpg" class="d-block w-100 img-thumbnail" alt="gardening-planting">
-              </button>
-              <figcaption>
-                <h3>planting</h3>
-                <p class="m-0">This is just a place holder. This is just a place holder.</p>
-              </figcaption>
-            </figure>  
-          </div>
-        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </section>
+      <!-- 縮圖 -->
+      <section class="container carousel_outer mb-3">
+        <div class="row">
+          <figure class="col-12 col-sm-4">
+            <button class="active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1">
+              <img src="image/gardening-tip.jpg" class="d-block w-100 img-thumbnail" alt="gardening-tip">
+            </button>
+            <figcaption>
+              <h3>tips</h3>
+              <p class="m-0">This is just a place holder. This is just a place holder.</p>
+            </figcaption>
+          </figure>
+          <figure class="col-12 col-sm-4">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+              <img src="image/gardening-happy-gardener.jpg" class="d-block w-100 img-thumbnail" alt="gardening-happy-gardener">
+            </button>
+            <figcaption>
+              <h3>happy gardener</h3>
+              <p class="m-0">This is just a place holder. This is just a place holder.</p>
+            </figcaption>
+          </figure>
+          <figure class="col-12 col-sm-4">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+              <img src="image/gardening-planting.jpg" class="d-block w-100 img-thumbnail" alt="gardening-planting">
+            </button>
+            <figcaption>
+              <h3>planting</h3>
+              <p class="m-0">This is just a place holder. This is just a place holder.</p>
+            </figcaption>
+          </figure>  
+        </div>
+      </section>
+    
+      <!-- 卡片圖 -->
       <section class="bg-white container featured_wrapper p-4">
         <div class="card_container">
           <h2>featured gardens</h2>
           <div class="card_list g-5">
             <div class="card col">
-              <a class="image_box" href="##">
-                <img class="w-100" src="image/feature-gardens1.jpg" alt="feature-gardens1">
-              </a>
-              <div class="card-body">
-                <h3>juliet's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-              </div>
+                <a class="image_box" href="##">
+                  <img class="w-100" src="image/feature-gardens1.jpg" alt="feature-gardens1">
+                </a>
+                <div class="card-body">
+                  <h3>juliet's garden</h3>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                </div>
             </div>
             <div class="card col">
-              <a class="image_box" href="##">
-                <img class="w-100" src="image/feature-gardens2.jpg" alt="feature-gardens2">
-              </a>
-              <div class="card-body">
-                <h3>joanne's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-              </div>
+                <a class="image_box" href="##">
+                  <img class="w-100" src="image/feature-gardens2.jpg" alt="feature-gardens2">
+                </a>
+                <div class="card-body">
+                  <h3>joanne's garden</h3>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                </div>
             </div>
             <div class="card col">
-              <a class="image_box" href="##">
-                <img class="w-100" src="image/feature-gardens3.jpg" alt="feature-gardens3">
-              </a>
-              <div class="card-body">
-                <h3>jettka's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-              </div>
+                <a class="image_box" href="##">
+                  <img class="w-100" src="image/feature-gardens3.jpg" alt="feature-gardens3">
+                </a>
+                <div class="card-body">
+                  <h3>jettka's garden</h3>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                </div>
             </div>
             <div class="card col">
-              <a class="image_box" href="##">
-                <img class="w-100" src="image/feature-gardens4.jpg" alt="feature-gardens4">
-              </a>
-              <div class="card-body">
-                <h3>jia's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
-              </div>
+                <a class="image_box" href="##">
+                  <img class="w-100" src="image/feature-gardens4.jpg" alt="feature-gardens4">
+                </a>
+                <div class="card-body">
+                  <h3>jia's garden</h3>
+                  <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+                </div>
             </div>
           </div>
         </div>
         <hr>
-        <div class="row gx-4 article_container">
-          <div class="image_box col-12 col-lg-4">
-            <img src="image/tip-of-the-week.jpg" class="w-100" alt="tip-of-the-week">
+        <div class="article_container">
+          <div class="image_box">
+            <img src="image/tip-of-the-week.jpg" class="img-fluid w-100" alt="tip-of-the-week">
           </div>
-          <article class="text_box col-12 col-lg-8">
+          <article class="text_box">
             <h2>tips of the week</h2>
             <ol>
               <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
