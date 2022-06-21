@@ -28,6 +28,12 @@ body {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .body_wrapper {
+        width: 80%;
+    }
+}
+
 /*  Breakpoints
 None	<576px  手機直向 max-width: 575px
 sm	    ≥576px  手機橫向 min-width: 576px

@@ -64,11 +64,15 @@
 .accordion-body a {
     display: block;
     text-decoration: none;
-    text-transform: capitalize;
     color: unset;
 }
+
 .accordion-body a:hover {
     color: rgb(45, 110, 37);
+}
+
+.connect_list a {
+    text-transform: capitalize;
 }
 
 .connect_list i {
@@ -76,7 +80,6 @@
     color: rgb(45, 110, 37);
     font-size: 1.2rem;
 }
-
 
 .footer_right p {
     margin: 0;

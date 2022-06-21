@@ -14,23 +14,25 @@
 </head>
 <body>
   <div class="container-sm px-sm-4 body_wrapper">
-    <header class="navbar-expand-lg">
-      <div class="d-flex">
-        <h1 class="m-0 p-2 p-lg-4">
+    <header>
+      <div class="navbar px-3">
+        <h1>
           <a href="index.html"><img class="w-100" src="image/logo.png" alt="logo"></a>
         </h1>
-        <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button>  
       </div>
-      <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav w-100">
-          <a class="nav-link active" href="#">home</a>
-          <a class="nav-link" href="#">about</a>
-          <a class="nav-link" href="#">plants</a>
-          <a class="nav-link" href="#">gardens</a>
-          <a class="nav-link" href="#">news</a>
-          <a class="nav-link" href="#">contact</a>
+      <nav class="navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav w-100">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#">plants</a>
+            <a class="nav-link" href="#">gardens</a>
+            <a class="nav-link" href="#">news</a>
+            <a class="nav-link" href="#">contact</a>
+          </div>  
         </div>
       </nav>
     </header>
@@ -84,7 +86,7 @@
         </div>
         <section class="carousel-indicators mb-3">
           <div class="row figure_list gx-3">
-            <figure class="col col-lg-4">
+            <figure class="col-lg-4">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  class="active" aria-current="carousel" aria-label="Slide 1">
                 <img src="image/gardening-tip.jpg" class="d-block w-100 img-thumbnail" alt="gardening-tip">
               </button>
@@ -93,7 +95,7 @@
                 <p class="m-0">This is just a place holder. This is just a place holder.</p>
               </figcaption>
             </figure>
-            <figure class="col col-lg-4">
+            <figure class="col-lg-4">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
                 <img src="image/gardening-happy-gardener.jpg" class="d-block w-100 img-thumbnail" alt="gardening-happy-gardener">
               </button>
@@ -102,7 +104,7 @@
                 <p class="m-0">This is just a place holder. This is just a place holder.</p>
               </figcaption>
             </figure>
-            <figure class="col col-lg-4">
+            <figure class="col-lg-4">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
                 <img src="image/gardening-planting.jpg" class="d-block w-100 img-thumbnail" alt="gardening-planting">
               </button>
@@ -117,8 +119,8 @@
       <section class="bg-white container featured_wrapper p-4">
         <div class="card_container">
           <h2>featured gardens</h2>
-          <div class="card_list g-5">
-            <div class="card col">
+          <div class="row card_list g-4">
+            <div class="col card">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens1.jpg" alt="feature-gardens1">
               </a>
@@ -127,7 +129,7 @@
                 <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
               </div>
             </div>
-            <div class="card col">
+            <div class="col card">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens2.jpg" alt="feature-gardens2">
               </a>
@@ -136,7 +138,7 @@
                 <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
               </div>
             </div>
-            <div class="card col">
+            <div class="col card">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens3.jpg" alt="feature-gardens3">
               </a>
@@ -145,7 +147,7 @@
                 <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
               </div>
             </div>
-            <div class="card col">
+            <div class="col card">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens4.jpg" alt="feature-gardens4">
               </a>
@@ -158,9 +160,9 @@
         </div>
         <hr>
         <div class="row gx-4 article_container">
-          <div class="image_box col-12 col-lg-4">
+          <a class="image_box col-12 col-lg-4" href="##">
             <img src="image/tip-of-the-week.jpg" class="w-100" alt="tip-of-the-week">
-          </div>
+          </a>
           <article class="text_box col-12 col-lg-8">
             <h2>tips of the week</h2>
             <ol>
@@ -249,7 +251,7 @@
         </div>
       </div>
       
-      <div class="footer_right p-sm-3 p-lg-2">
+      <div class="footer_right p-2">
         <p>Garden Walkthrough &copy; 2023 &#124; All Rights Reserved</p>
       </div>
     </footer>

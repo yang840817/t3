@@ -45,11 +45,6 @@
     display: block;
 }
 
-.figure_list {
-    flex-direction: column;
-}
-
-
 .carousel-indicators figure {
     display: flex;
     align-items: flex-start;
@@ -61,7 +56,6 @@
     margin-bottom: 0;
 }
 
-/* button */
 .carousel-indicators [data-bs-target] { 
     background-color: unset;
     margin: 0 1rem 0 0;
@@ -96,22 +90,18 @@ button:hover .img-thumbnail {
     color: white;
 }
 
-
-/* featured */
 .card_list {
-    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .card {
     border: none;
-    gap: 1.5rem;
     border-radius: initial;
 }
 
 .card .image_box {
     flex: 1 0 auto;
+    margin: 0 0 1rem 0;
 }
 
 
@@ -158,9 +148,12 @@ button:hover .img-thumbnail {
     margin-bottom: 1.5rem;
 }
 
-.article_container .image_box:hover {
+  .article_container .image_box:hover {
     transform: scale(0.98);
 }
+
+
+
 
 .text_box ol {
     padding-left: 1.5rem;
@@ -175,10 +168,6 @@ ol li::marker {
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
-    .card {
-        flex-direction: row;
-    }
-
     .carousel-caption .text_box {
         min-width: 0;
     }
@@ -189,6 +178,12 @@ ol li::marker {
     }
     .carousel-caption .text_box .into {
         flex-shrink: 0;
+    }
+    .card {
+        flex-direction: row;
+    }
+    .card .image_box {
+        margin: 0 1rem 0 0;
     }
 }
 
@@ -207,13 +202,11 @@ ol li::marker {
     .card-body p {
         text-align: initial;
     }
-
     .article_container .image_box {
         width: 50%;
         margin-right: auto!important;
         margin-left: auto!important;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -264,11 +257,8 @@ ol li::marker {
         flex: initial;
     }
 
-    .article_container {
-        flex-direction: row;
-    }
-
     .article_container .image_box {
+        margin-bottom: 0;
         width: 33.33333333%;
     }
 }
