@@ -1,4 +1,5 @@
-.carousel-caption {
+/* 輪播圖 */
+main .carousel-caption {
     right: 0;
     bottom: 0;
     left: 0;
@@ -8,25 +9,25 @@
     text-align: initial;
 }
 
-.carousel-caption h2 {
+main .carousel-caption h2 {
     margin: 0;
     color: rgb(231,233,165);
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 
-.carousel-caption .text_box {
+main .carousel-caption .text_box {
     display: flex;
     text-decoration: none;
 }
 
-.carousel-caption .text_box p {
+main .carousel-caption .text_box p {
     margin: 0;
     font-size: 1em;
     color: #fff;
 }
 
-.carousel-caption .text_box i {
+main .carousel-caption .text_box i {
     font-size: 1em;
     color: black;
     border-radius: 50%;
@@ -34,29 +35,69 @@
     background-color: rgb(109, 131, 157);
 }
 
-.carousel-caption .text_box:hover i{
+main .carousel-caption .text_box:hover i{
     background-color: lightblue;
 }
 
-.carousel-indicators {
+/* 兩個箭頭圖示<i>：
+    在576px~991px顯示P外層的into，(P子層的<i>因省略會自隱藏)
+    在>=992px隱藏外層的into，(P子層的<i>無省略會自顯示) */
+@media (min-width: 576px) and (max-width: 991px) {
+    main .carousel-caption .text_box {
+        min-width: 0;
+    }
+    main .carousel-caption .text_box p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    main .carousel-caption .text_box .into {
+        flex: 0 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    main .carousel-caption .text_box .into {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    main .carousel-control-next, 
+    main .carousel-control-prev {
+        width: 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    main .carousel-caption {
+        padding: 1% 5%;
+    }
+    main .carousel-control-next, 
+    main .carousel-control-prev {
+        width: 5%;
+    }
+}
+
+/* 輪播圖下三縮圖 */
+main .carousel-indicators {
     position: initial;
     margin: 0;
     padding: 0 1.5rem 0;
     display: block;
 }
 
-.carousel-indicators figure {
+main .carousel-indicators figure {
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-
-.figure_list figure:nth-last-child(1){
+main .figure_list figure:nth-last-child(1){
     margin-bottom: 0;
 }
 
-.carousel-indicators [data-bs-target] { 
+main .carousel-indicators [data-bs-target] { 
     background-color: unset;
     margin: 0 1rem 0 0;
     width: initial;
@@ -65,56 +106,83 @@
     flex: 1 0 auto;
 }
 
-button .img-thumbnail {
+main button .img-thumbnail {
     padding: 0.15rem;
     border: 0;
     border-radius: 0.05rem;
 }
 
-.carousel-indicators .active .img-thumbnail {
+main .carousel-indicators .active .img-thumbnail {
     background-color:rgb(231,233,165);
 }
 
-button:hover .img-thumbnail {
+main button:hover .img-thumbnail {
     background-color:rgb(231,233,165);
 }
 
-.carousel-indicators figcaption h3 {
+main .carousel-indicators figcaption h3 {
     font-size: 1.2rem;
     color: rgb(231,233,165);
     text-transform: capitalize;
 }
 
-.carousel-indicators figcaption p {
+main .carousel-indicators figcaption p {
     font-size: 1rem;
     color: white;
 }
 
-.card_list {
+@media (min-width: 768px) {
+    main .carousel-indicators [data-bs-target] {
+        flex: initial;
+    }
+}
+
+@media (min-width: 992px) {
+    main .figure_list {
+        flex-direction: row;
+    }
+    main .figure_list figure:nth-last-child(1),
+    main .figure_list figure:nth-last-child(2),
+    main .figure_list figure:nth-last-child(3) {
+        margin-bottom: 0;
+    }
+    main .figure_list figure {
+        padding: 0 1rem;
+        border-right: 0.3rem ridge rgb(150, 150, 150, 0.2);        
+    }
+    main .figure_list figure:nth-child(3n) {
+        border-right: 0.3rem ridge rgb(150, 150, 150, 0);
+    }
+    main .carousel-indicators [data-bs-target] {
+        flex: 1 0 auto;
+    }
+}
+
+/* 四圖卡牌區 */
+main .card_list {
     flex-direction: column;
 }
 
-.card {
+main .card {
     border: none;
     border-radius: initial;
 }
 
-.card .image_box {
+main .card .image_box {
     flex: 1 0 auto;
     margin: 0 0 1rem 0;
 }
 
-
-.card .image_box:hover {
+main .card .image_box:hover {
     transform: scale(0.98);
 }
 
-.card_list .card .card-body {
+main .card_list .card .card-body {
     flex: initial;
     padding: 0;
 }
 
-.featured_wrapper h2 {
+main .featured_wrapper h2 {
     padding: 0.5rem 0;
     margin: 0 0 1.5rem;
     border-bottom: 3px solid rgb(179,199,161);
@@ -126,7 +194,7 @@ button:hover .img-thumbnail {
     text-shadow: 3px -1px white;
 }
 
-.card-body h3 {
+main .card-body h3 {
     margin: 0 0 .5rem;
     color: rgb(118, 84, 55);
     font-size: 1.2rem;
@@ -134,132 +202,78 @@ button:hover .img-thumbnail {
     text-transform: uppercase;
 }
 
-.card-body p {
+main .card-body p {
     margin: 0;
     font-size: 1rem;
     text-align: center;
 }
 
-.featured_wrapper hr {
+main .featured_wrapper hr {
     margin: 1.5rem auto;
 }
 
-.article_container .image_box {
+main .article_container .image_box {
     margin-bottom: 1.5rem;
 }
 
-  .article_container .image_box:hover {
-    transform: scale(0.98);
-}
-
-
-
-
-.text_box ol {
-    padding-left: 1.5rem;
-}
-
-.text_box ol li {
-    margin-bottom: 1rem;
-}
-
-ol li::marker {
-    font-weight: bold;
-}
-
-@media screen and (min-width: 576px) and (max-width: 991px) {
-    .carousel-caption .text_box {
-        min-width: 0;
-    }
-    .carousel-caption .text_box p {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    .carousel-caption .text_box .into {
-        flex-shrink: 0;
-    }
-    .card {
+@media (min-width: 576px) and (max-width: 991px) {
+    main .card {
         flex-direction: row;
     }
-    .card .image_box {
+    main .card .image_box {
         margin: 0 1rem 0 0;
     }
 }
 
-@media screen and (min-width: 576px) {
-    .carousel-control-next, .carousel-control-prev {
-        width: 10%;
-    }
-    .featured_wrapper h2 {
+@media (min-width: 576px) {
+    main .featured_wrapper h2 {
         text-align: initial;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
-    .card-body h3 {
+    main .card-body h3 {
         text-align: initial;
     }
-    .card-body p {
+    main .card-body p {
         text-align: initial;
     }
-    .article_container .image_box {
-        width: 50%;
+}
+
+@media (min-width: 992px) {
+    main .card_list {
+        flex-direction: row;
+    }
+    main .card .image_box {
+        flex: initial;
+    }
+}
+
+/* 單張圖片-tips區塊 */
+main .article_container .image_box a:hover {
+    transform: scale(0.98);
+}
+
+main .text_box ol {
+    padding-left: 1.5rem;
+}
+
+main .text_box ol li {
+    margin-bottom: 1rem;
+}
+
+main ol li::marker {
+    font-weight: bold;
+}   
+
+@media (min-width: 576px) {
+    main .article_container .image_box {
         margin-right: auto!important;
         margin-left: auto!important;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .carousel-indicators [data-bs-target] {
-        flex: initial;
-    }
-}    
-
-@media screen and (min-width: 992px) {
-    .carousel-caption {
-        padding: 1% 5%;
-    }
-    .carousel-control-next, .carousel-control-prev {
-        width: 5%;
-    }
-
-    .figure_list {
-        flex-direction: row;
-    }
-
-    .figure_list figure:nth-last-child(1),
-    .figure_list figure:nth-last-child(2),
-    .figure_list figure:nth-last-child(3) {
+@media (min-width: 992px) {
+    main .article_container .image_box {
         margin-bottom: 0;
-    }
-
-    .figure_list figure {
-        padding: 0 1rem;
-    }
-
-    .figure_list figure {
-        border-right: 0.3rem ridge rgb(150, 150, 150, 0.2);        
-    }
-
-    .figure_list figure:nth-child(3n) {
-        border-right: 0.3rem ridge rgb(150, 150, 150, 0);
-    }
-
-    .carousel-indicators [data-bs-target] {
-        flex: 1 0 auto;
-    }
-
-    .card_list {
-        flex-direction: row;
-    }
-
-    .card .image_box {
-        flex: initial;
-    }
-
-    .article_container .image_box {
-        margin-bottom: 0;
-        width: 33.33333333%;
     }
 }
-

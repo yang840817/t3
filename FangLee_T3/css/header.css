@@ -1,12 +1,18 @@
-header {
+.body_wrapper header {
     background-color: rgb(222, 233, 214);
 }
 
-h1 {
+@media (min-width: 576px) {
+    .body_wrapper header {
+        background-color: white;
+    }   
+}
+
+header h1 {
     margin: 0;
 }
 
-h1 > a {
+header h1 > a {
     display: block;
 }
 
@@ -14,15 +20,21 @@ header .navbar {
     flex-wrap: initial;
 }
 
-.navbar .navbar-toggler {
+@media (min-width: 768px) {
+    header .navbar {
+        justify-content: space-around;
+    }
+}
+
+header .navbar .navbar-toggler {
     border: 0;
 }
 
-.navbar-toggler:focus {
+header .navbar-toggler:focus {
     box-shadow: unset;
 }
 
-.navbar-nav .nav-link {
+header .navbar-nav .nav-link {
     flex:1;
     background-color: #4b4b4b;
     color: lightyellow;
@@ -30,36 +42,12 @@ header .navbar {
     text-transform: capitalize;
 }
 
-.nav-link:hover {
+header .nav-link:hover {
     background-color:rgb(220, 233, 209);
     color: black;    
 }
 
-.navbar-nav .nav-link.active {
+header .navbar-nav .nav-link.active {
     background-color:rgb(157, 177, 138);
     color: green;
-}
-
-@media screen and (min-width: 576px) {
-    .body_wrapper header {
-        background-color: white;
-    }   
-}
-
-@media screen and (min-width: 768px) {
-    header .navbar {
-        justify-content: space-around;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .navbar-nav .nav-link {
-        padding: 1rem;
-    }
-    .body_wrapper header {
-        padding-bottom: 0.1rem;
-    }
-    header .navbar {
-        justify-content: center;
-    }
 }

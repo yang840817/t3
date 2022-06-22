@@ -13,9 +13,9 @@
 
 </head>
 <body>
-  <div class="container-sm px-sm-4 body_wrapper">
+  <div class="container-sm px-0 px-sm-4 body_wrapper">
     <header>
-      <div class="navbar px-3">
+      <div class="navbar navbar-light px-3">
         <h1>
           <a href="index.html"><img class="w-100" src="image/logo.png" alt="logo"></a>
         </h1>
@@ -23,21 +23,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>  
       </div>
-      <nav class="navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar-expand-lg  bg-light">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav w-100">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">about</a>
-            <a class="nav-link" href="#">plants</a>
-            <a class="nav-link" href="#">gardens</a>
-            <a class="nav-link" href="#">news</a>
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link p-lg-3 active" aria-current="page" href="#">home</a>
+            <a class="nav-link p-lg-3" href="#">about</a>
+            <a class="nav-link p-lg-3" href="#">plants</a>
+            <a class="nav-link p-lg-3" href="#">gardens</a>
+            <a class="nav-link p-lg-3" href="#">news</a>
+            <a class="nav-link p-lg-3" href="#">contact</a>
           </div>  
         </div>
       </nav>
     </header>
     <main>
-      <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false"> <!-- data-bs-ride="false" carousel 關掉輪播改vscode才有用 -->
         <div class="carousel-inner mb-3"> 
           <div class="carousel-item active">
             <img src="image/carousel-1.jpg" class="d-block w-100" alt="carousel-1">
@@ -47,7 +47,7 @@
                 <p>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.
                   <i class="bi bi-arrow-right-short"></i>
                 </p>
-                <div class="d-lg-none"><i class="bi bi-arrow-right-short"></i></div>
+                <div class="into"><i class="bi bi-arrow-right-short"></i></div>
               </a>
             </div>
           </div>
@@ -59,7 +59,7 @@
                 <p>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.
                   <i class="bi bi-arrow-right-short"></i>
                 </p>
-                <div class="d-lg-none"><i class="bi bi-arrow-right-short"></i></div>
+                <div class="into"><i class="bi bi-arrow-right-short"></i></div>
               </a>
             </div>
           </div>
@@ -71,7 +71,7 @@
                 <p>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.
                   <i class="bi bi-arrow-right-short"></i>
                 </p>
-                <div class="d-lg-none"><i class="bi bi-arrow-right-short"></i></div>
+                <div class="into"><i class="bi bi-arrow-right-short"></i></div>
               </a>
             </div>
           </div>
@@ -160,9 +160,11 @@
         </div>
         <hr>
         <div class="row gx-4 article_container">
-          <a class="image_box col-12 col-lg-4" href="##">
-            <img src="image/tip-of-the-week.jpg" class="w-100" alt="tip-of-the-week">
-          </a>
+          <div class="image_box col-12 col-md-6 col-lg-4">
+            <a class="d-block" href="##">
+              <img src="image/tip-of-the-week.jpg" class="w-100" alt="tip-of-the-week">
+            </a>
+          </div>
           <article class="text_box col-12 col-lg-8">
             <h2>tips of the week</h2>
             <ol>
@@ -175,7 +177,7 @@
       </section>
     </main>
     <footer>
-      <div class="accordion navbar-expand-sm" id="accordionExample">
+      <div class="row g-0 accordion navbar-expand-sm" id="accordionExample">
         <div class="accordion-item col-12 col-sm-6 col-lg-3">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button collapsed navbar-toggler" type="button" 
@@ -242,10 +244,10 @@
                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body connect_list">
               <h2 class="d-none d-sm-block">connect</h2>
-              <a class="nav-link" href="mailto:Garden@mysite.com"><i class="fa-solid fa-envelope fa-fw"></i>email us</a>
-              <a class="nav-link" href="##"><i class="fa-brands fa-facebook-square fa-fw"></i>facebook</a>
-              <a class="nav-link" href="##"><i class="fa-brands fa-twitter fa-fw"></i>twitter</a>
-              <a class="nav-link" href="##"><i class="fa-brands fa-google-plus-square fa-fw"></i>google&#43;</a>
+              <a class="nav-link" href="mailto:Garden@mysite.com"><i class="fa-solid fa-envelope fa-fw"></i>Email us</a>
+              <a class="nav-link" href="##"><i class="fa-brands fa-facebook-square fa-fw"></i>Facebook</a>
+              <a class="nav-link" href="##"><i class="fa-brands fa-twitter fa-fw"></i>Twitter</a>
+              <a class="nav-link" href="##"><i class="fa-brands fa-google-plus-square fa-fw"></i>Google&#43;</a>
             </div>
           </div>
         </div>
