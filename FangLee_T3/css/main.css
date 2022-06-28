@@ -104,6 +104,7 @@ main .carousel-indicators [data-bs-target] {
     height: auto;
     border: 0;
     flex: 1 0 auto;
+    opacity: 1;
 }
 
 main button .img-thumbnail {
@@ -114,6 +115,11 @@ main button .img-thumbnail {
 
 main .carousel-indicators .active .img-thumbnail {
     background-color:rgb(231,233,165);
+}
+
+main .carousel-indicators .active {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px black;
 }
 
 main button:hover .img-thumbnail {

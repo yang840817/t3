@@ -1,13 +1,18 @@
-footer .accordion {
+footer .row {
     flex-wrap: wrap;
-    --bs-accordion-bg: rgb(222, 233, 214);
-    --bs-accordion-border-color: rgb(179,199,161);
-    --bs-accordion-border-radius: initial;
-    border-top: 1px solid rgb(179,199,161);
-    border-bottom: 1px solid rgb(179,199,161);
+}
+
+footer .accordion-item:first-of-type ,
+footer .accordion-item:first-of-type .accordion-button ,
+footer .accordion-item:last-of-type ,
+footer .accordion-item:last-of-type .accordion-collapse {
+    border-radius: 0;
+    border-radius: 0;
 }
 
 footer .accordion-item {
+    background-color:rgb(222, 233, 214);
+    
     color: #848484;
     border: 0;
 }
@@ -16,16 +21,9 @@ footer .accordion-item:not(:first-of-type) {
     border-top: 1px solid rgb(179,199,161);
 }
 
-footer .accordion-item:first-of-type .accordion-button {
-    border-radius: 0;
-}
-
-footer .accordion-item:last-of-type .accordion-button.collapsed {
-    border-radius: 0;
-}
-
 footer .accordion-button {
     padding: 0.5rem 1.25rem 0.5rem;
+    background-color:rgb(222, 233, 214);
     color: unset;
     text-shadow: 2px -1px white;
 }
@@ -51,7 +49,7 @@ footer .accordion-button:not(.collapsed)::after {
 }
 
 footer .accordion-body {
-    padding: 0 1.2rem 1rem;
+    padding: 0 1.25rem 1rem;
 }
 
 /* 兩個都是標題 內容一模一樣，只是裝置不同會隱藏與顯示。
@@ -64,9 +62,8 @@ footer .accordion-body h2 {
     text-shadow: 2px -1px white;
 }
 
-footer .accordion-body a {
-    display: block;
-    text-decoration: none;
+footer .accordion-body .nav-link {
+    padding: 0;
     color: unset;
 }
 
