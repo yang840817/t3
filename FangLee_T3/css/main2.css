@@ -26,7 +26,7 @@ main .carousel-caption .text_box .text {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -36,7 +36,7 @@ main .carousel-caption .text_box .into {
 }
 
 main .carousel-caption .text_box i {
-    font-size: 1em;
+    font-size: 1rem;
     color: black;
     border-radius: 50%;
     background-color: rgb(109, 131, 157);
