@@ -30,6 +30,7 @@ header .navbar {
     header {
         padding-bottom: 0.1rem;
     }
+    
     header .navbar {
         justify-content: center;
     }

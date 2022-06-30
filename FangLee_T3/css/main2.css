@@ -121,7 +121,7 @@ main .carousel-indicators .card-body .card-text {
     color: white;
 }
 
-.carousel-indicators [data-bs-target] {
+main .carousel-indicators [data-bs-target] {
     flex: unset;
     width: initial;
     height: auto;
@@ -133,14 +133,14 @@ main .carousel-indicators .card-body .card-text {
     opacity: 1;
 }
 
-main button .img-thumbnail {
+main .carousel-indicators button:hover .img-thumbnail {
+    background-color:rgb(231,233,165);
+}
+
+main .carousel-indicators .img-thumbnail {
     padding: 0.15rem;
     border: 0;
     border-radius: 0.05rem;
-}
-
-main .carousel-indicators .active .img-thumbnail {
-    background-color:rgb(231,233,165);
 }
 
 main .carousel-indicators .active {
@@ -148,13 +148,13 @@ main .carousel-indicators .active {
     box-shadow: 2px 2px 5px black;
 }
 
-main button:hover .img-thumbnail {
+main .carousel-indicators .active .img-thumbnail {
     background-color:rgb(231,233,165);
 }
 
 @media (min-width: 768px) {
     main .carousel-indicators .image_box {
-        flex:initial;
+        flex: initial;
     }
 }
 
@@ -187,34 +187,31 @@ main .featured_wrapper h2 {
     text-shadow: 3px -1px white;
 }
 
-main .card_container .card_list {
-    flex-direction: column;
-}
-
-main .card_container .card_list .card {
+main .card_container .card {
     margin-bottom: 1.5rem;
     flex-direction: row;
     border: 0;
     border-radius: 0;
 }
-main .card_container .card_list .card:nth-last-of-type(1) {
+
+main .card_container .card:nth-last-of-type(1) {
     margin-bottom: 0;
 }
 
-main .card_list .image_box {
+main .featured_wrapper .image_box {
     margin: 0 1.5rem 0 0;
 }
 
-main .card_list .image_box img:hover {
+main .featured_wrapper .image_box img:hover {
     transform: scale(0.98);
     box-shadow: 0px 0px 10px black;
 }
 
-main .card_list .card-body {
+main .featured_wrapper .card-body {
     padding: 0;
 }
 
-main .card_list .card-body h3 {
+main .featured_wrapper .card-body h3 {
     margin: 0 0 1rem;
     color: rgb(118, 84, 55);
     font-size: 1.2rem;
@@ -229,7 +226,6 @@ main .featured_wrapper .card-body .card-text {
     font-size: 1rem;
 }
 
-
 @media (min-width: 576px) {
     main .featured_wrapper h2 {
         text-align: initial;
@@ -238,23 +234,17 @@ main .featured_wrapper .card-body .card-text {
     }
 }
 
-@media (min-width: 768px) {
-    main .card_container .card_list {
-        flex-direction: row;
-    }
-}
-
 @media (min-width: 992px) {
-    main .card_container .card_list .card {
+    main .featured_wrapper .card {
         margin-bottom: 0;
         flex-direction: column;
     }
 
-    main .card_list .image_box {
+    main .featured_wrapper .image_box {
         margin: 0 0 1.5rem 0;
     }
 
-    main .card_list .card-body h3 {
+    main .featured_wrapper .card-body h3 {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
@@ -278,46 +268,50 @@ main .article_container .image_box {
     margin: 0 auto;
 }
 
-main .article_container .image_box img:hover {
-    transform: scale(0.98);
-    box-shadow: 0px 0px 5px black;
-}
-
-main .article_container ol {
-    margin: 0 0 1.5rem 0;
-    padding: 0 0 0 1.5rem;
-}
-
-main .article_container ol li {
-    margin-bottom: 1.5rem;
-}
-
-main .article_container ol li:nth-last-child(1) {
-    margin-bottom: 0;
-}
-
 main .article_container .image_box a {
     display: block;
     width: 50%;
     margin: 0 auto;
 }
 
-main ol li::marker {
+main .article_container .image_box img:hover {
+    transform: scale(0.98);
+    box-shadow: 0px 0px 5px black;
+}
+
+main .article_container ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none; 
+    counter-reset: li;
+}
+
+main .article_container li::before {
+    content: counter(li) ".";
     font-weight: bold;
-}   
+    display: inline-block;
+    width: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+main .article_container li {
+    counter-increment: li;
+    margin-bottom: 1.25rem;
+}
+
+main .article_container li:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
 
 @media (min-width: 992px) {
     main .article_container {
         flex-wrap: nowrap;
     }
 
-    main .article_container .text {
+    main .article_container .text_box {
         order: 2;
     }
-
-    main .article_container ol {
-        margin: 0;
-    }    
 
     main .article_container .image_box {
         margin: 0;
