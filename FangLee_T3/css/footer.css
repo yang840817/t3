@@ -1,30 +1,36 @@
-footer .row {
-    flex-wrap: wrap;
-}
-
-footer .accordion-item:first-of-type ,
-footer .accordion-item:first-of-type .accordion-button ,
-footer .accordion-item:last-of-type ,
-footer .accordion-item:last-of-type .accordion-collapse {
-    border-radius: 0;
-    border-radius: 0;
+footer .accordion-flush .accordion-item:first-child {
+    border-top: 2px solid rgba(179,199,161);
 }
 
 footer .accordion-item {
     background-color:rgb(222, 233, 214);
-    
-    color: #848484;
-    border: 0;
+    border: 1px solid rgba(179,199,161);
 }
 
-footer .accordion-item:not(:first-of-type) {
-    border-top: 1px solid rgb(179,199,161);
+footer .accordion-button p {
+    margin: 0;
+    padding-left: 1.25rem;
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+footer .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 footer .accordion-button {
-    padding: 0.5rem 1.25rem 0.5rem;
     background-color:rgb(222, 233, 214);
-    color: unset;
+    color: #848484;
     text-shadow: 2px -1px white;
 }
 
@@ -34,8 +40,8 @@ footer .accordion-button:focus {
 
 footer .accordion-button:not(.collapsed) {
     color: #2d6e25;
-    background-color: unset;
-    box-shadow: initial;
+    background-color:rgb(222, 233, 214);
+    box-shadow: none;
 }
 
 footer .accordion-button::after {
@@ -48,45 +54,88 @@ footer .accordion-button:not(.collapsed)::after {
     filter: drop-shadow(-1px 1px white);
 }
 
-footer .accordion-body {
-    padding: 0 1.25rem 1rem;
+footer .accordion-button {
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
 }
 
-/* 兩個都是標題 內容一模一樣，只是裝置不同會隱藏與顯示。
-    手風琴標題：accordion h2 button  only for <576px 
-    小裝置以外標題：accordion-body h2  for >=576px */
-footer .accordion h2 button , 
-footer .accordion-body h2 {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    text-shadow: 2px -1px white;
+footer .accordion-body {
+   padding: 0 1.5rem 1.5rem;
+   margin: 0 auto;
+   width: fit-content;
 }
 
 footer .accordion-body .nav-link {
     padding: 0;
-    color: unset;
+    color: #848484;
 }
 
 footer .accordion-body a:hover {
     color: rgb(45, 110, 37);
 }
 
+footer .connect_list .nav-link + .nav-link {
+    margin-top: 0.5rem;
+}
+
 footer .connect_list i {
-    margin-right: 0.5rem;
     color: rgb(45, 110, 37);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
-@media (min-width: 576px) {
+footer .connect_list p {
+    margin: 0;
+    padding: 0 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    footer .accordion {
+        background-color: rgb(222, 233, 214);
+    }
+    footer .accordion-flush .accordion-item {
+        border-bottom: 0;
+        border-top: 2px solid rgba(179,199,161);
+    }
+    footer .accordion-flush .accordion-item:nth-of-type(odd) {
+        border-right: 2px solid rgba(179,199,161);
+    }
+    footer .collapse:not(.show) {
+        display: unset;
+    }
+    footer .accordion-button {
+        pointer-events: none;
+    }
+    footer .accordion-button:not(.collapsed) {
+        color: #848484;
+    }    
+    footer .accordion-button::after {
+        display: none;
+    }
+    footer .accordion-button p {
+        padding-left: 0;
+        text-align: start;
+    }
     footer .accordion-body {
-        padding: 1rem 1.25rem;
-    }
-    footer .accordion-item {
-        border: 1px solid rgb(179,199,161);
+        margin: 0;
+        padding: 0 1.5rem 1.5rem;
+        width: 100%;
     }
 }
 
-footer .footer_right p {
+@media (min-width: 992px) {
+    footer .accordion-flush .accordion-item:nth-of-type(odd) {
+        border-right: 0;
+    }
+    footer .accordion-flush .accordion-item + .accordion-item {
+        border-left: 2px solid rgba(179,199,161);
+    }
+}
+
+
+footer .footer_copyright p {
     margin: 0;
     text-align: center;
     color: white;
