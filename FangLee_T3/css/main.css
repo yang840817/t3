@@ -74,29 +74,59 @@ main .carousel-indicators {
 
 main .carousel-indicators .card {
     margin: 0 0 1.5rem 0;
-    flex-direction: row;
-    justify-content: center;
+    display: block;
     background-color: unset;
     border: 0;
     border-radius: 0;
 }
-
 main .carousel-indicators .card:nth-last-of-type(1){
     margin-bottom: 0;
 }
-
-main .carousel-indicators .card .image_box {
-    flex: 1 0 auto;
+@media (min-width: 992px) {
+    main .carousel-indicators .card {
+        margin-bottom: 0;
+    }
+    main .carousel-indicators .card + .card {
+        border-left: 0.3rem ridge rgb(150, 150, 150, 0.2);        
+    }
 }
 
-main .carousel-indicators .card-body {
+main .carousel-indicators .card_box {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* 按鈕＋圖效果 */
+main .carousel-indicators [data-bs-target] {
+    width: initial;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-indent: initial;
+    background-color: unset;
+    border: 0;
+    opacity: 1;
+}
+main .carousel-indicators .indicators_button:hover .img-thumbnail {
+    background-color:rgb(231,233,165);
+}
+main .carousel-indicators .indicators_button .img-thumbnail {
+    padding: 0.15rem;
+    border: 0;
+    border-radius: 0.05rem;
+}
+main .carousel-indicators .active {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px black;
+}
+main .carousel-indicators .active .img-thumbnail {
+    background-color:rgb(231,233,165);
+}
+
+
+/* figcaption 文字區 */
+main .carousel-indicators .card_box .card-body {
     padding: 0 0 0 1.5rem;
-    flex: initial;
-}
-
-main .carousel-indicators :nth-last-of-type(1) > .card-body {
-    border-right: 0;
-
 }
 
 main .carousel-indicators .card-body .card-title {
@@ -112,63 +142,10 @@ main .carousel-indicators .card-body .card-title {
 main .carousel-indicators .card-body .card-text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     overflow: hidden;
     font-size: 1rem;
     color: white;
-}
-
-main .carousel-indicators [data-bs-target] {
-    flex: unset;
-    width: initial;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    text-indent: initial;
-    background-color: unset;
-    border: 0;
-    opacity: 1;
-}
-
-main .carousel-indicators button:hover .img-thumbnail {
-    background-color:rgb(231,233,165);
-}
-
-main .carousel-indicators .img-thumbnail {
-    padding: 0.15rem;
-    border: 0;
-    border-radius: 0.05rem;
-}
-
-main .carousel-indicators .active {
-    transform: scale(1.1);
-    box-shadow: 2px 2px 5px black;
-}
-
-main .carousel-indicators .active .img-thumbnail {
-    background-color:rgb(231,233,165);
-}
-
-@media (min-width: 768px) {
-    main .carousel-indicators .card .image_box {
-        flex: initial;
-    }
-}
-
-@media (min-width: 992px) {
-    main .carousel-indicators .card:nth-last-child(1),
-    main .carousel-indicators .card:nth-last-child(2),
-    main .carousel-indicators .card:nth-last-child(3) {
-        margin-bottom: 0;
-    }
-
-    main .carousel-indicators .card-body {
-        border-right: 0.3rem ridge rgb(150, 150, 150, 0.2);        
-    }
-    
-    main .carousel-indicators .card .image_box {
-        flex: 1 0 auto;
-    }
 }
 
 /* featured_container 四圖卡牌區 */
@@ -242,9 +219,8 @@ main .featured_container .card-body .card-text {
     }
 
     main .featured_container .card-body h3 {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         overflow: hidden;
     }
 
@@ -275,7 +251,6 @@ main .article_container .image_box img:hover {
 main .article_container .text_box {
     margin-bottom: 1.5rem;
 }
-
 
 main .article_container ol {
     margin-left: 1.5rem;

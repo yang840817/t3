@@ -15,7 +15,7 @@ footer .accordion-button p {
     font-size: 1.4rem;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 footer .accordion-item:last-of-type .accordion-button.collapsed {
@@ -133,7 +133,6 @@ footer .connect_list p {
         border-left: 2px solid rgba(179,199,161);
     }
 }
-
 
 footer .footer_copyright p {
     margin: 0;

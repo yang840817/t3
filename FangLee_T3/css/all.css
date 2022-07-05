@@ -2,13 +2,18 @@
     /* outline: 1px solid red ; */
 }
 
-.body_container {
+body {
     min-width: 375px;
     background-image: url("../image/bg-body.jpg");
 }
 @media (min-width: 576px) {
-    .body_container {
-        padding: 0 10%;
+    body {
+        padding: 0 1.5rem;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        padding: 0 12%;
     }
 }
 
@@ -20,6 +25,7 @@
         padding: 0 1.5rem;
     }
 }
+
 
 /*  Breakpoints
 None	<576px  手機直向 max-width: 575px

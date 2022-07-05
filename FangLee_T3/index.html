@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/index.css">
 
 </head>
-<body class="container-fulid body_container">
-  <div class="container-fulid body_wrapper">
+<body>
+  <div class="body_wrapper">
     <header>
       <div class="navbar navbar-light px-4 py-3 py-lg-4">
         <h1>
@@ -82,36 +82,42 @@
           </button>
         </div>
         <div class="carousel-indicators p-4">
-          <div class="row row-cols-1 row-cols-lg-3">
-            <figure class="card h-100">
-              <div class="image_box">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="w-100 active" aria-current="false" aria-label="Slide 1">
-                <img src="image/gardening-tip.jpg" class="w-100 img-thumbnail" alt="gardening-tip"></button>
+          <div class="row row-cols-1 row-cols-lg-3 gx-5">
+            <figure class="card">
+              <div class="row row-cols-2 card_box g-0">
+                <div class="col-3 col-sm-2 col-lg-5 image_box">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="indicators_button w-100 active" aria-current="false" aria-label="Slide 1">
+                  <img src="image/gardening-tip.jpg" class="w-100 img-thumbnail" alt="gardening-tip"></button>
+                </div>
+                <figcaption class="card-body">
+                  <h3 class="card-title">tips</h3>
+                  <p class="card-text">This is just a place holder. This is just a place holder.</p>
+                </figcaption>
               </div>
-              <figcaption class="card-body">
-                <h3 class="card-title">tips</h3>
-                <p class="card-text">This is just a place holder. This is just a place holder.</p>
-              </figcaption>
+            </figure>  
+            <figure class="card">
+              <div class="row row-cols-2 card_box g-0">
+                <div class="col-3 col-sm-2 col-lg-5 image_box">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="indicators_button w-100" aria-label="Slide 2">
+                  <img src="image/gardening-happy-gardener.jpg" class="w-100 img-thumbnail" alt="gardening-happy-gardener"></button>
+                </div>
+                <figcaption class="card-body">
+                  <h3 class="card-title">happy gardener</h3>
+                  <p class="card-text">This is just a place holder. This is just a place holder.</p>
+                </figcaption>  
+              </div>
             </figure>
-            <figure class="card h-100">
-              <div class="image_box">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="w-100" aria-label="Slide 2">
-                <img src="image/gardening-happy-gardener.jpg" class="w-100 img-thumbnail" alt="gardening-happy-gardener"></button>
+            <figure class="card">
+              <div class="row row-cols-2 card_box g-0">
+                <div class="col-3 col-sm-2 col-lg-5 image_box">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="indicators_button w-100" aria-label="Slide 3">
+                    <img src="image/gardening-planting.jpg" class="w-100 img-thumbnail" alt="gardening-planting"></button>
+                </div>
+                <figcaption class="card-body">
+                  <h3 class="card-title">planting</h3>
+                  <p class="card-text">This is just a place holder. This is just a place holder.</p>
+                </figcaption>
               </div>
-              <figcaption class="card-body">
-                <h3 class="card-title">happy gardener</h3>
-                <p class="card-text">This is just a place holder. This is just a place holder.</p>
-              </figcaption>  
-            </figure>
-            <figure class="card h-100">
-              <div class="image_box">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="w-100" aria-label="Slide 3">
-                  <img src="image/gardening-planting.jpg" class="w-100 img-thumbnail" alt="gardening-planting"></button>
-              </div>
-              <figcaption class="card-body">
-                <h3 class="card-title">planting</h3>
-                <p class="card-text">This is just a place holder. This is just a place holder.</p>
-              </figcaption>
             </figure>
           </div>
         </div>
@@ -177,8 +183,8 @@
       </section>
     </main>
     <footer>
-      <div class="accordion accordion-flush row g-0" id="accordionPanelsStayOpenExample">
-        <div class="col-md-6 col-lg-3 accordion-item">
+      <div class="accordion accordion-flush row row-cols-1 row-cols-md-2 row-cols-lg-4 g-0" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
               <p>place holder</p>
@@ -192,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 accordion-item">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
               <p>place holder</p>
@@ -206,7 +212,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 accordion-item">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
               <p>place holder</p>
@@ -220,7 +226,7 @@
             </div>
           </div> 
         </div>         
-        <div class="col-md-6 col-lg-3 accordion-item">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingfour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
               <p>connect</p>
