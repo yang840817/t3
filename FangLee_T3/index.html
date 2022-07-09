@@ -15,24 +15,24 @@
 <body>
   <div class="body_wrapper">
     <header>
-      <div class="navbar navbar-light px-4 py-3 py-lg-4">
-        <h1>
-          <a href="index.html"><img class="w-100" src="image/logo.png" alt="logo"></a>
-        </h1>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>  
-      </div>
-      <nav class="navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo">
+          <h1>
+            <a href="index.html"><img class="w-100" src="image/logo.png" alt="logo"></a>
+          </h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav w-100">
-            <a class="nav-link p-3 p-lg-4 active" aria-current="page" href="#">home</a>
-            <a class="nav-link p-3 p-lg-4" href="#">about</a>
-            <a class="nav-link p-3 p-lg-4" href="#">plants</a>
-            <a class="nav-link p-3 p-lg-4" href="#">gardens</a>
-            <a class="nav-link p-3 p-lg-4" href="#">news</a>
-            <a class="nav-link p-3 p-lg-4" href="#">contact</a>
-          </div>  
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">home</a>
+            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#">plants</a>
+            <a class="nav-link" href="#">gardens</a>
+            <a class="nav-link" href="#">news</a>
+            <a class="nav-link" href="#">contact</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -41,34 +41,31 @@
         <div class="carousel-inner"> 
           <div class="carousel-item active">
             <img src="image/carousel-1.jpg" class="d-block w-100" alt="carousel-1">
-            <div class="carousel-caption d-none d-sm-block">
+            <div class="carousel-caption">
               <h2 class="title">gardening tips</h2> 
               <a class="text_box" href="##">
-                <p class="text">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.<i class="bi bi-arrow-right-short"></i>
-                </p>
-                <div class="into"><i class="bi bi-arrow-right-short fa-fw"></i></div>
+                <span class="text">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</span>
+                <i class="into bi bi-arrow-right-short fa-fw"></i>
               </a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="image/carousel-2.jpg" class="d-block w-100" alt="carousel-2">
-            <div class="carousel-caption d-none d-sm-block">
+            <div class="carousel-caption">
               <h2 class="title">happy gardener</h2>
               <a class="text_box" href="##">
-                <p class="text">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.<i class="bi bi-arrow-right-short"></i>
-                </p>
-                <div class="into"><i class="bi bi-arrow-right-short"></i></div>
+                <span class="text">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</span>
+                <i class="into bi bi-arrow-right-short fa-fw"></i>
               </a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="image/carousel-3.jpg" class="d-block w-100" alt="carousel-3">
-            <div class="carousel-caption d-none d-sm-block">
+            <div class="carousel-caption">
               <h2 class="title">planting</h2>
               <a class="text_box" href="##">
-                <p class="text">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.<i class="bi bi-arrow-right-short"></i>
-                </p>
-                <div class="into"><i class="bi bi-arrow-right-short"></i></div>
+                <span class="text">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</span>
+                <i class="into bi bi-arrow-right-short fa-fw"></i>
               </a>
             </div>
           </div>
@@ -81,168 +78,166 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="carousel-indicators p-4">
-          <div class="row row-cols-1 row-cols-lg-3 gx-5">
-            <figure class="card">
-              <div class="row row-cols-2 card_box g-0">
-                <div class="col-3 col-sm-2 col-lg-5 image_box">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="indicators_button w-100 active" aria-current="false" aria-label="Slide 1">
-                  <img src="image/gardening-tip.jpg" class="w-100 img-thumbnail" alt="gardening-tip"></button>
+        <div class="carousel-indicators">
+          <div class="row row-cols-1 row-cols-md-3 gx-0 gx-md-5">
+            <div class="col indicators_item">
+              <div class="image_box">
+                <div data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="w-100 active" aria-current="true" aria-label="Slide 1">
+                  <img src="image/gardening-tip.jpg" class="w-100 img-thumbnail" alt="gardening-tip">
                 </div>
-                <figcaption class="card-body">
-                  <h3 class="card-title">tips</h3>
-                  <p class="card-text">This is just a place holder. This is just a place holder.</p>
-                </figcaption>
               </div>
-            </figure>  
-            <figure class="card">
-              <div class="row row-cols-2 card_box g-0">
-                <div class="col-3 col-sm-2 col-lg-5 image_box">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="indicators_button w-100" aria-label="Slide 2">
-                  <img src="image/gardening-happy-gardener.jpg" class="w-100 img-thumbnail" alt="gardening-happy-gardener"></button>
+              <div class="indication-caption">
+                <h3 class="title">tips</h3>
+                <a class="text_box" herf="##"><p>This is just a place holder. This is just a place holder.</p></a>
+              </div>
+            </div>
+            <div class="col indicators_item">
+              <div class="image_box">
+                <div data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="w-100" aria-label="Slide 2">
+                  <img src="image/gardening-happy-gardener.jpg" class="w-100 img-thumbnail" alt="gardening-happy-gardener">
                 </div>
-                <figcaption class="card-body">
-                  <h3 class="card-title">happy gardener</h3>
-                  <p class="card-text">This is just a place holder. This is just a place holder.</p>
-                </figcaption>  
               </div>
-            </figure>
-            <figure class="card">
-              <div class="row row-cols-2 card_box g-0">
-                <div class="col-3 col-sm-2 col-lg-5 image_box">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="indicators_button w-100" aria-label="Slide 3">
-                    <img src="image/gardening-planting.jpg" class="w-100 img-thumbnail" alt="gardening-planting"></button>
+              <div class="indication-caption">
+                <h3 class="title">happy gardener</h3>
+                <a class="text_box" herf="##"><p>This is just a place holder. This is just a place holder.</p></a>
+              </div>
+            </div>
+            <div class="col indicators_item">
+              <div class="image_box">
+                <div data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="w-100" aria-label="Slide 3">
+                  <img src="image/gardening-planting.jpg" class="w-100 img-thumbnail" alt="gardening-planting">
                 </div>
-                <figcaption class="card-body">
-                  <h3 class="card-title">planting</h3>
-                  <p class="card-text">This is just a place holder. This is just a place holder.</p>
-                </figcaption>
               </div>
-            </figure>
+              <div class="indication-caption">
+                <h3 class="title">planting</h3>
+                <a class="text_box" herf="##"><p>This is just a place holder. This is just a place holder.</p></a>
+              </div>
+            </div>  
           </div>
         </div>
       </section>
       <section class="bg-white p-4">
-        <div class="featured_container mb-4">
-          <h2 class="h2_primary">featured gardens</h2>
-          <div class="row row-cols-1 row-cols-lg-4">
-            <figure class="card">
+        <div class="featured_container">
+          <h2 class="title_primary">featured gardens</h2>
+          <div class="row row-cols-1 row-cols-md-4">
+            <figure class="col featured_item">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens1.jpg" alt="feature-gardens1">
               </a>
-              <figcaption class="card-body">
-                <h3 class="card-title">juliet's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+              <figcaption class="featured_caption">
+                <h3 class="title">juliet's garden</h3>
+                <p class="text">This is just a place holder, so you can see what the site would look like.</p>
               </figcaption>
             </figure>
-            <figure class="card">
+            <figure class="col featured_item">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens2.jpg" alt="feature-gardens2">
               </a>
-              <figcaption class="card-body">
-                <h3 class="card-title">joanne's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+              <figcaption class="featured_caption">
+                <h3 class="title">joanne's garden</h3>
+                <p class="text">This is just a place holder, so you can see what the site would look like.</p>
               </figcaption>
             </figure>
-            <figure class="card">
+            <figure class="col featured_item">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens3.jpg" alt="feature-gardens3">
               </a>
-              <figcaption class="card-body">
-                <h3 class="card-title">jettka's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+              <figcaption class="featured_caption">
+                <h3 class="title">jettka's garden</h3>
+                <p class="text">This is just a place holder, so you can see what the site would look like.</p>
               </figcaption>
             </figure>
-            <figure class="card">
+            <figure class="col featured_item">
               <a class="image_box" href="##">
                 <img class="w-100" src="image/feature-gardens4.jpg" alt="feature-gardens4">
               </a>
-              <figcaption class="card-body">
-                <h3 class="card-title">jia's garden</h3>
-                <p class="card-text">This is just a place holder, so you can see what the site would look like.</p>
+              <figcaption class="featured_caption">
+                <h3 class="title">jia's garden</h3>
+                <p class="text">This is just a place holder, so you can see what the site would look like.</p>
               </figcaption>
             </figure>
           </div>
         </div>
-        <hr>
-        <article class="row gx-4 article_container">
-          <div class="text_box col-lg-8">
-            <h2 class="h2_primary">tips of the week</h2>
-            <ol>
-              <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-              <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-              <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-            </ol>
+        <hr class="mt-0 mb-4">
+        <article class="article_container">
+          <div class="row gx-4">
+            <div class="col-12 col-md-8 text_box">
+              <h2 class="title_primary">tips of the week</h2>
+              <ol class="text">
+                <li><span>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.<span></li>
+                <li><span>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.<span></li>
+                <li><span>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.<span></li>
+              </ol>
+            </div>
+            <div class="col-12 col-md-4 image_box">
+              <a href="##">
+                <img src="image/tip-of-the-week.jpg" class="w-100" alt="tip-of-the-week">
+              </a>
+            </div>
           </div>
-          <div class="image_box col-lg-4">
-            <a href="##">
-              <img src="image/tip-of-the-week.jpg" class="w-100" alt="tip-of-the-week">
-            </a>  
-          </div>
-        </article>
       </section>
     </main>
     <footer>
       <div class="accordion accordion-flush row row-cols-1 row-cols-md-2 row-cols-lg-4 g-0" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
+        <div class="col accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-              <p>place holder</p>
+              <span>place holder</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
-              <a class="nav-link" href="##">This is just a place holder.</a>
-              <a class="nav-link" href="##">This is just a place holder.</a>
-              <a class="nav-link" href="##">This is just a place holder.</a>
-            </div>
+            <ul class="accordion-body">
+              <li><a href="##">This is just a place holder.</a></li>
+              <li><a href="##">This is just a place holder.</a></li>
+              <li><a href="##">This is just a place holder.</a></li>
+            </ul>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="col accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-              <p>place holder</p>
+              <span>place holder</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
-              <a class="nav-link" href="##">This is just a place holder.</a>
-              <a class="nav-link" href="##">This is just a place holder.</a>
-              <a class="nav-link" href="##">This is just a place holder.</a>
-            </div>
+            <ul class="accordion-body">
+              <li><a href="##">This is just a place holder.</a></li>
+              <li><a href="##">This is just a place holder.</a></li>
+              <li><a href="##">This is just a place holder.</a></li>
+            </ul>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="col accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-              <p>place holder</p>
+              <span>place holder</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
-              <a class="nav-link" href="##">This is just a place holder.</a>
-              <a class="nav-link" href="##">This is just a place holder.</a>
-              <a class="nav-link" href="##">This is just a place holder.</a>
-            </div>
-          </div> 
+            <ul class="accordion-body">
+              <li><a href="##">This is just a place holder.</a></li>
+              <li><a href="##">This is just a place holder.</a></li>
+              <li><a href="##">This is just a place holder.</a></li>
+            </ul>
+          </div>
         </div>         
-        <div class="accordion-item">
+        <div class="col accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingfour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
-              <p>connect</p>
+              <span>connect</span>
             </button>
           </h2>
           <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
-            <div class="accordion-body connect_list">
-              <a class="nav-link" href="mailto:Garden@mysite.com"><i class="fa-solid fa-envelope fa-fw"></i><p>Email us</p></a>
-              <a class="nav-link" href="##"><i class="fa-brands fa-facebook-square fa-fw"></i><p>Facebook</p></a>
-              <a class="nav-link" href="##"><i class="fa-brands fa-twitter fa-fw"></i><p>Twitter</p></a>
-              <a class="nav-link" href="##"><i class="fa-brands fa-google-plus-square fa-fw"></i><p>Google&#43;</p></a>
-            </div>
+            <ul class="accordion-body connect_list">
+              <li><a href="mailto:Garden@mysite.com"><i class="fa-solid fa-envelope fa-fw"></i><span>Email us</span></a></li>
+              <li><a href="##"><i class="fa-brands fa-facebook-square fa-fw"></i><span>Facebook</span></a></li>
+              <li><a href="##"><i class="fa-brands fa-twitter fa-fw"></i><span>Twitter</span></a></li>
+              <li><a href="##"><i class="fa-brands fa-google-plus-square fa-fw"></i><span>Google&#43;</span></a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="footer_copyright px-4 py-3">
+      <div class="footer_copyright">
         <p>Garden Walkthrough &copy; 2023 &#124; All Rights Reserved</p>
       </div>
     </footer>
