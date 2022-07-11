@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 1px rgb(252, 201, 34) solid;
+}
+body{
+    background: url("./img/bg-body.jpg");
+}
+.container{
+    /* max-width: 980px; */
+    text-align: center;
+
+    background-color: #326611;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* -----header----- */
+.image__container--logo{
+    justify-content: center;
+    cursor: pointer;
+
+    background-color: #fff;
+}
+.image__container--logo img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    margin-bottom: 0;
+    margin: 15px auto;
+    height: 70px;
+    background: no-repeat center url("/img/logo.png");
+    background-size: contain;
+}
+nav{
+    background-color: #4a4a4a;
+    font-size: 0;
+}
+nav a{
+    display: inline-block;
+    padding: 12px; 
+    text-decoration: none;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+nav a:hover{
+    text-decoration: none;
+
+    background-color: #dbebd1;
+    color: #4a4a4a;
+    transition: 0.5s;
+}
+nav a:nth-child(1){
+    background-color: #79896e;
+    color: #4a4a4a;
+}
+
+/* -----section__container--banner----- */
+.section__container--banner{
+    position: relative;
+}
+.banner__container{
+    display: block;
+    height: 450px;
+    cursor: pointer;
+
+    background: no-repeat center url("./img/gardening1.jpg");
+    background-size: cover;
+}
+.banner__article{
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    text-align: left;
+
+    background-color: rgba(0, 0, 0, 0.61);
+}
+h2{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+    color: #E0E297;
+    font-size: 24px;
+    font-weight: 700;
+}
+.banner__article p{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.banner__article i{
+    color: #74888A;
+    font-size: 16px;
+}
+.banner__article i:hover{
+    color: #fff;
+}
+
+.banner__menu--anchor{
+    padding: 15px 0;
+}
+.banner__menu--anchor:hover{
+    background-color: #66c42c42;
+    transition: 0.5s;
+}
+.image__container{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    outline: 1px solid #fff;
+}
+.banner__menu--anchor article{
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    text-align: left;
+}
+h4{
+    color: #E0E297;
+    font-size: 20px;
+
+}
+.banner__menu--anchor p{
+    padding: 0;
+    margin: 0;
+
+    color: #fff;
+    font-size: 16px;
+}
