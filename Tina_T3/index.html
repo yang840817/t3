@@ -12,18 +12,51 @@
 <body>
     <div class="container">
         <header>
-            <a class="row image__container--logo">
-                <h1 class="col-7">
-                </h1>
-            </a>
-            <nav class="row">
-                <a href="##" class="col-2">Home</a>
-                <a href="##" class="col-2">About</a>
-                <a href="##" class="col-2">Plants</a>
-                <a href="##" class="col-2">Gardens</a>
-                <a href="##" class="col-2">News</a>
-                <a href="##" class="col-2">Contact</a>
-            </nav>
+            <div class="header__wrap">
+                <a class="row image__container--logo">
+                    <h1 class="col-7"></h1>
+                </a>
+                <nav class="row header__wrap--nav">
+                    <a href="##" class="col-2 header__wrap--a">Home</a>
+                    <a href="##" class="col-2 header__wrap--a">About</a>
+                    <a href="##" class="col-2 header__wrap--a">Plants</a>
+                    <a href="##" class="col-2 header__wrap--a">Gardens</a>
+                    <a href="##" class="col-2 header__wrap--a">News</a>
+                    <a href="##" class="col-2 header__wrap--a">Contact</a>
+                </nav>                
+            </div>
+
+            <div class="mobile__wrap">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container row">
+                        <a class="navbar-brand col-sm-7 col-12" href="##">
+                            <img class="img-fluid" src="./img/logo.png" alt="logo">
+                        </a>
+                        <button 
+                        class="navbar-toggler col-sm-3 col-12" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#header__navbar" 
+                        aria-controls="header__navbar" 
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="header__navbar">
+                            <div class="navbar-nav">
+                                <a href="##" class="nav-link">Home</a>
+                                <a href="##" class="nav-link">About</a>
+                                <a href="##" class="nav-link">Plants</a>
+                                <a href="##" class="nav-link">Gardens</a>
+                                <a href="##" class="nav-link">News</a>
+                                <a href="##" class="nav-link">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
         </header>
 
         <section>
@@ -38,7 +71,7 @@
                 </article>
             </div>
             <div class="row banner__menu">
-                <a class="col-4 banner__menu--anchor" href="##">
+                <a class="col-md-4 col-sm-12 banner__menu--anchor" href="##">
                     <div class="image__container">
                         <img src="./img/gardening2.jpg" alt="">
                     </div>
@@ -47,7 +80,7 @@
                         <p>This is just a placeholder.This is just a placeholder.</p>
                     </article>
                 </a>
-                <a class="col-4 banner__menu--anchor" href="##">
+                <a class="col-md-4 col-sm-12 banner__menu--anchor" href="##">
                     <div class="image__container">
                         <img src="./img/gardening3.jpg" alt="">
                     </div>
@@ -56,7 +89,7 @@
                         <p>This is just a placeholder.This is just a placeholder.</p>
                     </article>
                 </a>
-                <a class="col-4 banner__menu--anchor" href="##">
+                <a class="col-md-4 col-sm-12 banner__menu--anchor" href="##">
                     <div class="image__container">
                         <img src="./img/gardening4.jpg" alt="">
                     </div>

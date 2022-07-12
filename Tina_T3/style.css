@@ -17,7 +17,7 @@ body{
     margin-left: 0;
 }
 
-/* -----header----- */
+/* -----header header__wrap----- */
 .image__container--logo{
     justify-content: center;
     cursor: pointer;
@@ -35,11 +35,11 @@ h1{
     background: no-repeat center url("/img/logo.png");
     background-size: contain;
 }
-nav{
+.header__wrap--nav{
     background-color: #4a4a4a;
     font-size: 0;
 }
-nav a{
+.header__wrap--a{
     display: inline-block;
     padding: 12px; 
     text-decoration: none;
@@ -48,16 +48,27 @@ nav a{
     font-size: 16px;
     font-weight: 700;
 }
-nav a:hover{
+.header__wrap--a:hover{
     text-decoration: none;
 
     background-color: #dbebd1;
     color: #4a4a4a;
     transition: 0.5s;
 }
-nav a:nth-child(1){
+.header__wrap--a:nth-child(1){
     background-color: #79896e;
     color: #4a4a4a;
+}
+
+/* -----header mobile__wrap----- */
+nav{
+    background-color: #fff;
+}
+nav .container{
+    background-color: #fff;
+}
+.navbar-brand{
+    padding: 0;
 }
 
 /* -----section__container--banner----- */
@@ -106,7 +117,11 @@ h2{
 }
 
 .banner__menu--anchor{
+    margin: 8px 0;
     padding: 15px 0;
+}
+.banner__menu--anchor+.banner__menu--anchor{
+    border-left: 1px solid rgb(122, 189, 122);
 }
 .banner__menu--anchor:hover{
     background-color: #66c42c42;
@@ -135,4 +150,21 @@ h4{
 
     color: #fff;
     font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {  
+    .mobile__wrap{
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 767px) {  
+    .header__wrap{
+        display: none;
+    }
+    .banner__menu--anchor+.banner__menu--anchor{
+        margin-top: 0;
+        border-top: 1px solid rgb(96, 145, 66);
+        border-left: 0px;
+    }  
 }
