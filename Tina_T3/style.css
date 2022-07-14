@@ -7,7 +7,7 @@ body{
     background: url("./img/bg-body.jpg");
 }
 .body__container{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .container{
     /* max-width: 980px; */
@@ -71,6 +71,7 @@ nav .container{
     background-color: #fff;
 }
 .navbar-brand{
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -156,7 +157,7 @@ h2{
 
 /* -----section__container--featured-gardens----- */
 .section__container{
-    padding: 20px 10px;
+    padding: 20px 20px;
 
     background-color: #fefefe;
     font-size: 0;
@@ -175,13 +176,22 @@ h3{
     padding: 8px;
     margin: 0;
 }
+.featured-garden__items--anchor:hover{
+    text-decoration: none;
+
+    background-color: rgb(218, 213, 213);
+    transition: 0.5s;
+}
 .image__container--gardens img{
+    margin-bottom: 20px;
     width: 100%;
 }
 .featured-garden__items--anchor article{
     text-align: left;
 }
 .featured-garden__items--anchor h4{
+    text-transform: uppercase;
+
     color: #836247;
     font-size: 20px;
 }
@@ -204,9 +214,75 @@ li{
     font-size: 16px;
 }
 
+/* -----section__container--tips----- */
+.image__container--tips{
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+}
+.image__container--tips img{
+    width: 100%;
+}
+.image__container--tips + article{
+    display: inline-block;
+    padding: 0 0 0 20px;
+    vertical-align: top;
+}
+.section__container--tips h3{
+    margin-bottom: 30px;
+}
+.section__container--tips ol{
+    padding-left: 25px;
+}
+.section__container--tips li{
+    margin-bottom: 15px;
+    list-style-position: outside;
+}
+.section__container--tips li::marker{
+    font-weight: 900;
+}
+
 /* -----footer----- */
 footer{
+    margin-bottom: 10px;
+    border-top: 1px solid #74888A;
+
     background-color: rgb(221,233,233);
+    font-size: 0;
+}
+.footer__content{
+    padding: 20px 15px;
+    text-align: left;
+}
+.footer__content span{
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    color: #74888A;
+    font-size: 22px;
+}
+.footer__content a{
+    display: block;
+
+    color: #74888A;
+    font-size: 16px;
+}
+.footer__content + .footer__content{
+    border-left: 1px solid #74888A;
+}
+.connect-info a{
+    font-size: 18px;
+}
+.connect-info i{
+    color: #326611;
+    font-size: 18px;
+}
+
+footer + span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
 }
 
 /* -----media-query----- */
@@ -227,4 +303,13 @@ footer{
     .banner__menu--anchor{
         margin: 0;
     } 
+    .image__container--tips + article{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+    .footer__content + .footer__content{
+        border-left: 0px;
+    }
 }
