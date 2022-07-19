@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T3切版</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -60,16 +59,28 @@
         </header>
 
         <section>
-            <div class="section__container--banner">
-                <a class="banner__container"></a>
-                <article class="banner__article">
-                    <h2>gardening tips</h2>
-                    <p>
-                        This is just a place holder, so you can see what the site would look like.This is just a place holder, so you can see what the site would look like.This is just a place holder, so you can see what the site would look like.
-                        <a href="##"><i class="fa-fw fas fa-arrow-circle-right"></i></a>
-                    </p>
-                </article>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/gardening1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/gardening1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                        <div class="carousel-item">
+                        <img src="./img/gardening1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+
             <div class="row banner__menu">
                 <a class="col-md-4 col-sm-12 banner__menu--anchor" href="##">
                     <div class="image__container--gardening">
@@ -103,8 +114,8 @@
 
         <section>
             <div class="section__container">
-                <div class="section__container--featured-garden">
-                    <h3>featured gardens</h3>
+                <div class="row section__container--featured-garden">
+                    <h3 class="col-12">featured gardens</h3>
                     <a class="col-md-3 col-sm-6 featured-garden__items--anchor" href="##">
                         <div class="image__container--gardens">
                             <img class="img-fluid" src="./img/garden1.jpg" alt="">
@@ -152,10 +163,10 @@
                     <article class="col-md-8 col-sm-12">
                         <h3>tips of the weeks</h3>
                         <ol>
-                            <li>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</li>
-                            <li>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</li>
-                            <li>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</li>
-                        </ol>                        
+                            <li><p>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</p></li>
+                            <li><p>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</p></li>
+                            <li><p>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</p></li>
+                        </ol>
                     </article>
 
                 </div>
@@ -204,8 +215,6 @@
         <span>Garden Walkthrough &copy; | All Rights Reserved</span>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
