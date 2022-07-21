@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* outline: 1px rgb(252, 201, 34) solid; */
+    outline: 1px rgb(252, 201, 34) solid;
 }
 body{
     background: url("./img/bg-body.jpg");
@@ -28,12 +28,15 @@ body{
     max-width: 100%;
     height: auto;
 }
+
 h1{
-    margin-bottom: 0;
     margin: 15px 0;
     height: 70px;
     background: no-repeat center url("/img/logo.png");
     background-size: contain;
+}
+.mt-15{
+    margin-top: 15px;
 }
 .header__wrap--nav{
     background-color: #4a4a4a;
@@ -163,10 +166,13 @@ h2{
 
 /* -----section__container--featured-gardens----- */
 .section__container{
-    padding: 20px 20px;
+    padding: 20px 10px;
 
     background-color: #fefefe;
     font-size: 0;
+}
+.section__container--featured-garden>div{
+    padding: 0 10px;
 }
 h3{
     margin-bottom: 20px;
@@ -179,12 +185,9 @@ h3{
     color:#836247;
 }
 .featured-garden__items--anchor{
-    padding: 0;
-}
-.featured-garden__items--anchor{
-    display: inline-block;
-    /* padding: 8px; */
     margin: 0;
+    padding: 10px;
+    text-decoration: none;
 }
 .featured-garden__items--anchor:hover{
     text-decoration: none;
@@ -192,8 +195,10 @@ h3{
     background-color: rgb(218, 213, 213);
     transition: 0.5s;
 }
-.image__container--gardens img{
+.image__container--gardens{
     margin-bottom: 20px;
+}
+.image__container--gardens img{
     width: 100%;
 }
 .featured-garden__items--anchor article{
@@ -238,6 +243,9 @@ li{
     padding: 0 0 0 20px;
     vertical-align: top;
 }
+.section__container--tips{
+    padding: 0 10px;
+}
 .section__container--tips h3{
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -254,17 +262,24 @@ li{
 
 /* -----footer----- */
 footer{
-    margin-bottom: 10px;
     border-top: 1px solid #74888A;
 
-    background-color: rgb(221,233,233);
     font-size: 0;
+}
+.accordion{
+    margin-bottom: 10px;
+}
+.accordion-item{
+    border-radius: 0;
+    padding: 0;
+
+    background-color: rgb(221,233,233);
 }
 .footer__content{
     padding: 20px 15px;
     text-align: left;
 }
-.footer__content span{
+.h4, h4 button{
     display: inline-block;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -272,11 +287,14 @@ footer{
     color: #74888A;
     font-size: 22px;
 }
-.footer__content a{
+footer a{
     display: block;
 
     color: #74888A;
     font-size: 16px;
+}
+footer ul{
+    list-style: none;
 }
 .footer__content + .footer__content{
     border-left: 1px solid #74888A;
@@ -289,7 +307,7 @@ footer{
     font-size: 18px;
 }
 
-footer + span{
+footer span{
     color: #fff;
     font-size: 16px;
     font-weight: 900;
