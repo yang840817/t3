@@ -17,32 +17,36 @@ body{
     margin-left: 0;
 }
 
-/* -----header header__wrap----- */
-.image__container--logo{
-    justify-content: center;
-    cursor: pointer;
-
+/* -----header----- */
+header{
     background-color: #fff;
 }
-.image__container--logo img{
-    max-width: 100%;
-    height: auto;
+.navbar__container{
+    padding: 0;
 }
+.navbar > .navbar__content{
+    padding: 0;
+    justify-content: center;
+}
+.navbar__content--row{
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+.navbar__brand{
+    padding: 0;
+    margin: 20px 0;
+}
+.navbar__collapse{
+    padding: 0;
+}
+.navbar__nav{
+    width: 100%;
 
-h1{
-    margin: 15px 0;
-    height: 70px;
-    background: no-repeat center url("/img/logo.png");
-    background-size: contain;
-}
-.mt-15{
-    margin-top: 15px;
-}
-.header__wrap--nav{
     background-color: #4a4a4a;
     font-size: 0;
 }
-.header__wrap--a{
+.nav__link{
     display: inline-block;
     padding: 12px; 
     text-decoration: none;
@@ -51,34 +55,22 @@ h1{
     font-size: 16px;
     font-weight: 700;
 }
-.header__wrap--a:hover{
+.nav__link:hover{
     text-decoration: none;
 
     background-color: #dbebd1;
     color: #4a4a4a;
     transition: 0.5s;
 }
-.header__wrap--a:nth-child(1){
+.nav__link:nth-child(1){
     background-color: #79896e;
     color: #4a4a4a;
 }
 
-/* -----header mobile__wrap----- */
-nav{
-    background-color: #fff;
-}
-nav .container{
-    background-color: #fff;
-}
-.navbar-brand{
-    margin-bottom: 10px;
-    padding: 0;
-}
-.nav-link:hover{
-    background-color: rgb(218, 213, 213);
-}
-
 /* -----section__container--banner----- */
+.section__container--carousel{
+    margin-bottom: 8px;
+}
 .section__container--banner{
     margin: 0 0 8px 0;
     position: relative;
@@ -134,8 +126,15 @@ h2{
     padding: 15px 0;
 }
 .banner__menu--anchor+.banner__menu--anchor{
-    border-left: 1px solid rgb(122, 189, 122);
+    border-left: 3px solid #507e33;
+    box-shadow: inset 9px 0px 8px -10px rgb(58 58 58);
 }
+@media screen and (max-width: 767px) {
+    .banner__menu--anchor+.banner__menu--anchor{
+        border-left: 0px solid #507e33;
+        box-shadow: none;
+    }
+}」ㄇ
 .banner__menu--anchor:hover{
     background-color: #66c42c42;
     transition: 0.5s;
@@ -146,6 +145,11 @@ h2{
     vertical-align: top;
     outline: 1px solid #fff;
 }
+@media screen and (max-width: 991px) {
+    .image__container--gardening{
+        margin-bottom: 10px;
+    }
+}
 .banner__menu--anchor article{
     display: inline-block;
     width: 180px;
@@ -155,6 +159,11 @@ h2{
 .banner__menu--anchor h4{
     color: #E0E297;
     font-size: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .banner__menu--anchor h4{
+        text-align: center;
+    }
 }
 .banner__menu--anchor p{
     padding: 0;
@@ -223,7 +232,6 @@ hr{
 }
 
 li{
-    list-style-position: inside;
     text-align: left;
 
     font-size: 16px;
@@ -266,45 +274,58 @@ footer{
 
     font-size: 0;
 }
-.accordion{
+.footer__container{
     margin-bottom: 10px;
+    --bs-accordion-border-radius: 0;
 }
-.accordion-item{
+.footer__content{
     border-radius: 0;
-    padding: 0;
+    padding: 20px;
+    text-align: left;
 
     background-color: rgb(221,233,233);
 }
-.footer__content{
-    padding: 20px 15px;
-    text-align: left;
+@media screen and (max-width: 992px) {
+    .footer__content{
+        padding: 0;
+    }
+    .footer__content--ul li{
+        padding: 10px;
+    }
 }
-.h4, h4 button{
-    display: inline-block;
-    margin-bottom: 10px;
+h4 button{
     text-transform: uppercase;
 
     color: #74888A;
-    font-size: 22px;
+    font-size: 24px;
 }
-footer a{
-    display: block;
+.footer__content--h4{
+    margin-bottom: 20px;
+    text-transform: uppercase;
 
     color: #74888A;
-    font-size: 16px;
+    font-size: 24px;
 }
-footer ul{
+.footer__content--ul{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
-.footer__content + .footer__content{
-    border-left: 1px solid #74888A;
+.footer__content--ul a{
+    display: block;
+    text-decoration: none;
+
+    color: #74888A;
+    font-size: 18px;
 }
 .connect-info a{
+    margin-bottom: 5px;
+
     font-size: 18px;
 }
 .connect-info i{
     color: #326611;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 footer span{
@@ -318,9 +339,6 @@ footer span{
     .mobile__wrap{
         display: none;
     }
-    .footer__content + .footer__content{
-        border-left: 0px;
-    }
 }
 
 @media screen and (max-width: 767px) {  
@@ -331,7 +349,7 @@ footer span{
         margin-bottom: 0px;
     } 
     .banner__menu--anchor+.banner__menu--anchor{
-        border-top: 1px solid rgb(96, 145, 66);
+        border-top: 2px solid #2e610e;
         border-left: 0px;
     } 
     .banner__menu--anchor{
