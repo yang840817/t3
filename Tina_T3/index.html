@@ -7,38 +7,37 @@
     <title>T3切版</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap-modify.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container body__container">
         <header>
             <nav class="navbar navbar-expand-md navbar-light navbar__container">
-                <div class="container navbar__content">
-                    <div class="navbar__content--row row">
-                        <a class="navbar-brand navbar__brand col-7" href="##">
-                            <img class="img-fluid" src="./img/logo.png" alt="logo">
-                        </a>
-                        <button 
-                        class="navbar-toggler navbar__toggler col-3" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#header__navbar" 
-                        aria-controls="header__navbar" 
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse navbar__collapse" id="header__navbar">
-                            <div class="navbar-nav navbar__nav row">
-                                <a href="##" class="nav-link nav__link col-md-2"><span>Home</span></a>
-                                <a href="##" class="nav-link nav__link col-md-2"><span>About</span></a>
-                                <a href="##" class="nav-link nav__link col-md-2"><span>Plants</span></a>
-                                <a href="##" class="nav-link nav__link col-md-2"><span>Gardens</span></a>
-                                <a href="##" class="nav-link nav__link col-md-2"><span>News</span></a>
-                                <a href="##" class="nav-link nav__link col-md-2"><span>Contact</span></a>
-                            </div>
-                        </div>
+                <div class="navbar__content--row row">
+                    <a class="navbar-brand navbar__brand col-7 text-align-center" href="##">
+                        <img class="img-fluid" src="./img/logo.png" alt="logo">
+                    </a>
+                    <button 
+                    class="navbar-toggler navbar__toggler col-2" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#header__navbar" 
+                    aria-controls="header__navbar" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar__collapse" id="header__navbar">
+                    <div class="navbar-nav navbar__nav row text-align-center">
+                        <a href="##" class="nav-link nav__link col-md-2"><span>Home</span></a>
+                        <a href="##" class="nav-link nav__link col-md-2"><span>About</span></a>
+                        <a href="##" class="nav-link nav__link col-md-2"><span>Plants</span></a>
+                        <a href="##" class="nav-link nav__link col-md-2"><span>Gardens</span></a>
+                        <a href="##" class="nav-link nav__link col-md-2"><span>News</span></a>
+                        <a href="##" class="nav-link nav__link col-md-2"><span>Contact</span></a>
                     </div>
                 </div>
             </nav>
@@ -66,7 +65,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
 
-                    <div class="banner__article d-none d-md-block">
+                    <div class="carousel__banner-article d-none d-md-block">
                         <article>
                             <h2>gardening tips</h2>
                             <p>
@@ -78,35 +77,35 @@
                 </div>
 
 
-                <div class="carousel-indicators carousel__indicators row">
+                <div class="carousel-indicators carousel__indicators row text-align-center">
                     <div class="carousel__indicators--col col-md-4 col-12">
-                        <a data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active banner__menu--anchor" aria-current="true" aria-label="Slide 1">
-                            <div class="image__container--gardening">
+                        <a data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active carousel__indicators--anchor" aria-current="true" aria-label="Slide 1">
+                            <div class="carousel__indicators--image">
                                 <img src="./img/gardening2.jpg" alt="">
                             </div>
-                            <article>
+                            <article class="carousel__indicators--article">
                                 <h4>Tips</h4>
                                 <p>This is just a placeholder.This is just a placeholder.</p>
                             </article>
                         </a>
                     </div>
                     <div class="carousel__indicators--col col-md-4 col-12">
-                        <a data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="banner__menu--anchor" aria-label="Slide 2">
-                            <div class="image__container--gardening">
+                        <a data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="carousel__indicators--anchor" aria-label="Slide 2">
+                            <div class="carousel__indicators--image">
                                 <img src="./img/gardening3.jpg" alt="">
                             </div>
-                            <article>
+                            <article class="carousel__indicators--article">
                                 <h4>Happy Gardener</h4>
                                 <p>This is just a placeholder.This is just a placeholder.</p>
                             </article>
                         </a>
                     </div>
                     <div class="carousel__indicators--col col-md-4 col-12">
-                        <a data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="banner__menu--anchor" aria-label="Slide 3">
-                            <div class="image__container--gardening">
+                        <a data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="carousel__indicators--anchor" aria-label="Slide 3">
+                            <div class="carousel__indicators--image">
                                 <img src="./img/gardening4.jpg" alt="">
                             </div>
-                            <article>
+                            <article class="carousel__indicators--article">
                                 <h4>Planting</h4>
                                 <p>This is just a placeholder.This is just a placeholder.</p>
                             </article>
@@ -119,7 +118,7 @@
         <section>
             <div class="section__container">
                 <div class="section__container--featured-garden row">
-                    <div><h3 class="col-12">featured gardens</h3></div>
+                    <div><h3 class="section__container--h3 col-12">featured gardens</h3></div>
                     <a class="featured-garden__items--anchor col-md-3 col-sm-6" href="##">
                         <div class="image__container--gardens">
                             <img class="img-fluid" src="./img/garden1.jpg" alt="">
@@ -161,26 +160,28 @@
                 <hr>
                 
                 <div class="section__container--tips row">
-                    <div class="image__container--tips col-md-4 col-sm-12">
+                    <div class="image__container--tips col-md-4 d-none d-md-inline">
                         <img src="./img/gardening5.jpg" alt="">
                     </div>
-                    <article class="col-md-8 col-sm-12">
-                        <h3>tips of the weeks</h3>
+                    <article class="col-md-8 col-12">
+                        <h3 class="section__container--h3">tips of the weeks</h3>
+                        <div class="image__container--tips tips--middle-version d-block d-md-none">
+                            <img src="./img/gardening5.jpg" alt="">
+                        </div>
                         <ol>
                             <li><p>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</p></li>
                             <li><p>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</p></li>
                             <li><p>This is just a placeholder, so you can see what the site would look like.This is just a placeholder, so you can see what the site would look like.</p></li>
                         </ol>
                     </article>
-
                 </div>
             </div>
         </section>
 
-        <footer>
+        <footer class="text-align-center">
             <div class="accordion footer__container row" id="accordion">
                 <div class="accordion-item footer__content col-lg-3 col-12">
-                    <h4 class="accordion-header d-block d-lg-none d-xl-none" id="headingOne">
+                    <div class="h4 accordion-header d-block d-lg-none d-xl-none" id="headingOne">
                         <button 
                         class="accordion-button collapsed" 
                         type="button" 
@@ -189,15 +190,15 @@
                         aria-expanded="false" 
                         aria-controls="collapseOne"
                         >
-                            placeholder
+                            PLACEHOLDER
                         </button>
-                    </h4>
+                    </div>
 
-                    <div class="h4 d-none d-lg-block d-xl-block footer__content--h4">placeholder</div>
+                    <h4 class="d-none d-lg-block d-xl-block footer__content--h4">placeholder</h4>
 
                     <div 
                     id="collapseOne" 
-                    class="accordion-collapse collapse d-lg-flex" 
+                    class="accordion-collapse collapse d-lg-block" 
                     aria-labelledby="headingOne" 
                     data-bs-parent="#accordion"
                     >
@@ -215,7 +216,7 @@
                     </div>
                 </div>
                 <div class="accordion-item footer__content col-lg-3 col-12">
-                    <h4 class="accordion-header d-block d-lg-none d-xl-none" id="headingTwo">
+                    <div class="h4 accordion-header d-block d-lg-none d-xl-none" id="headingTwo">
                         <button 
                         class="accordion-button collapsed" 
                         type="button" 
@@ -224,15 +225,15 @@
                         aria-expanded="false" 
                         aria-controls="collapseTwo"
                         >
-                            placeholder
+                            PLACEHOLDER
                         </button>
-                    </h4>
+                    </div>
 
-                    <div class="h4 d-none d-lg-block d-xl-block footer__content--h4">placeholder</div>
+                    <h4 class="d-none d-lg-block d-xl-block footer__content--h4">placeholder</h4>
 
                     <div 
                     id="collapseTwo" 
-                    class="accordion-collapse collapse d-lg-flex" 
+                    class="accordion-collapse collapse d-lg-block" 
                     aria-labelledby="headingTwo" 
                     data-bs-parent="#accordion"
                     >
@@ -250,7 +251,7 @@
                     </div>
                 </div>
                 <div class="accordion-item footer__content col-lg-3 col-12">
-                    <h4 class="accordion-header d-block d-lg-none d-xl-none" id="headingThree">
+                    <div class="h4 accordion-header d-block d-lg-none d-xl-none" id="headingThree">
                         <button 
                         class="accordion-button collapsed" 
                         type="button" 
@@ -259,15 +260,15 @@
                         aria-expanded="false" 
                         aria-controls="collapseThree"
                         >
-                            placeholder
+                            PLACEHOLDER
                         </button>
-                    </h4>
+                    </div>
 
-                    <div class="h4 d-none d-lg-block d-xl-block footer__content--h4">placeholder</div>
+                    <h4 class="d-none d-lg-block d-xl-block footer__content--h4">placeholder</h4>
 
                     <div 
                     id="collapseThree" 
-                    class="accordion-collapse collapse d-lg-flex" 
+                    class="accordion-collapse collapse d-lg-block" 
                     aria-labelledby="headingThree" 
                     data-bs-parent="#accordion"
                     >
@@ -285,7 +286,7 @@
                     </div>
                 </div>   
                 <div class="accordion-item footer__content col-lg-3 col-12">
-                    <h4 class="accordion-header d-block d-lg-none d-xl-none" id="headingFour">
+                    <div class="h4 accordion-header d-block d-lg-none d-xl-none" id="headingFour">
                         <button 
                         class="accordion-button collapsed" 
                         type="button" 
@@ -294,15 +295,15 @@
                         aria-expanded="false" 
                         aria-controls="collapseFour"
                         >
-                            connect
+                            CONNECT
                         </button>
-                    </h4>
+                    </div>
 
-                    <div class="h4 d-none d-lg-block d-xl-block footer__content--h4">connect</div>
+                    <h4 class="d-none d-lg-block d-xl-block footer__content--h4">connect</h4>
 
                     <div 
                     id="collapseFour" 
-                    class="accordion-collapse collapse d-lg-flex" 
+                    class="accordion-collapse collapse d-lg-block" 
                     aria-labelledby="headingFour" 
                     data-bs-parent="#accordion"
                     >
