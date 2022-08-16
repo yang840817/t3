@@ -1,5 +1,6 @@
 /* 輪播圖 */
-main .carousel-caption {
+.carousel-caption {
+    display: none;
     right: 0;
     bottom: 0;
     left: 0;
@@ -9,96 +10,112 @@ main .carousel-caption {
     color: #fff;
     text-align: initial;
 }
+@media (min-width: 576px) {
+    .carousel-caption {
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    .carousel-caption {
+        padding: 1.5rem;
+    }
+}
 
-main .carousel-caption .title {
+.carousel-caption .title {
     margin: 0;
     color: rgb(231,233,165);
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 
-main .carousel-caption .text_box {
-    display: block;
+.carousel-caption .text_box {
     text-decoration: none;
 }
 
-main .carousel-caption .text_box .text {
+.carousel-caption .text {
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
-    font-size: 1rem;
     color: #fff;
-}
-
-main .carousel-caption .text_box .into {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-main .carousel-caption .text_box i {
     font-size: 1rem;
-    color: black;
-    border-radius: 50%;
-    background-color: rgb(109, 131, 157);
-    color: white;
 }
-
-main .carousel-caption .text_box:hover i {
-    background-color: lightblue;
-}
-
 @media (min-width: 576px) and (max-width: 991px) {
-    main .carousel-caption .text_box .text {
-        width: 90%;
+    .carousel-caption .text {
+        width: calc(100% - 5%);
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden; 
     }
 }
-
 @media (min-width: 992px) {
-    main .carousel-caption {
-        padding: 1.5rem;
-    }
-    main .carousel-caption .text_box .into {
-        display: none;
+    .carousel-caption .text {
+        display: inline;
     }
 }
 
-/* 輪播圖下面的三張縮圖 */
-main .carousel-indicators {
+.carousel-caption .into {
+    vertical-align: middle;
+    border-radius: 50%;    
+    background-color: rgb(109, 131, 157);
+    color: white;
+    font-size: 1rem;
+}
+
+.carousel-caption .text_box:hover .text {
+    text-decoration: underline;
+}
+
+.carousel-caption .text_box:hover i {
+    background-color: lightblue;
+}
+
+ /* 輪播圖下面三張縮圖   */
+.carousel-indicators {
+    display: block;
     position: initial;
+    padding: 1.5rem;
     margin: 0;
-    display: block;
 }
 
-main .carousel-indicators .card {
-    margin: 0 0 1.5rem 0;
-    display: block;
-    background-color: unset;
-    border: 0;
-    border-radius: 0;
+.carousel-indicators .indicators_item {
+    display: flex;
+    justify-content: center;
 }
-main .carousel-indicators .card:nth-last-of-type(1){
-    margin-bottom: 0;
-}
-@media (min-width: 992px) {
-    main .carousel-indicators .card {
-        margin-bottom: 0;
+@media (min-width: 768px) {
+    .carousel-indicators .indicators_item {
+        border-right: 4px ridge rgba(253, 253, 253, 0.20);
     }
-    main .carousel-indicators .card + .card {
-        border-left: 0.3rem ridge rgb(150, 150, 150, 0.2);        
+    .carousel-indicators .indicators_item:nth-last-of-type(1) {
+        border-color: rgba(245, 242, 242, 0);
     }
 }
-
-main .carousel-indicators .card_box {
-    margin: 0 auto;
-    width: fit-content;
+.carousel-indicators .indicators_item + .indicators_item {
+    margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+    .carousel-indicators .indicators_item + .indicators_item {
+        margin-top: 0;
+    }    
 }
 
-/* 按鈕＋圖效果 */
-main .carousel-indicators [data-bs-target] {
-    width: initial;
+.indicators_item .image_box {
+    flex:0 0 15%;
+}
+
+.indication-caption {
+    padding: 0 0 0 1.5rem;
+    flex: 0 1 auto;
+}
+
+@media (min-width: 768px) {
+    .indicators_item .image_box {
+        flex: 0 0 30%;
+    }
+    .indication-caption {
+        flex: 0 1 auto;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
     height: auto;
     padding: 0;
     margin: 0;
@@ -107,29 +124,26 @@ main .carousel-indicators [data-bs-target] {
     border: 0;
     opacity: 1;
 }
-main .carousel-indicators .indicators_button:hover .img-thumbnail {
-    background-color:rgb(231,233,165);
-}
-main .carousel-indicators .indicators_button .img-thumbnail {
+.indicators_item .image_box .img-thumbnail {
     padding: 0.15rem;
     border: 0;
     border-radius: 0.05rem;
 }
-main .carousel-indicators .active {
-    transform: scale(1.1);
-    box-shadow: 2px 2px 5px black;
-}
-main .carousel-indicators .active .img-thumbnail {
+.indicators_item .image_box .img-thumbnail:hover {
     background-color:rgb(231,233,165);
 }
 
-
-/* figcaption 文字區 */
-main .carousel-indicators .card_box .card-body {
-    padding: 0 0 0 1.5rem;
+.carousel-indicators .active .img-thumbnail {
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.1);
+    transition: all .5s;
 }
 
-main .carousel-indicators .card-body .card-title {
+.carousel-indicators .active .img-thumbnail {
+    background-color:rgb(231,233,165);
+}
+
+.indication-caption .title {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
@@ -139,17 +153,36 @@ main .carousel-indicators .card-body .card-title {
     text-transform: capitalize;
 }
 
-main .carousel-indicators .card-body .card-text {
+.indication-caption .text_box {
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+}
+.indication-caption .text_box p {
+    margin-bottom: 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     overflow: hidden;
     font-size: 1rem;
     color: white;
 }
+@media (min-width: 767px) {
+    .indication-caption .text_box p {
+        -webkit-line-clamp: 3;
+    }
+}
+
+.indication-caption .text_box:hover p {
+    text-decoration: underline;
+}
+
 
 /* featured_container 四圖卡牌區 */
-main .h2_primary {
+.featured_container {
+    margin: 0 0 1.5rem 0;
+}
+.title_primary {
     padding: 0.5rem 0;
     margin: 0 0 1.5rem 0;
     border-bottom: 3px solid rgb(179,199,161);
@@ -160,139 +193,143 @@ main .h2_primary {
     text-transform: uppercase;
     text-shadow: 3px -1px white;
 }
-
-main .featured_container .card {
-    margin-bottom: 1.5rem;
-    flex-direction: row;
-    border: 0;
-    border-radius: 0;
-}
-
-main .featured_container .card:nth-last-of-type(1) {
-    margin-bottom: 0;
-}
-
-main .featured_container .card .image_box {
-    margin: 0 1.5rem 0 0;
-}
-
-main .featured_container .image_box img:hover {
-    transform: scale(0.98);
-    box-shadow: 0px 0px 10px black;
-}
-
-main .featured_container .card-body {
-    padding: 0;
-}
-
-main .featured_container .card-body .card-title {
-    margin: 0 0 1rem;
-    color: rgb(118, 84, 55);
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-main .featured_container .card-body .card-text {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    font-size: 1rem;
-}
-
 @media (min-width: 576px) {
-    main .h2_primary {
+    .title_primary {
         text-align: initial;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 }
 
-@media (min-width: 992px) {
-    main .featured_container .card {
-        margin-bottom: 0;
+.featured_container .featured_item {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    border-radius: 0;
+}
+@media (min-width: 768px) {
+    .featured_container .featured_item {
         flex-direction: column;
     }
+}
 
-    main .featured_container .card .image_box {
+.featured_container .featured_item + .featured_item {
+    margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+    .featured_container .featured_item + .featured_item {
+        margin-top: 0;
+    }
+}
+
+.featured_container .featured_item .image_box {
+    margin: 0 1.5rem 0 0;
+    flex: 0 0 25%;
+}
+@media (min-width: 768px) {
+    .featured_container .featured_item .image_box {
         margin: 0 0 1.5rem 0;
     }
+}
 
-    main .featured_container .card-body h3 {
+.featured_container .image_box img:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px black;
+    transition: all .5s;
+}
+
+.featured_container .featured_caption {
+    padding: 0;
+}
+
+.featured_container .featured_caption .title {
+    margin: 0 0 1rem;
+    color: rgb(118, 84, 55);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .featured_container .featured_caption .title {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
+}
 
-    main .featured_container .card-body .card-text {
+.featured_container .featured_caption .text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 1rem;
+}
+@media (min-width: 768px) {
+    .featured_container .featured_caption .text {
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 3;
         overflow: hidden;
     }
 }
 
-main hr {
-    margin: 0 0 1.5rem 0;
-}
-
 /* 單張圖片-tips區塊 */
-main .article_container .image_box a {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-}
-
-main .article_container .image_box img:hover {
-    transform: scale(0.98);
-    box-shadow: 0px 0px 5px black;
-}
-
-main .article_container .text_box {
+.article_container .text_box {
     margin-bottom: 1.5rem;
 }
+@media (min-width: 768px) {
+    .article_container .text_box {
+        margin-bottom: 0;
+        order: 2;
+    }
+}
 
-main .article_container ol {
-    margin-left: 1.5rem;
+.article_container .text {
+    margin-left: 2rem;
     margin-bottom: 0;
     padding: 0;
     list-style: none; 
     counter-reset: li;
 }
 
-main .article_container li::before {
+.article_container li {
+    counter-increment: li;
+}
+.article_container li + li {
+    margin-top: 1rem;
+}
+
+.article_container li::before {
     content: counter(li) ".";
     font-weight: bold;
     display: inline-block;
-    width: 1.5rem;
-    margin-left: -1.5rem;
+    width: 2rem;
+    margin-left: -2rem;
+    text-align: right;
+    padding-right: .5rem;
+    vertical-align: top;
 }
 
-main .article_container li {
-    counter-increment: li;
-    margin-bottom: 1.25rem;
+.article_container li span {
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
-main .article_container li:nth-last-of-type(1) {
-    margin-bottom: 0;
+.article_container .image_box a {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
-
-@media (min-width: 992px) {
-    main .article_container {
-        flex-wrap: nowrap;
-    }
-
-    main .article_container .text_box {
-        margin-bottom: 0;
-        order: 2;
-    }
-
-    main .article_container .image_box {
-        margin: 0;
-        order: 1;
-    }
-
-    main .article_container .image_box a {
+@media (min-width: 768px) {
+    .article_container .image_box a {
         width: 100%;
     }
+}
+
+.article_container .image_box img:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 5px black;
+    transition: all .5s;
 }
