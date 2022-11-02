@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px red solid; */
+}
+
+body {
+  background-image: url(../img/bg-body.jpg);
+}
+
+.body_container {
+  max-width: 1070px;
+  min-width: 350px;
+  background-color: #1f6700;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 20px;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.navbar-toggler {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+}
+.navbar-toggler:not(.collapsed) {
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,35 @@
+.footer_container nav {
+  align-items: flex-start;
+  background-color: #dae8d3;
+  border: 1px solid #c8debe;
+}
+
+.footer_container h4 {
+  text-transform: uppercase;
+  color: #8c8c8c;
+  text-shadow: white 1px 0;
+}
+.footer_container nav p,
+.footer_community a {
+  color: #898989;
+}
+
+.footer_community i {
+  color: green;
+}
+
+.footer_community a:hover {
+  color: #062c02;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1199.98px) {
+  .footer_container nav {
+    align-items: center;
+    text-align: center;
+  }
+}
