@@ -13,8 +13,11 @@
 .footer_community a {
   color: #898989;
 }
+.footer_container p {
+  margin-bottom: 0;
+}
 
-.footer_community i {
+.footer_community a i {
   color: green;
 }
 
@@ -30,6 +33,5 @@
 @media (max-width: 1199.98px) {
   .footer_container nav {
     align-items: center;
-    text-align: center;
   }
 }

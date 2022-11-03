@@ -2,6 +2,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   text-align: unset;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -11,11 +12,14 @@
 }
 .banner_prompt a {
   color: #edecec;
-  margin-bottom: 0;
+}
+.banner_prompt a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #217000;
 }
 .banner_list > div {
   display: flex;
-  text-align: start;
+  justify-content: center;
 }
 .banner_list > div + div {
   border-left: 2px solid #217000;
@@ -51,8 +55,8 @@
   text-transform: uppercase;
   color: #742800;
 }
-.table-group-divider {
-  color: gainsboro;
+.featured_container .table-group-divider {
+  color: #eae9e5;
 }
 
 @media (max-width: 991.98px) {
@@ -71,14 +75,5 @@
   .banner_list > div + div {
     border-top: 2px solid #217000;
     border-left: unset;
-  }
-}
-@media (max-width: 575.98px) {
-  .banner_list > div {
-    display: flex;
-    text-align: start;
-  }
-  .banner_list_img-box {
-    display: block;
   }
 }
