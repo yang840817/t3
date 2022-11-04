@@ -19,7 +19,6 @@
 }
 .banner_list > div {
   display: flex;
-  justify-content: center;
 }
 .banner_list > div + div {
   border-left: 2px solid #217000;
@@ -57,6 +56,17 @@
 }
 .featured_container .table-group-divider {
   color: #eae9e5;
+}
+
+.article_img-container img {
+  height: 100%;
+  object-fit: cover;
+}
+.article_container li {
+  line-height: 2;
+}
+.article_container li + li {
+  margin-top: 1rem;
 }
 
 @media (max-width: 991.98px) {
