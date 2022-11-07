@@ -1,11 +1,21 @@
 .banner_prompt {
+  position: unset;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
   text-align: unset;
   background-color: rgba(0, 0, 0, 0.4);
 }
+@media (min-width: 992px) {
+  .banner_prompt {
+    position: absolute;
+  }
+}
+.carousel-item img {
+  min-height: 35vh;
+  object-fit: cover;
+}
+
 .banner_prompt h2 {
   text-transform: uppercase;
   color: #e8ec9d;
@@ -18,9 +28,31 @@
   background-color: rgba(255, 255, 255, 0.8);
   color: #217000;
 }
-
+.banner_prompt span {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 16px);
+}
+@media (min-width: 992px) {
+  .banner_prompt span {
+    display: unset;
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
+    width: unset;
+  }
+}
 .banner_list > div + div {
-  border-left: 2px ridge rgba(223, 233, 227, 0.382);
+  border-top: 2px ridge rgba(223, 233, 227, 0.382);
+}
+@media (min-width: 992px) {
+  .banner_list > div + div {
+    border-left: 2px ridge rgba(223, 233, 227, 0.382);
+    border-top: unset;
+  }
 }
 .banner_list_img-box {
   flex-shrink: 0;
@@ -40,7 +72,6 @@
   background-color: white;
 }
 .featured_container h3 {
-  padding: 10px 20px 15px;
   text-transform: uppercase;
   color: #742800;
   text-shadow: white 1px 0;
@@ -61,28 +92,16 @@
   object-fit: cover;
 }
 .article_container li {
-  line-height: 2;
+  line-height: normal;
+}
+@media (min-width: 992px) {
+  .article_container li {
+    line-height: 2;
+  }
+}
+.article_container li::marker {
+  font-weight: bolder;
 }
 .article_container li + li {
   margin-top: 1rem;
-}
-
-@media (max-width: 991.98px) {
-  .banner_prompt {
-    position: unset;
-  }
-  .banner_prompt span {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: calc(100% - 16px);
-  }
-  ol li {
-    line-height: normal;
-  }
-  .banner_list > div + div {
-    border-top: 2px ridge rgba(223, 233, 227, 0.382);
-    border-left: unset;
-  }
 }

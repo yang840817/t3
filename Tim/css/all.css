@@ -11,7 +11,7 @@ body {
   background-color: #1f6700;
 }
 a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 h4 {
@@ -35,4 +35,9 @@ a img:hover {
 .navbar-toggler:not(.collapsed) {
   transform: rotate(-180deg);
   color: green;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  top: 25%;
+  bottom: 25%;
 }
