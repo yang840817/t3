@@ -3,7 +3,6 @@
   background-color: #dae8d3;
   border: 1px solid #c8debe;
 }
-
 .footer_container h4 {
   text-transform: uppercase;
   color: #8c8c8c;
@@ -16,15 +15,12 @@
 .footer_container p {
   margin-bottom: 0;
 }
-
 .footer_community a i {
   color: green;
 }
-
 .footer_community a:hover {
   color: #062c02;
 }
-
 .copyright {
   text-align: center;
   font-size: 12px;
@@ -35,13 +31,11 @@
     font-size: 18px;
   }
 }
-
-.footer_container > div {
+.footer_container .flex-sm-column {
   align-items: center;
 }
-
 @media (min-width: 1200px) {
-  .footer_container > div {
+  .footer_container .flex-sm-column {
     align-items: flex-start;
   }
 }

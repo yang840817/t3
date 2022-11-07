@@ -10,6 +10,7 @@ body {
   min-width: 350px;
   background-color: #1f6700;
 }
+/* 以下變更bootstrap預設樣式為本網頁主題 */
 a {
   display: block;
   text-decoration: none;

@@ -15,7 +15,6 @@
   min-height: 35vh;
   object-fit: cover;
 }
-
 .banner_prompt h2 {
   text-transform: uppercase;
   color: #e8ec9d;
@@ -78,7 +77,15 @@
   background-color: #dae8d3;
   border-bottom: 2px solid #a4c895;
 }
-
+.featured_introduce div:first-child {
+  width: 33%;
+  flex-shrink: 0;
+}
+@media (min-width: 992px) {
+  .featured_introduce div:first-child {
+    width: 100%;
+  }
+}
 .featured_introduce h4 {
   text-transform: uppercase;
   color: #742800;
@@ -86,7 +93,6 @@
 .divider {
   border-top: 2px solid #eae9e5;
 }
-
 .article_img-container img {
   height: 100%;
   object-fit: cover;
