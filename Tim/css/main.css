@@ -1,14 +1,14 @@
 .banner_prompt {
   position: unset;
-  bottom: 0;
-  left: 0;
-  right: 0;
   text-align: unset;
   background-color: rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 992px) {
   .banner_prompt {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 .carousel-item img {
@@ -97,7 +97,11 @@
   height: 100%;
   object-fit: cover;
 }
+.article_container ul {
+  counter-reset: a;
+}
 .article_container li {
+  list-style: none;
   line-height: normal;
 }
 @media (min-width: 992px) {
@@ -105,8 +109,14 @@
     line-height: 2;
   }
 }
-.article_container li::marker {
+.article_container li:before {
+  content: counter(a) ".";
+  counter-increment: a;
   font-weight: bolder;
+  display: inline-block;
+  width: 2em;
+  margin-left: -2.5em;
+  text-align: right;
 }
 .article_container li + li {
   margin-top: 1rem;
