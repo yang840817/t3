@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="container-xl px-3 body_container">
+    <div class="container-fluid px-3 body_container">
       <header>
         <div class="header_container">
-          <nav class="navbar-expand-sm container-fluid">
+          <nav class="navbar-expand-sm">
             <div class="justify-content-center row">
               <div class="navbar col-2 d-sm-none justify-content-center p-3">
                 <button
@@ -49,7 +49,7 @@
               </h1>
               <div class="collapse navbar-collapse col-12" id="navbarText">
                 <ul
-                  class="navbar-nav navbar-collapse text-center row menu_list"
+                  class="navbar-nav navbar-collapse text-center row g-0 menu_list"
                 >
                   <li class="nav-item col-12 col-sm-2 px-0">
                     <a class="nav-link active" aria-current="page" href="##"
@@ -325,7 +325,7 @@
               class="row g-0 justify-content-center justify-content-lg-start article_container mb-4"
             >
               <div
-                class="col-8 col-md-6 col-lg-4 order-2 order-sm-0 article_img-container"
+                class="col-8 col-md-6 col-lg-4 order-2 order-md-0 article_img-container"
               >
                 <img src="./img/tip-of-the-week.jpg" alt="" />
               </div>
@@ -354,11 +354,13 @@
         </section>
       </main>
       <footer>
-        <div class="container-fluid">
-          <div class="row footer_container">
+        <div>
+          <div class="row g-0 footer_container">
             <div class="col-12 col-sm-6 col-xl-3 p-3">
               <!-- 使用bootstrap navbar系列class_name開合功能 -->
-              <div class="navbar navbar-expand-sm flex-sm-column py-0">
+              <div
+                class="navbar navbar-expand-sm flex-sm-column align-items-center align-items-xl-start py-0"
+              >
                 <h4>place holder</h4>
                 <button
                   class="navbar-toggler collapsed"
@@ -390,7 +392,9 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 p-3">
-              <div class="navbar navbar-expand-sm flex-sm-column py-0">
+              <div
+                class="navbar navbar-expand-sm flex-sm-column align-items-center align-items-xl-start py-0"
+              >
                 <h4>place holder</h4>
                 <button
                   class="navbar-toggler collapsed"
@@ -422,7 +426,9 @@
               </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 p-3">
-              <div class="navbar navbar-expand-sm flex-sm-column py-0">
+              <div
+                class="navbar navbar-expand-sm flex-sm-column align-items-center align-items-xl-start py-0"
+              >
                 <h4>place holder</h4>
                 <button
                   class="navbar-toggler collapsed"
@@ -455,7 +461,7 @@
             </div>
             <div class="col-12 col-sm-6 col-xl-3 p-3">
               <div
-                class="navbar navbar-expand-sm flex-sm-column py-0 footer_community"
+                class="navbar navbar-expand-sm flex-sm-column py-0 align-items-center align-items-xl-start footer_community"
               >
                 <h4>connect</h4>
                 <button
@@ -504,10 +510,10 @@
                 </div>
               </div>
             </div>
-            <p class="copyright col-12 p-3">
-              Garden Walkthrough &copy; 2023 | All Rights Reserved
-            </p>
           </div>
+          <p class="copyright mb-0 py-3">
+            Garden Walkthrough &copy; 2023 | All Rights Reserved
+          </p>
         </div>
       </footer>
     </div>
