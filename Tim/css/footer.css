@@ -1,6 +1,31 @@
+.footer_container {
+  border-top: 1px solid #c8debe;
+  border-bottom: 1px solid #c8debe;
+}
 .footer_container > div {
   background-color: #dae8d3;
-  border: 1px solid #c8debe;
+}
+.footer_container > div + div {
+  border-top: 1px solid #c8debe;
+}
+@media (min-width: 576px) {
+  .footer_container > div + div {
+    border-top: unset;
+  }
+  .footer_container > div:nth-child(n + 3) {
+    border-top: 1px solid #c8debe;
+  }
+  .footer_container > div:nth-child(even) {
+    border-left: 1px solid #c8debe;
+  }
+}
+@media (min-width: 1200px) {
+  .footer_container > div:nth-child(n + 3) {
+    border-top: unset;
+  }
+  .footer_container > div + div {
+    border-left: 1px solid #c8debe;
+  }
 }
 .footer_container h4 {
   text-transform: uppercase;
@@ -15,6 +40,7 @@
   margin-bottom: 0;
 }
 .footer_community a i {
+  font-size: 24px;
   color: green;
 }
 .footer_community a:hover {
