@@ -102,6 +102,9 @@
 }
 .article_container li {
   list-style: none;
+}
+
+.article_container li {
   line-height: normal;
 }
 @media (min-width: 992px) {
